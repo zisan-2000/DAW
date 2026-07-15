@@ -137,7 +137,10 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body className="flex min-h-screen flex-col overflow-x-clip bg-background text-foreground antialiased">
+      <body
+        className="flex min-h-screen flex-col overflow-x-clip bg-background text-foreground antialiased"
+        suppressHydrationWarning
+      >
         <NextIntlClientProvider messages={messages}>
           <MotionProvider>
             <SkipLink />
