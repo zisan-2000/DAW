@@ -9,6 +9,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
+    "products": "Products",
     "industries": "Industries",
     "caseStudies": "Case Studies",
     "blog": "Blog",
@@ -600,6 +601,285 @@
         "emailPlaceholder": "john@company.com",
         "submit": "Get Help Now",
         "disclaimer": "Your information is encrypted and confidential. We respond within 15 minutes."
+      }
+    },
+    "common": {
+      "learnMore": "Learn More",
+      "viewAll": "View All Services"
+    }
+  },
+  "generativeEngineOptimization": {
+    "hero": {
+      "status": "AI Search Ready",
+      "eyebrow": "Generative Engine Optimization",
+      "title": "Get Cited By",
+      "titleAccent": "AI Engines",
+      "description": "Be the answer ChatGPT, Perplexity, and Google AI Overviews give. We optimize your content to be discovered, understood, and cited by generative AI search engines.",
+      "cta": "Get Your AI Visibility Audit",
+      "secondaryCta": "See Our Process",
+      "citationLabel": "AI Citation Score",
+      "citationDescription": "Average visibility increase across AI engines",
+      "engines": "AI Engines Tracked",
+      "monitoringLabel": "Live Monitoring",
+      "coverageLabel": "Queries Tracked"
+    },
+    "trustBar": {
+      "label": "Optimizing Visibility Across",
+      "chatgpt": "ChatGPT",
+      "perplexity": "Perplexity",
+      "gemini": "Google Gemini",
+      "copilot": "Microsoft Copilot",
+      "claude": "Claude"
+    },
+    "services": {
+      "eyebrow": "Our Services",
+      "title": "Complete AI Search Optimization",
+      "subtitle": "We help your brand become the trusted source AI engines cite and recommend.",
+      "contentStructuring": {
+        "title": "Content Structuring",
+        "description": "Restructure your content into clear, citable, well-formatted answers that AI models can easily parse and reference.",
+        "stat": "3.2x",
+        "statLabel": "citation increase"
+      },
+      "entityOptimization": {
+        "title": "Entity Optimization",
+        "description": "Strengthen your brand's entity recognition across knowledge graphs so AI engines understand who you are and what you offer.",
+        "stat": "94%",
+        "statLabel": "recognition rate"
+      },
+      "aiCitationTracking": {
+        "title": "AI Citation Tracking",
+        "description": "Monitor how and where your brand appears in ChatGPT, Perplexity, Gemini, and Copilot responses in real time.",
+        "stat": "24/7",
+        "statLabel": "monitoring"
+      },
+      "schemaMarkup": {
+        "title": "Schema & Structured Data",
+        "description": "Implement advanced structured data markup that gives AI crawlers the context they need to cite you accurately.",
+        "stat": "100%",
+        "statLabel": "coverage"
+      },
+      "answerEngineeringy": {
+        "title": "Answer Engineering",
+        "description": "Craft concise, authoritative answers to the exact questions your audience is asking large language models.",
+        "stat": "87%",
+        "statLabel": "answer match rate"
+      },
+      "competitiveGapAnalysis": {
+        "title": "Competitive Gap Analysis",
+        "description": "Identify where competitors are being cited instead of you, and close the gap with targeted content strategy.",
+        "stat": "156",
+        "statLabel": "gaps closed avg."
+      }
+    },
+    "process": {
+      "eyebrow": "Our Process",
+      "title": "How We Get You Cited",
+      "subtitle": "A proven methodology for earning visibility inside AI-generated answers.",
+      "step1": {
+        "title": "AI Visibility Audit",
+        "description": "We analyze how your brand currently appears (or doesn't) across major AI search engines and identify quick wins.",
+        "time": "Week 1"
+      },
+      "step2": {
+        "title": "Content & Schema Optimization",
+        "description": "We restructure existing content and implement structured data to make it machine-readable and citation-ready.",
+        "time": "Week 2-3"
+      },
+      "step3": {
+        "title": "Authority Building",
+        "description": "We strengthen entity signals and third-party mentions that AI models use to validate trustworthiness.",
+        "time": "Week 4-6"
+      },
+      "step4": {
+        "title": "Monitor & Iterate",
+        "description": "We track citations across every major AI engine and continuously refine content based on performance data.",
+        "time": "Ongoing"
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Testimonials",
+      "title": "What Our Clients Say",
+      "founder": {
+        "quote": "Within six weeks we went from invisible to being cited directly in ChatGPT answers for our core product category. The traffic shift has been remarkable.",
+        "name": "Daniel Park",
+        "role": "Founder, Northwind Software",
+        "metric": "312%",
+        "metricLabel": "AI referral growth"
+      },
+      "cmo": {
+        "quote": "They understood something our old SEO agency didn't: ranking on Google isn't enough anymore. Now Perplexity and Gemini both cite us as a source.",
+        "name": "Priya Anand",
+        "role": "CMO, Fieldstone Health",
+        "metric": "5 engines",
+        "metricLabel": "actively citing us"
+      },
+      "director": {
+        "quote": "The schema and content restructuring work alone paid for the engagement. We're now the top-cited source for our category across every AI assistant we track.",
+        "name": "Owen Bennett",
+        "role": "Director of Growth, Larkspur",
+        "metric": "#1",
+        "metricLabel": "cited source in category"
+      }
+    },
+    "stats": {
+      "citationsTracked": "Citations Tracked Monthly",
+      "avgVisibilityLift": "Avg. Visibility Lift",
+      "enginesCovered": "AI Engines Covered",
+      "clientsOptimized": "Brands Optimized"
+    },
+    "consultation": {
+      "eyebrow": "Free AI Visibility Audit",
+      "title": "See Where You Stand in AI Search",
+      "description": "Get a complimentary audit showing exactly how visible your brand is across ChatGPT, Perplexity, Gemini, and Copilot, plus a roadmap to improve it.",
+      "benefits": {
+        "immediate": "Instant Audit Results",
+        "confidential": "No Obligation",
+        "expert": "Expert-Reviewed Report"
+      },
+      "form": {
+        "emailPlaceholder": "Enter your work email",
+        "submit": "Get My Free Audit",
+        "disclaimer": "We'll send your AI visibility report within 24 hours."
+      }
+    },
+    "common": {
+      "learnMore": "Learn More",
+      "viewAll": "View All Services"
+    }
+  },
+  "publicRelations": {
+    "hero": {
+      "status": "Now Accepting New Clients",
+      "eyebrow": "Public Relations",
+      "title": "Command the",
+      "titleAccent": "Narrative",
+      "description": "From media placements to executive positioning, we build public relations strategies that earn trust, coverage, and lasting influence for your brand.",
+      "cta": "Book a PR Strategy Call",
+      "secondaryCta": "See Our Process",
+      "reachLabel": "Media Reach Generated",
+      "reachDescription": "Combined audience reach across earned placements",
+      "monitoringLabel": "Media Monitoring",
+      "coverageLabel": "Outlets in Network"
+    },
+    "trustBar": {
+      "label": "Featured In",
+      "forbes": "Forbes",
+      "techcrunch": "TechCrunch",
+      "bloomberg": "Bloomberg",
+      "wsj": "The Wall Street Journal",
+      "fastcompany": "Fast Company"
+    },
+    "services": {
+      "eyebrow": "Our Services",
+      "title": "Full-Service Public Relations",
+      "subtitle": "Strategic communications that build credibility and keep your brand top of mind.",
+      "mediaRelations": {
+        "title": "Media Relations",
+        "description": "Build and maintain relationships with top-tier journalists and outlets to secure consistent, credible press coverage.",
+        "stat": "500+",
+        "statLabel": "media contacts"
+      },
+      "executivePositioning": {
+        "title": "Executive Positioning",
+        "description": "Establish your leadership team as trusted voices through bylines, speaking engagements, and expert commentary.",
+        "stat": "85%",
+        "statLabel": "placement rate"
+      },
+      "pressReleaseStrategy": {
+        "title": "Press Release Strategy",
+        "description": "Craft and distribute announcements that cut through the noise and land coverage in publications that matter.",
+        "stat": "3x",
+        "statLabel": "avg. pickup rate"
+      },
+      "crisisCommunications": {
+        "title": "Crisis Communications",
+        "description": "Proactive planning and rapid-response messaging to protect your reputation when it matters most.",
+        "stat": "24/7",
+        "statLabel": "on-call support"
+      },
+      "productLaunchPr": {
+        "title": "Product Launch PR",
+        "description": "Coordinated media campaigns that build anticipation and secure launch-day coverage across key outlets.",
+        "stat": "92%",
+        "statLabel": "launch coverage rate"
+      },
+      "industryAwards": {
+        "title": "Awards & Recognition",
+        "description": "Identify and secure industry awards and rankings that build third-party credibility for your brand.",
+        "stat": "120+",
+        "statLabel": "awards secured"
+      }
+    },
+    "process": {
+      "eyebrow": "Our Process",
+      "title": "How We Build Your Presence",
+      "subtitle": "A structured approach to earning the coverage and credibility your brand deserves.",
+      "step1": {
+        "title": "Discovery & Positioning",
+        "description": "We audit your current media presence and define the narrative, angles, and spokespeople that will resonate.",
+        "time": "Week 1"
+      },
+      "step2": {
+        "title": "Media Strategy & Targeting",
+        "description": "We build a target list of journalists and outlets aligned with your industry and audience.",
+        "time": "Week 2"
+      },
+      "step3": {
+        "title": "Outreach & Placement",
+        "description": "We pitch stories, coordinate interviews, and secure coverage across print, digital, and broadcast media.",
+        "time": "Ongoing"
+      },
+      "step4": {
+        "title": "Measurement & Reporting",
+        "description": "We track reach, sentiment, and share of voice, and refine strategy based on what's driving results.",
+        "time": "Monthly"
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Testimonials",
+      "title": "What Our Clients Say",
+      "ceo": {
+        "quote": "They landed us coverage in three major outlets within our first month. Our brand credibility with investors changed almost overnight.",
+        "name": "Laura Mitchell",
+        "role": "CEO, Brightline Robotics",
+        "metric": "3",
+        "metricLabel": "top-tier placements, month one"
+      },
+      "founder": {
+        "quote": "Our founder went from unknown to a recognized voice in the industry. The speaking invitations and press requests haven't stopped since.",
+        "name": "Jordan Reyes",
+        "role": "Founder, Meridian Foods",
+        "metric": "40+",
+        "metricLabel": "press mentions in 6 months"
+      },
+      "vp": {
+        "quote": "Their team handled a sensitive situation with total professionalism. We came out the other side with our reputation intact and even strengthened.",
+        "name": "Alicia Ferreira",
+        "role": "VP Communications, Harborview Group",
+        "metric": "0",
+        "metricLabel": "negative coverage post-response"
+      }
+    },
+    "stats": {
+      "placementsSecured": "Placements Secured",
+      "combinedReach": "Combined Media Reach",
+      "outletRelationships": "Outlet Relationships",
+      "clientRetention": "Client Retention Rate"
+    },
+    "consultation": {
+      "eyebrow": "Start Your PR Strategy",
+      "title": "Ready to Shape Your Story?",
+      "description": "Tell us about your brand and goals. Our PR strategists will put together a tailored media plan to build your visibility and credibility.",
+      "benefits": {
+        "immediate": "Response Within 24 Hours",
+        "confidential": "No-Pressure Consultation",
+        "expert": "Senior PR Strategists"
+      },
+      "form": {
+        "emailPlaceholder": "Enter your work email",
+        "submit": "Book My Strategy Call",
+        "disclaimer": "Your information is kept confidential and never shared."
       }
     },
     "common": {

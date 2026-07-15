@@ -19,7 +19,8 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "callPhone": "Call {phone}",
-    "freeConsultation": "Take a Free Consultation"
+    "freeConsultation": "Take a Free Consultation",
+    "products": "Products"
   },
   "footer": {
     "servicesHeading": "Services",
@@ -65,5 +66,17 @@
       "submit": "Send Message",
       "successMessage": "Thank you for your message! We will contact you soon."
     }
+  },
+  "products": {
+    "breadcrumbHome": "Home",
+    "relatedAudiences": "Other audiences",
+    "relatedProducts": "Related products",
+    "whoItsFor": "Who it's for",
+    "selectedWork": "Selected work",
+    "viewAllCaseStudies": "View all case studies",
+    "caseStudiesEyebrow": "Case studies",
+    "caseStudiesDescription": "Demonstration projects with sample challenges and placeholder results.",
+    "sampleLabel": "Sample · demo",
+    "emptyCaseStudies": "No demonstration case studies for this product yet."
   }
 }
