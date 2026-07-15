@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react'
 import { Link } from '@/i18n/navigation'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { CASE_STUDIES, HOMEPAGE } from '@/lib/content'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/ui/container'
@@ -13,7 +14,9 @@ import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion'
 import { cn } from '@/lib/utils'
 
 export function FeaturedCaseStudiesSection() {
-  const { caseStudiesSection } = HOMEPAGE
+  const t = useTranslations('homepage.caseStudiesSection')
+  const tCase = useTranslations('homepage.caseStudies')
+  const filters = HOMEPAGE.caseStudiesSection.filters
   const [activeFilter, setActiveFilter] = useState('all')
 
   const featured = useMemo(
@@ -43,9 +46,9 @@ export function FeaturedCaseStudiesSection() {
           <motion.div variants={fadeUp}>
             <SectionHeader
               titleId="case-studies-heading"
-              eyebrow={caseStudiesSection.eyebrow}
-              title={caseStudiesSection.title}
-              description={caseStudiesSection.description}
+              eyebrow={t('eyebrow')}
+              title={t('title')}
+              description={t('description')}
             />
           </motion.div>
         </motion.div>
@@ -60,7 +63,7 @@ export function FeaturedCaseStudiesSection() {
           role="tablist"
           aria-label="Filter case studies by service"
         >
-          {caseStudiesSection.filters.map((filter) => {
+          {filters.map((filter) => {
             const isActive = activeFilter === filter.id
             return (
               <button
@@ -76,7 +79,7 @@ export function FeaturedCaseStudiesSection() {
                     : 'border-border bg-background text-muted-foreground hover:border-accent/40 hover:text-foreground',
                 )}
               >
-                {filter.label}
+                {t(`filters.${filter.id}`)}
               </button>
             )
           })}
@@ -103,104 +106,109 @@ export function FeaturedCaseStudiesSection() {
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.35 }}
             >
-              {filtered.map((caseStudy, index) => (
-                <motion.article
-                  key={caseStudy.id}
-                  initial={{ opacity: 0, y: 16 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.06, duration: 0.4 }}
-                  className="group flex flex-col overflow-hidden rounded-2xl border border-border/80 bg-background transition-colors hover:border-accent/35"
-                >
-                  {/* Visual plane — abstract industry panel, not a fake photo */}
-                  <div className="relative h-40 overflow-hidden bg-surface-ink">
-                    <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_80%_at_80%_20%,color-mix(in_oklab,var(--accent)_28%,transparent),transparent_65%)]" />
-                    <div className="absolute inset-0 bg-grid-fade opacity-40" />
-                    <div className="absolute inset-x-0 bottom-0 p-5">
-                      <p className="text-[11px] tracking-[0.16em] text-accent uppercase">
-                        {caseStudy.industryLabel}
-                      </p>
-                      <p className="mt-1 font-display text-lg font-semibold text-surface-ink-foreground">
-                        {caseStudy.clientName}
-                      </p>
-                    </div>
-                  </div>
+              {filtered.map((caseStudy, index) => {
+                const id = String(caseStudy.id)
+                const tags = tCase.raw(`${id}.tags`) as string[]
 
-                  <div className="flex flex-1 flex-col p-6">
-                    <h3 className="font-display text-xl font-semibold tracking-tight text-foreground transition-colors group-hover:text-accent">
-                      {caseStudy.title}
-                    </h3>
-
-                    <div className="mt-5 space-y-3 text-sm leading-relaxed">
-                      <p>
-                        <span className="font-semibold text-foreground">
-                          Challenge:{' '}
-                        </span>
-                        <span className="text-muted-foreground line-clamp-4 sm:line-clamp-none">
-                          {caseStudy.challenge}
-                        </span>
-                      </p>
-                      <p>
-                        <span className="font-semibold text-foreground">
-                          Solution:{' '}
-                        </span>
-                        <span className="text-muted-foreground line-clamp-3 sm:line-clamp-none">
-                          {caseStudy.solution}
-                        </span>
-                      </p>
-                    </div>
-
-                    <div className="mt-5 rounded-xl border border-border/70 bg-surface-muted/60 p-4">
-                      <p className="mb-3 text-[10px] tracking-[0.14em] text-muted-foreground uppercase">
-                        Results · {caseStudy.resultsNote}
-                      </p>
-                      <div className="grid grid-cols-3 gap-3">
-                        {[
-                          {
-                            value: caseStudy.results.metric1,
-                            label: caseStudy.results.metric1Label,
-                          },
-                          {
-                            value: caseStudy.results.metric2,
-                            label: caseStudy.results.metric2Label,
-                          },
-                          {
-                            value: caseStudy.results.metric3,
-                            label: caseStudy.results.metric3Label,
-                          },
-                        ].map((metric) => (
-                          <div key={metric.label}>
-                            <p className="font-display text-base font-semibold text-accent sm:text-lg">
-                              {metric.value}
-                            </p>
-                            <p className="mt-0.5 text-[11px] leading-snug text-muted-foreground">
-                              {metric.label}
-                            </p>
-                          </div>
-                        ))}
+                return (
+                  <motion.article
+                    key={caseStudy.id}
+                    initial={{ opacity: 0, y: 16 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.06, duration: 0.4 }}
+                    className="group flex flex-col overflow-hidden rounded-2xl border border-border/80 bg-background transition-colors hover:border-accent/35"
+                  >
+                    {/* Visual plane — abstract industry panel, not a fake photo */}
+                    <div className="relative h-40 overflow-hidden bg-surface-ink">
+                      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_80%_at_80%_20%,color-mix(in_oklab,var(--accent)_28%,transparent),transparent_65%)]" />
+                      <div className="absolute inset-0 bg-grid-fade opacity-40" />
+                      <div className="absolute inset-x-0 bottom-0 p-5">
+                        <p className="text-[11px] tracking-[0.16em] text-accent uppercase">
+                          {tCase(`${id}.industryLabel`)}
+                        </p>
+                        <p className="mt-1 font-display text-lg font-semibold text-surface-ink-foreground">
+                          {caseStudy.clientName}
+                        </p>
                       </div>
                     </div>
 
-                    <div className="mt-5 flex flex-wrap gap-2">
-                      {caseStudy.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="rounded-full border border-border px-2.5 py-1 text-[11px] text-muted-foreground"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
+                    <div className="flex flex-1 flex-col p-6">
+                      <h3 className="font-display text-xl font-semibold tracking-tight text-foreground transition-colors group-hover:text-accent">
+                        {tCase(`${id}.title`)}
+                      </h3>
 
-                    <Link
-                      href={`/case-studies/${caseStudy.slug}`}
-                      className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-accent"
-                    >
-                      Read Full Case Study
-                      <ArrowUpRight className="size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                    </Link>
-                  </div>
-                </motion.article>
-              ))}
+                      <div className="mt-5 space-y-3 text-sm leading-relaxed">
+                        <p>
+                          <span className="font-semibold text-foreground">
+                            Challenge:{' '}
+                          </span>
+                          <span className="text-muted-foreground line-clamp-4 sm:line-clamp-none">
+                            {tCase(`${id}.challenge`)}
+                          </span>
+                        </p>
+                        <p>
+                          <span className="font-semibold text-foreground">
+                            Solution:{' '}
+                          </span>
+                          <span className="text-muted-foreground line-clamp-3 sm:line-clamp-none">
+                            {tCase(`${id}.solution`)}
+                          </span>
+                        </p>
+                      </div>
+
+                      <div className="mt-5 rounded-xl border border-border/70 bg-surface-muted/60 p-4">
+                        <p className="mb-3 text-[10px] tracking-[0.14em] text-muted-foreground uppercase">
+                          {t('results')} · {tCase(`${id}.resultsNote`)}
+                        </p>
+                        <div className="grid grid-cols-3 gap-3">
+                          {[
+                            {
+                              value: caseStudy.results.metric1,
+                              label: tCase(`${id}.metric1Label`),
+                            },
+                            {
+                              value: caseStudy.results.metric2,
+                              label: tCase(`${id}.metric2Label`),
+                            },
+                            {
+                              value: caseStudy.results.metric3,
+                              label: tCase(`${id}.metric3Label`),
+                            },
+                          ].map((metric) => (
+                            <div key={metric.label}>
+                              <p className="font-display text-base font-semibold text-accent sm:text-lg">
+                                {metric.value}
+                              </p>
+                              <p className="mt-0.5 text-[11px] leading-snug text-muted-foreground">
+                                {metric.label}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="mt-5 flex flex-wrap gap-2">
+                        {tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-full border border-border px-2.5 py-1 text-[11px] text-muted-foreground"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+
+                      <Link
+                        href={`/case-studies/${caseStudy.slug}`}
+                        className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-accent"
+                      >
+                        {t('readFull')}
+                        <ArrowUpRight className="size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      </Link>
+                    </div>
+                  </motion.article>
+                )
+              })}
             </motion.div>
           )}
         </AnimatePresence>

@@ -3,6 +3,7 @@
 import { Link } from '@/i18n/navigation'
 import { motion, useReducedMotion } from 'framer-motion'
 import { ArrowRight, ArrowDown } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { AGENCY_CONFIG, HOMEPAGE } from '@/lib/content'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/ui/container'
@@ -141,6 +142,7 @@ function HeroVisual({ reduced }: { reduced: boolean }) {
 
 export function HeroSection() {
   const reduced = useReducedMotion() ?? false
+  const t = useTranslations('homepage.hero')
   const { hero } = HOMEPAGE
 
   return (
@@ -198,7 +200,7 @@ export function HeroSection() {
               </span>
               <span className="h-px w-10 bg-accent/50" aria-hidden />
               <span className="text-xs tracking-wide text-surface-ink-foreground/45">
-                Growth partner
+                {t('growthPartner')}
               </span>
             </motion.div>
 
@@ -210,10 +212,10 @@ export function HeroSection() {
                 'text-[clamp(2.4rem,1.2rem+4.2vw,4.6rem)] leading-[1.05] font-semibold tracking-[-0.04em]',
               )}
             >
-              Building digital{' '}
-              <span className="text-accent">growth systems</span>
+              {t('headlineBefore')}{' '}
+              <span className="text-accent">{t('headlineAccent')}</span>
               <span className="mt-1 block text-surface-ink-foreground/92">
-                for ambitious businesses
+                {t('headlineAfter')}
               </span>
             </motion.h1>
 
@@ -221,7 +223,7 @@ export function HeroSection() {
               variants={fadeUp}
               className="mt-6 max-w-xl text-pretty text-base leading-relaxed text-surface-ink-foreground/65 sm:text-lg"
             >
-              {hero.supporting}
+              {t('supporting')}
             </motion.p>
 
             <motion.div
@@ -233,7 +235,7 @@ export function HeroSection() {
                   size="lg"
                   className="h-12 w-full rounded-xl bg-accent px-6 text-[15px] font-semibold text-accent-foreground shadow-[0_0_0_1px_color-mix(in_oklab,var(--accent)_40%,transparent),0_12px_40px_-12px_color-mix(in_oklab,var(--accent)_55%,transparent)] hover:bg-accent/90 sm:w-auto"
                 >
-                  {hero.primaryCta.label}
+                  {t('primaryCta')}
                   <ArrowRight className="size-4 transition-transform group-hover/button:translate-x-0.5" />
                 </Button>
               </Link>
@@ -243,7 +245,7 @@ export function HeroSection() {
                   variant="outline"
                   className="h-12 w-full rounded-xl border-white/15 bg-white/3 px-6 text-[15px] text-surface-ink-foreground backdrop-blur-sm hover:border-accent/40 hover:bg-white/6 hover:text-surface-ink-foreground sm:w-auto"
                 >
-                  {hero.secondaryCta.label}
+                  {t('secondaryCta')}
                 </Button>
               </Link>
             </motion.div>
@@ -252,7 +254,7 @@ export function HeroSection() {
               variants={fadeUp}
               className="mt-8 max-w-lg border-l border-accent/35 pl-4 text-sm leading-relaxed text-surface-ink-foreground/50"
             >
-              {hero.trustLine}
+              {t('trustLine')}
             </motion.p>
           </motion.div>
 

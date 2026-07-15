@@ -12,7 +12,8 @@ import {
   Video,
   type LucideIcon,
 } from 'lucide-react'
-import { HOMEPAGE, SERVICES } from '@/lib/content'
+import { useTranslations } from 'next-intl'
+import { SERVICES } from '@/lib/content'
 import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
 import { SectionHeader } from '@/components/ui/section-header'
@@ -29,7 +30,8 @@ const ICON_MAP: Record<string, LucideIcon> = {
 }
 
 export function ServicesGridSection() {
-  const { servicesSection } = HOMEPAGE
+  const t = useTranslations('homepage.servicesSection')
+  const tService = useTranslations('homepage.services')
   const services = [...SERVICES].sort((a, b) => a.order - b.order)
 
   return (
@@ -49,9 +51,9 @@ export function ServicesGridSection() {
           <motion.div variants={fadeUp}>
             <SectionHeader
               titleId="services-heading"
-              eyebrow={servicesSection.eyebrow}
-              title={servicesSection.title}
-              description={servicesSection.description}
+              eyebrow={t('eyebrow')}
+              title={t('title')}
+              description={t('description')}
             />
           </motion.div>
         </motion.div>
@@ -94,11 +96,11 @@ export function ServicesGridSection() {
                   </div>
 
                   <h3 className="font-display text-xl font-semibold tracking-tight text-foreground sm:text-2xl">
-                    {service.title}
+                    {tService(`${service.id}.title`)}
                   </h3>
 
                   <p className="mt-3 max-w-md flex-1 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
-                    {service.description}
+                    {tService(`${service.id}.description`)}
                   </p>
 
                   <ul className="mt-6 space-y-2 border-t border-border/70 pt-5">

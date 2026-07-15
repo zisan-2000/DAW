@@ -2,18 +2,29 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { HOMEPAGE, TECH_STACK } from '@/lib/content'
+import { useTranslations } from 'next-intl'
+import { TECH_STACK } from '@/lib/content'
 import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
 import { SectionHeader } from '@/components/ui/section-header'
 import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion'
 import { cn } from '@/lib/utils'
 
+const TECH_CATEGORY_KEYS = [
+  'frontend',
+  'backend',
+  'cms',
+  'infrastructure',
+  'marketing',
+] as const
+
 export function TechStackSection() {
-  const { techSection } = HOMEPAGE
-  const [activeCategory, setActiveCategory] = useState(TECH_STACK[0]?.category ?? '')
-  const active =
-    TECH_STACK.find((item) => item.category === activeCategory) ?? TECH_STACK[0]
+  const t = useTranslations('homepage.techSection')
+  const tCategory = useTranslations('homepage.techCategories')
+  const [activeIndex, setActiveIndex] = useState(0)
+  const active = TECH_STACK[activeIndex] ?? TECH_STACK[0]
+  const activeKey = TECH_CATEGORY_KEYS[activeIndex] ?? TECH_CATEGORY_KEYS[0]
+  const activeLabel = tCategory(activeKey)
 
   return (
     <Section
@@ -32,11 +43,11 @@ export function TechStackSection() {
           <motion.div variants={fadeUp}>
             <SectionHeader
               titleId="tech-heading"
-              eyebrow={techSection.eyebrow}
-              title={techSection.title}
-              description={techSection.description}
+              eyebrow={t('eyebrow')}
+              title={t('title')}
+              description={t('description')}
             />
-            <p className="mt-3 text-xs text-muted-foreground">{techSection.note}</p>
+            <p className="mt-3 text-xs text-muted-foreground">{t('note')}</p>
           </motion.div>
         </motion.div>
 
@@ -50,8 +61,10 @@ export function TechStackSection() {
             role="tablist"
             aria-label="Technology categories"
           >
-            {TECH_STACK.map((item) => {
-              const isActive = item.category === activeCategory
+            {TECH_STACK.map((item, index) => {
+              const key = TECH_CATEGORY_KEYS[index]
+              const label = key ? tCategory(key) : item.category
+              const isActive = index === activeIndex
               return (
                 <motion.button
                   key={item.category}
@@ -59,7 +72,7 @@ export function TechStackSection() {
                   role="tab"
                   aria-selected={isActive}
                   variants={fadeUp}
-                  onClick={() => setActiveCategory(item.category)}
+                  onClick={() => setActiveIndex(index)}
                   className={cn(
                     'shrink-0 rounded-xl border px-4 py-3 text-left text-sm font-medium transition-colors lg:w-full',
                     isActive
@@ -67,7 +80,7 @@ export function TechStackSection() {
                       : 'border-border bg-background text-muted-foreground hover:border-accent/25 hover:text-foreground',
                   )}
                 >
-                  {item.category}
+                  {label}
                 </motion.button>
               )
             })}
@@ -80,11 +93,11 @@ export function TechStackSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
             role="tabpanel"
-            aria-label={active?.category}
+            aria-label={activeLabel}
           >
             <div className="rounded-2xl border border-border/80 bg-background p-6 sm:p-8">
               <p className="font-display text-xl font-semibold tracking-tight text-foreground">
-                {active?.category}
+                {activeLabel}
               </p>
               <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
                 {active?.technologies.map((tech) => (

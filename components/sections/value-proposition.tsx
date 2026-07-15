@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { HOMEPAGE } from '@/lib/content'
 import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
@@ -11,7 +12,8 @@ import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion'
 import { cn } from '@/lib/utils'
 
 export function ValuePropositionSection() {
-  const { valueProposition } = HOMEPAGE
+  const t = useTranslations('homepage.valueProposition')
+  const stages = HOMEPAGE.valueProposition.stages
   const reduced = useReducedMotion() ?? false
   const [active, setActive] = useState(0)
 
@@ -32,9 +34,9 @@ export function ValuePropositionSection() {
           <motion.div variants={fadeUp}>
             <SectionHeader
               titleId="value-prop-heading"
-              eyebrow={valueProposition.eyebrow}
-              title={valueProposition.title}
-              description={valueProposition.description}
+              eyebrow={t('eyebrow')}
+              title={t('title')}
+              description={t('description')}
             />
           </motion.div>
         </motion.div>
@@ -48,11 +50,11 @@ export function ValuePropositionSection() {
           viewport={viewportOnce}
           onMouseLeave={() => !reduced && setActive(0)}
         >
-          {valueProposition.stages.map((stage, index) => {
+          {stages.map((stage, index) => {
             const isActive = active === index
             return (
               <motion.li key={stage.id} variants={fadeUp} className="relative">
-                {index < valueProposition.stages.length - 1 ? (
+                {index < stages.length - 1 ? (
                   <span
                     className="pointer-events-none absolute top-5 left-[calc(50%+22px)] hidden h-px w-[calc(100%-12px)] bg-border lg:block"
                     aria-hidden
@@ -88,14 +90,14 @@ export function ValuePropositionSection() {
                     {String(index + 1).padStart(2, '0')}
                   </span>
                   <span className="font-display text-base font-semibold tracking-tight text-foreground">
-                    {stage.label}
+                    {t(`stages.${stage.id}.label`)}
                   </span>
                   <span className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {stage.detail}
+                    {t(`stages.${stage.id}.detail`)}
                   </span>
                 </button>
 
-                {index < valueProposition.stages.length - 1 ? (
+                {index < stages.length - 1 ? (
                   <ArrowRight
                     className="absolute top-1/2 -right-2 z-10 hidden size-4 -translate-y-1/2 text-muted-foreground/40 md:block lg:hidden"
                     aria-hidden
@@ -118,7 +120,7 @@ export function ValuePropositionSection() {
             className="absolute top-4 bottom-4 left-[1.15rem] w-px bg-border"
             aria-hidden
           />
-          {valueProposition.stages.map((stage, index) => (
+          {stages.map((stage, index) => (
             <motion.li
               key={stage.id}
               variants={fadeUp}
@@ -129,10 +131,10 @@ export function ValuePropositionSection() {
               </span>
               <div className="flex-1 rounded-2xl border border-border/80 bg-background p-4">
                 <p className="font-display text-base font-semibold text-foreground">
-                  {stage.label}
+                  {t(`stages.${stage.id}.label`)}
                 </p>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
-                  {stage.detail}
+                  {t(`stages.${stage.id}.detail`)}
                 </p>
               </div>
             </motion.li>

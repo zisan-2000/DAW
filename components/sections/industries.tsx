@@ -3,6 +3,7 @@
 import { Link } from '@/i18n/navigation'
 import { motion } from 'framer-motion'
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { HOMEPAGE, INDUSTRIES } from '@/lib/content'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/ui/container'
@@ -11,7 +12,8 @@ import { SectionHeader } from '@/components/ui/section-header'
 import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion'
 
 export function IndustriesSection() {
-  const { industriesSection } = HOMEPAGE
+  const t = useTranslations('homepage.industriesSection')
+  const tIndustry = useTranslations('homepage.industries')
   const industries = [...INDUSTRIES].sort((a, b) => a.order - b.order)
 
   return (
@@ -31,18 +33,18 @@ export function IndustriesSection() {
           <motion.div variants={fadeUp} className="max-w-2xl">
             <SectionHeader
               titleId="industries-heading"
-              eyebrow={industriesSection.eyebrow}
-              title={industriesSection.title}
-              description={industriesSection.description}
+              eyebrow={t('eyebrow')}
+              title={t('title')}
+              description={t('description')}
             />
           </motion.div>
           <motion.div variants={fadeUp} className="shrink-0">
-            <Link href={industriesSection.cta.href}>
+            <Link href={HOMEPAGE.industriesSection.cta.href}>
               <Button
                 variant="outline"
                 className="h-11 rounded-xl border-border px-5 hover:bg-surface-muted"
               >
-                {industriesSection.cta.label}
+                {t('ctaLabel')}
                 <ArrowRight className="size-4" />
               </Button>
             </Link>
@@ -64,12 +66,12 @@ export function IndustriesSection() {
               >
                 <div className="mb-4 flex items-start justify-between gap-3">
                   <span className="font-display text-base font-semibold tracking-tight text-foreground transition-colors group-hover:text-accent">
-                    {industry.name}
+                    {tIndustry(`${industry.id}.name`)}
                   </span>
                   <ArrowUpRight className="size-4 shrink-0 text-muted-foreground transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent" />
                 </div>
                 <p className="text-sm leading-relaxed text-muted-foreground">
-                  {industry.outcome}
+                  {tIndustry(`${industry.id}.outcome`)}
                 </p>
               </Link>
             </motion.li>

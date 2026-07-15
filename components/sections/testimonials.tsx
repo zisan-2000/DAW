@@ -3,7 +3,8 @@
 import { useCallback, useEffect, useId, useRef, useState, type KeyboardEvent, type TouchEvent } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
-import { HOMEPAGE, TESTIMONIALS } from '@/lib/content'
+import { useTranslations } from 'next-intl'
+import { TESTIMONIALS } from '@/lib/content'
 import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
 import { SectionHeader } from '@/components/ui/section-header'
@@ -11,7 +12,8 @@ import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion'
 import { cn } from '@/lib/utils'
 
 export function TestimonialsSection() {
-  const { testimonialsSection } = HOMEPAGE
+  const t = useTranslations('homepage.testimonialsSection')
+  const tItem = useTranslations('homepage.testimonials')
   const reduced = useReducedMotion() ?? false
   const labelId = useId()
   const [index, setIndex] = useState(0)
@@ -20,6 +22,11 @@ export function TestimonialsSection() {
 
   const total = TESTIMONIALS.length
   const active = TESTIMONIALS[index]
+  const activeId = active ? String(active.id) : '1'
+  const activeName = active ? tItem(`${activeId}.name`) : ''
+  const activeText = active
+    ? tItem(`${activeId}.text`).replace(/^\[SAMPLE\]\s*/, '').replace(/\]$/, '')
+    : ''
 
   const goTo = useCallback(
     (next: number) => {
@@ -33,9 +40,9 @@ export function TestimonialsSection() {
 
   useEffect(() => {
     if (liveRef.current && active) {
-      liveRef.current.textContent = `Showing testimonial ${index + 1} of ${total}: ${active.name}`
+      liveRef.current.textContent = `Showing testimonial ${index + 1} of ${total}: ${activeName}`
     }
-  }, [index, total, active])
+  }, [index, total, active, activeName])
 
   const onKeyDown = (event: KeyboardEvent) => {
     if (event.key === 'ArrowRight') {
@@ -83,9 +90,9 @@ export function TestimonialsSection() {
             <SectionHeader
               tone="ink"
               titleId="testimonials-heading"
-              eyebrow={testimonialsSection.eyebrow}
-              title={testimonialsSection.title}
-              description={testimonialsSection.description}
+              eyebrow={t('eyebrow')}
+              title={t('title')}
+              description={t('description')}
             />
           </motion.div>
         </motion.div>
@@ -118,12 +125,12 @@ export function TestimonialsSection() {
               >
                 {active.isSample ? (
                   <p className="mb-5 text-[10px] tracking-[0.16em] text-accent uppercase">
-                    Sample testimonial · not a verified review
+                    {t('sampleBadge')}
                   </p>
                 ) : null}
 
                 <p className="font-display max-w-3xl text-xl leading-relaxed text-surface-ink-foreground sm:text-2xl lg:text-[1.75rem]">
-                  “{active.text.replace(/^\[SAMPLE\]\s*/, '').replace(/\]$/, '')}”
+                  “{activeText}”
                 </p>
 
                 <footer className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -133,15 +140,15 @@ export function TestimonialsSection() {
                     </span>
                     <div>
                       <cite className="font-display not-italic text-base font-semibold text-surface-ink-foreground">
-                        {active.name}
+                        {activeName}
                       </cite>
                       <p className="text-sm text-surface-ink-foreground/55">
-                        {active.role}, {active.company}
+                        {tItem(`${activeId}.role`)}, {tItem(`${activeId}.company`)}
                       </p>
                     </div>
                   </div>
                   <span className="w-fit rounded-full border border-white/15 px-3 py-1 text-xs text-surface-ink-foreground/60">
-                    {active.serviceCategory}
+                    {tItem(`${activeId}.serviceCategory`)}
                   </span>
                 </footer>
               </motion.blockquote>

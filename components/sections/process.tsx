@@ -11,7 +11,8 @@ import {
   Search,
   type LucideIcon,
 } from 'lucide-react'
-import { HOMEPAGE, PROCESS_STEPS } from '@/lib/content'
+import { useTranslations } from 'next-intl'
+import { PROCESS_STEPS } from '@/lib/content'
 import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
 import { SectionHeader } from '@/components/ui/section-header'
@@ -28,7 +29,8 @@ const ICON_MAP: Record<string, LucideIcon> = {
 }
 
 export function ProcessSection() {
-  const { processSection } = HOMEPAGE
+  const t = useTranslations('homepage.processSection')
+  const tStep = useTranslations('homepage.processSteps')
   const reduced = useReducedMotion() ?? false
   const [activeStep, setActiveStep] = useState(1)
   const itemRefs = useRef<(HTMLLIElement | null)[]>([])
@@ -80,9 +82,9 @@ export function ProcessSection() {
             <SectionHeader
               tone="ink"
               titleId="process-heading"
-              eyebrow={processSection.eyebrow}
-              title={processSection.title}
-              description={processSection.description}
+              eyebrow={t('eyebrow')}
+              title={t('title')}
+              description={t('description')}
             />
           </motion.div>
         </motion.div>
@@ -108,6 +110,7 @@ export function ProcessSection() {
               const Icon = ICON_MAP[step.icon] ?? Search
               const isActive = reduced || activeStep === step.step
               const isPast = !reduced && activeStep > step.step
+              const stepKey = String(step.step)
 
               return (
                 <motion.li
@@ -141,16 +144,16 @@ export function ProcessSection() {
                         <Icon className="size-5" aria-hidden />
                       </span>
                       <span className="font-display text-xs tracking-[0.18em] text-accent uppercase">
-                        Step {String(step.step).padStart(2, '0')}
+                        {t('stepLabel')} {String(step.step).padStart(2, '0')}
                       </span>
                     </div>
 
                     <div className="min-w-0 flex-1">
                       <h3 className="font-display text-lg font-semibold tracking-tight text-surface-ink-foreground sm:text-xl">
-                        {step.title}
+                        {tStep(`${stepKey}.title`)}
                       </h3>
                       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-surface-ink-foreground/60 sm:text-[15px]">
-                        {step.description}
+                        {tStep(`${stepKey}.description`)}
                       </p>
                     </div>
                   </div>

@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { AGENCY_CONFIG, HOMEPAGE } from '@/lib/content'
 import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
@@ -51,6 +52,7 @@ function StatItem({
 }
 
 export function StatisticsSection() {
+  const t = useTranslations('homepage.statistics')
   const { statistics } = HOMEPAGE
 
   return (
@@ -78,9 +80,9 @@ export function StatisticsSection() {
             <SectionHeader
               titleId="stats-heading"
               tone="ink"
-              eyebrow={statistics.eyebrow}
-              title={statistics.title}
-              description={statistics.note}
+              eyebrow={t('eyebrow')}
+              title={t('title')}
+              description={t('note')}
             />
           </motion.div>
         </motion.div>
@@ -94,8 +96,8 @@ export function StatisticsSection() {
         >
           {statistics.items.map((item, index) => (
             <StatItem
-              key={item.label}
-              label={item.label}
+              key={item.valueKey}
+              label={t(`items.${item.valueKey}`)}
               end={AGENCY_CONFIG[item.valueKey]}
               suffix={item.suffix}
               isPlaceholder={item.isPlaceholder}

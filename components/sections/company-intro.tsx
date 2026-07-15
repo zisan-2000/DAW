@@ -3,6 +3,7 @@
 import { Link } from '@/i18n/navigation'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { AGENCY_CONFIG, HOMEPAGE } from '@/lib/content'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/ui/container'
@@ -11,6 +12,8 @@ import { SectionHeader } from '@/components/ui/section-header'
 import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion'
 
 export function CompanyIntroSection() {
+  const t = useTranslations('homepage.companyIntro')
+  const body = t.raw('body') as string[]
   const { companyIntro } = HOMEPAGE
 
   return (
@@ -27,9 +30,9 @@ export function CompanyIntroSection() {
             <motion.div variants={fadeUp}>
               <SectionHeader
                 titleId="company-intro-heading"
-                eyebrow={companyIntro.eyebrow}
-                title={companyIntro.title}
-                description={companyIntro.body[0]}
+                eyebrow={t('eyebrow')}
+                title={t('title')}
+                description={body[0]}
               />
             </motion.div>
 
@@ -37,7 +40,7 @@ export function CompanyIntroSection() {
               variants={fadeUp}
               className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg"
             >
-              {companyIntro.body[1]}
+              {body[1]}
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-8">
@@ -46,7 +49,7 @@ export function CompanyIntroSection() {
                   size="lg"
                   className="h-11 rounded-xl bg-primary px-5 text-primary-foreground hover:bg-primary/90"
                 >
-                  {companyIntro.cta.label}
+                  {t('ctaLabel')}
                   <ArrowRight className="size-4" />
                 </Button>
               </Link>
@@ -65,7 +68,7 @@ export function CompanyIntroSection() {
                 const value = AGENCY_CONFIG[item.valueKey]
                 return (
                   <motion.div
-                    key={item.label}
+                    key={item.valueKey}
                     variants={fadeUp}
                     className="bg-surface-muted px-5 py-6 sm:px-6 sm:py-8"
                   >
@@ -73,7 +76,9 @@ export function CompanyIntroSection() {
                       {value}
                       <span className="text-accent">+</span>
                     </p>
-                    <p className="mt-2 text-sm text-muted-foreground">{item.label}</p>
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      {t(`highlights.${item.valueKey}`)}
+                    </p>
                     <p className="mt-1 text-[10px] tracking-wide text-muted-foreground/60 uppercase">
                       Editable
                     </p>

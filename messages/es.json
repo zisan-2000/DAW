@@ -4,7 +4,9 @@
   },
   "announcementBar": {
     "textShort": "Estrategia, tecnología y crecimiento medible.",
-    "ctaShort": "Consultar"
+    "ctaShort": "Consultar",
+    "text": "Ayudamos a marcas ambiciosas a crecer con estrategia, tecnología y ejecución medible.",
+    "ctaLabel": "Agenda una consulta gratuita"
   },
   "nav": {
     "home": "Inicio",
@@ -1908,6 +1910,371 @@
     "common": {
       "learnMore": "Conocer Más",
       "viewAll": "Ver Todos los Servicios"
+    }
+  },
+  "homepage": {
+    "meta": {
+      "title": "[BRAND] | Socio de crecimiento digital — Web, SEO, marketing y software",
+      "description": "Estrategia, tecnología y marketing para acelerar el crecimiento. Sitios web orientados a conversión, marketing de rendimiento, SEO y software escalable para negocios ambiciosos.",
+      "keywords": "agencia digital, socio de crecimiento, desarrollo web, SEO, marketing digital, branding, desarrollo de software"
+    },
+    "announcement": {
+      "text": "Ayudamos a marcas ambiciosas a crecer con estrategia, tecnología y ejecución medible.",
+      "ctaLabel": "Agenda una consulta gratuita"
+    },
+    "hero": {
+      "growthPartner": "Socio de crecimiento",
+      "headlineBefore": "Construimos sistemas digitales",
+      "headlineAccent": "de crecimiento",
+      "headlineAfter": "para negocios ambiciosos",
+      "supporting": "Sitios web orientados a conversión, marketing de rendimiento, SEO y software escalable—conectados como un solo sistema para atraer mejores clientes y crecer con claridad.",
+      "primaryCta": "Obtén una evaluación de crecimiento gratuita",
+      "secondaryCta": "Ver nuestro trabajo",
+      "trustLine": "Atendemos clientes en Bangladesh, Reino Unido, EE. UU., Canadá, Australia, EAU e internacionales. El conteo de proyectos es editable en la configuración."
+    },
+    "logoMarquee": {
+      "heading": "La confianza de negocios en crecimiento",
+      "note": "Logotipos de demostración — reemplazar con marcas de clientes autorizadas"
+    },
+    "companyIntro": {
+      "eyebrow": "Sobre la agencia",
+      "title": "Un socio de crecimiento creado para la economía digital",
+      "body": [
+        "Integramos estrategia, marketing, diseño, software, datos e IA en un solo equipo—para que campañas, productos y sistemas de marca avancen en la misma dirección.",
+        "Ya sea que estés escalando desde Bangladesh hacia nuevos mercados o fortaleciendo una presencia digital internacional, construimos sistemas prácticos que se refuerzan con el tiempo."
+      ],
+      "ctaLabel": "Conoce nuestra agencia",
+      "highlights": {
+        "yearsOfExperience": "Años de experiencia",
+        "projectsCompleted": "Proyectos completados",
+        "countriesServed": "Mercados atendidos",
+        "clientsServed": "Clientes con los que colaboramos"
+      }
+    },
+    "statistics": {
+      "eyebrow": "Resultados",
+      "title": "Números que reflejan el trabajo—no promesas vacías",
+      "note": "Marcadores editables hasta confirmar métricas verificadas del negocio.",
+      "items": {
+        "projectsCompleted": "Proyectos entregados",
+        "clientsServed": "Clientes con los que colaboramos",
+        "countriesServed": "Países atendidos",
+        "yearsOfExperience": "Años en el mercado"
+      }
+    },
+    "servicesSection": {
+      "eyebrow": "Capacidades",
+      "title": "Servicios diseñados para impulsar un crecimiento compuesto",
+      "description": "Cada compromiso conecta adquisición, experiencia y tecnología—para que cada canal aporte con más fuerza al mismo objetivo comercial."
+    },
+    "services": {
+      "digital-marketing": {
+        "title": "Marketing digital",
+        "description": "Genera demanda calificada con medios pagados, redes sociales y programas de crecimiento medidos frente al pipeline—no métricas vanidosas."
+      },
+      "seo": {
+        "title": "Optimización en motores de búsqueda",
+        "description": "Gana visibilidad orgánica duradera con bases técnicas, arquitectura de contenido y alineación con la intención de búsqueda."
+      },
+      "web-development": {
+        "title": "Desarrollo de sitios web",
+        "description": "Lanza sitios y aplicaciones web rápidos, orientados a conversión, pensados para velocidad, claridad y mantenibilidad a largo plazo."
+      },
+      "software-development": {
+        "title": "Desarrollo de software",
+        "description": "Construye plataformas a medida, automatizaciones y productos que eliminan la fricción operativa a medida que escalas."
+      },
+      "branding-design": {
+        "title": "Branding y diseño",
+        "description": "Da forma a identidades y experiencias de producto que transmiten credibilidad y hacen que cada punto de contacto se sienta intencional."
+      },
+      "content-video": {
+        "title": "Contenido y video",
+        "description": "Produce mensajes y medios que clarifican tu oferta, apoyan el SEO y convierten la atención en acción."
+      }
+    },
+    "valueProposition": {
+      "eyebrow": "Sistema conectado",
+      "title": "Más que servicios separados—un sistema de crecimiento conectado",
+      "description": "Marketing, diseño, desarrollo, SEO, contenido, datos y automatización funcionan como un solo sistema operativo—no como proyectos desconectados.",
+      "stages": {
+        "strategy": {
+          "label": "Estrategia",
+          "detail": "Objetivos de negocio, claridad de audiencia y hoja de ruta priorizada."
+        },
+        "experience": {
+          "label": "Experiencia",
+          "detail": "Marca, UX y sitios web que convierten la atención en confianza."
+        },
+        "acquisition": {
+          "label": "Adquisición",
+          "detail": "SEO, medios pagados y contenido que alcanzan la demanda correcta."
+        },
+        "conversion": {
+          "label": "Conversión",
+          "detail": "Ofertas, embudos y eliminación de fricción en UX que elevan los resultados."
+        },
+        "retention": {
+          "label": "Retención",
+          "detail": "Mensajería de ciclo de vida, CRM y bucles de producto que hacen volver."
+        },
+        "scale": {
+          "label": "Escala",
+          "detail": "Medición, automatización y sistemas listos para crecer."
+        }
+      }
+    },
+    "caseStudiesSection": {
+      "eyebrow": "Trabajo seleccionado",
+      "title": "Casos de estudio que muestran el sistema en acción",
+      "description": "Proyectos de demostración con desafíos de ejemplo y resultados de marcador de posición. Reemplazar con resultados verificados antes del lanzamiento.",
+      "filters": {
+        "all": "Todos",
+        "seo": "SEO",
+        "paid-advertising": "Publicidad pagada",
+        "website-development": "Desarrollo web",
+        "software": "Software",
+        "branding": "Branding",
+        "content": "Contenido"
+      },
+      "readFull": "Leer caso de estudio completo",
+      "results": "Resultados"
+    },
+    "caseStudies": {
+      "1": {
+        "title": "Reconstrucción de conversión y visibilidad en e-commerce",
+        "summary": "[SAMPLE] Una tasa de conversión baja y una visibilidad orgánica débil limitaban el crecimiento de ingresos.",
+        "industryLabel": "E-commerce",
+        "tags": [
+          "Desarrollo web",
+          "SEO",
+          "Publicidad pagada"
+        ],
+        "challenge": "La tienda cargaba lento, el descubrimiento de productos no era claro y el tráfico orgánico se estancó mientras subían los costos de adquisición pagada.",
+        "solution": "Rediseño del sitio centrado en rutas de conversión, bases técnicas de SEO y adquisición pagada coordinada.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "metric1Label": "Mejora en conversión (marcador)",
+        "metric2Label": "Visibilidad orgánica (marcador)",
+        "metric3Label": "Experiencia de página (marcador)"
+      },
+      "2": {
+        "title": "Sistema de captación de leads para servicios profesionales",
+        "summary": "[SAMPLE] Un flujo inconsistente de leads hacía poco confiable la planificación del pipeline y la contratación.",
+        "industryLabel": "Servicios profesionales",
+        "tags": [
+          "Publicidad pagada",
+          "Desarrollo web",
+          "Software"
+        ],
+        "challenge": "Las consultas entrantes llegaban de forma esporádica, las landing pages no rendían y el seguimiento vivía en hojas de cálculo dispersas.",
+        "solution": "Sistema de landing pages, estructura de Google Ads y automatización de CRM para calificación y velocidad de respuesta.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "metric1Label": "Mejora en leads calificados (marcador)",
+        "metric2Label": "Eficiencia de costos (marcador)",
+        "metric3Label": "Velocidad de respuesta (marcador)"
+      },
+      "3": {
+        "title": "Embudo de inscripción educativa",
+        "summary": "[SAMPLE] Un embudo de inscripción digital débil limitaba el descubrimiento de programas y la calidad de las consultas.",
+        "industryLabel": "Educación",
+        "tags": [
+          "SEO",
+          "Contenido",
+          "Desarrollo web"
+        ],
+        "challenge": "Las páginas de programas posicionaban mal en consultas con alta intención, el contenido carecía de estructura y los formularios se abandonaban a mitad del flujo.",
+        "solution": "Arquitectura SEO, estrategia de contenido alineada a la intención de inscripción y optimización de conversión en los recorridos clave.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "metric1Label": "Consultas orgánicas (marcador)",
+        "metric2Label": "Alcance de páginas de programas (marcador)",
+        "metric3Label": "Completado de formularios (marcador)"
+      }
+    },
+    "processSection": {
+      "eyebrow": "Cómo trabajamos",
+      "title": "Un proceso claro desde el descubrimiento hasta la optimización continua",
+      "description": "Colaboración estructurada con participación senior en cada etapa—para que la entrega sea práctica, medible y fácil de seguir.",
+      "stepLabel": "Paso"
+    },
+    "processSteps": {
+      "1": {
+        "title": "Descubrimiento y evaluación del negocio",
+        "description": "Clarificamos objetivos, restricciones, compradores y el rendimiento actual para que el brief sea comercial—no genérico."
+      },
+      "2": {
+        "title": "Investigación de mercado y competencia",
+        "description": "Mapeamos la demanda, brechas de mensaje y oportunidades de canal que realmente puedan mover tus números."
+      },
+      "3": {
+        "title": "Estrategia y hoja de ruta",
+        "description": "Priorizamos iniciativas en experiencia, adquisición y tecnología con una secuencia clara."
+      },
+      "4": {
+        "title": "Diseño y producción",
+        "description": "Construimos marca, interfaces, contenido y activos técnicos con revisión senior en los puntos críticos."
+      },
+      "5": {
+        "title": "Lanzamiento y ejecución",
+        "description": "Publicamos con QA, tracking y disciplina de go-live para que campañas y productos sean medibles desde el día uno."
+      },
+      "6": {
+        "title": "Medición y optimización",
+        "description": "Revisamos resultados, eliminamos fricción y acumulamos mejoras en canales y sistemas."
+      }
+    },
+    "industriesSection": {
+      "eyebrow": "Industrias",
+      "title": "Resultados por industria para los que diseñamos",
+      "description": "El contexto del sector moldea la estrategia. Descubre cómo los sistemas de crecimiento digital se adaptan a las presiones de tu mercado.",
+      "ctaLabel": "Explorar soluciones por industria"
+    },
+    "industries": {
+      "ecommerce": {
+        "name": "E-commerce",
+        "outcome": "Más ventas en línea con escaparates orientados a conversión y adquisición."
+      },
+      "saas": {
+        "name": "Software y SaaS",
+        "outcome": "Mejor adquisición de clientes y bucles de crecimiento product-led más claros."
+      },
+      "finance": {
+        "name": "Finanzas y fintech",
+        "outcome": "Recorridos que construyen confianza y respaldan consultas calificadas de producto."
+      },
+      "education": {
+        "name": "Educación",
+        "outcome": "Mayor interés en inscripción a través de embudos digitales estructurados."
+      },
+      "realestate": {
+        "name": "Bienes raíces",
+        "outcome": "Más consultas calificadas de propiedades desde búsqueda y canales pagados."
+      },
+      "healthcare": {
+        "name": "Salud",
+        "outcome": "Rutas más claras para pacientes y clientes, sin resultados sobredimensionados."
+      },
+      "legal": {
+        "name": "Legal y servicios profesionales",
+        "outcome": "Demanda entrante consistente con mejor calificación y seguimiento."
+      },
+      "travel": {
+        "name": "Viajes y hospitalidad",
+        "outcome": "Mayor intención de reserva con contenido, SEO y UX de conversión."
+      },
+      "manufacturing": {
+        "name": "Manufactura",
+        "outcome": "Presencia digital más clara que apoya la generación de demanda B2B."
+      },
+      "localbusiness": {
+        "name": "Negocios locales",
+        "outcome": "Mayor visibilidad local y sistemas de consulta para clientes cercanos."
+      }
+    },
+    "techSection": {
+      "eyebrow": "Stack",
+      "title": "Tecnología y plataformas con las que trabajamos",
+      "description": "Herramientas modernas elegidas por rendimiento, mantenibilidad y visibilidad de marketing. Solo se reclaman alianzas oficiales cuando están verificadas.",
+      "note": "Familiaridad con herramientas listada por claridad—no como afirmaciones de respaldo."
+    },
+    "techCategories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cms": "CMS y comercio",
+      "infrastructure": "Infraestructura",
+      "marketing": "Marketing"
+    },
+    "testimonialsSection": {
+      "eyebrow": "Voz del cliente",
+      "title": "Cómo puede sentirse la colaboración",
+      "description": "Testimonios de muestra para demostrar el layout. Reemplazar con reseñas verificadas y citas autorizadas antes del lanzamiento.",
+      "sampleBadge": "Muestra"
+    },
+    "testimonials": {
+      "1": {
+        "name": "[Client Name 1]",
+        "role": "[Title]",
+        "company": "[Company Name]",
+        "serviceCategory": "Desarrollo web",
+        "text": "[SAMPLE] Nos ayudaron a reconstruir el sitio web en torno a rutas de conversión claras y reportes que realmente podemos usar en las decisiones semanales.]"
+      },
+      "2": {
+        "name": "[Client Name 2]",
+        "role": "[Title]",
+        "company": "[Company Name]",
+        "serviceCategory": "Publicidad pagada",
+        "text": "[SAMPLE] La comunicación se mantuvo transparente y la estructura de medios pagados facilitó mucho la revisión de resultados para nuestro equipo.]"
+      },
+      "3": {
+        "name": "[Client Name 3]",
+        "role": "[Title]",
+        "company": "[Company Name]",
+        "serviceCategory": "SEO",
+        "text": "[SAMPLE] El trabajo de SEO y contenido se enfocó primero en las páginas comerciales, lo que hizo que la priorización se sintiera práctica y no abstracta.]"
+      }
+    },
+    "whyChooseUsSection": {
+      "eyebrow": "Estándares de partnership",
+      "title": "Por qué los equipos eligen trabajar con nosotros",
+      "description": "Principios claros de operación—no garantías de rankings, leads o ingresos."
+    },
+    "whyChooseUs": {
+      "businessFirst": {
+        "title": "Estrategia centrada en el negocio",
+        "description": "Las prioridades parten de objetivos comerciales, restricciones y recorridos del comprador—no de preferencias de herramientas."
+      },
+      "seniorInvolvement": {
+        "title": "Participación de especialistas senior",
+        "description": "Profesionales experimentados permanecen cerca del descubrimiento, las revisiones y los puntos de entrega."
+      },
+      "transparentComm": {
+        "title": "Comunicación transparente",
+        "description": "Responsabilidad clara, actualizaciones prácticas y decisiones documentadas, sin teatralidad."
+      },
+      "measurableReporting": {
+        "title": "Reportes medibles",
+        "description": "Tracking y revisiones construidos en torno a indicadores en los que tu equipo puede actuar en cada ciclo."
+      },
+      "scalableTech": {
+        "title": "Soluciones técnicas escalables",
+        "description": "Las decisiones de arquitectura priorizan la mantenibilidad para que los sistemas crezcan con la demanda."
+      },
+      "longTermOpt": {
+        "title": "Optimización a largo plazo",
+        "description": "El lanzamiento es la línea de partida—la mejora continua acumula resultados con el tiempo."
+      }
+    },
+    "blogSection": {
+      "eyebrow": "Perspectivas",
+      "title": "Pensamiento práctico sobre crecimiento, sistemas y ejecución",
+      "description": "Artículos redactados como marcadores editables. Reemplazar con contenido editorial publicado antes del lanzamiento.",
+      "ctaLabel": "Ver todos los artículos",
+      "readArticle": "Leer artículo"
+    },
+    "blogPosts": {
+      "maximize-ecommerce-conversions": {
+        "title": "Cómo mejorar la conversión en e-commerce sin adivinar",
+        "categoryLabel": "Marketing digital",
+        "excerpt": "Una lista práctica para diagnosticar fricción en el embudo, velocidad de página y claridad de la oferta antes de invertir más en anuncios."
+      },
+      "future-of-seo-2024": {
+        "title": "Qué debería desbloquear primero el SEO técnico",
+        "categoryLabel": "SEO",
+        "excerpt": "Prioriza rastreabilidad, indexación e intención en páginas comerciales para que el trabajo de búsqueda apoye el pipeline—no solo gráficos de tráfico."
+      },
+      "building-scalable-apps": {
+        "title": "Construir sitios web que sigan siendo rápidos a medida que crece el contenido",
+        "categoryLabel": "Desarrollo web",
+        "excerpt": "Patrones de arquitectura y publicación que mantienen el rendimiento estable cuando los equipos de marketing publican páginas cada semana."
+      }
+    },
+    "finalCta": {
+      "eyebrow": "Siguiente paso",
+      "title": "¿Listo para construir tu próxima etapa de crecimiento?",
+      "description": "Cuéntanos dónde está tu negocio hoy y hacia dónde quieres llevarlo. Nuestro equipo recomendará una hoja de ruta digital práctica.",
+      "primaryCta": "Solicitar una consulta gratuita",
+      "secondaryCta": "Chatear por WhatsApp",
+      "reassurance": "Sin presión. Sin discurso de ventas genérico. Solo una conversación enfocada en tus objetivos.",
+      "whatsappMessage": "Hola, visité su sitio web y me gustaría hablar sobre un proyecto."
     }
   }
 }

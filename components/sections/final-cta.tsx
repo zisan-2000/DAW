@@ -3,6 +3,7 @@
 import { Link } from '@/i18n/navigation'
 import { motion } from 'framer-motion'
 import { ArrowRight, MessageCircle } from 'lucide-react'
+import { useTranslations } from 'next-intl'
 import { AGENCY_CONFIG, HOMEPAGE } from '@/lib/content'
 import { getWhatsAppHref } from '@/lib/whatsapp'
 import { Button } from '@/components/ui/button'
@@ -11,8 +12,9 @@ import { Section } from '@/components/ui/section'
 import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion'
 
 export function FinalCtaSection() {
+  const t = useTranslations('homepage.finalCta')
   const { finalCta } = HOMEPAGE
-  const whatsappHref = getWhatsAppHref(finalCta.whatsappMessage)
+  const whatsappHref = getWhatsAppHref(t('whatsappMessage'))
   const isExternalWhatsApp = whatsappHref.startsWith('http')
 
   return (
@@ -58,7 +60,7 @@ export function FinalCtaSection() {
             variants={fadeUp}
             className="mb-4 text-xs font-semibold tracking-[0.18em] text-accent uppercase"
           >
-            {finalCta.eyebrow}
+            {t('eyebrow')}
           </motion.p>
 
           <motion.h2
@@ -66,14 +68,14 @@ export function FinalCtaSection() {
             variants={fadeUp}
             className="font-display text-balance text-3xl font-semibold tracking-tight text-surface-ink-foreground sm:text-4xl lg:text-5xl"
           >
-            {finalCta.title}
+            {t('title')}
           </motion.h2>
 
           <motion.p
             variants={fadeUp}
             className="mx-auto mt-5 max-w-2xl text-pretty text-base leading-relaxed text-surface-ink-foreground/65 sm:text-lg"
           >
-            {finalCta.description}
+            {t('description')}
           </motion.p>
 
           <motion.div
@@ -85,7 +87,7 @@ export function FinalCtaSection() {
                 size="lg"
                 className="h-12 w-full rounded-xl bg-accent px-6 text-[15px] font-semibold text-accent-foreground hover:bg-accent/90 sm:min-w-60"
               >
-                {finalCta.primaryCta.label}
+                {t('primaryCta')}
                 <ArrowRight className="size-4" />
               </Button>
             </Link>
@@ -103,7 +105,7 @@ export function FinalCtaSection() {
                   className="h-12 w-full rounded-xl border-white/15 bg-white/3 px-6 text-[15px] text-surface-ink-foreground hover:border-accent/40 hover:bg-white/6 hover:text-surface-ink-foreground sm:min-w-50"
                 >
                   <MessageCircle className="size-4" />
-                  {finalCta.secondaryCta.label}
+                  {t('secondaryCta')}
                 </Button>
               </a>
             ) : (
@@ -114,7 +116,7 @@ export function FinalCtaSection() {
                   className="h-12 w-full rounded-xl border-white/15 bg-white/3 px-6 text-[15px] text-surface-ink-foreground hover:border-accent/40 hover:bg-white/6 hover:text-surface-ink-foreground sm:min-w-50"
                 >
                   <MessageCircle className="size-4" />
-                  {finalCta.secondaryCta.label}
+                  {t('secondaryCta')}
                 </Button>
               </Link>
             )}
@@ -124,7 +126,7 @@ export function FinalCtaSection() {
             variants={fadeUp}
             className="mx-auto mt-6 max-w-md text-sm text-surface-ink-foreground/45"
           >
-            {finalCta.reassurance}
+            {t('reassurance')}
           </motion.p>
 
           <motion.p

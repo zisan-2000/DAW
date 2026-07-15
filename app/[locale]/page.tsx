@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import { getTranslations } from 'next-intl/server'
 import { HeroSection } from '@/components/sections/hero'
 import { LogoMarqueeSection } from '@/components/sections/logo-marquee'
 import { CompanyIntroSection } from '@/components/sections/company-intro'
@@ -13,14 +13,20 @@ import { TestimonialsSection } from '@/components/sections/testimonials'
 import { WhyChooseUsSection } from '@/components/sections/why-choose-us'
 import { BlogPreviewSection } from '@/components/sections/blog-preview'
 import { FinalCtaSection } from '@/components/sections/final-cta'
-import { AGENCY_CONFIG } from '@/lib/content'
 
-export const metadata: Metadata = {
-  title: `${AGENCY_CONFIG.shortName} | Digital Growth Partner — Web, SEO, Marketing & Software`,
-  description:
-    'Strategy, technology and marketing built to accelerate growth. Conversion-focused websites, performance marketing, SEO and scalable software for ambitious businesses.',
-  keywords:
-    'digital agency, growth partner, web development, SEO, digital marketing, branding, software development',
+type PageProps = {
+  params: Promise<{ locale: string }>
+}
+
+export async function generateMetadata({ params }: PageProps) {
+  const { locale } = await params
+  const t = await getTranslations({ locale, namespace: 'homepage.meta' })
+
+  return {
+    title: t('title'),
+    description: t('description'),
+    keywords: t('keywords'),
+  }
 }
 
 export default function Page() {

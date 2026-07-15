@@ -3,6 +3,7 @@
 import { Link } from '@/i18n/navigation'
 import { motion } from 'framer-motion'
 import { ArrowRight, ArrowUpRight, Clock } from 'lucide-react'
+import { useLocale, useTranslations } from 'next-intl'
 import { BLOG_POSTS, HOMEPAGE } from '@/lib/content'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/ui/container'
@@ -10,10 +11,10 @@ import { Section } from '@/components/ui/section'
 import { SectionHeader } from '@/components/ui/section-header'
 import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion'
 
-function formatDate(value: string) {
+function formatDate(value: string, locale: string) {
   const parsed = new Date(value)
   if (Number.isNaN(parsed.getTime())) return value
-  return new Intl.DateTimeFormat('en-GB', {
+  return new Intl.DateTimeFormat(locale, {
     day: 'numeric',
     month: 'short',
     year: 'numeric',
@@ -21,7 +22,9 @@ function formatDate(value: string) {
 }
 
 export function BlogPreviewSection() {
-  const { blogSection } = HOMEPAGE
+  const t = useTranslations('homepage.blogSection')
+  const tPost = useTranslations('homepage.blogPosts')
+  const locale = useLocale()
   const featured = BLOG_POSTS.filter((post) => post.featured).slice(0, 3)
 
   return (
@@ -41,18 +44,18 @@ export function BlogPreviewSection() {
           <motion.div variants={fadeUp} className="max-w-2xl">
             <SectionHeader
               titleId="blog-heading"
-              eyebrow={blogSection.eyebrow}
-              title={blogSection.title}
-              description={blogSection.description}
+              eyebrow={t('eyebrow')}
+              title={t('title')}
+              description={t('description')}
             />
           </motion.div>
           <motion.div variants={fadeUp} className="shrink-0">
-            <Link href={blogSection.cta.href}>
+            <Link href={HOMEPAGE.blogSection.cta.href}>
               <Button
                 variant="outline"
                 className="h-11 rounded-xl border-border px-5 hover:bg-background"
               >
-                {blogSection.cta.label}
+                {t('ctaLabel')}
                 <ArrowRight className="size-4" />
               </Button>
             </Link>
@@ -76,23 +79,23 @@ export function BlogPreviewSection() {
                     <div className="absolute inset-0 bg-grid-fade opacity-35" />
                     <div className="absolute inset-x-0 bottom-0 p-4">
                       <span className="rounded-full border border-white/15 bg-black/25 px-2.5 py-1 text-[11px] font-medium tracking-wide text-surface-ink-foreground backdrop-blur-sm">
-                        {post.categoryLabel}
+                        {tPost(`${post.slug}.categoryLabel`)}
                       </span>
                     </div>
                   </div>
 
                   <div className="flex flex-1 flex-col p-6">
                     <h3 className="font-display text-lg font-semibold tracking-tight text-foreground transition-colors group-hover:text-accent sm:text-xl">
-                      {post.title}
+                      {tPost(`${post.slug}.title`)}
                     </h3>
                     <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
-                      {post.excerpt}
+                      {tPost(`${post.slug}.excerpt`)}
                     </p>
 
                     <div className="mt-5 flex items-center justify-between gap-3 border-t border-border/70 pt-4 text-xs text-muted-foreground">
                       <span>{post.author}</span>
                       <span className="inline-flex items-center gap-3">
-                        <time dateTime={post.date}>{formatDate(post.date)}</time>
+                        <time dateTime={post.date}>{formatDate(post.date, locale)}</time>
                         <span className="inline-flex items-center gap-1">
                           <Clock className="size-3.5" aria-hidden />
                           {post.readTime}
@@ -101,7 +104,7 @@ export function BlogPreviewSection() {
                     </div>
 
                     <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-accent">
-                      Read article
+                      {t('readArticle')}
                       <ArrowUpRight className="size-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </span>
                   </div>

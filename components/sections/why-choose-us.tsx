@@ -10,7 +10,8 @@ import {
   Users,
   type LucideIcon,
 } from 'lucide-react'
-import { HOMEPAGE, WHY_CHOOSE_US } from '@/lib/content'
+import { useTranslations } from 'next-intl'
+import { WHY_CHOOSE_US } from '@/lib/content'
 import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
 import { SectionHeader } from '@/components/ui/section-header'
@@ -25,8 +26,18 @@ const ICON_MAP: Record<string, LucideIcon> = {
   RefreshCw,
 }
 
+const WHY_CHOOSE_KEYS = [
+  'businessFirst',
+  'seniorInvolvement',
+  'transparentComm',
+  'measurableReporting',
+  'scalableTech',
+  'longTermOpt',
+] as const
+
 export function WhyChooseUsSection() {
-  const { whyChooseUsSection } = HOMEPAGE
+  const t = useTranslations('homepage.whyChooseUsSection')
+  const tItem = useTranslations('homepage.whyChooseUs')
 
   return (
     <Section
@@ -45,9 +56,9 @@ export function WhyChooseUsSection() {
           <motion.div variants={fadeUp}>
             <SectionHeader
               titleId="why-choose-heading"
-              eyebrow={whyChooseUsSection.eyebrow}
-              title={whyChooseUsSection.title}
-              description={whyChooseUsSection.description}
+              eyebrow={t('eyebrow')}
+              title={t('title')}
+              description={t('description')}
             />
           </motion.div>
         </motion.div>
@@ -61,9 +72,10 @@ export function WhyChooseUsSection() {
         >
           {WHY_CHOOSE_US.map((item, index) => {
             const Icon = ICON_MAP[item.icon] ?? Target
+            const key = WHY_CHOOSE_KEYS[index]
             return (
               <motion.li
-                key={item.title}
+                key={key ?? item.title}
                 variants={fadeUp}
                 className="rounded-2xl border border-border/80 bg-background p-6 transition-colors hover:border-accent/30"
               >
@@ -76,10 +88,10 @@ export function WhyChooseUsSection() {
                   </span>
                 </div>
                 <h3 className="font-display text-lg font-semibold tracking-tight text-foreground">
-                  {item.title}
+                  {key ? tItem(`${key}.title`) : item.title}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {item.description}
+                  {key ? tItem(`${key}.description`) : item.description}
                 </p>
               </motion.li>
             )

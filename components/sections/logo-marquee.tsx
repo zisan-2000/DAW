@@ -1,6 +1,7 @@
 'use client'
 
 import { useReducedMotion } from 'framer-motion'
+import { useTranslations } from 'next-intl'
 import { HOMEPAGE } from '@/lib/content'
 import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
@@ -24,9 +25,9 @@ function LogoMark({ name, initials }: { name: string; initials: string }) {
 }
 
 export function LogoMarqueeSection() {
+  const t = useTranslations('homepage.logoMarquee')
   const reduced = useReducedMotion() ?? false
-  const { logoMarquee } = HOMEPAGE
-  const logos = logoMarquee.logos
+  const logos = HOMEPAGE.logoMarquee.logos
   const loop = [...logos, ...logos]
 
   return (
@@ -43,9 +44,9 @@ export function LogoMarqueeSection() {
             id="trusted-heading"
             className="font-display text-sm font-semibold tracking-[0.16em] text-foreground uppercase"
           >
-            {logoMarquee.heading}
+            {t('heading')}
           </h2>
-          <p className="text-xs text-muted-foreground">{logoMarquee.note}</p>
+          <p className="text-xs text-muted-foreground">{t('note')}</p>
         </div>
       </Container>
 
