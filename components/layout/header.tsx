@@ -72,71 +72,77 @@ function ProductsDesktopDropdown() {
         />
       </button>
 
+      {/* Viewport-anchored panel — never clips against the Products trigger edge */}
       <div
         className="
-          invisible absolute left-1/2 top-full z-50
-          w-[min(1050px,calc(100vw-48px))]
-          -translate-x-1/2 translate-y-3 pt-5 opacity-0
-          transition-all duration-200
-          group-hover:visible group-hover:translate-y-0 group-hover:opacity-100
-          group-focus-within:visible group-focus-within:translate-y-0
+          pointer-events-none invisible fixed inset-x-0 top-14 z-50
+          px-4 pt-3 opacity-0 transition-all duration-200 sm:top-[4.25rem] sm:px-6 lg:px-8
+          group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100
+          group-focus-within:pointer-events-auto group-focus-within:visible
           group-focus-within:opacity-100
         "
       >
-        <div className="overflow-hidden rounded-2xl border border-border/80 bg-card shadow-2xl shadow-black/10">
-          <div className="border-b border-border/70 px-6 py-4">
-            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-              {t("productsEyebrow")}
-            </p>
+        <div className="mx-auto max-w-[1600px]">
+          <div className="origin-top translate-y-2 overflow-hidden rounded-2xl border border-border/80 bg-card shadow-2xl shadow-black/10 transition-transform duration-200 group-hover:translate-y-0 group-focus-within:translate-y-0 dark:shadow-black/40">
+            <div className="border-b border-border/70 px-5 py-4 sm:px-6">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+                {t("productsEyebrow")}
+              </p>
+              <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
+                {t("productsDescription")}
+              </p>
+            </div>
 
-            <p className="mt-1 text-sm text-muted-foreground">
-              {t("productsDescription")}
-            </p>
-          </div>
+            <div className="max-h-[min(70vh,640px)] overflow-y-auto overflow-x-hidden p-3">
+              <div className="grid grid-cols-2 gap-1 md:grid-cols-3 xl:grid-cols-5">
+                {productSections.map((section) => {
+                  const sectionActive = isActivePath(
+                    pathname,
+                    section.basePath,
+                  );
 
-          <div className="grid grid-cols-2 gap-0 p-3 lg:grid-cols-5">
-            {productSections.map((section) => {
-              const sectionActive = isActivePath(pathname, section.basePath);
+                  return (
+                    <div
+                      key={section.id}
+                      className="min-w-0 rounded-xl p-3 transition-colors hover:bg-muted/60"
+                    >
+                      <Link
+                        href={section.basePath}
+                        className={`group/title flex min-h-11 items-start justify-between gap-2 text-sm font-semibold leading-5 transition-colors hover:text-accent ${
+                          sectionActive ? "text-accent" : "text-foreground"
+                        }`}
+                      >
+                        <span className="text-balance">{section.label}</span>
+                        <ArrowRight
+                          size={15}
+                          className="mt-0.5 shrink-0 -translate-x-1 opacity-0 transition-all group-hover/title:translate-x-0 group-hover/title:opacity-100"
+                        />
+                      </Link>
 
-              return (
-                <div
-                  key={section.id}
-                  className="rounded-xl p-3 transition-colors hover:bg-muted/60"
-                >
-                  <Link
-                    href={section.basePath}
-                    className={`group/title flex min-h-12 items-start justify-between gap-2 text-sm font-semibold leading-5 transition-colors hover:text-accent ${
-                      sectionActive ? "text-accent" : "text-foreground"
-                    }`}
-                  >
-                    <span>{section.label}</span>
+                      <div className="mt-3 space-y-0.5 border-t border-border/70 pt-3">
+                        {section.items.map((item) => {
+                          const itemActive = isActivePath(pathname, item.href);
 
-                    <ArrowRight
-                      size={15}
-                      className="mt-0.5 shrink-0 -translate-x-1 opacity-0 transition-all group-hover/title:translate-x-0 group-hover/title:opacity-100"
-                    />
-                  </Link>
-
-                  <div className="mt-3 space-y-1 border-t border-border/70 pt-3">
-                    {section.items.map((item) => {
-                      const itemActive = isActivePath(pathname, item.href);
-
-                      return (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          className={`block rounded-lg px-2 py-2 text-xs font-medium leading-4 transition-colors hover:bg-background hover:text-accent ${
-                            itemActive ? "text-accent" : "text-muted-foreground"
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
+                          return (
+                            <Link
+                              key={item.href}
+                              href={item.href}
+                              className={`block rounded-lg px-2 py-2 text-xs font-medium leading-4 transition-colors hover:bg-background hover:text-accent ${
+                                itemActive
+                                  ? "text-accent"
+                                  : "text-muted-foreground"
+                              }`}
+                            >
+                              {item.label}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -144,9 +150,22 @@ function ProductsDesktopDropdown() {
   );
 }
 
-function DesktopDropdown({ item }: { item: NavigationItem }) {
+function DesktopDropdown({
+  item,
+  align = "start",
+}: {
+  item: NavigationItem;
+  align?: "start" | "end" | "center";
+}) {
   const pathname = usePathname();
   const active = isActiveGroup(pathname, item.items);
+
+  const panelAlign =
+    align === "end"
+      ? "left-auto right-0"
+      : align === "center"
+        ? "left-1/2 -translate-x-1/2"
+        : "left-0";
 
   return (
     <div className="group relative">
@@ -156,7 +175,6 @@ function DesktopDropdown({ item }: { item: NavigationItem }) {
         aria-haspopup="true"
       >
         {item.label}
-
         <ChevronDown
           size={14}
           aria-hidden="true"
@@ -165,14 +183,14 @@ function DesktopDropdown({ item }: { item: NavigationItem }) {
       </button>
 
       <div
-        className="
-          invisible absolute left-1/2 top-full z-50
-          w-[320px] -translate-x-1/2 translate-y-3
-          pt-5 opacity-0 transition-all duration-200
+        className={`
+          invisible absolute top-full z-50 w-[min(320px,calc(100vw-2rem))]
+          translate-y-3 pt-4 opacity-0 transition-all duration-200
           group-hover:visible group-hover:translate-y-0 group-hover:opacity-100
           group-focus-within:visible group-focus-within:translate-y-0
           group-focus-within:opacity-100
-        "
+          ${panelAlign}
+        `}
       >
         <div className="overflow-hidden rounded-2xl border border-border/80 bg-card p-2 text-card-foreground shadow-2xl shadow-black/10 dark:shadow-black/40">
           <div className="border-b border-border/70 px-3 py-3">
@@ -181,7 +199,7 @@ function DesktopDropdown({ item }: { item: NavigationItem }) {
             </p>
           </div>
 
-          <div className="max-h-[420px] overflow-y-auto py-2">
+          <div className="max-h-[min(60vh,420px)] overflow-y-auto py-2">
             {item.items?.map((subItem) => {
               const itemActive = isActivePath(pathname, subItem.href);
 
@@ -193,11 +211,10 @@ function DesktopDropdown({ item }: { item: NavigationItem }) {
                     itemActive ? "text-accent" : "text-foreground"
                   }`}
                 >
-                  <span>{subItem.label}</span>
-
+                  <span className="pr-2">{subItem.label}</span>
                   <ArrowRight
                     size={15}
-                    className="translate-x-1 opacity-0 transition-all group-hover/link:translate-x-0 group-hover/link:opacity-100"
+                    className="shrink-0 translate-x-1 opacity-0 transition-all group-hover/link:translate-x-0 group-hover/link:opacity-100"
                   />
                 </Link>
               );
@@ -328,13 +345,13 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/80 bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80">
-      <div className="mx-auto flex min-h-20 max-w-[1600px] items-center justify-between gap-5 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex min-h-16 max-w-[1600px] items-center justify-between gap-3 px-4 sm:min-h-20 sm:gap-4 sm:px-6 lg:px-8">
         <Link
           href="/"
           className="font-display flex shrink-0 items-center gap-2.5 text-lg font-semibold text-foreground transition-colors hover:text-accent"
           aria-label={`${AGENCY_CONFIG.shortName} home`}
         >
-          <div className="flex size-10 items-center justify-center rounded-xl bg-accent text-sm font-bold text-accent-foreground shadow-sm">
+          <div className="flex size-9 items-center justify-center rounded-xl bg-accent text-sm font-bold text-accent-foreground shadow-sm sm:size-10">
             {AGENCY_CONFIG.shortName.replace(/[\[\]]/g, "").charAt(0) || "A"}
           </div>
 
@@ -342,13 +359,17 @@ export function Header() {
         </Link>
 
         <nav
-          className="hidden flex-1 items-center justify-center gap-5 xl:flex 2xl:gap-7"
+          className="hidden flex-1 items-center justify-center gap-3 xl:flex 2xl:gap-6"
           aria-label={tNav("primaryNavigation")}
         >
           <ProductsDesktopDropdown />
 
           {navigationItems.map((item) => (
-            <DesktopDropdown key={item.id} item={item} />
+            <DesktopDropdown
+              key={item.id}
+              item={item}
+              align={item.id === "about" ? "end" : "start"}
+            />
           ))}
 
           <Link
@@ -359,7 +380,7 @@ export function Header() {
           </Link>
         </nav>
 
-        <div className="hidden shrink-0 items-center gap-3 xl:flex">
+        <div className="hidden shrink-0 items-center gap-2 xl:flex 2xl:gap-3">
           <ThemeToggle />
 
           <LanguageSwitcher />
@@ -375,7 +396,7 @@ export function Header() {
 
           <a
             href={phoneHref}
-            className="group flex items-center gap-2 rounded-xl px-2 py-2 text-sm font-semibold text-foreground transition-colors hover:text-accent"
+            className="group flex items-center gap-2 rounded-xl px-1.5 py-2 text-sm font-semibold text-foreground transition-colors hover:text-accent 2xl:px-2"
             aria-label={tNav("callPhone", { phone: phoneNumber })}
           >
             <span className="flex size-9 items-center justify-center rounded-lg bg-muted transition-colors group-hover:bg-accent/10">
