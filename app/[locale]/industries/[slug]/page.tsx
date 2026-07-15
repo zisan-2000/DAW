@@ -1,5 +1,5 @@
 import { INDUSTRIES, AGENCY_CONFIG } from '@/lib/content'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
@@ -9,16 +9,18 @@ export const generateStaticParams = () => {
   }))
 }
 
-export const generateMetadata = ({ params }: { params: { slug: string } }) => {
-  const industry = INDUSTRIES.find(i => i.slug === params.slug)
+export const generateMetadata = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params
+  const industry = INDUSTRIES.find(i => i.slug === slug)
   return {
     title: `${industry?.name} Solutions | ${AGENCY_CONFIG.shortName}`,
     description: `Digital solutions tailored for the ${industry?.name} industry`,
   }
 }
 
-export default function IndustryPage({ params }: { params: { slug: string } }) {
-  const industry = INDUSTRIES.find(i => i.slug === params.slug)
+export default async function IndustryPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const industry = INDUSTRIES.find(i => i.slug === slug)
 
   if (!industry) {
     return <div className="py-20 text-center">Industry not found</div>

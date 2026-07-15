@@ -1,5 +1,5 @@
 import { CASE_STUDIES, AGENCY_CONFIG } from '@/lib/content'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 
 export const metadata = {
   title: `Case Studies | ${AGENCY_CONFIG.shortName}`,

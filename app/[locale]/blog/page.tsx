@@ -1,5 +1,5 @@
 import { BLOG_POSTS, AGENCY_CONFIG } from '@/lib/content'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { Calendar } from 'lucide-react'
 
 export const metadata = {

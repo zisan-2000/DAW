@@ -1,11 +1,13 @@
 'use client'
 
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
 import { Mail, Phone, MapPin } from 'lucide-react'
 import { AGENCY_CONFIG } from '@/lib/content'
 
 export default function ContactPage() {
+  const t = useTranslations('contactPage')
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,7 +20,7 @@ export default function ContactPage() {
     e.preventDefault()
     // Handle form submission - integrate with your backend
     console.log('Form submitted:', formData)
-    alert('Thank you for your message! We will contact you soon.')
+    alert(t('form.successMessage'))
     setFormData({ name: '', email: '', phone: '', company: '', message: '' })
   }
 
@@ -27,9 +29,9 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-accent/10 to-background">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Get in Touch</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">{t('heroTitle')}</h1>
           <p className="text-xl text-muted-foreground max-w-2xl">
-            Have a project in mind? Let's discuss how we can help your business grow
+            {t('heroSubtitle')}
           </p>
         </div>
       </section>
@@ -40,13 +42,13 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Contact Info */}
             <div>
-              <h2 className="text-2xl font-bold text-foreground mb-8">Contact Information</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-8">{t('infoHeading')}</h2>
               <div className="space-y-6">
                 {AGENCY_CONFIG.email !== '[contact@agency.com]' && (
                   <a href={`mailto:${AGENCY_CONFIG.email}`} className="flex gap-4 hover:text-accent transition-colors">
                     <Mail className="text-accent flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-foreground">Email</p>
+                      <p className="font-semibold text-foreground">{t('emailLabel')}</p>
                       <p className="text-muted-foreground">{AGENCY_CONFIG.email}</p>
                     </div>
                   </a>
@@ -55,7 +57,7 @@ export default function ContactPage() {
                   <a href={`tel:${AGENCY_CONFIG.phone}`} className="flex gap-4 hover:text-accent transition-colors">
                     <Phone className="text-accent flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-foreground">Phone</p>
+                      <p className="font-semibold text-foreground">{t('phoneLabel')}</p>
                       <p className="text-muted-foreground">{AGENCY_CONFIG.phone}</p>
                     </div>
                   </a>
@@ -64,7 +66,7 @@ export default function ContactPage() {
                   <div className="flex gap-4">
                     <MapPin className="text-accent flex-shrink-0 mt-1" />
                     <div>
-                      <p className="font-semibold text-foreground">Address</p>
+                      <p className="font-semibold text-foreground">{t('addressLabel')}</p>
                       <p className="text-muted-foreground">{AGENCY_CONFIG.address}</p>
                     </div>
                   </div>
@@ -74,69 +76,69 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <h2 className="text-2xl font-bold text-foreground mb-8">Send us a Message</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-8">{t('formHeading')}</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Name</label>
+                  <label className="block text-sm font-medium text-foreground mb-2">{t('form.nameLabel')}</label>
                   <input
                     type="text"
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     className="w-full px-4 py-2 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent"
-                    placeholder="Your name"
+                    placeholder={t('form.namePlaceholder')}
                   />
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">Email</label>
+                    <label className="block text-sm font-medium text-foreground mb-2">{t('form.emailLabel')}</label>
                     <input
                       type="email"
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
                       className="w-full px-4 py-2 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent"
-                      placeholder="your@email.com"
+                      placeholder={t('form.emailPlaceholder')}
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">Phone</label>
+                    <label className="block text-sm font-medium text-foreground mb-2">{t('form.phoneLabel')}</label>
                     <input
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
                       className="w-full px-4 py-2 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent"
-                      placeholder="Your phone number"
+                      placeholder={t('form.phonePlaceholder')}
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Company</label>
+                  <label className="block text-sm font-medium text-foreground mb-2">{t('form.companyLabel')}</label>
                   <input
                     type="text"
                     value={formData.company}
                     onChange={(e) => setFormData({...formData, company: e.target.value})}
                     className="w-full px-4 py-2 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent"
-                    placeholder="Your company"
+                    placeholder={t('form.companyPlaceholder')}
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">Message</label>
+                  <label className="block text-sm font-medium text-foreground mb-2">{t('form.messageLabel')}</label>
                   <textarea
                     required
                     value={formData.message}
                     onChange={(e) => setFormData({...formData, message: e.target.value})}
                     rows={5}
                     className="w-full px-4 py-2 rounded-lg border border-border bg-card text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-accent"
-                    placeholder="Tell us about your project"
+                    placeholder={t('form.messagePlaceholder')}
                   />
                 </div>
 
                 <Button type="submit" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-                  Send Message
+                  {t('form.submit')}
                 </Button>
               </form>
             </div>

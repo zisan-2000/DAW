@@ -2,6 +2,9 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, DM_Sans } from "next/font/google";
 import Script from "next/script";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -10,6 +13,7 @@ import { SkipLink } from "@/components/a11y/skip-link";
 import { MotionProvider } from "@/components/providers/motion-provider";
 import { AGENCY_CONFIG } from "@/lib/content";
 import { generateOrganizationSchema } from "@/lib/seo";
+import { routing, rtlLocales, type Locale } from "@/i18n/routing";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -22,6 +26,10 @@ const dmSans = DM_Sans({
   variable: "--font-sans",
   display: "swap",
 });
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export const metadata: Metadata = {
   title: `${AGENCY_CONFIG.shortName} | Premium Digital Agency - Web Development, SEO & Marketing`,
@@ -90,14 +98,26 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
+  const messages = await getMessages();
+  const dir = rtlLocales.includes(locale as Locale) ? "rtl" : "ltr";
+
   return (
     <html
-      lang="en"
+      lang={locale}
+      dir={dir}
       suppressHydrationWarning
       className={`${spaceGrotesk.variable} ${dmSans.variable}`}
     >
@@ -111,15 +131,17 @@ export default function RootLayout({
         />
       </head>
       <body className="flex min-h-screen flex-col overflow-x-clip bg-background text-foreground antialiased">
-        <MotionProvider>
-          <SkipLink />
-          <AnnouncementBar />
-          <Header />
-          <main id="main-content" className="flex-1">
-            {children}
-          </main>
-          <Footer />
-        </MotionProvider>
+        <NextIntlClientProvider messages={messages}>
+          <MotionProvider>
+            <SkipLink />
+            <AnnouncementBar />
+            <Header />
+            <main id="main-content" className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </MotionProvider>
+        </NextIntlClientProvider>
         {process.env.NODE_ENV === "production" && <Analytics />}
       </body>
     </html>

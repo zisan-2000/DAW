@@ -1,5 +1,5 @@
 import { SERVICES, AGENCY_CONFIG } from '@/lib/content'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { motion } from 'framer-motion'
 import * as Icons from 'lucide-react'
 

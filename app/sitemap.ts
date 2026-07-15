@@ -1,86 +1,64 @@
 import { MetadataRoute } from 'next'
 import { SERVICES, INDUSTRIES, CASE_STUDIES, BLOG_POSTS } from '@/lib/content'
+import { routing } from '@/i18n/routing'
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://yourdomain.com'
 
+function localizedPath(path: string, locale: string) {
+  if (locale === routing.defaultLocale) {
+    return `${BASE_URL}${path}`
+  }
+  return `${BASE_URL}/${locale}${path}`
+}
+
+function alternates(path: string) {
+  return Object.fromEntries(
+    routing.locales.map((locale) => [locale, localizedPath(path, locale)]),
+  )
+}
+
+function entriesForPath(
+  path: string,
+  changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'],
+  priority: number,
+): MetadataRoute.Sitemap {
+  return routing.locales.map((locale) => ({
+    url: localizedPath(path, locale),
+    lastModified: new Date(),
+    changeFrequency,
+    priority,
+    alternates: {
+      languages: alternates(path),
+    },
+  }))
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Static pages
   const staticPages = [
-    {
-      url: `${BASE_URL}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 1,
-    },
-    {
-      url: `${BASE_URL}/about`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/services`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/industries`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/case-studies`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    },
+    ...entriesForPath('', 'weekly', 1),
+    ...entriesForPath('/about', 'monthly', 0.8),
+    ...entriesForPath('/services', 'monthly', 0.9),
+    ...entriesForPath('/industries', 'monthly', 0.9),
+    ...entriesForPath('/case-studies', 'weekly', 0.9),
+    ...entriesForPath('/blog', 'weekly', 0.8),
+    ...entriesForPath('/contact', 'monthly', 0.7),
   ]
 
-  // Dynamic service pages
-  const servicePages = SERVICES.map(service => ({
-    url: `${BASE_URL}/services/${service.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }))
+  const servicePages = SERVICES.flatMap((service) =>
+    entriesForPath(`/services/${service.slug}`, 'monthly', 0.8),
+  )
 
-  // Dynamic industry pages
-  const industryPages = INDUSTRIES.map(industry => ({
-    url: `${BASE_URL}/industries/${industry.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }))
+  const industryPages = INDUSTRIES.flatMap((industry) =>
+    entriesForPath(`/industries/${industry.slug}`, 'monthly', 0.8),
+  )
 
-  // Dynamic case study pages
-  const caseStudyPages = CASE_STUDIES.map(cs => ({
-    url: `${BASE_URL}/case-studies/${cs.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }))
+  const caseStudyPages = CASE_STUDIES.flatMap((cs) =>
+    entriesForPath(`/case-studies/${cs.slug}`, 'monthly', 0.8),
+  )
 
-  // Dynamic blog pages
-  const blogPages = BLOG_POSTS.map(post => ({
-    url: `${BASE_URL}/blog/${post.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.7,
-  }))
+  const blogPages = BLOG_POSTS.flatMap((post) =>
+    entriesForPath(`/blog/${post.slug}`, 'weekly', 0.7),
+  )
 
   return [
     ...staticPages,

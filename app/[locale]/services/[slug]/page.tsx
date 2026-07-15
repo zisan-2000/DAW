@@ -1,5 +1,5 @@
 import { SERVICES, AGENCY_CONFIG, CASE_STUDIES } from '@/lib/content'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
@@ -9,16 +9,18 @@ export const generateStaticParams = () => {
   }))
 }
 
-export const generateMetadata = ({ params }: { params: { slug: string } }) => {
-  const service = SERVICES.find(s => s.slug === params.slug)
+export const generateMetadata = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params
+  const service = SERVICES.find(s => s.slug === slug)
   return {
     title: `${service?.title} | ${AGENCY_CONFIG.shortName}`,
     description: service?.description,
   }
 }
 
-export default function ServicePage({ params }: { params: { slug: string } }) {
-  const service = SERVICES.find(s => s.slug === params.slug)
+export default async function ServicePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const service = SERVICES.find(s => s.slug === slug)
   const relatedCaseStudies = CASE_STUDIES.filter(cs => cs.service === service?.id).slice(0, 2)
 
   if (!service) {

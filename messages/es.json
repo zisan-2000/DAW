@@ -1,0 +1,69 @@
+{
+  "a11y": {
+    "skipToContent": "Skip to content"
+  },
+  "announcementBar": {
+    "textShort": "Strategy, technology & measurable growth.",
+    "ctaShort": "Consult"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "industries": "Industries",
+    "caseStudies": "Case Studies",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact",
+    "primaryNavigation": "Primary navigation",
+    "mobileNavigation": "Mobile navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "callPhone": "Call {phone}",
+    "freeConsultation": "Take a Free Consultation"
+  },
+  "footer": {
+    "servicesHeading": "Services",
+    "companyHeading": "Company",
+    "companyLinks": {
+      "about": "About Us",
+      "caseStudies": "Case Studies",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "contactHeading": "Get In Touch",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "rightsReserved": "All rights reserved.",
+    "madeWith": "Made with"
+  },
+  "common": {
+    "loading": "Loading...",
+    "learnMore": "Learn more",
+    "viewAll": "View all",
+    "readMore": "Read more",
+    "backToHome": "Back to home"
+  },
+  "contactPage": {
+    "heroTitle": "Get in Touch",
+    "heroSubtitle": "Have a project in mind? Let's discuss how we can help your business grow",
+    "infoHeading": "Contact Information",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "addressLabel": "Address",
+    "formHeading": "Send us a Message",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "Your phone number",
+      "companyLabel": "Company",
+      "companyPlaceholder": "Your company",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell us about your project",
+      "submit": "Send Message",
+      "successMessage": "Thank you for your message! We will contact you soon."
+    }
+  }
+}

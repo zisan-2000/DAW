@@ -1,8 +1,11 @@
-import Link from 'next/link'
 import { Mail, Phone, MapPin, Share2, Share, Heart, Play } from 'lucide-react'
+import { useTranslations } from 'next-intl'
+import { Link } from '@/i18n/navigation'
 import { AGENCY_CONFIG, SERVICES } from '@/lib/content'
 
 export function Footer() {
+  const t = useTranslations('footer')
+
   return (
     <footer className="bg-card border-t border-border">
       <div className="mx-auto max-w-7xl px-4 md:px-6 py-16">
@@ -43,7 +46,7 @@ export function Footer() {
 
           {/* Services Column */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Services</h3>
+            <h3 className="font-semibold text-foreground mb-4">{t('servicesHeading')}</h3>
             <ul className="space-y-2">
               {SERVICES.map((service) => (
                 <li key={service.id}>
@@ -57,26 +60,26 @@ export function Footer() {
 
           {/* Company Column */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Company</h3>
+            <h3 className="font-semibold text-foreground mb-4">{t('companyHeading')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/about" className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                  About Us
+                  {t('companyLinks.about')}
                 </Link>
               </li>
               <li>
                 <Link href="/case-studies" className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                  Case Studies
+                  {t('companyLinks.caseStudies')}
                 </Link>
               </li>
               <li>
                 <Link href="/blog" className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                  Blog
+                  {t('companyLinks.blog')}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                  Contact
+                  {t('companyLinks.contact')}
                 </Link>
               </li>
             </ul>
@@ -84,7 +87,7 @@ export function Footer() {
 
           {/* Contact Column */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Get In Touch</h3>
+            <h3 className="font-semibold text-foreground mb-4">{t('contactHeading')}</h3>
             <ul className="space-y-3">
               {AGENCY_CONFIG.email !== '[contact@agency.com]' && (
                 <li>
@@ -114,17 +117,17 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} {AGENCY_CONFIG.name}. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {AGENCY_CONFIG.name}. {t('rightsReserved')}</p>
           <div className="flex items-center gap-4">
             <Link href="/privacy" className="hover:text-accent transition-colors">
-              Privacy Policy
+              {t('privacyPolicy')}
             </Link>
             <Link href="/terms" className="hover:text-accent transition-colors">
-              Terms of Service
+              {t('termsOfService')}
             </Link>
           </div>
           <p className="flex items-center gap-1">
-            Made with <Heart size={14} className="text-accent" /> by {AGENCY_CONFIG.shortName}
+            {t('madeWith')} <Heart size={14} className="text-accent" /> {AGENCY_CONFIG.shortName}
           </p>
         </div>
       </div>

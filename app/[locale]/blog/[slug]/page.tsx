@@ -7,16 +7,18 @@ export const generateStaticParams = () => {
   }))
 }
 
-export const generateMetadata = ({ params }: { params: { slug: string } }) => {
-  const post = BLOG_POSTS.find(p => p.slug === params.slug)
+export const generateMetadata = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params
+  const post = BLOG_POSTS.find(p => p.slug === slug)
   return {
     title: `${post?.title} | ${AGENCY_CONFIG.shortName}`,
     description: post?.excerpt,
   }
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = BLOG_POSTS.find(p => p.slug === params.slug)
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const post = BLOG_POSTS.find(p => p.slug === slug)
 
   if (!post) {
     return <div className="py-20 text-center">Post not found</div>

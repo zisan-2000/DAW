@@ -1,5 +1,5 @@
 import { CASE_STUDIES, AGENCY_CONFIG } from '@/lib/content'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 
@@ -9,16 +9,18 @@ export const generateStaticParams = () => {
   }))
 }
 
-export const generateMetadata = ({ params }: { params: { slug: string } }) => {
-  const cs = CASE_STUDIES.find(s => s.slug === params.slug)
+export const generateMetadata = async ({ params }: { params: Promise<{ slug: string }> }) => {
+  const { slug } = await params
+  const cs = CASE_STUDIES.find(s => s.slug === slug)
   return {
     title: `${cs?.title} | ${AGENCY_CONFIG.shortName}`,
     description: cs?.summary,
   }
 }
 
-export default function CaseStudyPage({ params }: { params: { slug: string } }) {
-  const caseStudy = CASE_STUDIES.find(s => s.slug === params.slug)
+export default async function CaseStudyPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const caseStudy = CASE_STUDIES.find(s => s.slug === slug)
 
   if (!caseStudy) {
     return <div className="py-20 text-center">Case study not found</div>
