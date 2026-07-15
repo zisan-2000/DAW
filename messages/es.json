@@ -1,186 +1,1913 @@
 {
   "a11y": {
-    "skipToContent": "Skip to content"
+    "skipToContent": "Saltar al contenido"
   },
   "announcementBar": {
-    "textShort": "Strategy, technology & measurable growth.",
-    "ctaShort": "Consult"
+    "textShort": "Estrategia, tecnología y crecimiento medible.",
+    "ctaShort": "Consultar"
   },
   "nav": {
-    "home": "Home",
-    "services": "Services",
-    "industries": "Industries",
-    "caseStudies": "Case Studies",
+    "home": "Inicio",
+    "services": "Servicios",
+    "industries": "Industrias",
+    "caseStudies": "Casos de Éxito",
     "blog": "Blog",
-    "about": "About",
-    "contact": "Contact",
-    "primaryNavigation": "Primary navigation",
-    "mobileNavigation": "Mobile navigation",
-    "openMenu": "Open menu",
-    "closeMenu": "Close menu",
-    "callPhone": "Call {phone}",
-    "freeConsultation": "Take a Free Consultation",
-    "products": "Products"
-  },
-  "footer": {
-    "servicesHeading": "Services",
-    "companyHeading": "Company",
-    "companyLinks": {
-      "about": "About Us",
-      "caseStudies": "Case Studies",
-      "blog": "Blog",
-      "contact": "Contact"
-    },
-    "contactHeading": "Get In Touch",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service",
-    "rightsReserved": "All rights reserved.",
-    "madeWith": "Made with"
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "primaryNavigation": "Navegación principal",
+    "mobileNavigation": "Navegación móvil",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "callPhone": "Llamar a {phone}",
+    "freeConsultation": "Obtén una Consultoría Gratuita",
+    "products": "Productos"
   },
   "common": {
-    "loading": "Loading...",
-    "learnMore": "Learn more",
-    "viewAll": "View all",
-    "readMore": "Read more",
-    "backToHome": "Back to home"
+    "loading": "Cargando...",
+    "learnMore": "Conocer más",
+    "viewAll": "Ver todo",
+    "readMore": "Leer más",
+    "backToHome": "Volver al inicio"
   },
   "contactPage": {
-    "heroTitle": "Get in Touch",
-    "heroSubtitle": "Have a project in mind? Let's discuss how we can help your business grow",
-    "infoHeading": "Contact Information",
-    "emailLabel": "Email",
-    "phoneLabel": "Phone",
-    "addressLabel": "Address",
-    "formHeading": "Send us a Message",
+    "heroTitle": "Ponte en Contacto",
+    "heroSubtitle": "¿Tienes un proyecto en mente? Hablemos sobre cómo podemos ayudar a tu negocio a crecer",
+    "infoHeading": "Información de Contacto",
+    "emailLabel": "Correo Electrónico",
+    "phoneLabel": "Teléfono",
+    "addressLabel": "Dirección",
+    "formHeading": "Envíanos un Mensaje",
     "form": {
-      "nameLabel": "Name",
-      "namePlaceholder": "Your name",
-      "emailLabel": "Email",
-      "emailPlaceholder": "your@email.com",
-      "phoneLabel": "Phone",
-      "phonePlaceholder": "Your phone number",
-      "companyLabel": "Company",
-      "companyPlaceholder": "Your company",
-      "messageLabel": "Message",
-      "messagePlaceholder": "Tell us about your project",
-      "submit": "Send Message",
-      "successMessage": "Thank you for your message! We will contact you soon."
+      "nameLabel": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "emailLabel": "Correo Electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "phoneLabel": "Teléfono",
+      "phonePlaceholder": "Tu número de teléfono",
+      "companyLabel": "Empresa",
+      "companyPlaceholder": "Tu empresa",
+      "messageLabel": "Mensaje",
+      "messagePlaceholder": "Cuéntanos sobre tu proyecto",
+      "submit": "Enviar Mensaje",
+      "successMessage": "¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto."
     }
   },
   "fixMySearchResults": {
     "hero": {
-      "eyebrow": "Online Reputation Management",
-      "title": "Fix your Google search results and take back control.",
-      "description": "We help individuals and businesses improve what people see when they search online. Our team identifies, suppresses, and replaces harmful results so you can move forward with confidence.",
-      "primaryCta": "Book a free consultation",
-      "secondaryCta": "Explore our process",
+      "eyebrow": "Gestión de Reputación en Línea",
+      "title": "Arregla tus resultados de búsqueda en Google y recupera el control.",
+      "description": "Ayudamos a personas y empresas a mejorar lo que la gente ve cuando busca en línea. Nuestro equipo identifica, suprime y reemplaza resultados dañinos para que puedas avanzar con confianza.",
+      "primaryCta": "Agendar una consultoría gratuita",
+      "secondaryCta": "Explora nuestro proceso",
       "badges": {
-        "confidential": "Confidential",
-        "strategic": "Strategic",
-        "resultsFocused": "Results-focused"
+        "confidential": "Confidencial",
+        "strategic": "Estratégico",
+        "resultsFocused": "Enfocado en resultados"
       },
       "stats": {
-        "visibility": "Reputation visibility",
-        "monitoring": "Ongoing monitoring",
-        "confidentiality": "Confidential strategy"
+        "visibility": "Visibilidad de reputación",
+        "monitoring": "Monitoreo continuo",
+        "confidentiality": "Estrategia confidencial"
       },
-      "imageAlt": "Online reputation management strategy"
-    },
-    "intro": {
-      "eyebrow": "Your search results matter",
-      "title": "Build a search presence that reflects your real value.",
-      "paragraph1": "Every piece of information about you shapes your online reputation, both good and bad. When people search your name or business to hire you, buy a service, or research a product, negative results can damage trust when they are left unchecked.",
-      "paragraph2": "Old, inaccurate, or harmful information can become mixed with positive results and create the wrong impression. Even when a direct removal is not possible, a strategic approach can reduce its visibility and make credible information easier to find.",
-      "paragraph3": "Our online reputation management services are designed to create a cleaner, stronger, and more positive digital profile for individuals, executives, brands, and businesses in organic search results."
-    },
-    "benefits": {
-      "eyebrow": "A complete approach",
-      "title": "Improve what people find about you.",
-      "subtitle": "Our process combines strategy, content, search optimization, and continuous monitoring to strengthen your online image.",
-      "strategicSuppression": {
-        "title": "Employ Strategic Suppression",
-        "description": "We design customized strategies to push negative search results lower and improve what people discover about you."
+      "crisisManagement": {
+        "title": "Respuesta a Crisis y Recuperación",
+        "description": "Estrategias de respuesta rápida para contener daños y reconstruir la confianza durante emergencias de reputación."
       },
-      "highQualityContent": {
-        "title": "Create and Promote High-Quality Content",
-        "description": "We create credible, positive content that supports your reputation and improves your visibility across search engines."
+      "monitoring": {
+        "title": "Monitoreo de Reputación en Tiempo Real",
+        "description": "Monitoreo 24/7 en todas las plataformas para detectar y abordar amenazas emergentes de manera proactiva."
       },
-      "imageAmplification": {
-        "title": "Amplify Your Image",
-        "description": "We help position your personal or business profile in front of the right audience with a stronger digital presence."
-      }
-    },
-    "difference": {
-      "eyebrow": "Why we are different",
-      "title": "A strategy built around your reputation, not a generic template.",
-      "paragraph1": "We understand that every reputation challenge is different. That is why our approach begins with your goals, your audience, and the search results that currently define your online image.",
-      "paragraph2": "Our specialists combine reputation strategy, content creation, digital publishing, search optimization, and ongoing monitoring to create lasting improvements.",
-      "visibility": "Reputation visibility",
-      "imageAlt": "Team discussing an online reputation strategy",
-      "trustPoints": {
-        "customizedStrategy": "Customized reputation strategy",
-        "experiencedSpecialists": "Experienced reputation specialists",
-        "transparentReporting": "Transparent progress reporting",
-        "longTermProtection": "Long-term reputation protection"
+      "brandBuilding": {
+        "title": "Construcción de Marca Digital",
+        "description": "Crea y amplifica contenido que muestre tu experiencia, logros y valores."
+      },
+      "privacyProtection": {
+        "title": "Privacidad y Protección de Datos",
+        "description": "Elimina información personal de sitios de corredores de datos y protege tu privacidad digital."
       }
     },
     "process": {
-      "eyebrow": "Our ORM process",
-      "title": "A clear path from reputation risk to measurable improvement.",
-      "subtitle": "Our process is structured to understand your current position, create the right strategy, execute effectively, and continuously improve results.",
-      "stepLabel": "Step {number} - {eyebrow}",
+      "eyebrow": "Cómo Trabajamos",
+      "title": "Un Enfoque Estratégico para la Reputación",
+      "subtitle": "Cada cliente recibe una estrategia personalizada diseñada para su situación única.",
+      "step1": {
+        "title": "Descubrimiento y Auditoría",
+        "description": "Análisis exhaustivo de tu huella digital actual, incluyendo resultados de búsqueda, presencia social y exposición de privacidad."
+      },
+      "step2": {
+        "title": "Desarrollo de Estrategia",
+        "description": "Hoja de ruta personalizada con prioridades claras, enfoques tácticos e hitos medibles alineados con tus objetivos."
+      },
+      "step3": {
+        "title": "Ejecución y Refinamiento",
+        "description": "Implementación con optimización continua, monitoreo y adaptación a la dinámica en línea en evolución."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Éxito de Clientes",
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "executive": {
+        "quote": "En cuestión de meses, los artículos negativos que habían perseguido mi carrera durante años ya no eran visibles. El equipo entendió la sensibilidad y manejó todo con discreción.",
+        "name": "Sarah Mitchell",
+        "role": "Ejecutiva de Fortune 500"
+      },
+      "entrepreneur": {
+        "quote": "Mi reputación en línea ahora refleja la realidad de mi negocio en lugar de reseñas injustas. Esto transformó cómo los clientes potenciales me perciben.",
+        "name": "David Chen",
+        "role": "Emprendedor Tecnológico"
+      },
+      "publicFigure": {
+        "quote": "La protección proactiva de la privacidad me ha dado tranquilidad. Ya no me preocupo por lo que la gente encontrará al buscar mi nombre.",
+        "name": "Amanda Ross",
+        "role": "Figura Pública"
+      }
+    },
+    "consultation": {
+      "eyebrow": "Comienza Tu Viaje",
+      "title": "¿Listo para Tomar el Control de Tu Reputación?",
+      "description": "Agenda una consultoría confidencial con nuestro equipo de expertos. Evaluaremos tu situación y delinearemos una estrategia personalizada.",
+      "benefits": {
+        "confidential": "Discusión 100% confidencial",
+        "expert": "Análisis experto de tu presencia digital",
+        "tailored": "Recomendaciones de estrategia personalizadas"
+      },
+      "cta": "Agendar Consultoría",
+      "form": {
+        "name": "Nombre Completo",
+        "namePlaceholder": "Juan Pérez",
+        "email": "Correo Electrónico",
+        "emailPlaceholder": "juan@ejemplo.com",
+        "message": "Cuéntanos sobre tu situación",
+        "messagePlaceholder": "Describe brevemente tus preocupaciones de reputación...",
+        "submit": "Enviar Solicitud",
+        "disclaimer": "Toda la información es confidencial y está protegida"
+      }
+    },
+    "common": {
+      "learnMore": "Conocer Más",
+      "viewAll": "Ver Todos los Servicios"
+    }
+  },
+  "contentIdeaGeneration": {
+    "hero": {
+      "eyebrow": "Estudio de Ideación de Contenido",
+      "title": "Nunca te quedes sin",
+      "titleAccent": "Ideas de Contenido",
+      "description": "Transforma tu estrategia de contenido con ideación impulsada por IA y creatividad humana. Generamos conceptos de contenido basados en datos que resuenan con tu audiencia y generan engagement.",
+      "cta": "Comienza tu Prueba Gratuita",
+      "secondaryCta": "Ver Cómo Funciona",
+      "years": "Años de Experiencia",
+      "clients": "Clientes Felices",
+      "ideasDelivered": "Ideas Entregadas",
+      "clientSatisfaction": "Satisfacción del Cliente",
+      "ideasPerMonth": "Ideas por Mes",
+      "ideasDescription": "Conceptos de contenido frescos y estratégicos generados mensualmente para nuestros clientes"
+    },
+    "trustBar": {
+      "label": "Destacado en",
+      "hubspot": "HubSpot",
+      "contentMarketing": "Content Marketing Institute",
+      "socialMedia": "Social Media Today",
+      "seoJournal": "Search Engine Journal"
+    },
+    "services": {
+      "eyebrow": "Nuestros Servicios",
+      "title": "Soluciones Completas de Ideación de Contenido",
+      "subtitle": "Desde la lluvia de ideas hasta la ejecución, proporcionamos servicios de estrategia de contenido de principio a fin.",
+      "contentIdeation": {
+        "title": "Ideación de Contenido",
+        "description": "Ideas de contenido estratégicas, frescas e ilimitadas, adaptadas a la voz de tu marca y las preferencias de tu audiencia."
+      },
+      "trendAnalysis": {
+        "title": "Análisis de Tendencias",
+        "description": "Monitoreo en tiempo real de tendencias de la industria y patrones de contenido viral para mantenerte a la vanguardia."
+      },
+      "audienceTargeting": {
+        "title": "Segmentación de Audiencia",
+        "description": "Conocimiento profundo de la audiencia y desarrollo de personas para asegurar que cada idea dé en el blanco."
+      },
+      "editorialCalendar": {
+        "title": "Calendario Editorial",
+        "description": "Hojas de ruta de contenido estructuradas de 90 días con sincronización estratégica y optimización de plataformas."
+      },
+      "aiPowered": {
+        "title": "Investigación Impulsada por IA",
+        "description": "Herramientas avanzadas de IA combinadas con experiencia humana para identificar brechas y oportunidades de contenido."
+      },
+      "platformOptimization": {
+        "title": "Optimización de Plataformas",
+        "description": "Adaptaciones de contenido específicas para cada plataforma para máximo alcance en Instagram, LinkedIn, TikTok y más."
+      }
+    },
+    "formats": {
+      "eyebrow": "Formatos de Contenido",
+      "title": "Ideas de Contenido Multiplataforma",
+      "subtitle": "Generamos ideas optimizadas para cada canal y formato.",
+      "blogPosts": "Artículos de Blog y Publicaciones",
+      "blogExamples": "Guías extensas, listas, artículos instructivos, piezas de liderazgo de pensamiento, casos de estudio y contenido optimizado para SEO.",
+      "socialMedia": "Contenido para Redes Sociales",
+      "socialExamples": "Publicaciones tipo carrusel, videos cortos, infografías, estrategias de hilos, secuencias de historias y llamados a la acción.",
+      "videoContent": "Video y Multimedia",
+      "videoExamples": "Guiones para YouTube, conceptos para TikTok, ideas para Reels, temas de podcast, esquemas de webinars y formatos de transmisión en vivo."
+    },
+    "process": {
+      "eyebrow": "Nuestro Proceso",
+      "title": "Cómo Generamos Ideas Ganadoras",
+      "subtitle": "Una metodología probada de 4 pasos que ofrece consistentemente conceptos de contenido de alto rendimiento.",
+      "step1": {
+        "title": "Descubrimiento y Auditoría",
+        "description": "Analizamos tu marca, audiencia, competidores y el rendimiento actual de tu contenido para identificar oportunidades."
+      },
+      "step2": {
+        "title": "Investigación y Lluvia de Ideas",
+        "description": "Nuestras herramientas de IA y equipo creativo generan cientos de ideas basadas en datos y tendencias."
+      },
+      "step3": {
+        "title": "Seleccionar y Priorizar",
+        "description": "Filtramos, validamos y clasificamos las ideas según su impacto potencial, relevancia y alineación estratégica."
+      },
+      "step4": {
+        "title": "Ejecutar y Optimizar",
+        "description": "Recibe un calendario de contenido listo para implementar con resúmenes detallados y pronósticos de rendimiento."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Testimonios",
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "marketer": {
+        "quote": "Las ideas de contenido que recibimos son increíblemente estratégicas y siempre alineadas con la marca. Nuestro engagement ha aumentado un 340% desde que nos asociamos con ellos.",
+        "name": "Sarah Chen",
+        "role": "VP de Marketing, TechFlow"
+      },
+      "creator": {
+        "quote": "Estaba luchando con el agotamiento de creador. Ahora tengo un flujo constante de ideas frescas que mi audiencia realmente quiere ver. ¡Un cambio de juego!",
+        "name": "Marcus Williams",
+        "role": "Creador de Contenido, 500K+ Seguidores"
+      },
+      "brand": {
+        "quote": "Sus estrategias específicas para cada plataforma nos ayudaron a dominar LinkedIn e Instagram simultáneamente. El ROI ha sido increíble.",
+        "name": "Emily Rodriguez",
+        "role": "Directora de Marca, Nova Retail"
+      }
+    },
+    "consultation": {
+      "eyebrow": "Comienza",
+      "title": "¿Listo para Transformar Tu Estrategia de Contenido?",
+      "description": "Agenda una consultoría gratuita y recibe 10 ideas de contenido personalizadas para tu marca.",
+      "benefits": {
+        "strategy": "Evaluación gratuita de estrategia de contenido (valor $500)",
+        "delivery": "10 ideas de contenido personalizadas entregadas en 48 horas",
+        "analytics": "Pronósticos de rendimiento y análisis de tendencias incluidos"
+      },
+      "cta": "Obtén Consultoría Gratuita",
+      "form": {
+        "name": "Nombre Completo",
+        "namePlaceholder": "Juan Pérez",
+        "email": "Correo de Trabajo",
+        "emailPlaceholder": "juan@empresa.com",
+        "niche": "Tu Industria/Nicho",
+        "nichePlaceholder": "ej. SaaS, Moda, Salud y Bienestar",
+        "message": "Mensaje (Opcional)",
+        "messagePlaceholder": "Cuéntanos sobre tus objetivos de contenido...",
+        "submit": "Obtén Mis Ideas Gratuitas",
+        "disclaimer": "Sin spam. Tus ideas serán entregadas en 48 horas."
+      }
+    },
+    "common": {
+      "learnMore": "Conocer Más"
+    }
+  },
+  "footer": {
+    "servicesHeading": "Nuestros Servicios",
+    "companyHeading": "Empresa",
+    "contactHeading": "Contáctanos",
+    "getInTouch": "Ponte en Contacto",
+    "rightsReserved": "Todos los derechos reservados.",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "cookiePolicy": "Política de Cookies",
+    "madeWith": "Hecho con",
+    "backToTop": "Volver arriba",
+    "newsletter": {
+      "label": "Mantente a la Vanguardia",
+      "placeholder": "Ingresa tu correo",
+      "subscribe": "Suscribirse"
+    },
+    "companyLinks": {
+      "about": "Nosotros",
+      "caseStudies": "Casos de Éxito",
+      "blog": "Blog y Perspectivas",
+      "contact": "Contáctanos",
+      "careers": "Carreras"
+    }
+  },
+  "branding": {
+    "hero": {
+      "eyebrow": "Estudio de Identidad de Marca",
+      "title": "Creando Marcas que",
+      "titleAccent": "Imponen Atención",
+      "description": "Desarrollo estratégico de marca que transforma negocios en marcas inolvidables. Desde la identidad visual hasta la voz de marca, creamos experiencias coherentes que resuenan e inspiran.",
+      "cta": "Eleva Tu Marca",
+      "secondaryCta": "Nuestro Proceso",
+      "years": "Años de Excelencia",
+      "brands": "Marcas Transformadas",
+      "valueLabel": "Aumento Promedio del Valor de Marca",
+      "valueDescription": "Nuestros clientes ven un aumento promedio del 340% en el valor de su marca en 12 meses"
+    },
+    "trustBar": {
+      "label": "Reconocidos por",
+      "brandingMagazine": "Branding Magazine",
+      "designWeek": "Design Week",
+      "creativeReview": "Creative Review",
+      "aiga": "AIGA"
+    },
+    "services": {
+      "eyebrow": "Qué Hacemos",
+      "title": "Soluciones Integrales de Marca",
+      "subtitle": "Servicios de desarrollo de marca de extremo a extremo que posicionan tu negocio para el éxito duradero.",
+      "brandStrategy": {
+        "title": "Estrategia de Marca",
+        "description": "Investigación de mercado profunda y posicionamiento estratégico para definir el lugar único de tu marca en el mercado."
+      },
+      "visualIdentity": {
+        "title": "Diseño de Identidad Visual",
+        "description": "Diseño de logo impresionante, sistemas de color y elementos visuales que capturan la esencia de tu marca."
+      },
+      "brandPositioning": {
+        "title": "Posicionamiento de Marca",
+        "description": "Análisis competitivo y estrategias de posicionamiento en el mercado que diferencian tu marca."
+      },
+      "brandMessaging": {
+        "title": "Mensajería de Marca",
+        "description": "Voz, tono y marcos de mensajería de marca convincentes que conectan con tu audiencia."
+      },
+      "brandGuidelines": {
+        "title": "Lineamientos de Marca",
+        "description": "Manuales de marca completos y sistemas de diseño para una expresión de marca consistente."
+      },
+      "rebranding": {
+        "title": "Estrategia de Rebranding",
+        "description": "Iniciativas estratégicas de rebranding que modernizan tu marca mientras preservan su valor."
+      }
+    },
+    "elements": {
+      "eyebrow": "Elementos de Marca",
+      "title": "Los Componentes de las Marcas Icónicas",
+      "subtitle": "Cada elemento de tu marca está meticulosamente diseñado para máximo impacto.",
+      "color": "Psicología del Color",
+      "colorDesc": "Selección estratégica de colores basada en psicología y posicionamiento de la industria para evocar las emociones y asociaciones correctas.",
+      "logo": "Diseño de Logo",
+      "logoDesc": "Diseño de marca distintivo que captura la esencia de tu marca y crea reconocimiento instantáneo en todos los puntos de contacto.",
+      "typography": "Sistemas Tipográficos",
+      "typographyDesc": "Tipografías y jerarquías cuidadosamente seleccionadas que comunican la personalidad de tu marca y aseguran legibilidad."
+    },
+    "process": {
+      "eyebrow": "Nuestro Proceso",
+      "title": "Cómo Construimos Marcas Icónicas",
+      "subtitle": "Una metodología probada que ofrece consistentemente identidades de marca notables.",
+      "step1": {
+        "title": "Descubrimiento",
+        "description": "Inmersión profunda en tu negocio, mercado, competidores y audiencia para descubrir oportunidades de marca."
+      },
+      "step2": {
+        "title": "Estrategia",
+        "description": "Desarrollar posicionamiento, mensajería y dirección creativa basados en información de investigación."
+      },
+      "step3": {
+        "title": "Diseño",
+        "description": "Crear sistemas de identidad visual que incluyen logos, colores, tipografía y activos de marca."
+      },
+      "step4": {
+        "title": "Lanzamiento",
+        "description": "Entregar lineamientos de marca completos y activos para una implementación sin problemas."
+      }
+    },
+    "portfolio": {
+      "eyebrow": "Nuestro Trabajo",
+      "title": "Transformaciones de Marca Destacadas",
+      "item1": {
+        "title": "Rebranding de TechFlow",
+        "category": "Tecnología"
+      },
+      "item2": {
+        "title": "Luxe Hospitality",
+        "category": "Hospitalidad"
+      },
+      "item3": {
+        "title": "Identidad Nova Retail",
+        "category": "Venta Minorista"
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Testimonios",
+      "title": "Aprobados por Líderes de la Industria",
+      "founder": {
+        "quote": "No solo diseñaron un logo—construyeron todo un ecosistema de marca que transformó cómo nos percibe el mercado. Los ingresos aumentaron un 200% después del lanzamiento.",
+        "name": "Alexandra Morgan",
+        "role": "Fundadora y CEO, TechFlow"
+      },
+      "ceo": {
+        "quote": "Nuestro rebranding fue impecable. Cada detalle fue considerado, cada punto de contacto elevado. Nuestra marca ahora tiene el posicionamiento premium que siempre quisimos.",
+        "name": "James Harrington",
+        "role": "CEO, Luxe Hospitality Group"
+      },
+      "director": {
+        "quote": "El pensamiento estratégico detrás de nuestra identidad de marca fue excepcional. Entendieron nuestra visión mejor que nosotros y la hicieron realidad de manera hermosa.",
+        "name": "Sophia Patel",
+        "role": "Directora Creativa, Nova Retail"
+      }
+    },
+    "consultation": {
+      "eyebrow": "Comienza Tu Proyecto",
+      "title": "¿Listo para Construir una Marca Icónica?",
+      "description": "Agenda una sesión gratuita de estrategia de marca y descubre cómo podemos elevar tu marca a nuevas alturas.",
+      "benefits": {
+        "audit": "Auditoría de marca gratuita y análisis competitivo (valor $1,000)",
+        "strategy": "Recomendaciones de estrategia de marca personalizadas",
+        "roadmap": "Hoja de ruta preliminar y cronograma"
+      },
+      "cta": "Agendar Consultoría Gratuita",
+      "form": {
+        "name": "Nombre Completo",
+        "namePlaceholder": "Juan Pérez",
+        "email": "Correo de Trabajo",
+        "emailPlaceholder": "juan@empresa.com",
+        "company": "Nombre de la Empresa",
+        "companyPlaceholder": "Tu Empresa S.A.",
+        "submit": "Comienza Mi Viaje de Marca",
+        "disclaimer": "Consultoría gratuita. Sin compromiso."
+      }
+    },
+    "common": {
+      "learnMore": "Conocer Más",
+      "viewCaseStudy": "Ver Caso de Estudio"
+    }
+  },
+  "crisisManagement": {
+    "emergency": {
+      "available": "Equipo de Respuesta a Crisis Disponible Ahora",
+      "hotline": "+1 (800) CRISIS-7"
+    },
+    "hero": {
+      "status": "Respuesta Rápida Activa",
+      "title": "Navega Crisis con",
+      "titleAccent": "Precisión y Velocidad",
+      "description": "Gestión de crisis de élite para situaciones de alto riesgo. Nuestro equipo de respuesta rápida protege tu reputación, mitiga daños y orquesta la recuperación con precisión militar.",
+      "cta": "Obtén Ayuda Inmediata",
+      "secondaryCta": "Explora Capacidades",
+      "responseLabel": "Tiempo Promedio de Respuesta",
+      "responseDescription": "De alerta a acción—minutos, no horas",
+      "crisisPhases": "Fases de Respuesta a Crisis",
+      "monitoringLabel": "Monitoreo",
+      "coverageLabel": "Cobertura Global"
+    },
+    "phases": {
+      "detect": {
+        "title": "Detectar",
+        "description": "El monitoreo impulsado por IA identifica crisis potenciales antes de que escalen."
+      },
+      "assess": {
+        "title": "Evaluar",
+        "description": "Evaluación rápida de amenazas y análisis de impacto por estrategas senior."
+      },
+      "respond": {
+        "title": "Responder",
+        "description": "Ejecución de respuesta coordinada multicanal en minutos."
+      },
+      "recover": {
+        "title": "Recuperar",
+        "description": "Reconstrucción estratégica de reputación y restauración del control narrativo."
+      }
+    },
+    "trustBar": {
+      "label": "Aprobados por",
+      "wsj": "The Wall Street Journal",
+      "bloomberg": "Bloomberg",
+      "reuters": "Reuters",
+      "cnn": "CNN",
+      "bbc": "BBC"
+    },
+    "services": {
+      "eyebrow": "Capacidades",
+      "title": "Suite Completa de Gestión de Crisis",
+      "reputationRecovery": {
+        "title": "Recuperación de Reputación",
+        "description": "Programas estratégicos de rehabilitación de reputación que restauran la confianza y reconstruyen el valor de la marca después de eventos de crisis.",
+        "statLabel": "Tasa de Éxito"
+      },
+      "socialMediaCrisis": {
+        "title": "Crisis en Redes Sociales",
+        "description": "Contención inmediata de amenazas virales en redes sociales con contra-narrativas estratégicas y gestión de engagement.",
+        "statLabel": "Tiempo de Respuesta"
+      },
+      "realTimeMonitoring": {
+        "title": "Monitoreo en Tiempo Real",
+        "description": "Escucha mediática y social global con detección de amenazas impulsada por IA y sistemas de alerta instantánea.",
+        "statLabel": "Monitoreo"
+      },
+      "legalPr": {
+        "title": "Integración Legal y RP",
+        "description": "Coordinación perfecta entre asesoría legal y equipos de comunicaciones para situaciones sensibles a litigios.",
+        "statLabel": "Cumplimiento"
+      },
+      "sentimentAnalysis": {
+        "title": "Análisis de Sentimiento",
+        "description": "Seguimiento avanzado de sentimiento y análisis predictivo para medir y pronosticar cambios en la percepción pública.",
+        "statLabel": "Precisión"
+      },
+      "preventionPlanning": {
+        "title": "Planificación de Prevención",
+        "description": "Preparación proactiva para crisis que incluye auditorías de vulnerabilidad, planificación de escenarios y protocolos de respuesta.",
+        "statLabel": "Tasa de Prevención"
+      }
+    },
+    "process": {
+      "eyebrow": "Metodología",
+      "title": "Nuestro Protocolo de Respuesta a Crisis",
+      "step1": {
+        "title": "Evaluación Inicial",
+        "time": "< 5 min",
+        "description": "Análisis inmediato de la situación, identificación de partes interesadas y categorización del nivel de amenaza."
+      },
+      "step2": {
+        "title": "Despliegue de Estrategia",
+        "time": "< 15 min",
+        "description": "Formulación rápida de estrategia de respuesta con ejecución multicanal en todas las plataformas relevantes."
+      },
+      "step3": {
+        "title": "Gestión Activa",
+        "time": "24-72 hrs",
+        "description": "Monitoreo continuo, refinamiento de mensajes y comunicación con partes interesadas durante todo el ciclo de vida de la crisis."
+      },
+      "step4": {
+        "title": "Recuperación y Reconstrucción",
+        "time": "30-90 días",
+        "description": "Rehabilitación de reputación a largo plazo con reconstrucción narrativa estratégica y restauración del sentimiento."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Testimonios",
+      "title": "Confiables en Momentos Críticos",
+      "ceo": {
+        "quote": "Cuando una violación de datos amenazó con destruir nuestra empresa, su equipo desplegó una estrategia de contención en 12 minutos. Sobrevivimos a lo que podría haber sido catastrófico.",
+        "name": "Jonathan Blackwell",
+        "role": "CEO, FinSecure Technologies",
+        "metricLabel": "Crisis Contenida En"
+      },
+      "founder": {
+        "quote": "Convirtieron un posible desastre de relaciones públicas en una demostración de los valores de nuestra empresa. El sentimiento público pasó de negativo a positivo en 72 horas.",
+        "name": "Victoria Sterling",
+        "role": "Fundadora, Apex Brands",
+        "metricLabel": "Recuperación de Sentimiento"
+      },
+      "director": {
+        "quote": "La velocidad y precisión de su respuesta nos ahorraron millones en pérdidas potenciales de ingresos. Su manual de crisis es ahora nuestro estándar de oro.",
+        "name": "Marcus Chen",
+        "role": "Director de Comunicaciones, Global Retail Co.",
+        "metricLabel": "Ingresos Protegidos"
+      }
+    },
+    "stats": {
+      "crisesManaged": "Crisis Gestionadas",
+      "avgResponse": "Respuesta Promedio",
+      "successRate": "Tasa de Éxito",
+      "availability": "Disponibilidad"
+    },
+    "consultation": {
+      "eyebrow": "Línea Directa de Crisis 24/7",
+      "title": "¿Enfrentando una Crisis en Este Momento?",
+      "description": "Cada minuto cuenta. Nuestros estrategas senior de crisis están disponibles para brindar asistencia inmediata y desarrollar tu estrategia de respuesta.",
+      "benefits": {
+        "immediate": "Respuesta Inmediata",
+        "confidential": "100% Confidencial",
+        "expert": "Estrategas Senior"
+      },
+      "cta": "Obtén Asistencia Inmediata",
+      "form": {
+        "name": "Nombre Completo",
+        "namePlaceholder": "Juan Pérez",
+        "email": "Correo Electrónico",
+        "emailPlaceholder": "juan@empresa.com",
+        "submit": "Obtén Ayuda Ahora",
+        "disclaimer": "Tu información está encriptada y es confidencial. Respondemos en 15 minutos."
+      }
+    },
+    "common": {
+      "learnMore": "Conocer Más",
+      "viewAll": "Ver Todos los Servicios"
+    }
+  },
+  "generativeEngineOptimization": {
+    "hero": {
+      "status": "Listo para Búsqueda con IA",
+      "eyebrow": "Optimización de Motores Generativos",
+      "title": "Haz que te Citen los",
+      "titleAccent": "Motores de IA",
+      "description": "Sé la respuesta que dan ChatGPT, Perplexity y Google AI Overviews. Optimizamos tu contenido para ser descubierto, entendido y citado por los motores de búsqueda de IA generativa.",
+      "cta": "Obtén Tu Auditoría de Visibilidad en IA",
+      "secondaryCta": "Ver Nuestro Proceso",
+      "citationLabel": "Puntuación de Citación en IA",
+      "citationDescription": "Aumento promedio de visibilidad en motores de IA",
+      "engines": "Motores de IA Rastreados",
+      "monitoringLabel": "Monitoreo en Vivo",
+      "coverageLabel": "Consultas Rastreadas"
+    },
+    "trustBar": {
+      "label": "Optimizando Visibilidad en",
+      "chatgpt": "ChatGPT",
+      "perplexity": "Perplexity",
+      "gemini": "Google Gemini",
+      "copilot": "Microsoft Copilot",
+      "claude": "Claude"
+    },
+    "services": {
+      "eyebrow": "Nuestros Servicios",
+      "title": "Optimización Completa de Búsqueda con IA",
+      "subtitle": "Ayudamos a tu marca a convertirse en la fuente confiable que los motores de IA citan y recomiendan.",
+      "contentStructuring": {
+        "title": "Estructuración de Contenido",
+        "description": "Reestructura tu contenido en respuestas claras, citables y bien formateadas que los modelos de IA puedan analizar y referenciar fácilmente.",
+        "stat": "3.2x",
+        "statLabel": "aumento de citaciones"
+      },
+      "entityOptimization": {
+        "title": "Optimización de Entidades",
+        "description": "Fortalecer el reconocimiento de entidad de tu marca a través de grafos de conocimiento para que los motores de IA entiendan quién eres y qué ofreces.",
+        "stat": "94%",
+        "statLabel": "tasa de reconocimiento"
+      },
+      "aiCitationTracking": {
+        "title": "Seguimiento de Citaciones en IA",
+        "description": "Monitorea cómo y dónde aparece tu marca en las respuestas de ChatGPT, Perplexity, Gemini y Copilot en tiempo real.",
+        "stat": "24/7",
+        "statLabel": "monitoreo"
+      },
+      "schemaMarkup": {
+        "title": "Esquema y Datos Estructurados",
+        "description": "Implementa marcado de datos estructurados avanzado que da a los rastreadores de IA el contexto que necesitan para citarte con precisión.",
+        "stat": "100%",
+        "statLabel": "cobertura"
+      },
+      "answerEngineeringy": {
+        "title": "Ingeniería de Respuestas",
+        "description": "Crea respuestas concisas y autoritarias a las preguntas exactas que tu audiencia hace a los grandes modelos de lenguaje.",
+        "stat": "87%",
+        "statLabel": "tasa de coincidencia"
+      },
+      "competitiveGapAnalysis": {
+        "title": "Análisis de Brechas Competitivas",
+        "description": "Identifica dónde los competidores están siendo citados en lugar de ti, y cierra la brecha con estrategia de contenido dirigida.",
+        "stat": "156",
+        "statLabel": "brechas cerradas promedio"
+      }
+    },
+    "process": {
+      "eyebrow": "Nuestro Proceso",
+      "title": "Cómo Logramos que te Citen",
+      "subtitle": "Una metodología probada para ganar visibilidad dentro de respuestas generadas por IA.",
+      "step1": {
+        "title": "Auditoría de Visibilidad en IA",
+        "description": "Analizamos cómo aparece (o no) tu marca en los principales motores de búsqueda de IA e identificamos victorias rápidas.",
+        "time": "Semana 1"
+      },
+      "step2": {
+        "title": "Optimización de Contenido y Esquema",
+        "description": "Reestructuramos el contenido existente e implementamos datos estructurados para hacerlo legible por máquinas y listo para citar.",
+        "time": "Semana 2-3"
+      },
+      "step3": {
+        "title": "Construcción de Autoridad",
+        "description": "Fortalecer las señales de entidad y menciones de terceros que los modelos de IA utilizan para validar la confiabilidad.",
+        "time": "Semana 4-6"
+      },
+      "step4": {
+        "title": "Monitorear e Iterar",
+        "description": "Rastreamos citaciones en cada motor de IA importante y refinamos continuamente el contenido basado en datos de rendimiento.",
+        "time": "Continuo"
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Testimonios",
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "founder": {
+        "quote": "En seis semanas pasamos de ser invisibles a ser citados directamente en respuestas de ChatGPT para nuestra categoría de producto principal. El cambio de tráfico ha sido notable.",
+        "name": "Daniel Park",
+        "role": "Fundador, Northwind Software",
+        "metric": "312%",
+        "metricLabel": "crecimiento de referencias IA"
+      },
+      "cmo": {
+        "quote": "Entendieron algo que nuestra antigua agencia de SEO no entendía: posicionarse en Google ya no es suficiente. Ahora Perplexity y Gemini nos citan como fuente.",
+        "name": "Priya Anand",
+        "role": "CMO, Fieldstone Health",
+        "metric": "5 motores",
+        "metricLabel": "nos citan activamente"
+      },
+      "director": {
+        "quote": "Solo el trabajo de reestructuración de esquema y contenido pagó el compromiso. Ahora somos la fuente más citada para nuestra categoría en cada asistente de IA que rastreamos.",
+        "name": "Owen Bennett",
+        "role": "Director de Crecimiento, Larkspur",
+        "metric": "#1",
+        "metricLabel": "fuente citada en categoría"
+      }
+    },
+    "stats": {
+      "citationsTracked": "Citaciones Rastreadas Mensualmente",
+      "avgVisibilityLift": "Aumento Promedio de Visibilidad",
+      "enginesCovered": "Motores de IA Cubiertos",
+      "clientsOptimized": "Marcas Optimizadas"
+    },
+    "consultation": {
+      "eyebrow": "Auditoría Gratuita de Visibilidad en IA",
+      "title": "Ve Dónde Estás en la Búsqueda con IA",
+      "description": "Obtén una auditoría gratuita que muestra exactamente qué tan visible es tu marca en ChatGPT, Perplexity, Gemini y Copilot, además de una hoja de ruta para mejorarlo.",
+      "benefits": {
+        "immediate": "Resultados de Auditoría Instantáneos",
+        "confidential": "Sin Obligación",
+        "expert": "Informe Revisado por Expertos"
+      },
+      "form": {
+        "emailPlaceholder": "Ingresa tu correo de trabajo",
+        "submit": "Obtén Mi Auditoría Gratuita",
+        "disclaimer": "Enviaremos tu informe de visibilidad en IA en 24 horas."
+      }
+    },
+    "common": {
+      "learnMore": "Conocer Más",
+      "viewAll": "Ver Todos los Servicios"
+    }
+  },
+  "publicRelations": {
+    "hero": {
+      "status": "Aceptando Nuevos Clientes",
+      "eyebrow": "Relaciones Públicas",
+      "title": "Domina el",
+      "titleAccent": "Narrativa",
+      "description": "Desde colocaciones en medios hasta posicionamiento ejecutivo, construimos estrategias de relaciones públicas que generan confianza, cobertura e influencia duradera para tu marca.",
+      "cta": "Agenda una Llamada de Estrategia de RP",
+      "secondaryCta": "Ver Nuestro Proceso",
+      "reachLabel": "Alcance Mediático Generado",
+      "reachDescription": "Audiencia combinada en colocaciones ganadas",
+      "monitoringLabel": "Monitoreo de Medios",
+      "coverageLabel": "Medios en Red"
+    },
+    "trustBar": {
+      "label": "Destacado en",
+      "forbes": "Forbes",
+      "techcrunch": "TechCrunch",
+      "bloomberg": "Bloomberg",
+      "wsj": "The Wall Street Journal",
+      "fastcompany": "Fast Company"
+    },
+    "services": {
+      "eyebrow": "Nuestros Servicios",
+      "title": "Relaciones Públicas de Servicio Completo",
+      "subtitle": "Comunicaciones estratégicas que construyen credibilidad y mantienen tu marca en la mente de todos.",
+      "mediaRelations": {
+        "title": "Relaciones con Medios",
+        "description": "Construir y mantener relaciones con periodistas y medios de primer nivel para asegurar cobertura de prensa consistente y creíble.",
+        "stat": "500+",
+        "statLabel": "contactos de medios"
+      },
+      "executivePositioning": {
+        "title": "Posicionamiento Ejecutivo",
+        "description": "Establece a tu equipo de liderazgo como voces de confianza a través de artículos firmados, participaciones en conferencias y comentarios de expertos.",
+        "stat": "85%",
+        "statLabel": "tasa de colocación"
+      },
+      "pressReleaseStrategy": {
+        "title": "Estrategia de Comunicados de Prensa",
+        "description": "Crea y distribuye anuncios que atraviesan el ruido y logran cobertura en publicaciones que importan.",
+        "stat": "3x",
+        "statLabel": "tasa de recogida promedio"
+      },
+      "crisisCommunications": {
+        "title": "Comunicaciones de Crisis",
+        "description": "Planificación proactiva y mensajería de respuesta rápida para proteger tu reputación cuando más importa.",
+        "stat": "24/7",
+        "statLabel": "soporte disponible"
+      },
+      "productLaunchPr": {
+        "title": "RP de Lanzamiento de Producto",
+        "description": "Campañas mediáticas coordinadas que generan anticipación y aseguran cobertura el día del lanzamiento en medios clave.",
+        "stat": "92%",
+        "statLabel": "tasa de cobertura de lanzamiento"
+      },
+      "industryAwards": {
+        "title": "Premios y Reconocimientos",
+        "description": "Identifica y asegura premios y clasificaciones de la industria que construyen credibilidad de terceros para tu marca.",
+        "stat": "120+",
+        "statLabel": "premios asegurados"
+      }
+    },
+    "process": {
+      "eyebrow": "Nuestro Proceso",
+      "title": "Cómo Construimos Tu Presencia",
+      "subtitle": "Un enfoque estructurado para ganar la cobertura y credibilidad que tu marca merece.",
+      "step1": {
+        "title": "Descubrimiento y Posicionamiento",
+        "description": "Auditamos tu presencia mediática actual y definimos el narrativa, ángulos y portavoces que resonarán.",
+        "time": "Semana 1"
+      },
+      "step2": {
+        "title": "Estrategia y Segmentación de Medios",
+        "description": "Construimos una lista objetivo de periodistas y medios alineados con tu industria y audiencia.",
+        "time": "Semana 2"
+      },
+      "step3": {
+        "title": "Alcance y Colocación",
+        "description": "Presentamos historias, coordinamos entrevistas y aseguramos cobertura en medios impresos, digitales y audiovisuales.",
+        "time": "Continuo"
+      },
+      "step4": {
+        "title": "Medición y Reportes",
+        "description": "Rastreamos alcance, sentimiento y participación de voz, y refinamos la estrategia basándonos en lo que genera resultados.",
+        "time": "Mensual"
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Testimonios",
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "ceo": {
+        "quote": "Nos consiguieron cobertura en tres medios importantes durante nuestro primer mes. La credibilidad de nuestra marca con los inversores cambió casi de la noche a la mañana.",
+        "name": "Laura Mitchell",
+        "role": "CEO, Brightline Robotics",
+        "metric": "3",
+        "metricLabel": "colocaciones de primer nivel, mes uno"
+      },
+      "founder": {
+        "quote": "Nuestro fundador pasó de ser desconocido a una voz reconocida en la industria. Las invitaciones para hablar y las solicitudes de prensa no han parado desde entonces.",
+        "name": "Jordan Reyes",
+        "role": "Fundador, Meridian Foods",
+        "metric": "40+",
+        "metricLabel": "menciones en prensa en 6 meses"
+      },
+      "vp": {
+        "quote": "Su equipo manejó una situación sensible con total profesionalismo. Salimos del otro lado con nuestra reputación intacta e incluso fortalecida.",
+        "name": "Alicia Ferreira",
+        "role": "VP de Comunicaciones, Harborview Group",
+        "metric": "0",
+        "metricLabel": "cobertura negativa post-respuesta"
+      }
+    },
+    "stats": {
+      "placementsSecured": "Colocaciones Aseguradas",
+      "combinedReach": "Alcance Mediático Combinado",
+      "outletRelationships": "Relaciones con Medios",
+      "clientRetention": "Tasa de Retención de Clientes"
+    },
+    "consultation": {
+      "eyebrow": "Comienza Tu Estrategia de RP",
+      "title": "¿Listo para Dar Forma a Tu Historia?",
+      "description": "Cuéntanos sobre tu marca y objetivos. Nuestros estrategas de RP prepararán un plan de medios personalizado para construir tu visibilidad y credibilidad.",
+      "benefits": {
+        "immediate": "Respuesta en 24 Horas",
+        "confidential": "Consultoría Sin Presión",
+        "expert": "Estrategas Senior de RP"
+      },
+      "form": {
+        "emailPlaceholder": "Ingresa tu correo de trabajo",
+        "submit": "Agendar Mi Llamada de Estrategia",
+        "disclaimer": "Tu información se mantiene confidencial y nunca se comparte."
+      }
+    },
+    "common": {
+      "learnMore": "Conocer Más",
+      "viewAll": "Ver Todos los Servicios"
+    }
+  },
+  "header": {
+    "products": "Productos",
+    "productsEyebrow": "Productos",
+    "productsDescription": "Elige una solución basada en tus necesidades de reputación y privacidad.",
+    "home": "Inicio",
+    "blog": "Blog",
+    "viewAll": "Ver todo",
+    "freeConsultation": "Obtén una Consultoría Gratuita",
+    "services": {
+      "label": "Servicios",
+      "fixMySearchResults": "Arreglar Mis Resultados de Búsqueda",
+      "personalReputationManagement": "Servicios de Gestión de Reputación Personal",
+      "businessReputationManagement": "Servicios de Gestión de Reputación Empresarial",
+      "aiReputationManagement": "Servicios de Gestión de Reputación con IA",
+      "executiveBranding": "Marca Ejecutiva",
+      "reviewManagement": "Gestión de Reseñas",
+      "redditRemoval": "Servicios de Eliminación de Reddit",
+      "wikipedia": "Servicios de Wikipedia",
+      "googleMapsSeo": "SEO de Google Maps",
+      "earnedMediaMarketing": "Servicios de Marketing de Medios Ganados",
+      "expertWitnessServices": "Servicios de Testigo Experto"
+    },
+    "consulting": {
+      "label": "Consultoría",
+      "reputationConsulting": "Consultoría en Reputación",
+      "contentIdeaGeneration": "Generación de Ideas de Contenido",
+      "branding": "Marca",
+      "crisisManagement": "Gestión de Crisis",
+      "generativeEngineOptimization": "Optimización de Motores Generativos",
+      "publicRelations": "Relaciones Públicas"
+    },
+    "about": {
+      "label": "Nosotros",
+      "ourStory": "Nuestra Historia",
+      "yourOnlineReputation": "Tu Reputación en Línea",
+      "whyUs": "¿Por Qué Nosotros?",
+      "caseStudies": "Casos de Éxito",
+      "concern": "Preocupación",
+      "faq": "FAQ",
+      "resources": "Recursos"
+    }
+  },
+  "ourStoryPage": {
+    "hero": {
+      "eyebrow": "Nuestra Historia",
+      "title": "Construidos para Proteger Reputaciones que Importan",
+      "description": "Lo que comenzó como un pequeño equipo ayudando a personas a luchar contra resultados de búsqueda injustos ha crecido hasta convertirse en una agencia de reputación y privacidad de servicio completo en la que confían ejecutivos, marcas y figuras públicas en todo el mundo."
+    },
+    "timeline": {
+      "eyebrow": "Nuestro Viaje",
+      "title": "Cómo Llegamos Aquí",
+      "milestones": [
+        {
+          "year": "Año Uno",
+          "title": "Una Misión Simple",
+          "description": "Comenzamos con un objetivo: ayudar a las personas a recuperar el control de lo que aparece cuando buscan su nombre."
+        },
+        {
+          "year": "Crecimiento Temprano",
+          "title": "De Individuos a Empresas",
+          "description": "El boca a boca se extendió. Dueños de negocios y ejecutivos comenzaron a pedirnos que protejamos sus marcas de la misma manera que protegíamos a individuos."
+        },
+        {
+          "year": "Escalando",
+          "title": "Construyendo un Equipo de Servicio Completo",
+          "description": "Nos expandimos a estrategia de contenido, coordinación legal, SEO y respuesta a crisis para manejar desafíos de reputación desde todos los ángulos."
+        },
+        {
+          "year": "Hoy",
+          "title": "Un Socio Global de Confianza",
+          "description": "Ahora apoyamos a clientes en docenas de países, combinando tecnología, estrategia y experiencia humana para gestionar la reputación en línea a gran escala."
+        }
+      ]
+    },
+    "mission": {
+      "eyebrow": "Nuestra Misión",
+      "title": "Todos Merecen una Primera Impresión Digital Justa",
+      "description": "Los resultados de búsqueda y los feeds sociales moldean cómo el mundo te ve antes de que tengas la oportunidad de presentarte. Existimos para asegurar que esa primera impresión sea precisa, justa y trabaje a tu favor."
+    },
+    "values": {
+      "eyebrow": "Qué Nos Impulsa",
+      "title": "Los Principios Detrás de Nuestro Trabajo",
+      "items": [
+        {
+          "title": "Integridad Primero",
+          "description": "Solo usamos estrategias éticas y sostenibles — sin atajos que puedan poner tu reputación en mayor riesgo."
+        },
+        {
+          "title": "Transparencia Radical",
+          "description": "Siempre sabrás exactamente qué estamos haciendo, por qué y qué resultados esperar."
+        },
+        {
+          "title": "Defensa Incansable",
+          "description": "Tratamos cada caso como el más importante en el que estamos trabajando, porque para ti, lo es."
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Listo para Escribir Tu Próximo Capítulo?",
+      "description": "Hablemos sobre dónde está tu reputación hoy y hacia dónde podemos llevarla.",
+      "button": "Comienza Tu Consultoría"
+    }
+  },
+  "yourOnlineReputationPage": {
+    "hero": {
+      "eyebrow": "Tu Reputación en Línea",
+      "title": "¿Qué Aparece Cuando la Gente Busca Tu Nombre?",
+      "description": "Tu reputación en línea es a menudo la primera — y a veces la única — impresión que dejas. Te ayudamos a entender lo que realmente hay ahí fuera y cómo tomar el control."
+    },
+    "stats": {
+      "eyebrow": "En Números",
+      "title": "Por Qué Importa Tu Reputación en Línea",
+      "items": [
+        {
+          "value": "90%+",
+          "label": "de los consumidores investigan en línea antes de tomar una decisión"
+        },
+        {
+          "value": "70%",
+          "label": "de los empleadores examinan candidatos mediante búsquedas antes de contratar"
+        },
+        {
+          "value": "60%",
+          "label": "de los compradores dicen que los resultados de búsqueda negativos cambiaron su decisión"
+        },
+        {
+          "value": "3 seg",
+          "label": "tiempo promedio para formar una primera impresión en línea"
+        }
+      ]
+    },
+    "risks": {
+      "eyebrow": "Qué Está en Juego",
+      "title": "Qué Daña una Reputación en Línea",
+      "items": [
+        {
+          "title": "Contenido Desactualizado o Inexacto",
+          "description": "Artículos de noticias antiguos, fotos de arresto o disputas resueltas que ya no reflejan quién eres hoy."
+        },
+        {
+          "title": "Reseñas y Quejas Negativas",
+          "description": "Un puñado de críticos ruidosos puede pesar más que cientos de clientes satisfechos en la visibilidad de búsqueda."
+        },
+        {
+          "title": "Suplantación y Desinformación",
+          "description": "Perfiles falsos, afirmaciones falsas y contenido manipulado que se difunde sin control."
+        },
+        {
+          "title": "Exposición en Corredores de Datos",
+          "description": "Información personal dispersa en docenas de sitios, accesible para cualquiera que busque."
+        }
+      ]
+    },
+    "approach": {
+      "eyebrow": "Nuestro Enfoque",
+      "title": "Cómo Te Ayudamos a Tomar el Control",
+      "steps": [
+        {
+          "title": "Auditoría",
+          "description": "Mapeamos cada mención, listado y resultado de búsqueda vinculado a tu nombre o marca."
+        },
+        {
+          "title": "Estrategia",
+          "description": "Construimos un plan personalizado que combina supresión, eliminación y contenido positivo."
+        },
+        {
+          "title": "Ejecución",
+          "description": "Nuestro equipo implementa la estrategia en plataformas de búsqueda, sociales y de reseñas."
+        },
+        {
+          "title": "Monitoreo",
+          "description": "Rastreamos tu presencia en línea continuamente para que los nuevos problemas se detecten a tiempo."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ve lo Que Realmente Está Ahí",
+      "description": "Obtén una instantánea gratuita de reputación que muestra exactamente lo que la gente encuentra cuando busca tu nombre.",
+      "button": "Obtén Mi Instantánea de Reputación Gratuita"
+    }
+  },
+  "whyUsPage": {
+    "hero": {
+      "eyebrow": "¿Por Qué Nosotros?",
+      "title": "La Diferencia que Hace la Experiencia",
+      "description": "No faltan agencias que prometen resultados de reputación. Esto es lo que realmente nos diferencia cuando tu nombre y sustento están en juego."
+    },
+    "reasons": {
+      "eyebrow": "Nuestras Ventajas",
+      "title": "Por Qué los Clientes Nos Eligen",
+      "items": [
+        {
+          "title": "Historial Comprobado",
+          "description": "Cientos de casos exitosos en individuos, ejecutivos y empresas en docenas de industrias.",
+          "stat": "150+",
+          "statLabel": "proyectos completados"
+        },
+        {
+          "title": "Solo Métodos Éticos",
+          "description": "Nunca usamos tácticas de sombrero negro que puedan tener efectos adversos o violar los términos de servicio.",
+          "stat": "100%",
+          "statLabel": "estrategias de sombrero blanco"
+        },
+        {
+          "title": "Equipos Dedicados por Caso",
+          "description": "Tienes un estratega nominado y equipo de soporte que conocen tu caso al detalle — no una cola de tickets.",
+          "stat": "1:1",
+          "statLabel": "soporte dedicado"
+        },
+        {
+          "title": "Capacidad de Servicio Completo",
+          "description": "SEO, coordinación legal, contenido, RP y respuesta a crisis bajo un mismo techo, para que nada se escape.",
+          "stat": "8+",
+          "statLabel": "años de experiencia"
+        },
+        {
+          "title": "Reportes Transparentes",
+          "description": "Actualizaciones regulares y métricas claras, para que siempre sepas exactamente dónde está tu caso.",
+          "stat": "24/7",
+          "statLabel": "visibilidad del caso"
+        },
+        {
+          "title": "Alcance Global",
+          "description": "Hemos ayudado a clientes en docenas de países a navegar desafíos de reputación en múltiples idiomas y jurisdicciones.",
+          "stat": "25+",
+          "statLabel": "países atendidos"
+        }
+      ]
+    },
+    "comparison": {
+      "eyebrow": "Ve la Diferencia",
+      "title": "Nosotros vs. La Agencia Típica",
+      "rows": [
+        {
+          "feature": "Estratega de caso dedicado",
+          "us": true,
+          "others": false
+        },
+        {
+          "feature": "Métodos éticos y compatibles con plataformas",
+          "us": true,
+          "others": false
+        },
+        {
+          "feature": "Reportes de progreso transparentes",
+          "us": true,
+          "others": false
+        },
+        {
+          "feature": "Servicio completo (legal, SEO, RP, contenido)",
+          "us": true,
+          "others": false
+        },
+        {
+          "feature": "Sin contratos de bloqueo a largo plazo",
+          "us": true,
+          "others": false
+        }
+      ]
+    },
+    "cta": {
+      "title": "Experimenta la Diferencia Tú Mismo",
+      "description": "Habla con nuestro equipo y descubre por qué los clientes confían en nosotros su activo más importante — su reputación.",
+      "button": "Agendar una Consultoría Gratuita"
+    }
+  },
+  "concernPage": {
+    "hero": {
+      "eyebrow": "Preocupación",
+      "title": "¿Preocupado por lo Que Hay en Línea Sobre Ti?",
+      "description": "Sea lo que sea que te mantenga despierto por la noche — una mala reseña, un artículo antiguo, un perfil falso — no tienes que enfrentarlo solo. Cuéntanos tu preocupación y te mostraremos un camino a seguir."
+    },
+    "concerns": {
+      "eyebrow": "Preocupaciones Comunes",
+      "title": "Hemos Ayudado con Situaciones como la Tuya",
+      "items": [
+        {
+          "title": "Cobertura de Noticias Negativas",
+          "description": "Un artículo o noticia antigua que ya no refleja quién eres pero que aún aparece en los primeros resultados de búsqueda."
+        },
+        {
+          "title": "Reseñas Dañinas",
+          "description": "Reseñas injustas o falsas que arrastran la reputación de tu negocio y te cuestan clientes."
+        },
+        {
+          "title": "Cuentas de Suplantación",
+          "description": "Alguien usando tu nombre o identidad de marca para engañar a otros o dañar tu credibilidad."
+        },
+        {
+          "title": "Información Personal Expuesta",
+          "description": "Tu dirección, número de teléfono o detalles familiares listados en sitios de corredores de datos."
+        },
+        {
+          "title": "Registros Judiciales e Historial Legal",
+          "description": "Registros públicos que son técnicamente precisos pero ya no justos o relevantes para tu situación actual."
+        },
+        {
+          "title": "Reacción en Redes Sociales",
+          "description": "Una publicación viral o hilo de comentarios que se ha salido de tu control."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "Qué Sucede Después",
+      "title": "Cómo Abordamos Tu Preocupación",
+      "steps": [
+        {
+          "title": "Consultoría Confidencial",
+          "description": "Comparte tu situación en privado con un miembro de nuestro equipo — sin juicios, sin compromisos."
+        },
+        {
+          "title": "Evaluación Personalizada",
+          "description": "Revisamos el alcance del problema y delineamos opciones y plazos realistas."
+        },
+        {
+          "title": "Plan de Acción",
+          "description": "Recibes una estrategia clara, paso a paso, adaptada a tu preocupación específica."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Hablemos de Ello",
+      "description": "Cada conversación es confidencial. Comunícate y te ayudaremos a entender tus opciones.",
+      "button": "Comparte Tu Preocupación"
+    }
+  },
+  "faqPage": {
+    "hero": {
+      "eyebrow": "FAQ",
+      "title": "Preguntas Frecuentes",
+      "description": "Respuestas a las preguntas que más escuchamos de clientes que consideran servicios de reputación y privacidad."
+    },
+    "categories": [
+      {
+        "title": "Cómo Empezar",
+        "items": [
+          {
+            "question": "¿Cómo comienza el proceso?",
+            "answer": "Comienza con una consultoría confidencial donde conocemos tu situación, revisamos lo que aparece actualmente en línea y delineamos opciones realistas antes de que te comprometas."
+          },
+          {
+            "question": "¿Cuánto tiempo toma ver resultados?",
+            "answer": "Los plazos varían según la complejidad del caso, pero la mayoría de los clientes comienzan a ver movimientos medibles entre 4 y 8 semanas, con resultados más completos desarrollándose en 3 a 6 meses."
+          },
+          {
+            "question": "¿Ofrecen una consultoría gratuita?",
+            "answer": "Sí. Cada compromiso comienza con una consultoría sin obligación para que puedas entender tus opciones antes de decidir avanzar."
+          }
+        ]
+      },
+      {
+        "title": "Servicios y Métodos",
+        "items": [
+          {
+            "question": "¿Pueden garantizar la eliminación de contenido negativo?",
+            "answer": "Ninguna agencia ética puede garantizar la eliminación total en todos los casos, ya que algunos contenidos están protegidos o alojados en sitios fuera de nuestro control. Lo que podemos garantizar es un esfuerzo estratégico y ético para suprimir, contrarrestar o buscar la eliminación siempre que sea legal y técnicamente posible."
+          },
+          {
+            "question": "¿Usan tácticas de sombrero negro o contra políticas?",
+            "answer": "Nunca. Solo usamos métodos de sombrero blanco y compatibles con las plataformas. Las tácticas que violan los términos de servicio de motores de búsqueda o plataformas ponen tu reputación en mayor riesgo a largo plazo."
+          },
+          {
+            "question": "¿Cuál es la diferencia entre supresión y eliminación?",
+            "answer": "Eliminación significa que el contenido se retira por completo. Supresión significa que lo empujamos por debajo del umbral de visibilidad construyendo contenido más fuerte y relevante que se posicione por encima. Ambas son estrategias válidas dependiendo de tu situación."
+          }
+        ]
+      },
+      {
+        "title": "Precios y Compromiso",
+        "items": [
+          {
+            "question": "¿Cuánto cuestan sus servicios?",
+            "answer": "El precio depende del alcance y complejidad de tu caso. Proporcionaremos una propuesta clara y detallada después de tu consultoría inicial — sin tarifas ocultas."
+          },
+          {
+            "question": "¿Hay contratos a largo plazo?",
+            "answer": "No encerramos a los clientes en contratos a largo plazo innecesarios. La duración del compromiso se basa en lo que tu caso realmente requiere."
+          },
+          {
+            "question": "¿Mi información se mantiene confidencial?",
+            "answer": "Absolutamente. Todo lo que compartes con nosotros se trata con estricta confidencialidad, y nunca publicitamos relaciones con clientes sin permiso explícito."
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "¿Aún Tienes Preguntas?",
+      "description": "Nuestro equipo está encantado de repasar tu situación específica y responder cualquier cosa que no hayamos cubierto aquí.",
+      "button": "Contacta a Nuestro Equipo"
+    }
+  },
+  "resourcesPage": {
+    "hero": {
+      "eyebrow": "Recursos",
+      "title": "Guías, Perspectivas y Herramientas",
+      "description": "Recursos prácticos para ayudarte a entender y gestionar tu reputación en línea, ya sea que estés comenzando a investigar o listo para actuar."
+    },
+    "categories": {
+      "eyebrow": "Explora por Tema",
+      "title": "Biblioteca de Recursos",
+      "items": [
+        {
+          "title": "Guías de Gestión de Reputación",
+          "description": "Guías paso a paso para entender, monitorear y mejorar tu presencia en línea."
+        },
+        {
+          "title": "Privacidad y Protección de Datos",
+          "description": "Aprende cómo se difunde la información personal en línea y qué puedes hacer para limitar la exposición."
+        },
+        {
+          "title": "SEO y Visibilidad en Búsquedas",
+          "description": "Entiende cómo los motores de búsqueda clasifican el contenido y cómo eso afecta lo que la gente encuentra sobre ti."
+        },
+        {
+          "title": "Manuales de Respuesta a Crisis",
+          "description": "Marcos para responder rápida y efectivamente cuando ocurre una crisis de reputación."
+        },
+        {
+          "title": "Casos de Estudio e Historias de Éxito",
+          "description": "Ejemplos reales de cómo hemos ayudado a clientes a recuperar y fortalecer su reputación en línea."
+        },
+        {
+          "title": "Herramientas y Listas de Verificación",
+          "description": "Listas de verificación descargables para ayudarte a auditar tu propia huella digital."
+        }
+      ]
+    },
+    "articles": {
+      "eyebrow": "Lecturas Populares",
+      "title": "Por Dónde Empezar",
+      "items": [
+        {
+          "title": "La Guía Completa de Gestión de Reputación en Línea",
+          "description": "Todo lo que necesitas saber sobre monitorear, proteger y mejorar tu presencia digital.",
+          "readTime": "12 min de lectura"
+        },
+        {
+          "title": "Cómo Eliminar Contenido Negativo de Google",
+          "description": "Un desglose práctico de opciones de eliminación, supresión y legales para resultados de búsqueda no deseados.",
+          "readTime": "9 min de lectura"
+        },
+        {
+          "title": "Protegiendo Tu Privacidad de los Corredores de Datos",
+          "description": "Entiende cómo los corredores de datos recopilan y venden tu información — y cómo darte de baja.",
+          "readTime": "7 min de lectura"
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Necesitas Algo Más Específico?",
+      "description": "Si no encuentras lo que buscas, nuestro equipo está feliz de orientarte en la dirección correcta.",
+      "button": "Pregunta a Nuestro Equipo"
+    }
+  },
+  "personalReputationManagement": {
+    "hero": {
+      "eyebrow": "Gestión de Reputación Personal",
+      "title": "Servicios de Gestión de Reputación Personal",
+      "description": "Construye una marca personal más fuerte, mejora lo que la gente encuentra en las búsquedas y protege tu reputación con una estrategia diseñada alrededor de tu identidad, carrera y objetivos a largo plazo.",
+      "primaryCta": "Agendar una consultoría",
+      "secondaryCta": "Explora nuestros servicios",
+      "badges": {
+        "confidential": "Privado y confidencial",
+        "strategyLed": "Orientado por estrategia",
+        "longTermProtection": "Protección a largo plazo"
+      },
+      "imageAlt": "Estrategia de gestión de reputación personal"
+    },
+    "introduction": {
+      "eyebrow": "Visibilidad en búsquedas personales",
+      "title": "Servicios de Gestión de Reputación en Línea",
+      "paragraph1": "Tu reputación en línea influye en cómo los empleadores, clientes, inversionistas, socios comerciales y contactos profesionales te perciben. Los resultados de búsqueda pueden moldear esa impresión antes de que una conversación siquiera comience.",
+      "paragraph2": "La gestión de reputación personal ayuda a asegurar que la información creíble, precisa y relevante sea más fácil de descubrir. También proporciona un enfoque estructurado para tratar contenido obsoleto, negativo o engañoso.",
+      "paragraph3": "Nuestro equipo combina análisis, estrategia de contenido, optimización de búsqueda, posicionamiento de marca y monitoreo para construir una presencia en línea que refleje mejor tu valor y experiencia reales.",
+      "strategyValue": "360°",
+      "strategyLabel": "Estrategia de reputación",
+      "imageAlt": "Concepto de gestión de reputación en línea"
+    },
+    "benefits": {
+      "eyebrow": "Ventajas principales",
+      "title": "Beneficios de la Gestión de Reputación",
+      "items": {
+        "1": "Mejorar la calidad y credibilidad de tus resultados de búsqueda personales.",
+        "2": "Reducir la visibilidad de contenido obsoleto, engañoso o dañino.",
+        "3": "Construir una marca personal más fuerte y confiable en línea.",
+        "4": "Proteger tu imagen profesional en motores de búsqueda y plataformas digitales.",
+        "5": "Mejorar la primera impresión que la gente recibe al investigar tu nombre.",
+        "6": "Monitorear riesgos de reputación y responder antes de que se conviertan en problemas mayores."
+      }
+    },
+    "services": {
+      "eyebrow": "Cobertura completa de reputación",
+      "title": "Gama Completa de Servicios",
+      "subtitle": "Cada servicio apoya una parte diferente de tu reputación personal, visibilidad en búsquedas y protección digital a largo plazo.",
+      "items": {
+        "intelligenceAudit": {
+          "title": "Auditoría de Inteligencia de Reputación",
+          "description": "Analizamos tu presencia actual en búsquedas, huella digital, riesgos y oportunidades de reputación antes de construir una estrategia personalizada."
+        },
+        "brandArchitecture": {
+          "title": "Arquitectura de Marca Personal",
+          "description": "Definimos la identidad, experiencia, valores y posicionamiento profesional que tu presencia en línea debe comunicar consistentemente."
+        },
+        "searchSuppression": {
+          "title": "Supresión y Limpieza de Resultados de Búsqueda",
+          "description": "Desarrollamos estrategias para reducir la visibilidad de resultados negativos, irrelevantes, obsoletos o engañosos en búsquedas de marca."
+        },
+        "aiOptimization": {
+          "title": "Optimización de Búsqueda con IA",
+          "description": "Mejoramos cómo aparece tu reputación dentro de herramientas de búsqueda impulsadas por IA, motores de respuesta y plataformas de descubrimiento emergentes."
+        },
+        "reviewProtection": {
+          "title": "Protección de Reseñas y Redes Sociales",
+          "description": "Monitoreamos conversaciones públicas, reseñas, menciones y señales sociales que pueden afectar cómo la gente percibe tu marca personal."
+        }
+      }
+    },
+    "howItWorks": {
+      "eyebrow": "Nuestro método",
+      "title": "Cómo Funciona",
       "steps": {
-        "discovery": {
-          "eyebrow": "Discovery",
-          "title": "Assess and Analyze",
-          "description": "We perform a detailed audit of your search results to uncover negative, harmful, outdated, or misleading information. We then identify opportunities, reputation risks, and the most effective path forward.",
-          "points": {
-            "1": "Search result and content audit",
-            "2": "Reputation risk identification",
-            "3": "Competitor and industry analysis"
-          },
-          "imageAlt": "Assessment and analysis workflow"
+        "discover": {
+          "number": "01",
+          "title": "Descubrir",
+          "description": "Evaluamos tus resultados de búsqueda existentes, perfiles en línea, menciones públicas y preocupaciones de reputación."
         },
-        "strategy": {
-          "eyebrow": "Strategy",
-          "title": "Strategize and Plan",
-          "description": "Our team develops a personalized strategy to remove, suppress, or outperform negative content with trustworthy and high-quality information about you or your business.",
-          "points": {
-            "1": "Personalized reputation roadmap",
-            "2": "Content and authority planning",
-            "3": "Clear priorities and milestones"
-          },
-          "imageAlt": "Strategy and planning workflow"
+        "plan": {
+          "number": "02",
+          "title": "Planificar",
+          "description": "Creamos una estrategia de reputación personalizada alineada con tus objetivos, audiencia y posición profesional."
         },
-        "execution": {
-          "eyebrow": "Execution",
-          "title": "Implement and Execute Positive Search Engine Results",
-          "description": "Once the strategy is approved, our team begins producing, publishing, and optimizing trustworthy content designed to improve what appears in search results.",
-          "points": {
-            "1": "Search-optimized content production",
-            "2": "Publishing and digital placement",
-            "3": "Authority and credibility development"
-          },
-          "imageAlt": "Content execution workflow"
+        "build": {
+          "number": "03",
+          "title": "Construir",
+          "description": "Creamos y optimizamos contenido creíble, perfiles, activos y propiedades digitales que fortalecen tu presencia."
         },
-        "reporting": {
-          "eyebrow": "Reporting",
-          "title": "Monitor and Report",
-          "description": "We continuously monitor your brand mentions and search visibility across major online channels. You receive clear reports, performance updates, and recommendations for continued reputation growth.",
+        "promote": {
+          "number": "04",
+          "title": "Promover",
+          "description": "Aumentamos la visibilidad y autoridad de los activos positivos a través de optimización de búsqueda y publicación estratégica."
+        },
+        "protect": {
+          "number": "05",
+          "title": "Proteger",
+          "description": "Monitoreamos tu reputación digital y ajustamos la estrategia a medida que aparecen nuevas oportunidades o riesgos."
+        }
+      }
+    },
+    "strategies": {
+      "eyebrow": "Protección más profunda",
+      "title": "Apoyo a la Estrategia de Reputación",
+      "items": {
+        "companyChecklist": {
+          "eyebrow": "Fundación",
+          "title": "Lista de Verificación de Empresa de Gestión de Reputación en Línea",
+          "description": "Elegir al socio de reputación adecuado requiere más que comparar promesas. Una empresa creíble debe proporcionar un proceso transparente, expectativas realistas, estándares de privacidad sólidos, reportes claros y una estrategia adaptada a tus resultados de búsqueda reales.",
+          "imageAlt": "Lista de verificación de empresa de gestión de reputación en línea",
           "points": {
-            "1": "Ongoing search result monitoring",
-            "2": "Performance and progress reports",
-            "3": "Long-term reputation protection"
-          },
-          "imageAlt": "Monitoring and reporting workflow"
+            "1": "Estrategia clara y transparente",
+            "2": "Manejo confidencial de clientes",
+            "3": "Plazos y expectativas realistas",
+            "4": "Reportes de rendimiento consistentes"
+          }
+        },
+        "searchResults": {
+          "eyebrow": "Control de búsqueda",
+          "title": "Reputación Personal y Resultados de Búsqueda",
+          "description": "Tu nombre puede aparecer en artículos, directorios, perfiles sociales, registros públicos, reseñas y sitios web de terceros. Ayudamos a organizar y fortalecer estas señales para que la información creíble y relevante sea más fácil de descubrir.",
+          "imageAlt": "Gestión de resultados de búsqueda de reputación personal",
+          "points": {
+            "1": "Evaluación de resultados de búsqueda",
+            "2": "Mejora de la calidad del contenido",
+            "3": "Optimización de perfiles y activos",
+            "4": "Desarrollo de visibilidad positiva"
+          }
+        },
+        "reputationProtection": {
+          "eyebrow": "Protección",
+          "title": "Gestión de Reputación para una Protección en Línea Sólida",
+          "description": "Una estrategia de reputación sólida no solo debe mejorar los resultados actuales sino también reducir la vulnerabilidad futura. Fortalecemos tu base digital y monitoreamos riesgos emergentes antes de que creen daños duraderos.",
+          "imageAlt": "Protección de reputación en línea sólida",
+          "points": {
+            "1": "Monitoreo continuo de reputación",
+            "2": "Revisiones de riesgos y vulnerabilidades",
+            "3": "Protección de visibilidad en búsquedas",
+            "4": "Resiliencia digital a largo plazo"
+          }
+        },
+        "localSearch": {
+          "eyebrow": "Visibilidad local",
+          "title": "Búsqueda Local y Medios Curados",
+          "description": "Para profesionales y líderes locales, la visibilidad en la búsqueda basada en ubicación puede influir en la credibilidad y la confianza. Optimizamos perfiles relevantes, resultados locales y oportunidades de medios curados.",
+          "imageAlt": "Estrategia de búsqueda local y medios curados",
+          "points": {
+            "1": "Optimización de perfiles locales",
+            "2": "Visibilidad en búsquedas basadas en ubicación",
+            "3": "Posicionamiento en medios creíbles",
+            "4": "Información personal consistente"
+          }
+        },
+        "reviewManagement": {
+          "eyebrow": "Retroalimentación pública",
+          "title": "Manejo de Reseñas Falsas y Retroalimentación Negativa",
+          "description": "La retroalimentación falsa, engañosa o injusta puede influir en decisiones antes de que tengas oportunidad de responder. Ayudamos a evaluar la situación, mejorar la estrategia de respuesta y fortalecer las señales de reputación circundantes.",
+          "imageAlt": "Gestión de reseñas falsas y retroalimentación negativa",
+          "points": {
+            "1": "Evaluación de reseñas y menciones",
+            "2": "Desarrollo de estrategia de respuesta",
+            "3": "Amplificación de retroalimentación positiva",
+            "4": "Orientación específica para plataformas"
+          }
+        },
+        "providerDifference": {
+          "eyebrow": "Ventaja estratégica",
+          "title": "Lo Que los Mejores Proveedores Hacen Diferente",
+          "description": "La gestión efectiva de reputación personal requiere más que publicar contenido. Los proveedores sólidos combinan análisis, estrategia de marca, conocimiento técnico de búsqueda, calidad de contenido, desarrollo de autoridad y medición continua.",
+          "imageAlt": "Proveedor profesional de gestión de reputación",
+          "points": {
+            "1": "Toma de decisiones basada en evidencia",
+            "2": "Arquitectura de reputación personalizada",
+            "3": "Estándares de contenido de alta calidad",
+            "4": "Optimización continua"
+          }
+        },
+        "riskMonitoring": {
+          "eyebrow": "Defensa continua",
+          "title": "Riesgos de Reputación Sensibles que Monitoreamos",
+          "description": "Las amenazas a la reputación pueden surgir de artículos obsoletos, confusión de identidad, afirmaciones falsas, suplantación, información filtrada, reseñas hostiles o atención pública inesperada. El monitoreo ayuda a identificar estos riesgos temprano.",
+          "imageAlt": "Monitoreo de riesgos de reputación sensibles",
+          "points": {
+            "1": "Confusión de identidad y nombre",
+            "2": "Información personal no deseada",
+            "3": "Menciones negativas o inexactas",
+            "4": "Cambios emergentes en resultados de búsqueda"
+          }
+        },
+        "reputationSignals": {
+          "eyebrow": "Construcción de autoridad",
+          "title": "Mejores Señales de Reputación para Construir",
+          "description": "Una reputación personal duradera está respaldada por perfiles creíbles, contenido autoritativo, menciones en medios confiables, activos profesionales, información precisa y un narrativa pública consistente.",
+          "imageAlt": "Señales de reputación personal positivas",
+          "points": {
+            "1": "Perfiles profesionales",
+            "2": "Contenido liderado por expertos",
+            "3": "Cobertura mediática confiable",
+            "4": "Marca personal consistente"
+          }
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Preguntas y respuestas",
+      "title": "Preguntas Frecuentes",
+      "items": {
+        "1": {
+          "question": "¿Qué es la gestión de reputación personal?",
+          "answer": "La gestión de reputación personal es el proceso de mejorar, proteger y monitorear cómo aparece un individuo en línea. Puede incluir análisis de resultados de búsqueda, desarrollo de contenido, optimización de perfiles, estrategias de supresión, posicionamiento de marca y monitoreo continuo."
+        },
+        "2": {
+          "question": "¿Quién necesita servicios de gestión de reputación personal?",
+          "answer": "Estos servicios pueden ayudar a ejecutivos, emprendedores, profesionales, buscadores de empleo, figuras públicas, inversionistas, consultores y cualquier persona cuya presencia en línea afecte oportunidades profesionales o personales."
+        },
+        "3": {
+          "question": "¿Cuánto cuestan los servicios de reputación personal?",
+          "answer": "El precio depende de la complejidad de los resultados de búsqueda, el número de problemas involucrados, el nivel de contenido requerido y la duración esperada de la campaña. Generalmente se necesita una auditoría de reputación antes de proporcionar un precio preciso."
+        },
+        "4": {
+          "question": "¿Cuánto tiempo tomará ver resultados?",
+          "answer": "Algunas mejoras pueden aparecer en semanas, mientras que las campañas de resultados de búsqueda competitivas o complejas pueden tomar varios meses. El tiempo depende de la autoridad de los resultados existentes y la escala de la estrategia."
+        },
+        "5": {
+          "question": "¿Cómo se vuelven más confiables los resultados?",
+          "answer": "Los resultados más confiables provienen de combinar contenido sólido, activos digitales creíbles, optimización de búsqueda, desarrollo de autoridad, publicación consistente y monitoreo continuo."
+        },
+        "6": {
+          "question": "¿Qué contenido crea la gestión de reputación?",
+          "answer": "El contenido puede incluir biografías profesionales, páginas de perfil, artículos de expertos, entrevistas, reportajes de negocios, activos mediáticos, perfiles sociales optimizados, sitios web personales y otros recursos creíbles."
+        },
+        "7": {
+          "question": "¿Pueden los servicios de reputación eliminar publicaciones dañinas en redes sociales?",
+          "answer": "La eliminación depende de la plataforma, la propiedad, el contexto legal y si el contenido viola políticas aplicables. Cuando la eliminación no está disponible, las estrategias de supresión, respuesta y fortalecimiento de reputación aún pueden ayudar."
+        },
+        "8": {
+          "question": "¿Cuál es la diferencia entre la gestión de reputación personal y el trabajo corporativo?",
+          "answer": "La gestión de reputación personal se enfoca en un nombre, identidad, carrera, experiencia e imagen pública individual. El trabajo de reputación corporativa generalmente se enfoca en una empresa, productos, liderazgo, reseñas, sentimiento del cliente y visibilidad comercial más amplia."
+        },
+        "9": {
+          "question": "¿Qué resultados ayudan a construir una reputación positiva?",
+          "answer": "Los resultados sólidos a menudo incluyen perfiles profesionales creíbles, artículos autoritativos, biografías precisas, menciones en medios respetados, contenido de expertos, listados verificados y propiedades sociales confiables."
         }
       }
     },
     "cta": {
-      "eyebrow": "Ready to improve your results?",
-      "title": "Build a stronger online reputation starting today.",
-      "description": "Speak with our reputation specialists and discover a strategy built around your search results, goals, and long-term image.",
-      "primaryCta": "Get a no-cost evaluation"
+      "eyebrow": "Toma el control de tu reputación",
+      "title": "Mejora tus resultados de búsqueda con una estrategia diseñada alrededor de ti.",
+      "description": "Habla con nuestros especialistas sobre tu presencia actual en búsquedas, objetivos de reputación y los próximos pasos más efectivos.",
+      "primaryCta": "Obtén una consultoría gratuita"
+    }
+  },
+  "businessReputationManagement": {
+    "hero": {
+      "eyebrow": "Gestión de Reputación Empresarial",
+      "title": "Servicios de Gestión de Reputación Empresarial",
+      "description": "Controla la reputación en línea de tu marca, fortalece la confianza del cliente y protege tu negocio con una estrategia construida alrededor de la visibilidad en búsquedas, credibilidad y crecimiento a largo plazo.",
+      "primaryCta": "Agenda una sesión para aprender cómo",
+      "secondaryCta": "Obtén un plan de evaluación sin costo",
+      "badges": {
+        "brandProtection": "Protección de marca",
+        "searchVisibility": "Visibilidad en búsquedas",
+        "customerTrust": "Confianza del cliente"
+      },
+      "imageAlt": "Servicios de gestión de reputación empresarial"
+    },
+    "introduction": {
+      "eyebrow": "Tu marca importa",
+      "title": "Protege la reputación detrás de tu negocio.",
+      "paragraph1": "Tu marca es más que un nombre. Representa tu identidad, historia, relaciones con clientes y la base de cómo la gente percibe tu negocio. Una reputación en línea sólida puede influir en decisiones de clientes, alianzas, contratación y crecimiento a largo plazo.",
+      "paragraph2": "Nuestros servicios de gestión de reputación empresarial ayudan a las organizaciones a abordar resultados de búsqueda dañinos, contenido engañoso, críticas públicas, reseñas negativas y riesgos emergentes de reputación.",
+      "paragraph3": "Combinamos inteligencia de reputación, estrategia de contenido, optimización de búsqueda, monitoreo de marca y comunicación estratégica para ayudar a tu negocio a construir credibilidad y mantener el control de su narrativa en línea.",
+      "metricValue": "360°",
+      "metricLabel": "Visibilidad de marca",
+      "imageAlt": "Equipo empresarial revisando reputación de marca"
+    },
+    "overview": {
+      "eyebrow": "Soluciones de reputación empresarial",
+      "title": "Ponemos la mejor cara de tu marca al frente.",
+      "paragraph1": "Las empresas enfrentan desafíos de reputación causados por desinformación, contenido obsoleto, reseñas negativas, críticas públicas, ataques competitivos o información de marca inconsistente en plataformas digitales.",
+      "paragraph2": "Nuestros especialistas en reputación construyen una estrategia personalizada diseñada para fortalecer los resultados de búsqueda positivos, reducir la exposición a contenido dañino y mejorar cómo los clientes, empleados, inversionistas y socios perciben tu organización.",
+      "paragraph3": "La campaña puede incluir supresión de resultados de búsqueda, creación de contenido optimizado, desarrollo de perfiles, monitoreo de reseñas, seguimiento de menciones de marca, preparación para crisis y reportes de rendimiento continuos."
+    },
+    "solutions": {
+      "eyebrow": "Protección completa de marca",
+      "title": "Una estrategia de reputación proactiva para cada etapa de tu negocio.",
+      "subtitle": "Nuestro marco de gestión de reputación empresarial combina estrategia de búsqueda, contenido, monitoreo y protección contra riesgos para mejorar la presencia digital de tu marca.",
+      "items": {
+        "proactivePresence": {
+          "eyebrow": "Visibilidad en búsquedas",
+          "title": "Crea una Presencia en Línea Proactiva y Controla los Resultados de Búsqueda",
+          "description": "Desarrollamos un plan estratégico de contenido y optimización de búsqueda diseñado para construir visibilidad positiva de marca, fortalecer credibilidad y crear una presencia de búsqueda más autoritativa.",
+          "points": {
+            "1": "Evaluación de resultados de búsqueda de marca",
+            "2": "Desarrollo de contenido positivo",
+            "3": "Construcción de autoridad y confianza",
+            "4": "Optimización de resultados de búsqueda"
+          },
+          "imageAlt": "Analítica de búsqueda empresarial y estrategia de reputación"
+        },
+        "monitorPresence": {
+          "eyebrow": "Monitoreo de marca",
+          "title": "Monitorea Tu Presencia en Línea y Crea Contenido Optimizado",
+          "description": "Monitoreamos menciones de marca, reseñas en línea, cambios en resultados de búsqueda y conversaciones públicas mientras producimos contenido optimizado que comunica claramente el valor de tu empresa.",
+          "points": {
+            "1": "Monitoreo de menciones de marca",
+            "2": "Seguimiento de reseñas y sentimiento",
+            "3": "Contenido de marca optimizado para búsquedas",
+            "4": "Mensajería digital consistente"
+          },
+          "imageAlt": "Profesional empresarial monitoreando comunicaciones de marca"
+        },
+        "negativeSuppression": {
+          "eyebrow": "Control de búsqueda",
+          "title": "Suprimir Contenido Negativo",
+          "description": "Usando optimización de búsqueda estratégica y desarrollo de contenido, reducimos la visibilidad de resultados negativos o engañosos mientras aumentamos la autoridad de los activos de marca creíbles.",
+          "points": {
+            "1": "Evaluación de resultados negativos",
+            "2": "Supresión estratégica de contenido",
+            "3": "Promoción de activos positivos",
+            "4": "Mejora de visibilidad a largo plazo"
+          },
+          "imageAlt": "Optimización de motores de búsqueda y supresión de contenido negativo"
+        },
+        "threatProtection": {
+          "eyebrow": "Defensa de reputación",
+          "title": "Protege Tu Marca de Amenazas en Línea",
+          "description": "Nuestro equipo ayuda a las empresas a prepararse y responder a incidentes de relaciones públicas, ataques a la reputación, cobertura mediática negativa, reseñas falsas y críticas en redes sociales.",
+          "points": {
+            "1": "Monitoreo de amenazas a la reputación",
+            "2": "Planificación de respuesta a crisis",
+            "3": "Comunicación pública estratégica",
+            "4": "Apoyo para recuperación de marca"
+          },
+          "imageAlt": "Protección digital de marca y seguridad de reputación"
+        }
+      }
+    },
+    "capabilities": {
+      "eyebrow": "Capacidades de reputación empresarial",
+      "title": "Todo lo que tu marca necesita para mantenerse visible, creíble y protegida.",
+      "subtitle": "Nuestros especialistas combinan tecnología, estrategia y comunicación para fortalecer cada parte de la reputación de tu negocio.",
+      "items": {
+        "reputationAudit": {
+          "title": "Auditoría de Reputación Empresarial",
+          "description": "Evaluamos tus resultados de búsqueda de marca, reseñas, menciones públicas, perfiles, visibilidad de liderazgo y riesgos potenciales de reputación.",
+          "metric": "Revisión completa de visibilidad"
+        },
+        "contentStrategy": {
+          "title": "Estrategia de Contenido de Marca",
+          "description": "Creamos contenido autoritativo diseñado para comunicar tu experiencia, logros, liderazgo, valores e impacto en clientes.",
+          "metric": "Contenido enfocado en credibilidad"
+        },
+        "reviewManagement": {
+          "title": "Gestión de Reseñas y Sentimiento",
+          "description": "Monitoreamos reseñas y retroalimentación pública mientras ayudamos a tu organización a responder apropiadamente y mejorar la confianza del cliente.",
+          "metric": "Mayor confianza del cliente"
+        },
+        "searchSuppression": {
+          "title": "Supresión de Búsquedas Negativas",
+          "description": "Fortalecemos propiedades de marca creíbles y reducimos la visibilidad de resultados de búsqueda dañinos, irrelevantes o engañosos.",
+          "metric": "Búsqueda de marca mejorada"
+        },
+        "crisisProtection": {
+          "title": "Protección contra Crisis y Amenazas",
+          "description": "Preparamos a tu organización para responder a incidentes repentinos de reputación con estrategias coordinadas de comunicación y recuperación.",
+          "metric": "Respuesta de reputación más rápida"
+        },
+        "reporting": {
+          "title": "Monitoreo y Reportes",
+          "description": "Rastreamos visibilidad en búsquedas, menciones de marca, rendimiento de contenido y cambios de reputación a través de reportes claros y procesables.",
+          "metric": "Progreso medible"
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "Nuestro proceso de gestión de reputación empresarial",
+      "title": "Un proceso estructurado para proteger y hacer crecer tu marca.",
+      "subtitle": "Cada campaña comienza con investigación y se desarrolla en un programa continuo de visibilidad, autoridad, monitoreo y protección.",
+      "steps": {
+        "audit": {
+          "number": "01",
+          "title": "Auditar la Marca",
+          "description": "Revisamos tu presencia en búsquedas, activos digitales, reseñas, cobertura mediática, sentimiento público y riesgos de reputación existentes."
+        },
+        "strategy": {
+          "number": "02",
+          "title": "Construir la Estrategia",
+          "description": "Creamos una hoja de ruta personalizada basada en tus objetivos comerciales, audiencias, entorno competitivo y prioridades de reputación."
+        },
+        "content": {
+          "number": "03",
+          "title": "Crear Activos de Marca",
+          "description": "Nuestro equipo desarrolla contenido creíble, perfiles, activos mediáticos y propiedades digitales autoritativas que respaldan tu reputación."
+        },
+        "optimization": {
+          "number": "04",
+          "title": "Optimizar y Promover",
+          "description": "Optimizamos y promovemos activos positivos para mejorar su autoridad, relevancia y visibilidad en búsquedas de marca."
+        },
+        "monitoring": {
+          "number": "05",
+          "title": "Monitorear y Proteger",
+          "description": "Monitoreamos continuamente menciones de marca, reseñas, resultados de búsqueda y amenazas emergentes mientras adaptamos la estrategia."
+        }
+      }
+    },
+    "whyChooseUs": {
+      "eyebrow": "Por qué las empresas nos eligen",
+      "title": "Gestión de reputación construida alrededor de resultados comerciales medibles.",
+      "description": "Hacemos más que responder a resultados negativos. Nuestro enfoque ayuda a las empresas a establecer autoridad digital duradera, mejorar la confianza de las partes interesadas y volverse más resilientes a futuros riesgos de reputación.",
+      "points": {
+        "customStrategy": {
+          "title": "Estrategia Personalizada",
+          "description": "Cada campaña se desarrolla alrededor de tu marca, mercado, audiencia, desafíos y objetivos comerciales a largo plazo."
+        },
+        "confidentiality": {
+          "title": "Servicio Confidencial",
+          "description": "Los asuntos de reputación sensibles se manejan con privacidad, profesionalismo y acceso controlado."
+        },
+        "reporting": {
+          "title": "Reportes Transparentes",
+          "description": "Recibes actualizaciones claras de progreso, información de visibilidad, datos de rendimiento y recomendaciones estratégicas."
+        },
+        "longTerm": {
+          "title": "Protección a Largo Plazo",
+          "description": "Nos enfocamos en activos de reputación duraderos y monitoreo continuo en lugar de cambios cosméticos temporales."
+        }
+      },
+      "imageAlt": "Reunión de estrategia de reputación empresarial"
+    },
+    "faq": {
+      "eyebrow": "Preguntas y respuestas",
+      "title": "Preguntas Frecuentes sobre Gestión de Reputación Empresarial",
+      "items": {
+        "1": {
+          "question": "¿Qué es la gestión de reputación empresarial?",
+          "answer": "La gestión de reputación empresarial es el proceso de monitorear, mejorar y proteger cómo aparece una organización en motores de búsqueda, reseñas, cobertura mediática, plataformas sociales, directorios y otros canales digitales."
+        },
+        "2": {
+          "question": "¿Por qué es importante la reputación en línea para un negocio?",
+          "answer": "Los clientes, empleados, inversionistas y socios comerciales a menudo investigan una empresa en línea antes de tomar decisiones. La información negativa o inexacta puede reducir la confianza, afectar las ventas, dañar la contratación y debilitar las relaciones comerciales."
+        },
+        "3": {
+          "question": "¿Se pueden eliminar los resultados de búsqueda empresariales negativos?",
+          "answer": "La eliminación depende de la propiedad, las reglas de la plataforma, las consideraciones legales y si el contenido viola políticas relevantes. Cuando la eliminación no está disponible, la supresión estratégica y el desarrollo de contenido positivo pueden ayudar a reducir la visibilidad."
+        },
+        "4": {
+          "question": "¿Cuánto tiempo toma la gestión de reputación empresarial?",
+          "answer": "Las mejoras simples pueden aparecer en varias semanas, mientras que las campañas competitivas o complejas pueden requerir varios meses. El tiempo depende de la autoridad del contenido existente, la competencia en búsquedas y el alcance de la campaña."
+        },
+        "5": {
+          "question": "¿La gestión de reputación empresarial incluye monitoreo de reseñas?",
+          "answer": "Sí. Un programa completo de reputación empresarial puede incluir monitoreo de reseñas, análisis de sentimiento, orientación de respuestas, desarrollo de retroalimentación positiva y seguimiento en plataformas de reseñas relevantes."
+        },
+        "6": {
+          "question": "¿Pueden proteger a una empresa durante una crisis de reputación?",
+          "answer": "Los especialistas en reputación pueden ayudar a evaluar el incidente, organizar la comunicación, monitorear la respuesta pública, fortalecer la información precisa y construir una estrategia de recuperación. Los consejos legales o regulatorios deben venir de profesionales calificados."
+        },
+        "7": {
+          "question": "¿Qué tipos de contenido se crean para las empresas?",
+          "answer": "El contenido puede incluir perfiles de empresa, artículos de liderazgo, artículos de expertos, casos de estudio, materiales de prensa, actualizaciones comerciales, páginas web optimizadas, entrevistas, activos sociales y recursos de marca autoritativos."
+        },
+        "8": {
+          "question": "¿Cómo se mide el progreso de la campaña?",
+          "answer": "El progreso puede medirse a través del movimiento de resultados de búsqueda, visibilidad de activos positivos, rendimiento de contenido, sentimiento de reseñas, menciones de marca, reducción de riesgos, tráfico y otros indicadores específicos de la campaña."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Protege la reputación de tu negocio",
+      "title": "Construye una presencia de marca más fuerte y creíble.",
+      "description": "Habla con nuestros especialistas en reputación sobre tus resultados de búsqueda actuales, percepción pública, riesgos de marca y la estrategia necesaria para avanzar.",
+      "primaryCta": "Obtén una evaluación sin costo"
+    }
+  },
+  "reputationConsulting": {
+    "hero": {
+      "eyebrow": "Estrategia de Reputación Digital",
+      "title": "Tu reputación es",
+      "titleAccent": "tu activo más valioso",
+      "description": "Consultoría estratégica para proteger, mejorar y controlar tu presencia digital. Ayudamos a ejecutivos, emprendedores y figuras públicas a dar forma a su narrativa en línea.",
+      "cta": "Obtén Consultoría Gratuita",
+      "secondaryCta": "Ver Nuestro Proceso",
+      "years": "Años de Experiencia",
+      "clients": "Clientes Atendidos",
+      "scoreLabel": "Puntuación de Reputación",
+      "scoreDescription": "Mejora promedio de clientes después de 6 meses"
+    },
+    "trustBar": {
+      "label": "Aprobados por",
+      "newsweek": "Newsweek",
+      "forbes": "Forbes",
+      "entrepreneur": "Entrepreneur",
+      "inc": "Inc."
+    },
+    "services": {
+      "eyebrow": "Qué Hacemos",
+      "title": "Consultoría Integral de Reputación",
+      "subtitle": "Soluciones estratégicas adaptadas a tus desafíos y objetivos únicos de reputación.",
+      "contentRemoval": {
+        "title": "Eliminación y Corrección de Contenido",
+        "description": "Elimina o corrige contenido inexacto, engañoso o dañino en toda la web."
+      },
+      "searchSuppression": {
+        "title": "Supresión de Resultados de Búsqueda",
+        "description": "Desplaza contenido positivo hacia arriba en los resultados de búsqueda a través de SEO estratégico y desarrollo de contenido."
+      },
+      "crisisManagement": {
+        "title": "Respuesta a Crisis y Recuperación",
+        "description": "Estrategias de respuesta rápida para contener daños y reconstruir la confianza durante emergencias de reputación."
+      },
+      "monitoring": {
+        "title": "Monitoreo de Reputación en Tiempo Real",
+        "description": "Monitoreo 24/7 en plataformas para detectar y abordar amenazas emergentes de manera proactiva."
+      },
+      "brandBuilding": {
+        "title": "Construcción de Marca Digital",
+        "description": "Crea y amplifica contenido que muestre tu experiencia, logros y valores."
+      },
+      "privacyProtection": {
+        "title": "Privacidad y Protección de Datos",
+        "description": "Elimina información personal de sitios de corredores de datos y protege tu privacidad digital."
+      }
+    },
+    "process": {
+      "eyebrow": "Cómo Trabajamos",
+      "title": "Un Enfoque Estratégico para la Reputación",
+      "subtitle": "Cada cliente recibe una estrategia personalizada diseñada para su situación única.",
+      "step1": {
+        "title": "Descubrimiento y Auditoría",
+        "description": "Análisis exhaustivo de tu huella digital actual, incluyendo resultados de búsqueda, presencia social y exposición de privacidad."
+      },
+      "step2": {
+        "title": "Desarrollo de Estrategia",
+        "description": "Hoja de ruta personalizada con prioridades claras, enfoques tácticos e hitos medibles alineados con tus objetivos."
+      },
+      "step3": {
+        "title": "Ejecución y Refinamiento",
+        "description": "Implementación con optimización continua, monitoreo y adaptación a la dinámica en línea en evolución."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Éxito de Clientes",
+      "title": "Lo Que Dicen Nuestros Clientes",
+      "executive": {
+        "quote": "En cuestión de meses, los artículos negativos que habían perseguido mi carrera durante años ya no eran visibles. El equipo entendió la sensibilidad y manejó todo con discreción.",
+        "name": "Sarah Mitchell",
+        "role": "Ejecutiva de Fortune 500"
+      },
+      "entrepreneur": {
+        "quote": "Mi reputación en línea ahora refleja la realidad de mi negocio en lugar de reseñas injustas. Esto transformó cómo los clientes potenciales me perciben.",
+        "name": "David Chen",
+        "role": "Emprendedor Tecnológico"
+      },
+      "publicFigure": {
+        "quote": "La protección proactiva de la privacidad me ha dado tranquilidad. Ya no me preocupo por lo que la gente encontrará al buscar mi nombre.",
+        "name": "Amanda Ross",
+        "role": "Figura Pública"
+      }
+    },
+    "consultation": {
+      "eyebrow": "Comienza Tu Viaje",
+      "title": "¿Listo para Tomar el Control de Tu Reputación?",
+      "description": "Agenda una consultoría confidencial con nuestro equipo de expertos. Evaluaremos tu situación y delinearemos una estrategia personalizada.",
+      "benefits": {
+        "confidential": "Discusión 100% confidencial",
+        "expert": "Análisis experto de tu presencia digital",
+        "tailored": "Recomendaciones de estrategia personalizadas"
+      },
+      "cta": "Agendar Consultoría",
+      "form": {
+        "name": "Nombre Completo",
+        "namePlaceholder": "Juan Pérez",
+        "email": "Correo Electrónico",
+        "emailPlaceholder": "juan@ejemplo.com",
+        "message": "Cuéntanos sobre tu situación",
+        "messagePlaceholder": "Describe brevemente tus preocupaciones de reputación...",
+        "submit": "Enviar Solicitud",
+        "disclaimer": "Toda la información es confidencial y está protegida"
+      }
+    },
+    "common": {
+      "learnMore": "Conocer Más",
+      "viewAll": "Ver Todos los Servicios"
     }
   }
 }
