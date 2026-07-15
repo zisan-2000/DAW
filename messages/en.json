@@ -53,101 +53,121 @@
     }
   },
   "fixMySearchResults": {
-    "hero": {
-      "eyebrow": "Online Reputation Management",
-      "title": "Fix your Google search results and take back control.",
-      "description": "We help individuals and businesses improve what people see when they search online. Our team identifies, suppresses, and replaces harmful results so you can move forward with confidence.",
-      "primaryCta": "Book a free consultation",
-      "secondaryCta": "Explore our process",
-      "badges": {
-        "confidential": "Confidential",
-        "strategic": "Strategic",
-        "resultsFocused": "Results-focused"
-      },
-      "stats": {
-        "visibility": "Reputation visibility",
-        "monitoring": "Ongoing monitoring",
-        "confidentiality": "Confidential strategy"
-      },
-      "crisisManagement": {
-        "title": "Crisis Response & Recovery",
-        "description": "Rapid response strategies to contain damage and rebuild trust during reputation emergencies."
-      },
-      "monitoring": {
-        "title": "Real-Time Reputation Monitoring",
-        "description": "24/7 monitoring across platforms to detect and address emerging threats proactively."
-      },
-      "brandBuilding": {
-        "title": "Digital Brand Building",
-        "description": "Create and amplify content that showcases your expertise, achievements, and values."
-      },
-      "privacyProtection": {
-        "title": "Privacy & Data Protection",
-        "description": "Remove personal information from data broker sites and protect your digital privacy."
-      }
+  "hero": {
+    "eyebrow": "Online Reputation Management",
+    "title": "Fix your Google search results and take back control.",
+    "description": "We help individuals and businesses improve what people see when they search online. Our team identifies, suppresses, and replaces harmful results so you can move forward with confidence.",
+    "primaryCta": "Book a free consultation",
+    "secondaryCta": "Explore our process",
+    "imageAlt": "Online reputation management strategy",
+    "badges": {
+      "confidential": "Confidential",
+      "strategic": "Strategic",
+      "resultsFocused": "Results-focused"
     },
-    "process": {
-      "eyebrow": "How We Work",
-      "title": "A Strategic Approach to Reputation",
-      "subtitle": "Every client receives a customized strategy designed for their unique situation.",
-      "step1": {
-        "title": "Discovery & Audit",
-        "description": "Comprehensive analysis of your current digital footprint, including search results, social presence, and privacy exposure."
-      },
-      "step2": {
-        "title": "Strategy Development",
-        "description": "Custom roadmap with clear priorities, tactical approaches, and measurable milestones aligned with your goals."
-      },
-      "step3": {
-        "title": "Execution & Refinement",
-        "description": "Implementation with ongoing optimization, monitoring, and adaptation to evolving online dynamics."
-      }
-    },
-    "testimonials": {
-      "eyebrow": "Client Success",
-      "title": "What Our Clients Say",
-      "executive": {
-        "quote": "Within months, the negative articles that had been haunting my career for years were no longer visible. The team understood the sensitivity and handled everything with discretion.",
-        "name": "Sarah Mitchell",
-        "role": "Fortune 500 Executive"
-      },
-      "entrepreneur": {
-        "quote": "My online reputation now reflects the reality of my business instead of unfair reviews. This transformed how potential clients perceive me.",
-        "name": "David Chen",
-        "role": "Tech Entrepreneur"
-      },
-      "publicFigure": {
-        "quote": "The proactive privacy protection has given me peace of mind. I no longer worry about what people will find when they search my name.",
-        "name": "Amanda Ross",
-        "role": "Public Figure"
-      }
-    },
-    "consultation": {
-      "eyebrow": "Start Your Journey",
-      "title": "Ready to Take Control of Your Reputation?",
-      "description": "Schedule a confidential consultation with our expert team. We'll assess your situation and outline a tailored strategy.",
-      "benefits": {
-        "confidential": "100% confidential discussion",
-        "expert": "Expert analysis of your digital presence",
-        "tailored": "Customized strategy recommendations"
-      },
-      "cta": "Schedule Consultation",
-      "form": {
-        "name": "Full Name",
-        "namePlaceholder": "John Doe",
-        "email": "Email Address",
-        "emailPlaceholder": "john@example.com",
-        "message": "Tell us about your situation",
-        "messagePlaceholder": "Briefly describe your reputation concerns...",
-        "submit": "Send Request",
-        "disclaimer": "All information is confidential and protected"
-      }
-    },
-    "common": {
-      "learnMore": "Learn More",
-      "viewAll": "View All Services"
+    "stats": {
+      "visibility": "Reputation visibility",
+      "monitoring": "Ongoing monitoring",
+      "confidentiality": "Confidential strategy"
     }
   },
+  "intro": {
+    "eyebrow": "Your search results matter",
+    "title": "Build a search presence that reflects your real value.",
+    "paragraph1": "Every piece of information about you shapes your online reputation, both good and bad. When people search your name or business to hire you, buy a service, or research a product, negative results can damage trust when they are left unchecked.",
+    "paragraph2": "Old, inaccurate, or harmful information can become mixed with positive results and create the wrong impression. Even when direct removal is not possible, a strategic approach can reduce its visibility and make credible information easier to find.",
+    "paragraph3": "Our online reputation management services are designed to create a cleaner, stronger, and more positive digital profile for individuals, executives, brands, and businesses in organic search results."
+  },
+  "benefits": {
+    "eyebrow": "A complete approach",
+    "title": "Improve what people find about you.",
+    "subtitle": "Our process combines strategy, content, search optimization, and continuous monitoring to strengthen your online image.",
+    "strategicSuppression": {
+      "title": "Employ Strategic Suppression",
+      "description": "We design customized strategies to push negative search results lower and improve what people discover about you."
+    },
+    "highQualityContent": {
+      "title": "Create and Promote High-Quality Content",
+      "description": "We create credible, positive content that supports your reputation and improves your visibility across search engines."
+    },
+    "imageAmplification": {
+      "title": "Amplify Your Image",
+      "description": "We help position your personal or business profile in front of the right audience with a stronger digital presence."
+    }
+  },
+  "difference": {
+    "eyebrow": "Why we are different",
+    "title": "A strategy built around your reputation, not a generic template.",
+    "paragraph1": "We understand that every reputation challenge is different. That is why our approach begins with your goals, your audience, and the search results that currently define your online image.",
+    "paragraph2": "Our specialists combine reputation strategy, content creation, digital publishing, search optimization, and ongoing monitoring to create lasting improvements.",
+    "visibility": "Reputation visibility",
+    "imageAlt": "Team discussing an online reputation strategy",
+    "trustPoints": {
+      "customizedStrategy": "Customized reputation strategy",
+      "experiencedSpecialists": "Experienced reputation specialists",
+      "transparentReporting": "Transparent progress reporting",
+      "longTermProtection": "Long-term reputation protection"
+    }
+  },
+  "process": {
+    "eyebrow": "Our ORM process",
+    "title": "A clear path from reputation risk to measurable improvement.",
+    "subtitle": "Our process is structured to understand your current position, create the right strategy, execute effectively, and continuously improve results.",
+    "stepLabel": "Step {number} - {eyebrow}",
+    "steps": {
+      "discovery": {
+        "eyebrow": "Discovery",
+        "title": "Assess and Analyze",
+        "description": "We perform a detailed audit of your search results to uncover negative, harmful, outdated, or misleading information. We then identify opportunities, reputation risks, and the most effective path forward.",
+        "imageAlt": "Assessment and analysis workflow",
+        "points": {
+          "1": "Search result and content audit",
+          "2": "Reputation risk identification",
+          "3": "Competitor and industry analysis"
+        }
+      },
+      "strategy": {
+        "eyebrow": "Strategy",
+        "title": "Strategize and Plan",
+        "description": "Our team develops a personalized strategy to remove, suppress, or outperform negative content with trustworthy and high-quality information about you or your business.",
+        "imageAlt": "Strategy and planning workflow",
+        "points": {
+          "1": "Personalized reputation roadmap",
+          "2": "Content and authority planning",
+          "3": "Clear priorities and milestones"
+        }
+      },
+      "execution": {
+        "eyebrow": "Execution",
+        "title": "Implement and Execute Positive Search Engine Results",
+        "description": "Once the strategy is approved, our team begins producing, publishing, and optimizing trustworthy content designed to improve what appears in search results.",
+        "imageAlt": "Content execution workflow",
+        "points": {
+          "1": "Search-optimized content production",
+          "2": "Publishing and digital placement",
+          "3": "Authority and credibility development"
+        }
+      },
+      "reporting": {
+        "eyebrow": "Reporting",
+        "title": "Monitor and Report",
+        "description": "We continuously monitor your brand mentions and search visibility across major online channels. You receive clear reports, performance updates, and recommendations for continued reputation growth.",
+        "imageAlt": "Monitoring and reporting workflow",
+        "points": {
+          "1": "Ongoing search result monitoring",
+          "2": "Performance and progress reports",
+          "3": "Long-term reputation protection"
+        }
+      }
+    }
+  },
+  "cta": {
+    "eyebrow": "Ready to improve your results?",
+    "title": "Build a stronger online reputation starting today.",
+    "description": "Speak with our reputation specialists and discover a strategy built around your search results, goals, and long-term image.",
+    "primaryCta": "Get a no-cost evaluation"
+  }
+},
   "contentIdeaGeneration": {
     "hero": {
       "eyebrow": "Content Ideation Studio",
@@ -1587,6 +1607,10 @@
         "searchVisibility": "Search visibility",
         "customerTrust": "Customer trust"
       },
+      "monitoringValue": "24/7",
+      "monitoringLabel": "Reputation monitoring",
+      "cardTitle": "Complete brand visibility",
+      "cardDescription": "Search, reviews, media, and public sentiment",
       "imageAlt": "Business reputation management services"
     },
     "introduction": {
@@ -1661,135 +1685,18 @@
         }
       }
     },
-    "capabilities": {
-      "eyebrow": "Business reputation capabilities",
-      "title": "Everything your brand needs to remain visible, credible, and protected.",
-      "subtitle": "Our specialists combine technology, strategy, and communication to strengthen every part of your business reputation.",
-      "items": {
-        "reputationAudit": {
-          "title": "Business Reputation Audit",
-          "description": "We evaluate your branded search results, reviews, public mentions, profiles, leadership visibility, and potential reputation risks.",
-          "metric": "Complete visibility review"
-        },
-        "contentStrategy": {
-          "title": "Brand Content Strategy",
-          "description": "We create authoritative content designed to communicate your expertise, achievements, leadership, values, and customer impact.",
-          "metric": "Credibility-focused content"
-        },
-        "reviewManagement": {
-          "title": "Review and Sentiment Management",
-          "description": "We monitor reviews and public feedback while helping your organization respond appropriately and improve customer trust.",
-          "metric": "Stronger customer confidence"
-        },
-        "searchSuppression": {
-          "title": "Negative Search Suppression",
-          "description": "We strengthen credible brand properties and reduce the visibility of harmful, irrelevant, or misleading search results.",
-          "metric": "Improved branded search"
-        },
-        "crisisProtection": {
-          "title": "Crisis and Threat Protection",
-          "description": "We prepare your organization to respond to sudden reputation incidents with coordinated communication and recovery strategies.",
-          "metric": "Faster reputation response"
-        },
-        "reporting": {
-          "title": "Monitoring and Reporting",
-          "description": "We track search visibility, brand mentions, content performance, and reputation changes through clear and actionable reporting.",
-          "metric": "Measurable progress"
-        }
-      }
-    },
-    "process": {
-      "eyebrow": "Our business ORM process",
-      "title": "A structured process for protecting and growing your brand.",
-      "subtitle": "Every campaign begins with research and develops into an ongoing program of visibility, authority, monitoring, and protection.",
-      "steps": {
-        "audit": {
-          "number": "01",
-          "title": "Audit the Brand",
-          "description": "We review your search presence, digital assets, reviews, media coverage, public sentiment, and existing reputation risks."
-        },
-        "strategy": {
-          "number": "02",
-          "title": "Build the Strategy",
-          "description": "We create a customized roadmap based on your business goals, audiences, competitive environment, and reputation priorities."
-        },
-        "content": {
-          "number": "03",
-          "title": "Create Brand Assets",
-          "description": "Our team develops credible content, profiles, media assets, and authoritative digital properties that support your reputation."
-        },
-        "optimization": {
-          "number": "04",
-          "title": "Optimize and Promote",
-          "description": "We optimize and promote positive assets to improve their authority, relevance, and visibility within branded search."
-        },
-        "monitoring": {
-          "number": "05",
-          "title": "Monitor and Protect",
-          "description": "We continuously monitor brand mentions, reviews, search results, and emerging threats while adapting the strategy."
-        }
-      }
-    },
-    "whyChooseUs": {
-      "eyebrow": "Why businesses choose us",
-      "title": "Reputation management built around measurable business outcomes.",
-      "description": "We do more than respond to negative results. Our approach helps businesses establish lasting digital authority, improve stakeholder confidence, and become more resilient to future reputation risks.",
-      "points": {
-        "customStrategy": {
-          "title": "Customized Strategy",
-          "description": "Every campaign is developed around your brand, market, audience, challenges, and long-term business goals."
-        },
-        "confidentiality": {
-          "title": "Confidential Service",
-          "description": "Sensitive reputation matters are handled with privacy, professionalism, and controlled access."
-        },
-        "reporting": {
-          "title": "Transparent Reporting",
-          "description": "You receive clear progress updates, visibility insights, performance data, and strategic recommendations."
-        },
-        "longTerm": {
-          "title": "Long-Term Protection",
-          "description": "We focus on durable reputation assets and ongoing monitoring rather than temporary cosmetic changes."
-        }
+    "closingHighlights": {
+      "searchVisibility": {
+        "title": "Search visibility",
+        "description": "Improve the quality and authority of branded search results."
       },
-      "imageAlt": "Business reputation strategy meeting"
-    },
-    "faq": {
-      "eyebrow": "Questions and answers",
-      "title": "Business Reputation Management FAQs",
-      "items": {
-        "1": {
-          "question": "What is business reputation management?",
-          "answer": "Business reputation management is the process of monitoring, improving, and protecting how an organization appears across search engines, reviews, media coverage, social platforms, directories, and other digital channels."
-        },
-        "2": {
-          "question": "Why is online reputation important for a business?",
-          "answer": "Customers, employees, investors, and business partners often research a company online before making decisions. Negative or inaccurate information can reduce trust, affect sales, damage recruitment, and weaken business relationships."
-        },
-        "3": {
-          "question": "Can negative business search results be removed?",
-          "answer": "Removal depends on ownership, platform rules, legal considerations, and whether the content violates relevant policies. When removal is not available, strategic suppression and positive content development can help reduce visibility."
-        },
-        "4": {
-          "question": "How long does business reputation management take?",
-          "answer": "Simple improvements may appear within several weeks, while competitive or complex campaigns may require several months. Timing depends on the authority of existing content, search competition, and campaign scope."
-        },
-        "5": {
-          "question": "Does business reputation management include review monitoring?",
-          "answer": "Yes. A complete business reputation program may include review monitoring, sentiment analysis, response guidance, positive feedback development, and tracking across relevant review platforms."
-        },
-        "6": {
-          "question": "Can you protect a company during a reputation crisis?",
-          "answer": "Reputation specialists can help assess the incident, organize communication, monitor public response, strengthen accurate information, and build a recovery strategy. Legal or regulatory advice should still come from qualified professionals."
-        },
-        "7": {
-          "question": "What types of content are created for businesses?",
-          "answer": "Content may include company profiles, leadership features, expert articles, case studies, press materials, business updates, optimized web pages, interviews, social assets, and authoritative brand resources."
-        },
-        "8": {
-          "question": "How is campaign progress measured?",
-          "answer": "Progress may be measured through search-result movement, positive asset visibility, content performance, review sentiment, brand mentions, risk reduction, traffic, and other campaign-specific indicators."
-        }
+      "brandProtection": {
+        "title": "Brand protection",
+        "description": "Prepare your business for reputation threats and public criticism."
+      },
+      "continuousMonitoring": {
+        "title": "Continuous monitoring",
+        "description": "Track reviews, mentions, media coverage, and search-result changes."
       }
     },
     "cta": {
@@ -1797,117 +1704,6 @@
       "title": "Build a stronger, more credible brand presence.",
       "description": "Speak with our reputation specialists about your current search results, public perception, brand risks, and the strategy required to move forward.",
       "primaryCta": "Get a no-cost evaluation"
-    }
-  },
-  "reputationConsulting": {
-    "hero": {
-      "eyebrow": "Digital Reputation Strategy",
-      "title": "Your reputation is",
-      "titleAccent": "your most valuable asset",
-      "description": "Strategic consulting to protect, enhance, and control your digital presence. We help executives, entrepreneurs, and public figures shape their online narrative.",
-      "cta": "Get Free Consultation",
-      "secondaryCta": "See Our Process",
-      "years": "Years Experience",
-      "clients": "Clients Served",
-      "scoreLabel": "Reputation Score",
-      "scoreDescription": "Average client improvement after 6 months"
-    },
-    "trustBar": {
-      "label": "Trusted by",
-      "newsweek": "Newsweek",
-      "forbes": "Forbes",
-      "entrepreneur": "Entrepreneur",
-      "inc": "Inc."
-    },
-    "services": {
-      "eyebrow": "What We Do",
-      "title": "Comprehensive Reputation Consulting",
-      "subtitle": "Strategic solutions tailored to your unique reputation challenges and goals.",
-      "contentRemoval": {
-        "title": "Content Removal & Correction",
-        "description": "Remove or correct inaccurate, misleading, or harmful content across the web."
-      },
-      "searchSuppression": {
-        "title": "Search Result Suppression",
-        "description": "Shift positive content upward in search results through strategic SEO and content development."
-      },
-      "crisisManagement": {
-        "title": "Crisis Response & Recovery",
-        "description": "Rapid response strategies to contain damage and rebuild trust during reputation emergencies."
-      },
-      "monitoring": {
-        "title": "Real-Time Reputation Monitoring",
-        "description": "24/7 monitoring across platforms to detect and address emerging threats proactively."
-      },
-      "brandBuilding": {
-        "title": "Digital Brand Building",
-        "description": "Create and amplify content that showcases your expertise, achievements, and values."
-      },
-      "privacyProtection": {
-        "title": "Privacy & Data Protection",
-        "description": "Remove personal information from data broker sites and protect your digital privacy."
-      }
-    },
-    "process": {
-      "eyebrow": "How We Work",
-      "title": "A Strategic Approach to Reputation",
-      "subtitle": "Every client receives a customized strategy designed for their unique situation.",
-      "step1": {
-        "title": "Discovery & Audit",
-        "description": "Comprehensive analysis of your current digital footprint, including search results, social presence, and privacy exposure."
-      },
-      "step2": {
-        "title": "Strategy Development",
-        "description": "Custom roadmap with clear priorities, tactical approaches, and measurable milestones aligned with your goals."
-      },
-      "step3": {
-        "title": "Execution & Refinement",
-        "description": "Implementation with ongoing optimization, monitoring, and adaptation to evolving online dynamics."
-      }
-    },
-    "testimonials": {
-      "eyebrow": "Client Success",
-      "title": "What Our Clients Say",
-      "executive": {
-        "quote": "Within months, the negative articles that had been haunting my career for years were no longer visible. The team understood the sensitivity and handled everything with discretion.",
-        "name": "Sarah Mitchell",
-        "role": "Fortune 500 Executive"
-      },
-      "entrepreneur": {
-        "quote": "My online reputation now reflects the reality of my business instead of unfair reviews. This transformed how potential clients perceive me.",
-        "name": "David Chen",
-        "role": "Tech Entrepreneur"
-      },
-      "publicFigure": {
-        "quote": "The proactive privacy protection has given me peace of mind. I no longer worry about what people will find when they search my name.",
-        "name": "Amanda Ross",
-        "role": "Public Figure"
-      }
-    },
-    "consultation": {
-      "eyebrow": "Start Your Journey",
-      "title": "Ready to Take Control of Your Reputation?",
-      "description": "Schedule a confidential consultation with our expert team. We'll assess your situation and outline a tailored strategy.",
-      "benefits": {
-        "confidential": "100% confidential discussion",
-        "expert": "Expert analysis of your digital presence",
-        "tailored": "Customized strategy recommendations"
-      },
-      "cta": "Schedule Consultation",
-      "form": {
-        "name": "Full Name",
-        "namePlaceholder": "John Doe",
-        "email": "Email Address",
-        "emailPlaceholder": "john@example.com",
-        "message": "Tell us about your situation",
-        "messagePlaceholder": "Briefly describe your reputation concerns...",
-        "submit": "Send Request",
-        "disclaimer": "All information is confidential and protected"
-      }
-    },
-    "common": {
-      "learnMore": "Learn More",
-      "viewAll": "View All Services"
     }
   }
 }
