@@ -2,8 +2,8 @@
 // All placeholder values are marked with [BRACKETS] for easy replacement
 
 export const AGENCY_CONFIG = {
-  name: "[AGENCY NAME]",
-  shortName: "[BRAND]",
+  name: "ORM DEFENDER",
+  shortName: "ORM DEFENDER",
   tagline: "[AGENCY TAGLINE - We craft digital experiences to scale and impact]",
   email: "[contact@agency.com]",
   phone: "[+1 (XXX) XXX-XXXX]",
