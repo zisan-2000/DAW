@@ -9,7 +9,6 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "products": "Products",
     "industries": "Industries",
     "caseStudies": "Case Studies",
     "blog": "Blog",
@@ -20,7 +19,23 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "callPhone": "Call {phone}",
-    "freeConsultation": "Take a Free Consultation"
+    "freeConsultation": "Take a Free Consultation",
+    "products": "Products"
+  },
+  "footer": {
+    "servicesHeading": "Services",
+    "companyHeading": "Company",
+    "companyLinks": {
+      "about": "About Us",
+      "caseStudies": "Case Studies",
+      "blog": "Blog",
+      "contact": "Contact"
+    },
+    "contactHeading": "Get In Touch",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "rightsReserved": "All rights reserved.",
+    "madeWith": "Made with"
   },
   "common": {
     "loading": "Loading...",
@@ -52,37 +67,22 @@
       "successMessage": "Thank you for your message! We will contact you soon."
     }
   },
-  "reputationConsulting": {
+  "fixMySearchResults": {
     "hero": {
-      "eyebrow": "Digital Reputation Strategy",
-      "title": "Your reputation is",
-      "titleAccent": "your most valuable asset",
-      "description": "Strategic consulting to protect, enhance, and control your digital presence. We help executives, entrepreneurs, and public figures shape their online narrative.",
-      "cta": "Get Free Consultation",
-      "secondaryCta": "See Our Process",
-      "years": "Years Experience",
-      "clients": "Clients Served",
-      "scoreLabel": "Reputation Score",
-      "scoreDescription": "Average client improvement after 6 months"
-    },
-    "trustBar": {
-      "label": "Trusted by",
-      "newsweek": "Newsweek",
-      "forbes": "Forbes",
-      "entrepreneur": "Entrepreneur",
-      "inc": "Inc."
-    },
-    "services": {
-      "eyebrow": "What We Do",
-      "title": "Comprehensive Reputation Consulting",
-      "subtitle": "Strategic solutions tailored to your unique reputation challenges and goals.",
-      "contentRemoval": {
-        "title": "Content Removal & Correction",
-        "description": "Remove or correct inaccurate, misleading, or harmful content across the web."
+      "eyebrow": "Online Reputation Management",
+      "title": "Fix your Google search results and take back control.",
+      "description": "We help individuals and businesses improve what people see when they search online. Our team identifies, suppresses, and replaces harmful results so you can move forward with confidence.",
+      "primaryCta": "Book a free consultation",
+      "secondaryCta": "Explore our process",
+      "badges": {
+        "confidential": "Confidential",
+        "strategic": "Strategic",
+        "resultsFocused": "Results-focused"
       },
-      "searchSuppression": {
-        "title": "Search Result Suppression",
-        "description": "Shift positive content upward in search results through strategic SEO and content development."
+      "stats": {
+        "visibility": "Reputation visibility",
+        "monitoring": "Ongoing monitoring",
+        "confidentiality": "Confidential strategy"
       },
       "crisisManagement": {
         "title": "Crisis Response & Recovery",

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 import { Link } from '@/i18n/navigation'
 import {
@@ -13,9 +14,11 @@ import {
   productCaseStudiesPath,
 } from '@/lib/products/nav'
 import { AUDIENCE_ORDER } from '@/lib/products/audiences'
+import { getProductDesign, getSectionVariants } from '@/lib/products/design'
 import { AGENCY_CONFIG } from '@/lib/content'
 import { ProductPageShell } from '@/components/products/product-page-shell'
 import { ProductHero } from '@/components/products/product-hero'
+import { AudienceShowcase } from '@/components/products/audience-showcase'
 import { CapabilitiesList } from '@/components/products/capabilities-list'
 import { ProcessSteps } from '@/components/products/process-steps'
 import { FaqAccordion } from '@/components/products/faq-accordion'
@@ -57,6 +60,8 @@ export default async function ProductHubPage({ params }: PageProps) {
   const product = getProduct(productId)
   if (!product) notFound()
 
+  const design = getProductDesign(product.id)
+  const variants = getSectionVariants(product.id)
   const caseStudies = getProductCaseStudies(product.id).slice(0, 2)
   const base = productBasePath(product.id)
 
@@ -71,6 +76,73 @@ export default async function ProductHubPage({ params }: PageProps) {
     description: PRODUCTS[id].tagline,
     href: productBasePath(id),
   }))
+
+  const sections: Record<(typeof design.sectionOrder)[number], ReactNode> = {
+    audiences: (
+      <AudienceShowcase
+        key="audiences"
+        layout={design.audienceLayout}
+        links={audienceLinks}
+      />
+    ),
+    capabilities: (
+      <CapabilitiesList
+        key="capabilities"
+        items={product.capabilities}
+        variant={variants.capabilities}
+      />
+    ),
+    process: (
+      <ProcessSteps
+        key="process"
+        steps={product.process}
+        layout={design.processLayout}
+      />
+    ),
+    cases: (
+      <section
+        key="cases"
+        className="border-t border-border/70 py-16 md:py-24"
+      >
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="mb-2 text-[11px] tracking-[0.16em] text-accent uppercase">
+                {design.signalWord}
+              </p>
+              <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+                Selected work
+              </h2>
+            </div>
+            <Link
+              href={productCaseStudiesPath(product.id)}
+              className="text-sm font-semibold text-accent hover:underline"
+            >
+              View all case studies
+            </Link>
+          </div>
+          <ProductCaseStudyCards
+            studies={caseStudies}
+            layout={variants.cases}
+          />
+        </div>
+      </section>
+    ),
+    faqs: (
+      <FaqAccordion
+        key="faqs"
+        items={product.faqs}
+        variant={variants.faq}
+      />
+    ),
+    related: (
+      <RelatedLinks
+        key="related"
+        title="Related products"
+        links={relatedLinks}
+      />
+    ),
+  }
 
   return (
     <ProductPageShell>
@@ -91,32 +163,19 @@ export default async function ProductHubPage({ params }: PageProps) {
           label: 'View case studies',
           href: productCaseStudiesPath(product.id),
         }}
+        layout={design.heroLayout}
+        motifLabel={design.motifLabel}
+        signalWord={design.signalWord}
+        accentNote={design.accentNote}
       />
 
-      <RelatedLinks title="Who it’s for" links={audienceLinks} />
-      <CapabilitiesList items={product.capabilities} />
-      <ProcessSteps steps={product.process} />
+      {design.sectionOrder.map((id) => sections[id])}
 
-      <section className="border-t border-white/5 py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-            <h2 className="font-display text-2xl font-semibold tracking-tight text-surface-ink-foreground sm:text-3xl">
-              Selected work
-            </h2>
-            <Link
-              href={productCaseStudiesPath(product.id)}
-              className="text-sm font-semibold text-accent hover:underline"
-            >
-              View all case studies
-            </Link>
-          </div>
-          <ProductCaseStudyCards studies={caseStudies} />
-        </div>
-      </section>
-
-      <FaqAccordion items={product.faqs} />
-      <RelatedLinks title="Related products" links={relatedLinks} />
-      <ProductCta />
+      <ProductCta
+        variant={variants.cta}
+        title={`Start a ${product.shortName} conversation`}
+        description={`Share your situation for ${product.name.toLowerCase()}. We’ll outline practical next steps—no pressure, no generic pitch.`}
+      />
     </ProductPageShell>
   )
 }

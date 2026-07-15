@@ -9,15 +9,16 @@ import {
 import {
   productBasePath,
   productCaseStudiesPath,
+  productAudiencePath,
 } from '@/lib/products/nav'
+import { getProductDesign, getSectionVariants } from '@/lib/products/design'
 import { AGENCY_CONFIG } from '@/lib/content'
 import { ProductPageShell } from '@/components/products/product-page-shell'
 import { ProductHero } from '@/components/products/product-hero'
 import { ProductCaseStudyCards } from '@/components/products/product-case-study-cards'
 import { ProductCta } from '@/components/products/product-cta'
-import { RelatedLinks } from '@/components/products/related-links'
+import { AudienceShowcase } from '@/components/products/audience-showcase'
 import { AUDIENCE_ORDER } from '@/lib/products/audiences'
-import { productAudiencePath } from '@/lib/products/nav'
 
 type PageProps = {
   params: Promise<{ locale: string; product: string }>
@@ -51,11 +52,14 @@ export default async function ProductCaseStudiesPage({ params }: PageProps) {
   const product = getProduct(productId)
   if (!product) notFound()
 
+  const design = getProductDesign(product.id)
+  const variants = getSectionVariants(product.id)
   const studies = getProductCaseStudies(product.id)
   const base = productBasePath(product.id)
 
   const audienceLinks = AUDIENCE_ORDER.map((id) => ({
     label: product.audiences[id].label,
+    description: product.audiences[id].supporting,
     href: productAudiencePath(product.id, id),
   }))
 
@@ -104,16 +108,32 @@ export default async function ProductCaseStudiesPage({ params }: PageProps) {
           label: `About ${product.shortName}`,
           href: base,
         }}
+        layout={design.heroLayout}
+        motifLabel={design.motifLabel}
+        signalWord={design.signalWord}
+        accentNote={design.accentNote}
       />
 
-      <section className="border-t border-white/5 py-16 md:py-20">
+      <section className="border-t border-border/70 py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <ProductCaseStudyCards studies={studies} />
+          <div className="mb-10">
+            <p className="text-[11px] tracking-[0.16em] text-accent uppercase">
+              Archive · {studies.length} entries
+            </p>
+            <h2 className="font-display mt-2 text-3xl font-semibold tracking-tight text-foreground">
+              Work in this practice
+            </h2>
+          </div>
+          <ProductCaseStudyCards studies={studies} layout={variants.cases} />
         </div>
       </section>
 
-      <RelatedLinks title="Explore audiences" links={audienceLinks} />
-      <ProductCta />
+      <AudienceShowcase
+        title="Explore by audience"
+        layout={design.audienceLayout}
+        links={audienceLinks}
+      />
+      <ProductCta variant={variants.cta} />
     </ProductPageShell>
   )
 }
