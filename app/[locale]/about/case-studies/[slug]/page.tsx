@@ -27,7 +27,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
   }
 
   return (
-    <div className="w-full">
+    <div className="about-editorial w-full">
       {/* Hero */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-accent/10 to-background">
         <div className="mx-auto max-w-7xl px-4 md:px-6">

@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function CaseStudiesPage() {
   return (
-    <div className="w-full">
+    <div className="about-editorial w-full">
       <section className="py-16 md:py-20">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Case Studies</h1>

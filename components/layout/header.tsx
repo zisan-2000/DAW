@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import { Menu, X, ChevronDown, Phone, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
@@ -31,137 +32,38 @@ type NavigationItem = {
 
 const productSections: MenuSection[] = productNavSections;
 
-const serviceItems: MenuItem[] = [
-  {
-    label: "Fix My Search Results",
-    href: "/services/fix-my-search-results",
-  },
-  {
-    label: "Personal Reputation Management Services",
-    href: "/services/personal-reputation-management",
-  },
-  {
-    label: "Business Reputation Management Services",
-    href: "/services/business-reputation-management",
-  },
-  {
-    label: "AI Reputation Management Services",
-    href: "/services/ai-reputation-management",
-  },
-  {
-    label: "Executive Branding",
-    href: "/services/executive-branding",
-  },
-  {
-    label: "Review Management",
-    href: "/services/review-management",
-  },
-  {
-    label: "Reddit Removal Services",
-    href: "/services/reddit-removal",
-  },
-  {
-    label: "Wikipedia Services",
-    href: "/services/wikipedia",
-  },
-  {
-    label: "Google Maps SEO",
-    href: "/services/google-maps-seo",
-  },
-  {
-    label: "Earned Media Marketing Services",
-    href: "/services/earned-media-marketing",
-  },
-  {
-    label: "Expert Witness Services",
-    href: "/services/expert-witness-services",
-  },
-];
-
-const consultingItems: MenuItem[] = [
-  {
-    label: "Reputation Consulting",
-    href: "/consulting/reputation-consulting",
-  },
-  {
-    label: "Content Idea Generation",
-    href: "/consulting/content-idea-generation",
-  },
-  {
-    label: "Branding",
-    href: "/consulting/branding",
-  },
-  {
-    label: "Crisis Management",
-    href: "/consulting/crisis-management",
-  },
-  {
-    label: "Generative Engine Optimization",
-    href: "/consulting/generative-engine-optimization",
-  },
-  {
-    label: "Public Relations",
-    href: "/consulting/public-relations",
-  },
-];
-
-const aboutItems: MenuItem[] = [
-  {
-    label: "Our Story",
-    href: "/about/our-story",
-  },
-  {
-    label: "Your Online Reputation",
-    href: "/about/your-online-reputation",
-  },
-  {
-    label: "Why Us?",
-    href: "/about/why-us",
-  },
-  {
-    label: "Case Studies",
-    href: "/case-studies",
-  },
-  {
-    label: "Concern",
-    href: "/about/concern",
-  },
-  {
-    label: "FAQ",
-    href: "/about/faq",
-  },
-  {
-    label: "Resources",
-    href: "/resources",
-  },
-];
-
-const navigationItems: NavigationItem[] = [
-  {
-    id: "services",
-    label: "Services",
-    items: serviceItems,
-  },
-  {
-    id: "consulting",
-    label: "Consulting",
-    items: consultingItems,
-  },
-  {
-    id: "about",
-    label: "About",
-    items: aboutItems,
-  },
-];
-
 const navLinkClass =
   "inline-flex items-center gap-1.5 whitespace-nowrap text-[13px] font-medium text-foreground transition-colors hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4";
 
+const navLinkActiveClass = "text-accent";
+
+function isActivePath(pathname: string, href: string) {
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
+function isActiveGroup(pathname: string, items: MenuItem[] = []) {
+  return items.some((item) => isActivePath(pathname, item.href));
+}
+
 function ProductsDesktopDropdown() {
+  const t = useTranslations("header");
+  const pathname = usePathname();
+  const active = isActiveGroup(
+    pathname,
+    productSections.flatMap((section) => [
+      { label: section.label, href: section.basePath },
+      ...section.items,
+    ]),
+  );
+
   return (
     <div className="group relative">
-      <button type="button" className={navLinkClass} aria-haspopup="true">
-        Products
+      <button
+        type="button"
+        className={`${navLinkClass} ${active ? navLinkActiveClass : ""}`}
+        aria-haspopup="true"
+      >
+        {t("products")}
         <ChevronDown
           size={14}
           aria-hidden="true"
@@ -183,45 +85,57 @@ function ProductsDesktopDropdown() {
         <div className="overflow-hidden rounded-2xl border border-border/80 bg-card shadow-2xl shadow-black/10">
           <div className="border-b border-border/70 px-6 py-4">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-              Products
+              {t("productsEyebrow")}
             </p>
 
             <p className="mt-1 text-sm text-muted-foreground">
-              Choose a solution based on your reputation and privacy needs.
+              {t("productsDescription")}
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-0 p-3 lg:grid-cols-5">
-            {productSections.map((section) => (
-              <div
-                key={section.id}
-                className="rounded-xl p-3 transition-colors hover:bg-muted/60"
-              >
-                <Link
-                  href={section.basePath}
-                  className="group/title flex min-h-12 items-start justify-between gap-2 text-sm font-semibold leading-5 text-foreground transition-colors hover:text-accent"
+            {productSections.map((section) => {
+              const sectionActive = isActivePath(pathname, section.basePath);
+
+              return (
+                <div
+                  key={section.id}
+                  className="rounded-xl p-3 transition-colors hover:bg-muted/60"
                 >
-                  <span>{section.label}</span>
+                  <Link
+                    href={section.basePath}
+                    className={`group/title flex min-h-12 items-start justify-between gap-2 text-sm font-semibold leading-5 transition-colors hover:text-accent ${
+                      sectionActive ? "text-accent" : "text-foreground"
+                    }`}
+                  >
+                    <span>{section.label}</span>
 
-                  <ArrowRight
-                    size={15}
-                    className="mt-0.5 shrink-0 -translate-x-1 opacity-0 transition-all group-hover/title:translate-x-0 group-hover/title:opacity-100"
-                  />
-                </Link>
+                    <ArrowRight
+                      size={15}
+                      className="mt-0.5 shrink-0 -translate-x-1 opacity-0 transition-all group-hover/title:translate-x-0 group-hover/title:opacity-100"
+                    />
+                  </Link>
 
-                <div className="mt-3 space-y-1 border-t border-border/70 pt-3">
-                  {section.items.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="block rounded-lg px-2 py-2 text-xs font-medium leading-4 text-muted-foreground transition-colors hover:bg-background hover:text-accent"
-                    >
-                      {item.label}
-                    </Link>
-                  ))}
+                  <div className="mt-3 space-y-1 border-t border-border/70 pt-3">
+                    {section.items.map((item) => {
+                      const itemActive = isActivePath(pathname, item.href);
+
+                      return (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className={`block rounded-lg px-2 py-2 text-xs font-medium leading-4 transition-colors hover:bg-background hover:text-accent ${
+                            itemActive ? "text-accent" : "text-muted-foreground"
+                          }`}
+                        >
+                          {item.label}
+                        </Link>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
@@ -230,9 +144,16 @@ function ProductsDesktopDropdown() {
 }
 
 function DesktopDropdown({ item }: { item: NavigationItem }) {
+  const pathname = usePathname();
+  const active = isActiveGroup(pathname, item.items);
+
   return (
     <div className="group relative">
-      <button type="button" className={navLinkClass} aria-haspopup="true">
+      <button
+        type="button"
+        className={`${navLinkClass} ${active ? navLinkActiveClass : ""}`}
+        aria-haspopup="true"
+      >
         {item.label}
 
         <ChevronDown
@@ -260,20 +181,26 @@ function DesktopDropdown({ item }: { item: NavigationItem }) {
           </div>
 
           <div className="max-h-[420px] overflow-y-auto py-2">
-            {item.items?.map((subItem) => (
-              <Link
-                key={subItem.href}
-                href={subItem.href}
-                className="group/link flex items-center justify-between rounded-xl px-3 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-muted hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-              >
-                <span>{subItem.label}</span>
+            {item.items?.map((subItem) => {
+              const itemActive = isActivePath(pathname, subItem.href);
 
-                <ArrowRight
-                  size={15}
-                  className="translate-x-1 opacity-0 transition-all group-hover/link:translate-x-0 group-hover/link:opacity-100"
-                />
-              </Link>
-            ))}
+              return (
+                <Link
+                  key={subItem.href}
+                  href={subItem.href}
+                  className={`group/link flex items-center justify-between rounded-xl px-3 py-2.5 text-sm font-medium transition-colors hover:bg-muted hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
+                    itemActive ? "text-accent" : "text-foreground"
+                  }`}
+                >
+                  <span>{subItem.label}</span>
+
+                  <ArrowRight
+                    size={15}
+                    className="translate-x-1 opacity-0 transition-all group-hover/link:translate-x-0 group-hover/link:opacity-100"
+                  />
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -282,6 +209,70 @@ function DesktopDropdown({ item }: { item: NavigationItem }) {
 }
 
 export function Header() {
+  const t = useTranslations("header");
+  const tNav = useTranslations("nav");
+  const pathname = usePathname();
+
+  const serviceItems: MenuItem[] = [
+    { label: t("services.fixMySearchResults"), href: "/services/fix-my-search-results" },
+    {
+      label: t("services.personalReputationManagement"),
+      href: "/services/personal-reputation-management",
+    },
+    {
+      label: t("services.businessReputationManagement"),
+      href: "/services/business-reputation-management",
+    },
+    {
+      label: t("services.aiReputationManagement"),
+      href: "/services/ai-reputation-management",
+    },
+    { label: t("services.executiveBranding"), href: "/services/executive-branding" },
+    { label: t("services.reviewManagement"), href: "/services/review-management" },
+    { label: t("services.redditRemoval"), href: "/services/reddit-removal" },
+    { label: t("services.wikipedia"), href: "/services/wikipedia" },
+    { label: t("services.googleMapsSeo"), href: "/services/google-maps-seo" },
+    {
+      label: t("services.earnedMediaMarketing"),
+      href: "/services/earned-media-marketing",
+    },
+    {
+      label: t("services.expertWitnessServices"),
+      href: "/services/expert-witness-services",
+    },
+  ];
+
+  const consultingItems: MenuItem[] = [
+    { label: t("consulting.reputationConsulting"), href: "/consulting/reputation-consulting" },
+    {
+      label: t("consulting.contentIdeaGeneration"),
+      href: "/consulting/content-idea-generation",
+    },
+    { label: t("consulting.branding"), href: "/consulting/branding" },
+    { label: t("consulting.crisisManagement"), href: "/consulting/crisis-management" },
+    {
+      label: t("consulting.generativeEngineOptimization"),
+      href: "/consulting/generative-engine-optimization",
+    },
+    { label: t("consulting.publicRelations"), href: "/consulting/public-relations" },
+  ];
+
+  const aboutItems: MenuItem[] = [
+    { label: t("about.ourStory"), href: "/about/our-story" },
+    { label: t("about.yourOnlineReputation"), href: "/about/your-online-reputation" },
+    { label: t("about.whyUs"), href: "/about/why-us" },
+    { label: t("about.caseStudies"), href: "/about/case-studies" },
+    { label: t("about.concern"), href: "/about/concern" },
+    { label: t("about.faq"), href: "/about/faq" },
+    { label: t("about.resources"), href: "/resources" },
+  ];
+
+  const navigationItems: NavigationItem[] = [
+    { id: "services", label: t("services.label"), items: serviceItems },
+    { id: "consulting", label: t("consulting.label"), items: consultingItems },
+    { id: "about", label: t("about.label"), items: aboutItems },
+  ];
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
@@ -310,6 +301,9 @@ export function Header() {
     setActiveProductSection((current) => (current === id ? null : id));
   };
 
+  const isHomeActive = pathname === "/";
+  const isBlogActive = isActivePath(pathname, "/blog");
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/80 bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80">
       <div className="mx-auto flex min-h-20 max-w-[1600px] items-center justify-between gap-5 px-4 sm:px-6 lg:px-8">
@@ -327,7 +321,7 @@ export function Header() {
 
         <nav
           className="hidden flex-1 items-center justify-center gap-5 xl:flex 2xl:gap-7"
-          aria-label="Primary navigation"
+          aria-label={tNav("primaryNavigation")}
         >
           <ProductsDesktopDropdown />
 
@@ -335,8 +329,11 @@ export function Header() {
             <DesktopDropdown key={item.id} item={item} />
           ))}
 
-          <Link href="/blog" className={navLinkClass}>
-            Blog
+          <Link
+            href="/blog"
+            className={`${navLinkClass} ${isBlogActive ? navLinkActiveClass : ""}`}
+          >
+            {t("blog")}
           </Link>
         </nav>
 
@@ -345,14 +342,14 @@ export function Header() {
 
           <Link href="/contact?type=consultation">
             <Button className="h-10 whitespace-nowrap rounded-xl bg-accent px-4 text-sm font-semibold text-accent-foreground shadow-sm hover:bg-accent/90">
-              Take a Free Consultation
+              {t("freeConsultation")}
             </Button>
           </Link>
 
           <a
             href={phoneHref}
             className="group flex items-center gap-2 rounded-xl px-2 py-2 text-sm font-semibold text-foreground transition-colors hover:text-accent"
-            aria-label={`Call ${phoneNumber}`}
+            aria-label={tNav("callPhone", { phone: phoneNumber })}
           >
             <span className="flex size-9 items-center justify-center rounded-lg bg-muted transition-colors group-hover:bg-accent/10">
               <Phone size={16} aria-hidden="true" />
@@ -368,7 +365,7 @@ export function Header() {
           <a
             href={phoneHref}
             className="inline-flex size-10 items-center justify-center rounded-xl border border-border bg-card text-foreground transition-colors hover:border-accent hover:text-accent"
-            aria-label={`Call ${phoneNumber}`}
+            aria-label={tNav("callPhone", { phone: phoneNumber })}
           >
             <Phone size={18} />
           </a>
@@ -379,7 +376,7 @@ export function Header() {
             className="inline-flex size-10 items-center justify-center rounded-xl border border-border bg-card text-foreground transition-colors hover:border-accent hover:bg-muted hover:text-accent"
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-navigation"
-            aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-label={mobileMenuOpen ? tNav("closeMenu") : tNav("openMenu")}
           >
             {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -418,14 +415,16 @@ export function Header() {
           >
             <nav
               className="mx-auto max-h-[calc(100vh-5rem)] max-w-7xl overflow-y-auto px-4 py-4 sm:px-6"
-              aria-label="Mobile navigation"
+              aria-label={tNav("mobileNavigation")}
             >
               <Link
                 href="/"
                 onClick={closeMobileMenu}
-                className="flex min-h-12 items-center rounded-xl px-3 font-medium text-foreground transition-colors hover:bg-muted hover:text-accent"
+                className={`flex min-h-12 items-center rounded-xl px-3 font-medium transition-colors hover:bg-muted hover:text-accent ${
+                  isHomeActive ? "text-accent" : "text-foreground"
+                }`}
               >
-                Home
+                {t("home")}
               </Link>
 
               <div className="mt-1 overflow-hidden rounded-xl border border-transparent">
@@ -436,7 +435,7 @@ export function Header() {
                   aria-expanded={activeSubmenu === "products"}
                   aria-controls="products-mobile-submenu"
                 >
-                  <span>Products</span>
+                  <span>{t("products")}</span>
 
                   <ChevronDown
                     size={17}
@@ -529,19 +528,30 @@ export function Header() {
                                         onClick={closeMobileMenu}
                                         className="block rounded-lg px-3 py-2 text-sm font-semibold text-accent hover:bg-background"
                                       >
-                                        View all
+                                        {t("viewAll")}
                                       </Link>
 
-                                      {section.items.map((item) => (
-                                        <Link
-                                          key={item.href}
-                                          href={item.href}
-                                          onClick={closeMobileMenu}
-                                          className="block rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-background hover:text-accent"
-                                        >
-                                          {item.label}
-                                        </Link>
-                                      ))}
+                                      {section.items.map((item) => {
+                                        const itemActive = isActivePath(
+                                          pathname,
+                                          item.href,
+                                        );
+
+                                        return (
+                                          <Link
+                                            key={item.href}
+                                            href={item.href}
+                                            onClick={closeMobileMenu}
+                                            className={`block rounded-lg px-3 py-2 text-sm transition-colors hover:bg-background hover:text-accent ${
+                                              itemActive
+                                                ? "text-accent"
+                                                : "text-muted-foreground"
+                                            }`}
+                                          >
+                                            {item.label}
+                                          </Link>
+                                        );
+                                      })}
                                     </div>
                                   </motion.div>
                                 )}
@@ -611,16 +621,27 @@ export function Header() {
                             className="overflow-hidden"
                           >
                             <div className="mx-3 mb-3 space-y-1 border-l border-border pl-3">
-                              {item.items?.map((subItem) => (
-                                <Link
-                                  key={subItem.href}
-                                  href={subItem.href}
-                                  onClick={closeMobileMenu}
-                                  className="block rounded-lg px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-accent"
-                                >
-                                  {subItem.label}
-                                </Link>
-                              ))}
+                              {item.items?.map((subItem) => {
+                                const itemActive = isActivePath(
+                                  pathname,
+                                  subItem.href,
+                                );
+
+                                return (
+                                  <Link
+                                    key={subItem.href}
+                                    href={subItem.href}
+                                    onClick={closeMobileMenu}
+                                    className={`block rounded-lg px-3 py-2.5 text-sm transition-colors hover:bg-muted hover:text-accent ${
+                                      itemActive
+                                        ? "text-accent"
+                                        : "text-muted-foreground"
+                                    }`}
+                                  >
+                                    {subItem.label}
+                                  </Link>
+                                );
+                              })}
                             </div>
                           </motion.div>
                         )}
@@ -633,9 +654,11 @@ export function Header() {
               <Link
                 href="/blog"
                 onClick={closeMobileMenu}
-                className="mt-1 flex min-h-12 items-center rounded-xl px-3 font-medium text-foreground transition-colors hover:bg-muted hover:text-accent"
+                className={`mt-1 flex min-h-12 items-center rounded-xl px-3 font-medium transition-colors hover:bg-muted hover:text-accent ${
+                  isBlogActive ? "text-accent" : "text-foreground"
+                }`}
               >
-                Blog
+                {t("blog")}
               </Link>
 
               <div className="mt-5 border-t border-border pt-5">
@@ -645,7 +668,7 @@ export function Header() {
                   className="block"
                 >
                   <Button className="h-12 w-full rounded-xl bg-accent font-semibold text-accent-foreground shadow-sm hover:bg-accent/90">
-                    Take a Free Consultation
+                    {t("freeConsultation")}
                   </Button>
                 </Link>
 

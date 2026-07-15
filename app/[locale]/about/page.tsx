@@ -1,4 +1,4 @@
-import { AGENCY_CONFIG, TEAM } from '@/lib/content'
+import { AGENCY_CONFIG } from '@/lib/content'
 import { Link } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="w-full">
+    <div className="about-editorial w-full">
       {/* Hero */}
       <section className="py-20 md:py-32 bg-gradient-to-b from-accent/10 to-background">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
@@ -34,8 +34,25 @@ export default function AboutPage() {
                 Today, we work with {AGENCY_CONFIG.clientsServed}+ clients across {AGENCY_CONFIG.countriesServed} countries, delivering {AGENCY_CONFIG.projectsCompleted}+ successful projects.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-accent/20 to-primary/20 rounded-xl h-80 flex items-center justify-center border border-accent/20">
-              <p className="text-muted-foreground text-center">[Add your company photo or video here]</p>
+            <div className="border border-border bg-card p-2">
+              <div className="border border-border p-6 md:p-8">
+                <p className="mb-6 font-mono text-xs uppercase tracking-[0.18em] text-accent">Explore the agency</p>
+                <nav className="divide-y divide-border" aria-label="About pages">
+                  {[
+                    ['/about/our-story', 'Our story', '01'],
+                    ['/about/why-us', 'Why choose us', '02'],
+                    ['/about/your-online-reputation', 'Your online reputation', '03'],
+                    ['/about/concern', 'Tell us your concern', '04'],
+                    ['/about/faq', 'Frequently asked questions', '05'],
+                    ['/about/case-studies', 'Case studies', '06'],
+                  ].map(([href, label, index]) => (
+                    <Link key={href} href={href} className="group flex items-center justify-between gap-4 py-3 text-sm text-foreground transition-colors hover:text-accent">
+                      <span>{label}</span>
+                      <span className="font-mono text-[10px] text-muted-foreground transition-transform group-hover:translate-x-1">{index} / →</span>
+                    </Link>
+                  ))}
+                </nav>
+              </div>
             </div>
           </div>
         </div>

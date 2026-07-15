@@ -157,6 +157,10 @@
         "submit": "Send Request",
         "disclaimer": "All information is confidential and protected"
       }
+    },
+    "common": {
+      "learnMore": "Learn More",
+      "viewAll": "View All Services"
     }
   },
   "contentIdeaGeneration": {
@@ -885,6 +889,460 @@
     "common": {
       "learnMore": "Learn More",
       "viewAll": "View All Services"
+    }
+  },
+  "header": {
+    "products": "Products",
+    "productsEyebrow": "Products",
+    "productsDescription": "Choose a solution based on your reputation and privacy needs.",
+    "home": "Home",
+    "blog": "Blog",
+    "viewAll": "View all",
+    "freeConsultation": "Take a Free Consultation",
+    "services": {
+      "label": "Services",
+      "fixMySearchResults": "Fix My Search Results",
+      "personalReputationManagement": "Personal Reputation Management Services",
+      "businessReputationManagement": "Business Reputation Management Services",
+      "aiReputationManagement": "AI Reputation Management Services",
+      "executiveBranding": "Executive Branding",
+      "reviewManagement": "Review Management",
+      "redditRemoval": "Reddit Removal Services",
+      "wikipedia": "Wikipedia Services",
+      "googleMapsSeo": "Google Maps SEO",
+      "earnedMediaMarketing": "Earned Media Marketing Services",
+      "expertWitnessServices": "Expert Witness Services"
+    },
+    "consulting": {
+      "label": "Consulting",
+      "reputationConsulting": "Reputation Consulting",
+      "contentIdeaGeneration": "Content Idea Generation",
+      "branding": "Branding",
+      "crisisManagement": "Crisis Management",
+      "generativeEngineOptimization": "Generative Engine Optimization",
+      "publicRelations": "Public Relations"
+    },
+    "about": {
+      "label": "About",
+      "ourStory": "Our Story",
+      "yourOnlineReputation": "Your Online Reputation",
+      "whyUs": "Why Us?",
+      "caseStudies": "Case Studies",
+      "concern": "Concern",
+      "faq": "FAQ",
+      "resources": "Resources"
+    }
+  },
+  "ourStoryPage": {
+    "hero": {
+      "eyebrow": "Our Story",
+      "title": "Built to Protect Reputations That Matter",
+      "description": "What started as a small team helping individuals fight back against unfair search results has grown into a full-service reputation and privacy agency trusted by executives, brands, and public figures worldwide."
+    },
+    "timeline": {
+      "eyebrow": "Our Journey",
+      "title": "How We Got Here",
+      "milestones": [
+        {
+          "year": "Year One",
+          "title": "A Simple Mission",
+          "description": "We started with one goal: help people take back control of what shows up when their name is searched."
+        },
+        {
+          "year": "Early Growth",
+          "title": "From Individuals to Businesses",
+          "description": "Word spread. Business owners and executives began asking us to protect their brands the same way we protected individuals."
+        },
+        {
+          "year": "Scaling Up",
+          "title": "Building a Full-Service Team",
+          "description": "We expanded into content strategy, legal coordination, SEO, and crisis response to handle reputation challenges from every angle."
+        },
+        {
+          "year": "Today",
+          "title": "A Trusted Global Partner",
+          "description": "Now we support clients across dozens of countries, combining technology, strategy, and human expertise to manage online reputation at scale."
+        }
+      ]
+    },
+    "mission": {
+      "eyebrow": "Our Mission",
+      "title": "Everyone Deserves a Fair Digital First Impression",
+      "description": "Search results and social feeds shape how the world sees you before you ever get to introduce yourself. We exist to make sure that first impression is accurate, fair, and works in your favor."
+    },
+    "values": {
+      "eyebrow": "What Drives Us",
+      "title": "The Principles Behind Our Work",
+      "items": [
+        {
+          "title": "Integrity First",
+          "description": "We only use ethical, sustainable strategies — no shortcuts that could put your reputation at greater risk."
+        },
+        {
+          "title": "Radical Transparency",
+          "description": "You'll always know exactly what we're doing, why, and what results to expect."
+        },
+        {
+          "title": "Relentless Advocacy",
+          "description": "We treat every case like it's the most important one we're working on, because to you, it is."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Write Your Next Chapter?",
+      "description": "Let's talk about where your reputation stands today and where we can take it.",
+      "button": "Start Your Consultation"
+    }
+  },
+  "yourOnlineReputationPage": {
+    "hero": {
+      "eyebrow": "Your Online Reputation",
+      "title": "What Shows Up When People Search Your Name?",
+      "description": "Your online reputation is often the first — and sometimes only — impression you make. We help you understand what's really out there and how to take control of it."
+    },
+    "stats": {
+      "eyebrow": "By the Numbers",
+      "title": "Why Your Online Reputation Matters",
+      "items": [
+        {
+          "value": "90%+",
+          "label": "of consumers research online before making a decision"
+        },
+        {
+          "value": "70%",
+          "label": "of employers screen candidates via search before hiring"
+        },
+        {
+          "value": "60%",
+          "label": "of buyers say negative search results changed their decision"
+        },
+        {
+          "value": "3 sec",
+          "label": "average time it takes to form a first impression online"
+        }
+      ]
+    },
+    "risks": {
+      "eyebrow": "What's at Stake",
+      "title": "What Damages an Online Reputation",
+      "items": [
+        {
+          "title": "Outdated or Inaccurate Content",
+          "description": "Old news articles, mugshots, or resolved disputes that no longer reflect who you are today."
+        },
+        {
+          "title": "Negative Reviews & Complaints",
+          "description": "A handful of loud critics can outweigh hundreds of satisfied customers in search visibility."
+        },
+        {
+          "title": "Impersonation & Misinformation",
+          "description": "Fake profiles, false claims, and manipulated content spreading unchecked."
+        },
+        {
+          "title": "Data Broker Exposure",
+          "description": "Personal information scattered across dozens of sites, accessible to anyone who searches."
+        }
+      ]
+    },
+    "approach": {
+      "eyebrow": "Our Approach",
+      "title": "How We Help You Take Control",
+      "steps": [
+        {
+          "title": "Audit",
+          "description": "We map every mention, listing, and search result tied to your name or brand."
+        },
+        {
+          "title": "Strategize",
+          "description": "We build a custom plan combining suppression, removal, and positive content."
+        },
+        {
+          "title": "Execute",
+          "description": "Our team implements the strategy across search, social, and review platforms."
+        },
+        {
+          "title": "Monitor",
+          "description": "We track your online presence continuously so new issues get caught early."
+        }
+      ]
+    },
+    "cta": {
+      "title": "See What's Really Out There",
+      "description": "Get a complimentary reputation snapshot showing exactly what people find when they search your name.",
+      "button": "Get My Free Reputation Snapshot"
+    }
+  },
+  "whyUsPage": {
+    "hero": {
+      "eyebrow": "Why Us?",
+      "title": "The Difference Experience Makes",
+      "description": "There's no shortage of agencies promising reputation results. Here's what actually sets us apart when your name and livelihood are on the line."
+    },
+    "reasons": {
+      "eyebrow": "Our Advantages",
+      "title": "Why Clients Choose Us",
+      "items": [
+        {
+          "title": "Proven Track Record",
+          "description": "Hundreds of successful cases across individuals, executives, and businesses in dozens of industries.",
+          "stat": "150+",
+          "statLabel": "projects completed"
+        },
+        {
+          "title": "Ethical Methods Only",
+          "description": "We never use black-hat tactics that could backfire or violate platform terms of service.",
+          "stat": "100%",
+          "statLabel": "white-hat strategies"
+        },
+        {
+          "title": "Dedicated Case Teams",
+          "description": "You get a named strategist and support team who know your case inside and out — not a ticket queue.",
+          "stat": "1:1",
+          "statLabel": "dedicated support"
+        },
+        {
+          "title": "Full-Service Capability",
+          "description": "SEO, legal coordination, content, PR, and crisis response under one roof, so nothing falls through the cracks.",
+          "stat": "8+",
+          "statLabel": "years of experience"
+        },
+        {
+          "title": "Transparent Reporting",
+          "description": "Regular updates and clear metrics, so you always know exactly where your case stands.",
+          "stat": "24/7",
+          "statLabel": "case visibility"
+        },
+        {
+          "title": "Global Reach",
+          "description": "We've helped clients across dozens of countries navigate reputation challenges in multiple languages and jurisdictions.",
+          "stat": "25+",
+          "statLabel": "countries served"
+        }
+      ]
+    },
+    "comparison": {
+      "eyebrow": "See the Difference",
+      "title": "Us vs. The Typical Agency",
+      "rows": [
+        {
+          "feature": "Dedicated case strategist",
+          "us": true,
+          "others": false
+        },
+        {
+          "feature": "Ethical, platform-compliant methods",
+          "us": true,
+          "others": false
+        },
+        {
+          "feature": "Transparent progress reporting",
+          "us": true,
+          "others": false
+        },
+        {
+          "feature": "Full-service (legal, SEO, PR, content)",
+          "us": true,
+          "others": false
+        },
+        {
+          "feature": "No long-term lock-in contracts",
+          "us": true,
+          "others": false
+        }
+      ]
+    },
+    "cta": {
+      "title": "Experience the Difference Yourself",
+      "description": "Talk to our team and see why clients trust us with their most important asset — their reputation.",
+      "button": "Book a Free Consultation"
+    }
+  },
+  "concernPage": {
+    "hero": {
+      "eyebrow": "Concern",
+      "title": "Worried About What's Online About You?",
+      "description": "Whatever is keeping you up at night — a bad review, an old article, a fake profile — you don't have to face it alone. Tell us your concern and we'll show you a path forward."
+    },
+    "concerns": {
+      "eyebrow": "Common Concerns",
+      "title": "We've Helped With Situations Like Yours",
+      "items": [
+        {
+          "title": "Negative News Coverage",
+          "description": "An old article or news story that no longer reflects who you are but still ranks at the top of search results."
+        },
+        {
+          "title": "Damaging Reviews",
+          "description": "Unfair or fake reviews dragging down your business's reputation and costing you customers."
+        },
+        {
+          "title": "Impersonation Accounts",
+          "description": "Someone using your name or brand identity to mislead others or damage your credibility."
+        },
+        {
+          "title": "Exposed Personal Information",
+          "description": "Your home address, phone number, or family details listed on data broker sites."
+        },
+        {
+          "title": "Court Records & Legal History",
+          "description": "Public records that are technically accurate but no longer fair or relevant to your present situation."
+        },
+        {
+          "title": "Social Media Backlash",
+          "description": "A viral post or comment thread that's spiraled out of your control."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "What Happens Next",
+      "title": "How We Address Your Concern",
+      "steps": [
+        {
+          "title": "Confidential Consultation",
+          "description": "Share your situation privately with a member of our team — no judgment, no obligation."
+        },
+        {
+          "title": "Custom Assessment",
+          "description": "We review the scope of the issue and outline realistic options and timelines."
+        },
+        {
+          "title": "Action Plan",
+          "description": "You receive a clear, step-by-step strategy tailored to your specific concern."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Let's Talk About It",
+      "description": "Every conversation is confidential. Reach out and we'll help you understand your options.",
+      "button": "Share Your Concern"
+    }
+  },
+  "faqPage": {
+    "hero": {
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "description": "Answers to the questions we hear most from clients considering reputation and privacy services."
+    },
+    "categories": [
+      {
+        "title": "Getting Started",
+        "items": [
+          {
+            "question": "How does the process begin?",
+            "answer": "It starts with a confidential consultation where we learn about your situation, review what's currently showing up online, and outline realistic options before you commit to anything."
+          },
+          {
+            "question": "How long does it take to see results?",
+            "answer": "Timelines vary by case complexity, but most clients begin seeing measurable movement within 4-8 weeks, with fuller results developing over 3-6 months."
+          },
+          {
+            "question": "Do you offer a free consultation?",
+            "answer": "Yes. Every engagement starts with a no-obligation consultation so you can understand your options before deciding to move forward."
+          }
+        ]
+      },
+      {
+        "title": "Services & Methods",
+        "items": [
+          {
+            "question": "Can you guarantee removal of negative content?",
+            "answer": "No ethical agency can guarantee outright removal in every case, since some content is protected or hosted on sites outside our control. What we can guarantee is a strategic, ethical effort to suppress, counterbalance, or pursue removal wherever legally and technically possible."
+          },
+          {
+            "question": "Do you use black-hat or against-policy tactics?",
+            "answer": "Never. We only use white-hat, platform-compliant methods. Tactics that violate search engine or platform terms of service put your reputation at greater long-term risk."
+          },
+          {
+            "question": "What's the difference between suppression and removal?",
+            "answer": "Removal means the content is taken down entirely. Suppression means we push it below the visibility threshold by building stronger, more relevant content that ranks above it. Both are valid strategies depending on your situation."
+          }
+        ]
+      },
+      {
+        "title": "Pricing & Engagement",
+        "items": [
+          {
+            "question": "How much do your services cost?",
+            "answer": "Pricing depends on the scope and complexity of your case. We'll provide a clear, itemized proposal after your initial consultation — no hidden fees."
+          },
+          {
+            "question": "Are there long-term contracts?",
+            "answer": "We don't lock clients into unnecessary long-term contracts. Engagement length is based on what your case actually requires."
+          },
+          {
+            "question": "Is my information kept confidential?",
+            "answer": "Absolutely. Everything you share with us is treated with strict confidentiality, and we never publicize client relationships without explicit permission."
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Still Have Questions?",
+      "description": "Our team is happy to walk through your specific situation and answer anything we haven't covered here.",
+      "button": "Contact Our Team"
+    }
+  },
+  "resourcesPage": {
+    "hero": {
+      "eyebrow": "Resources",
+      "title": "Guides, Insights & Tools",
+      "description": "Practical resources to help you understand and manage your online reputation, whether you're just starting to research or ready to take action."
+    },
+    "categories": {
+      "eyebrow": "Explore by Topic",
+      "title": "Resource Library",
+      "items": [
+        {
+          "title": "Reputation Management Guides",
+          "description": "Step-by-step guides on understanding, monitoring, and improving your online presence."
+        },
+        {
+          "title": "Privacy & Data Protection",
+          "description": "Learn how personal information spreads online and what you can do to limit exposure."
+        },
+        {
+          "title": "SEO & Search Visibility",
+          "description": "Understand how search engines rank content and how that affects what people find about you."
+        },
+        {
+          "title": "Crisis Response Playbooks",
+          "description": "Frameworks for responding quickly and effectively when a reputation crisis hits."
+        },
+        {
+          "title": "Case Studies & Success Stories",
+          "description": "Real examples of how we've helped clients recover and strengthen their online reputation."
+        },
+        {
+          "title": "Tools & Checklists",
+          "description": "Downloadable checklists to help you audit your own digital footprint."
+        }
+      ]
+    },
+    "articles": {
+      "eyebrow": "Popular Reads",
+      "title": "Where to Start",
+      "items": [
+        {
+          "title": "The Complete Guide to Online Reputation Management",
+          "description": "Everything you need to know about monitoring, protecting, and improving your digital presence.",
+          "readTime": "12 min read"
+        },
+        {
+          "title": "How to Remove Negative Content From Google",
+          "description": "A practical breakdown of removal, suppression, and legal options for unwanted search results.",
+          "readTime": "9 min read"
+        },
+        {
+          "title": "Protecting Your Privacy From Data Brokers",
+          "description": "Understand how data brokers collect and sell your information — and how to opt out.",
+          "readTime": "7 min read"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Need Something More Specific?",
+      "description": "If you can't find what you're looking for, our team is happy to point you in the right direction.",
+      "button": "Ask Our Team"
     }
   }
 }
