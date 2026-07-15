@@ -10,6 +10,7 @@ import { AGENCY_CONFIG } from "@/lib/content";
 import { productNavSections } from "@/lib/products/nav";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 type MenuItem = {
   label: string;
@@ -338,6 +339,8 @@ export function Header() {
         </nav>
 
         <div className="hidden shrink-0 items-center gap-3 xl:flex">
+          <ThemeToggle />
+
           <LanguageSwitcher />
 
           <Link href="/contact?type=consultation">
@@ -360,6 +363,8 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-2 xl:hidden">
+          <ThemeToggle />
+
           <LanguageSwitcher />
 
           <a
