@@ -1,41 +1,44 @@
-// app/[locale]/consulting/reputation-consulting/page.tsx
+// app/[locale]/consulting/content-idea-generation/page.tsx
 "use client";
 
 import { useTranslations } from "next-intl";
 import {
   ArrowRight,
-  Shield,
-  Star,
-  Users,
-  Clock,
-  Award,
+  Lightbulb,
+  Sparkles,
+  Target,
+  TrendingUp,
+  Brain,
+  Calendar,
   ChevronRight,
   CheckCircle,
+  Hash,
+  FileText,
 } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
-export default function ReputationConsultingPage() {
-  const t = useTranslations("reputationConsulting");
-  const [score, setScore] = useState(0);
+export default function ContentIdeaGenerationPage() {
+  const t = useTranslations("contentIdeaGeneration");
+  const [ideasCount, setIdeasCount] = useState(0);
   const sectionRef = useRef<HTMLDivElement>(null);
 
-  // Animate reputation score on scroll
+  // Animate ideas counter on scroll
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             let current = 0;
-            const target = 86;
+            const target = 250;
             const increment = target / 40;
             const timer = setInterval(() => {
               current += increment;
               if (current >= target) {
-                setScore(target);
+                setIdeasCount(target);
                 clearInterval(timer);
               } else {
-                setScore(Math.floor(current));
+                setIdeasCount(Math.floor(current));
               }
             }, 30);
             return () => clearInterval(timer);
@@ -54,52 +57,70 @@ export default function ReputationConsultingPage() {
 
   const services = [
     {
-      icon: Shield,
-      title: t("services.contentRemoval.title"),
-      description: t("services.contentRemoval.description"),
+      icon: Lightbulb,
+      title: t("services.contentIdeation.title"),
+      description: t("services.contentIdeation.description"),
     },
     {
-      icon: Star,
-      title: t("services.searchSuppression.title"),
-      description: t("services.searchSuppression.description"),
+      icon: TrendingUp,
+      title: t("services.trendAnalysis.title"),
+      description: t("services.trendAnalysis.description"),
     },
     {
-      icon: Users,
-      title: t("services.crisisManagement.title"),
-      description: t("services.crisisManagement.description"),
+      icon: Target,
+      title: t("services.audienceTargeting.title"),
+      description: t("services.audienceTargeting.description"),
     },
     {
-      icon: Clock,
-      title: t("services.monitoring.title"),
-      description: t("services.monitoring.description"),
+      icon: Calendar,
+      title: t("services.editorialCalendar.title"),
+      description: t("services.editorialCalendar.description"),
     },
     {
-      icon: Award,
-      title: t("services.brandBuilding.title"),
-      description: t("services.brandBuilding.description"),
+      icon: Brain,
+      title: t("services.aiPowered.title"),
+      description: t("services.aiPowered.description"),
     },
     {
-      icon: CheckCircle,
-      title: t("services.privacyProtection.title"),
-      description: t("services.privacyProtection.description"),
+      icon: Hash,
+      title: t("services.platformOptimization.title"),
+      description: t("services.platformOptimization.description"),
+    },
+  ];
+
+  const ideaFormats = [
+    {
+      icon: FileText,
+      format: t("formats.blogPosts"),
+      examples: t("formats.blogExamples"),
+    },
+    {
+      icon: Sparkles,
+      format: t("formats.socialMedia"),
+      examples: t("formats.socialExamples"),
+    },
+    {
+      icon: Target,
+      format: t("formats.videoContent"),
+      examples: t("formats.videoExamples"),
     },
   ];
 
   const testimonials = [
     {
-      quote: t("testimonials.executive.quote"),
-      name: t("testimonials.executive.name"),
-      role: t("testimonials.executive.role"),
+      quote: t("testimonials.marketer.quote"),
+      name: t("testimonials.marketer.name"),
+      role: t("testimonials.marketer.role"),
     },
     {
-      quote: t("testimonials.entrepreneur.quote"),
-      name: t("testimonials.entrepreneur.name"),
-      role: t("testimonials.entrepreneur.role"),
+      quote: t("testimonials.creator.quote"),
+      name: t("testimonials.creator.name"),
+      role: t("testimonials.creator.role"),
     },
     {
-      quote: t("testimonials.publicFigure.quote"),
-      name: t("testimonials.publicFigure.name"),
-      role: t("testimonials.publicFigure.role"),
+      quote: t("testimonials.brand.quote"),
+      name: t("testimonials.brand.name"),
+      role: t("testimonials.brand.role"),
     },
   ];
 
@@ -110,6 +131,13 @@ export default function ReputationConsultingPage() {
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 h-[600px] w-[600px] rounded-full bg-accent/5 blur-3xl" />
           <div className="absolute -bottom-40 -left-40 h-[500px] w-[500px] rounded-full bg-accent/5 blur-3xl" />
+          {/* Decorative content icons */}
+          <div className="absolute top-20 right-[15%] text-accent/10">
+            <FileText size={80} />
+          </div>
+          <div className="absolute bottom-20 left-[10%] text-accent/10">
+            <Lightbulb size={100} />
+          </div>
         </div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -145,23 +173,23 @@ export default function ReputationConsultingPage() {
               <div className="mt-12 flex flex-wrap items-center gap-8">
                 <div>
                   <span className="font-mono text-2xl font-semibold text-accent">
-                    20+
+                    15k+
                   </span>
                   <span className="ml-2 text-sm text-surface-ink-foreground/60">
-                    {t("hero.years")}
+                    {t("hero.ideasDelivered")}
                   </span>
                 </div>
                 <div>
                   <span className="font-mono text-2xl font-semibold text-accent">
-                    10k+
+                    98%
                   </span>
                   <span className="ml-2 text-sm text-surface-ink-foreground/60">
-                    {t("hero.clients")}
+                    {t("hero.clientSatisfaction")}
                   </span>
                 </div>
                 <div className="flex items-center gap-1 text-accent">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={16} fill="currentColor" />
+                    <Sparkles key={i} size={16} fill="currentColor" />
                   ))}
                   <span className="ml-2 text-sm text-surface-ink-foreground/60">
                     4.9/5
@@ -170,51 +198,41 @@ export default function ReputationConsultingPage() {
               </div>
             </div>
 
-            {/* Right Column - Reputation Score Visualization */}
+            {/* Right Column - Ideas Counter Visualization */}
             <div className="relative flex items-center justify-center">
               <div
                 ref={sectionRef}
                 className="relative aspect-square w-full max-w-md rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm"
               >
-                {/* Animated ring */}
-                <svg className="absolute inset-0 h-full w-full -rotate-90">
-                  <circle
-                    className="text-white/10"
-                    strokeWidth="6"
-                    stroke="currentColor"
-                    fill="transparent"
-                    r="45%"
-                    cx="50%"
-                    cy="50%"
-                  />
-                  <circle
-                    className="text-accent transition-all duration-1000 ease-out"
-                    strokeWidth="6"
-                    strokeLinecap="round"
-                    stroke="currentColor"
-                    fill="transparent"
-                    r="45%"
-                    cx="50%"
-                    cy="50%"
-                    strokeDasharray={`${score * 2.83} 283`}
-                    strokeDashoffset="0"
-                  />
-                </svg>
+                {/* Animated particles/orbs */}
+                <div className="absolute inset-0 overflow-hidden rounded-2xl">
+                  <div className="absolute top-1/4 left-1/4 h-2 w-2 rounded-full bg-accent/60 animate-pulse" />
+                  <div className="absolute top-1/3 right-1/3 h-3 w-3 rounded-full bg-accent/40 animate-pulse delay-100" />
+                  <div className="absolute bottom-1/3 left-1/3 h-2 w-2 rounded-full bg-accent/50 animate-pulse delay-200" />
+                  <div className="absolute bottom-1/4 right-1/4 h-3 w-3 rounded-full bg-accent/30 animate-pulse delay-300" />
+                  <div className="absolute top-1/2 left-1/2 h-1.5 w-1.5 rounded-full bg-accent/70 animate-pulse delay-150" />
+                </div>
 
                 {/* Center content */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <span className="font-mono text-6xl font-bold text-surface-ink-foreground">
-                    {score}
-                  </span>
-                  <span className="text-sm font-medium uppercase tracking-wider text-accent">
-                    {t("hero.scoreLabel")}
+                  <Lightbulb size={40} className="text-accent mb-4" />
+                  <div className="flex items-baseline gap-1">
+                    <span className="font-mono text-6xl font-bold text-surface-ink-foreground">
+                      {ideasCount}
+                    </span>
+                    <span className="font-mono text-2xl font-semibold text-accent">
+                      +
+                    </span>
+                  </div>
+                  <span className="text-sm font-medium uppercase tracking-wider text-accent mt-2">
+                    {t("hero.ideasPerMonth")}
                   </span>
                   <p className="mt-2 text-center text-xs text-surface-ink-foreground/60">
-                    {t("hero.scoreDescription")}
+                    {t("hero.ideasDescription")}
                   </p>
                 </div>
 
-                {/* Decorative dots */}
+                {/* Decorative elements */}
                 <div className="absolute -top-3 -right-3 h-6 w-6 rounded-full border-2 border-accent/30 bg-surface-ink" />
                 <div className="absolute -bottom-3 -left-3 h-6 w-6 rounded-full border-2 border-accent/30 bg-surface-ink" />
               </div>
@@ -230,14 +248,16 @@ export default function ReputationConsultingPage() {
             <span className="text-sm font-medium uppercase tracking-wider text-surface-ink-foreground/60">
               {t("trustBar.label")}
             </span>
-            {["newsweek", "forbes", "entrepreneur", "inc"].map((source) => (
-              <span
-                key={source}
-                className="font-['Playfair_Display'] text-xl font-semibold text-surface-ink-foreground/60 transition hover:text-surface-ink-foreground/90"
-              >
-                {t(`trustBar.${source}`)}
-              </span>
-            ))}
+            {["hubspot", "contentMarketing", "socialMedia", "seoJournal"].map(
+              (source) => (
+                <span
+                  key={source}
+                  className="font-['Playfair_Display'] text-xl font-semibold text-surface-ink-foreground/60 transition hover:text-surface-ink-foreground/90"
+                >
+                  {t(`trustBar.${source}`)}
+                </span>
+              ),
+            )}
           </div>
         </div>
       </section>
@@ -286,8 +306,48 @@ export default function ReputationConsultingPage() {
         </div>
       </section>
 
+      {/* Content Formats Section */}
+      <section className="border-t border-white/5 py-20 md:py-28 bg-white/[0.02]">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="mb-16 text-center">
+            <span className="inline-block font-mono text-xs font-semibold uppercase tracking-[0.15em] text-accent mb-4">
+              {t("formats.eyebrow")}
+            </span>
+            <h2 className="font-['Playfair_Display'] text-4xl md:text-5xl font-semibold leading-tight text-surface-ink-foreground">
+              {t("formats.title")}
+            </h2>
+            <p className="mt-4 text-lg text-surface-ink-foreground/60 max-w-lg mx-auto font-light">
+              {t("formats.subtitle")}
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            {ideaFormats.map((format, index) => {
+              const Icon = format.icon;
+              return (
+                <div
+                  key={index}
+                  className="group relative overflow-hidden rounded-lg border border-white/5 bg-surface-ink/50 p-8 backdrop-blur-sm transition-all hover:border-accent/30"
+                >
+                  <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-accent/5 opacity-0 transition-opacity group-hover:opacity-100" />
+                  <div className="relative z-10">
+                    <Icon size={32} className="text-accent mb-4" />
+                    <h3 className="font-['Playfair_Display'] text-xl font-semibold text-surface-ink-foreground mb-3">
+                      {format.format}
+                    </h3>
+                    <p className="text-sm font-light text-surface-ink-foreground/60 leading-relaxed">
+                      {format.examples}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Process Section */}
-      <section id="process" className="border-t border-white/5 py-20 md:py-28">
+      <section id="process" className="py-20 md:py-28">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-16 text-center">
             <span className="inline-block font-mono text-xs font-semibold uppercase tracking-[0.15em] text-accent mb-4">
@@ -301,20 +361,20 @@ export default function ReputationConsultingPage() {
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-3">
-            {[1, 2, 3].map((step) => (
+          <div className="grid gap-8 md:grid-cols-4">
+            {[1, 2, 3, 4].map((step) => (
               <div key={step} className="relative">
-                <div className="flex items-center gap-4">
-                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-accent/30 font-mono text-lg font-semibold text-accent">
+                <div className="flex flex-col items-center text-center">
+                  <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-accent/30 font-mono text-xl font-semibold text-accent mb-4">
                     {String(step).padStart(2, "0")}
                   </span>
-                  <h3 className="font-['Playfair_Display'] text-xl font-semibold text-surface-ink-foreground">
+                  <h3 className="font-['Playfair_Display'] text-lg font-semibold text-surface-ink-foreground">
                     {t(`process.step${step}.title`)}
                   </h3>
+                  <p className="mt-3 text-sm font-light text-surface-ink-foreground/60">
+                    {t(`process.step${step}.description`)}
+                  </p>
                 </div>
-                <p className="mt-4 pl-16 text-sm font-light text-surface-ink-foreground/60">
-                  {t(`process.step${step}.description`)}
-                </p>
               </div>
             ))}
           </div>
@@ -341,7 +401,7 @@ export default function ReputationConsultingPage() {
               >
                 <div className="mb-4 flex text-accent">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={16} fill="currentColor" />
+                    <Sparkles key={i} size={16} fill="currentColor" />
                   ))}
                 </div>
                 <blockquote className="text-sm font-light leading-relaxed text-surface-ink-foreground">
@@ -366,6 +426,10 @@ export default function ReputationConsultingPage() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="relative overflow-hidden rounded-2xl border border-accent/20 bg-gradient-to-br from-surface-ink via-accent/5 to-surface-ink p-8 md:p-16">
             <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent/10 blur-3xl" />
+            {/* Decorative lightbulbs */}
+            <div className="absolute top-10 right-10 text-accent/20">
+              <Lightbulb size={60} />
+            </div>
 
             <div className="relative grid gap-8 md:grid-cols-2 md:gap-16">
               <div>
@@ -379,7 +443,7 @@ export default function ReputationConsultingPage() {
                   {t("consultation.description")}
                 </p>
                 <ul className="mt-6 space-y-2">
-                  {["confidential", "expert", "tailored"].map((item) => (
+                  {["strategy", "delivery", "analytics"].map((item) => (
                     <li
                       key={item}
                       className="flex items-center gap-3 text-sm text-surface-ink-foreground"
@@ -421,12 +485,12 @@ export default function ReputationConsultingPage() {
                   </div>
                   <div>
                     <label className="block text-xs font-medium uppercase tracking-wider text-surface-ink-foreground/60">
-                      {t("consultation.form.message")}
+                      {t("consultation.form.niche")}
                     </label>
-                    <textarea
-                      rows={3}
-                      placeholder={t("consultation.form.messagePlaceholder")}
-                      className="mt-1 w-full border-b border-white/10 bg-transparent py-2 text-surface-ink-foreground placeholder:text-surface-ink-foreground/40 focus:border-accent focus:outline-none transition-colors resize-none"
+                    <input
+                      type="text"
+                      placeholder={t("consultation.form.nichePlaceholder")}
+                      className="mt-1 w-full border-b border-white/10 bg-transparent py-2 text-surface-ink-foreground placeholder:text-surface-ink-foreground/40 focus:border-accent focus:outline-none transition-colors"
                     />
                   </div>
                   <button className="w-full inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-accent text-accent-foreground font-medium rounded-sm hover:bg-transparent hover:text-accent border border-accent transition-all duration-300">
