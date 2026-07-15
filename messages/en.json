@@ -9,7 +9,6 @@
   "nav": {
     "home": "Home",
     "services": "Services",
-    "products": "Products",
     "industries": "Industries",
     "caseStudies": "Case Studies",
     "blog": "Blog",
@@ -20,7 +19,8 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "callPhone": "Call {phone}",
-    "freeConsultation": "Take a Free Consultation"
+    "freeConsultation": "Take a Free Consultation",
+    "products": "Products"
   },
   "footer": {
     "servicesHeading": "Services",
@@ -65,113 +65,6 @@
       "messagePlaceholder": "Tell us about your project",
       "submit": "Send Message",
       "successMessage": "Thank you for your message! We will contact you soon."
-    }
-  },
-  "reputationConsulting": {
-    "hero": {
-      "eyebrow": "Digital Reputation Strategy",
-      "title": "Your reputation is",
-      "titleAccent": "your most valuable asset",
-      "description": "Strategic consulting to protect, enhance, and control your digital presence. We help executives, entrepreneurs, and public figures shape their online narrative.",
-      "cta": "Get Free Consultation",
-      "secondaryCta": "See Our Process",
-      "years": "Years Experience",
-      "clients": "Clients Served",
-      "scoreLabel": "Reputation Score",
-      "scoreDescription": "Average client improvement after 6 months"
-    },
-    "trustBar": {
-      "label": "Trusted by",
-      "newsweek": "Newsweek",
-      "forbes": "Forbes",
-      "entrepreneur": "Entrepreneur",
-      "inc": "Inc."
-    },
-    "services": {
-      "eyebrow": "What We Do",
-      "title": "Comprehensive Reputation Consulting",
-      "subtitle": "Strategic solutions tailored to your unique reputation challenges and goals.",
-      "contentRemoval": {
-        "title": "Content Removal & Correction",
-        "description": "Remove or correct inaccurate, misleading, or harmful content across the web."
-      },
-      "searchSuppression": {
-        "title": "Search Result Suppression",
-        "description": "Shift positive content upward in search results through strategic SEO and content development."
-      },
-      "crisisManagement": {
-        "title": "Crisis Response & Recovery",
-        "description": "Rapid response strategies to contain damage and rebuild trust during reputation emergencies."
-      },
-      "monitoring": {
-        "title": "Real-Time Reputation Monitoring",
-        "description": "24/7 monitoring across platforms to detect and address emerging threats proactively."
-      },
-      "brandBuilding": {
-        "title": "Digital Brand Building",
-        "description": "Create and amplify content that showcases your expertise, achievements, and values."
-      },
-      "privacyProtection": {
-        "title": "Privacy & Data Protection",
-        "description": "Remove personal information from data broker sites and protect your digital privacy."
-      }
-    },
-    "process": {
-      "eyebrow": "How We Work",
-      "title": "A Strategic Approach to Reputation",
-      "subtitle": "Every client receives a customized strategy designed for their unique situation.",
-      "step1": {
-        "title": "Discovery & Audit",
-        "description": "Comprehensive analysis of your current digital footprint, including search results, social presence, and privacy exposure."
-      },
-      "step2": {
-        "title": "Strategy Development",
-        "description": "Custom roadmap with clear priorities, tactical approaches, and measurable milestones aligned with your goals."
-      },
-      "step3": {
-        "title": "Execution & Refinement",
-        "description": "Implementation with ongoing optimization, monitoring, and adaptation to evolving online dynamics."
-      }
-    },
-    "testimonials": {
-      "eyebrow": "Client Success",
-      "title": "What Our Clients Say",
-      "executive": {
-        "quote": "Within months, the negative articles that had been haunting my career for years were no longer visible. The team understood the sensitivity and handled everything with discretion.",
-        "name": "Sarah Mitchell",
-        "role": "Fortune 500 Executive"
-      },
-      "entrepreneur": {
-        "quote": "My online reputation now reflects the reality of my business instead of unfair reviews. This transformed how potential clients perceive me.",
-        "name": "David Chen",
-        "role": "Tech Entrepreneur"
-      },
-      "publicFigure": {
-        "quote": "The proactive privacy protection has given me peace of mind. I no longer worry about what people will find when they search my name.",
-        "name": "Amanda Ross",
-        "role": "Public Figure"
-      }
-    },
-    "consultation": {
-      "eyebrow": "Start Your Journey",
-      "title": "Ready to Take Control of Your Reputation?",
-      "description": "Schedule a confidential consultation with our expert team. We'll assess your situation and outline a tailored strategy.",
-      "benefits": {
-        "confidential": "100% confidential discussion",
-        "expert": "Expert analysis of your digital presence",
-        "tailored": "Customized strategy recommendations"
-      },
-      "cta": "Schedule Consultation",
-      "form": {
-        "name": "Full Name",
-        "namePlaceholder": "John Doe",
-        "email": "Email Address",
-        "emailPlaceholder": "john@example.com",
-        "message": "Tell us about your situation",
-        "messagePlaceholder": "Briefly describe your reputation concerns...",
-        "submit": "Send Request",
-        "disclaimer": "All information is confidential and protected"
-      }
     }
   },
   "fixMySearchResults": {
