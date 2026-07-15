@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
 import Script from 'next/script'
 import {
@@ -12,6 +13,7 @@ import {
   productCaseStudiesPath,
 } from '@/lib/products/nav'
 import { AUDIENCE_ORDER } from '@/lib/products/audiences'
+import { getProductDesign, getSectionVariants } from '@/lib/products/design'
 import { AGENCY_CONFIG } from '@/lib/content'
 import { ProductPageShell } from '@/components/products/product-page-shell'
 import { ProductHero } from '@/components/products/product-hero'
@@ -55,13 +57,14 @@ export async function generateMetadata({
 export default async function ProductAudiencePage({ params }: PageProps) {
   const { product: productId, audience: audienceId } = await params
 
-  // Reserved for dedicated case-studies route
   if (audienceId === 'case-studies') notFound()
 
   const data = getAudienceContent(productId, audienceId)
   if (!data) notFound()
 
   const { product, audience, audienceId: aid } = data
+  const design = getProductDesign(product.id)
+  const variants = getSectionVariants(product.id)
   const base = productBasePath(product.id)
 
   const siblingAudiences = AUDIENCE_ORDER.filter((id) => id !== aid).map(
@@ -93,6 +96,79 @@ export default async function ProductAudiencePage({ params }: PageProps) {
     })),
   }
 
+  /** Per-product content rhythm on audience pages */
+  const sectionRhythm = {
+    'reputation-management': [
+      'pains',
+      'outcomes',
+      'capabilities',
+      'process',
+      'faqs',
+    ],
+    'privacy-protection': [
+      'capabilities',
+      'pains',
+      'outcomes',
+      'process',
+      'faqs',
+    ],
+    'executive-privacy': [
+      'process',
+      'outcomes',
+      'pains',
+      'capabilities',
+      'faqs',
+    ],
+    'concierge-privacy': [
+      'outcomes',
+      'process',
+      'pains',
+      'capabilities',
+      'faqs',
+    ],
+    'negative-suppression': [
+      'pains',
+      'capabilities',
+      'outcomes',
+      'process',
+      'faqs',
+    ],
+  } as const
+
+  const blocks: Record<string, ReactNode> = {
+    pains: (
+      <AudiencePains
+        key="pains"
+        items={audience.painPoints}
+        variant={variants.pains}
+      />
+    ),
+    outcomes: (
+      <OutcomesGrid
+        key="outcomes"
+        items={audience.outcomes}
+        variant={variants.outcomes}
+      />
+    ),
+    capabilities: (
+      <CapabilitiesList
+        key="capabilities"
+        items={product.capabilities}
+        variant={variants.capabilities}
+      />
+    ),
+    process: (
+      <ProcessSteps
+        key="process"
+        steps={product.process}
+        layout={design.processLayout}
+      />
+    ),
+    faqs: (
+      <FaqAccordion key="faqs" items={faqs} variant={variants.faq} />
+    ),
+  }
+
   return (
     <ProductPageShell>
       <Script
@@ -117,16 +193,18 @@ export default async function ProductAudiencePage({ params }: PageProps) {
           label: 'View case studies',
           href: productCaseStudiesPath(product.id),
         }}
+        layout={design.heroLayout}
+        motifLabel={design.motifLabel}
+        signalWord={design.signalWord}
+        accentNote={design.accentNote}
       />
 
-      <AudiencePains items={audience.painPoints} />
-      <OutcomesGrid items={audience.outcomes} />
-      <CapabilitiesList items={product.capabilities} />
-      <ProcessSteps steps={product.process} />
-      <FaqAccordion items={faqs} />
+      {sectionRhythm[product.id].map((id) => blocks[id])}
+
       <RelatedLinks title="Other audiences" links={siblingAudiences} />
       <RelatedLinks title="Related products" links={relatedProducts} />
       <ProductCta
+        variant={variants.cta}
         title={`Talk about ${product.shortName} for ${audience.label.toLowerCase()}`}
       />
     </ProductPageShell>
