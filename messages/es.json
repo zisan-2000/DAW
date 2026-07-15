@@ -19,7 +19,8 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "callPhone": "Call {phone}",
-    "freeConsultation": "Take a Free Consultation"
+    "freeConsultation": "Take a Free Consultation",
+    "products": "Products"
   },
   "footer": {
     "servicesHeading": "Services",

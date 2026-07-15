@@ -6,6 +6,7 @@ import { Menu, X, ChevronDown, Phone, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
 import { AGENCY_CONFIG } from "@/lib/content";
+import { productNavSections } from "@/lib/products/nav";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
 
@@ -28,65 +29,7 @@ type NavigationItem = {
   items?: MenuItem[];
 };
 
-const productAudienceItems = (basePath: string): MenuItem[] => [
-  {
-    label: "Individuals",
-    href: `${basePath}/individuals`,
-  },
-  {
-    label: "Job Seekers",
-    href: `${basePath}/job-seekers`,
-  },
-  {
-    label: "Small Businesses",
-    href: `${basePath}/small-businesses`,
-  },
-  {
-    label: "Executives",
-    href: `${basePath}/executives`,
-  },
-  {
-    label: "Large Companies",
-    href: `${basePath}/large-companies`,
-  },
-  {
-    label: "Case Studies",
-    href: `${basePath}/case-studies`,
-  },
-];
-
-const productSections: MenuSection[] = [
-  {
-    id: "reputation-management",
-    label: "360° Reputation Management",
-    basePath: "/products/reputation-management",
-    items: productAudienceItems("/products/reputation-management"),
-  },
-  {
-    id: "privacy-protection",
-    label: "Privacy Protection",
-    basePath: "/products/privacy-protection",
-    items: productAudienceItems("/products/privacy-protection"),
-  },
-  {
-    id: "executive-privacy",
-    label: "Executive Privacy",
-    basePath: "/products/executive-privacy",
-    items: productAudienceItems("/products/executive-privacy"),
-  },
-  {
-    id: "concierge-privacy",
-    label: "Concierge Privacy",
-    basePath: "/products/concierge-privacy",
-    items: productAudienceItems("/products/concierge-privacy"),
-  },
-  {
-    id: "negative-suppression",
-    label: "Negative Suppression",
-    basePath: "/products/negative-suppression",
-    items: productAudienceItems("/products/negative-suppression"),
-  },
-];
+const productSections: MenuSection[] = productNavSections;
 
 const serviceItems: MenuItem[] = [
   {

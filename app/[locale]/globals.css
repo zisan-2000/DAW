@@ -44,6 +44,10 @@
   --color-success: var(--success);
   --color-warning: var(--warning);
   --color-error: var(--error);
+  --color-navy: var(--navy);
+  --color-sand: var(--sand);
+  --color-gold: var(--gold);
+  --color-slate-muted: var(--slate-muted);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -80,6 +84,11 @@
   --success: oklch(0.65 0.15 155);
   --warning: oklch(0.78 0.14 85);
   --error: oklch(0.58 0.22 25);
+  /* Reputation / products family */
+  --navy: #121a2f;
+  --sand: #e8e4dc;
+  --gold: #c9a96e;
+  --slate-muted: #6b7b8d;
   --chart-1: oklch(0.68 0.13 195);
   --chart-2: oklch(0.55 0.1 220);
   --chart-3: oklch(0.45 0.08 250);

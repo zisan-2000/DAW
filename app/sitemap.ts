@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 import { SERVICES, INDUSTRIES, CASE_STUDIES, BLOG_POSTS } from '@/lib/content'
+import { PRODUCT_IDS } from '@/lib/products/types'
+import { AUDIENCE_ORDER } from '@/lib/products/audiences'
 import { routing } from '@/i18n/routing'
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://yourdomain.com'
@@ -60,11 +62,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entriesForPath(`/blog/${post.slug}`, 'weekly', 0.7),
   )
 
+  const productHubPages = PRODUCT_IDS.flatMap((product) =>
+    entriesForPath(`/products/${product}`, 'monthly', 0.85),
+  )
+
+  const productAudiencePages = PRODUCT_IDS.flatMap((product) =>
+    AUDIENCE_ORDER.flatMap((audience) =>
+      entriesForPath(`/products/${product}/${audience}`, 'monthly', 0.8),
+    ),
+  )
+
+  const productCaseArchives = PRODUCT_IDS.flatMap((product) =>
+    entriesForPath(`/products/${product}/case-studies`, 'weekly', 0.75),
+  )
+
   return [
     ...staticPages,
     ...servicePages,
     ...industryPages,
     ...caseStudyPages,
     ...blogPages,
+    ...productHubPages,
+    ...productAudiencePages,
+    ...productCaseArchives,
   ]
 }
