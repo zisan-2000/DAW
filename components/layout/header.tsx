@@ -174,7 +174,7 @@ function DesktopDropdown({ item }: { item: NavigationItem }) {
           group-focus-within:opacity-100
         "
       >
-        <div className="overflow-hidden rounded-2xl border border-border/80 bg-card p-2 shadow-2xl shadow-black/10">
+        <div className="overflow-hidden rounded-2xl border border-border/80 bg-card p-2 text-card-foreground shadow-2xl shadow-black/10 dark:shadow-black/40">
           <div className="border-b border-border/70 px-3 py-3">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
               {item.label}

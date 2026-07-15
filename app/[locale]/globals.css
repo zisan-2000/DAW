@@ -84,6 +84,10 @@
   pointer-events: none;
 }
 
+.about-editorial.resources-editorial::before {
+  content: "RESOURCES / FIELD NOTES";
+}
+
 .about-editorial > section {
   position: relative;
   border-color: var(--about-line) !important;
@@ -95,16 +99,16 @@
   align-items: flex-end;
   padding-block: clamp(7rem, 13vw, 11rem) clamp(4.5rem, 8vw, 7rem) !important;
   background:
-    radial-gradient(circle at 82% 18%, color-mix(in srgb, var(--accent) 20%, transparent), transparent 28rem),
-    linear-gradient(145deg, var(--surface-ink) 0%, color-mix(in srgb, var(--surface-ink) 88%, var(--accent)) 100%) !important;
-  color: var(--surface-ink-foreground);
+    radial-gradient(circle at 82% 18%, color-mix(in srgb, var(--accent) 18%, transparent), transparent 28rem),
+    linear-gradient(145deg, var(--background) 0%, color-mix(in srgb, var(--card) 90%, var(--accent)) 100%) !important;
+  color: var(--foreground);
 }
 
 .about-editorial > section:first-child::after {
   content: "";
   position: absolute;
   inset: 1.25rem;
-  border: 1px solid rgba(255,255,255,.09);
+  border: 1px solid color-mix(in srgb, var(--foreground) 10%, transparent);
   pointer-events: none;
 }
 
@@ -115,13 +119,13 @@
   font-weight: 500 !important;
   line-height: .95 !important;
   letter-spacing: -.045em;
-  color: var(--surface-ink-foreground) !important;
+  color: var(--foreground) !important;
   text-wrap: balance;
 }
 
 .about-editorial > section:first-child p {
   max-width: 44rem !important;
-  color: color-mix(in srgb, var(--surface-ink-foreground) 68%, transparent) !important;
+  color: var(--muted-foreground) !important;
   line-height: 1.75;
 }
 
