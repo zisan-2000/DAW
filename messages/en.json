@@ -21,21 +21,6 @@
     "callPhone": "Call {phone}",
     "freeConsultation": "Take a Free Consultation"
   },
-  "footer": {
-    "servicesHeading": "Services",
-    "companyHeading": "Company",
-    "companyLinks": {
-      "about": "About Us",
-      "caseStudies": "Case Studies",
-      "blog": "Blog",
-      "contact": "Contact"
-    },
-    "contactHeading": "Get In Touch",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service",
-    "rightsReserved": "All rights reserved.",
-    "madeWith": "Made with"
-  },
   "common": {
     "loading": "Loading...",
     "learnMore": "Learn more",
@@ -171,6 +156,455 @@
         "submit": "Send Request",
         "disclaimer": "All information is confidential and protected"
       }
+    }
+  },
+  "contentIdeaGeneration": {
+    "hero": {
+      "eyebrow": "Content Ideation Studio",
+      "title": "Never Run Out of",
+      "titleAccent": "Content Ideas",
+      "description": "Transform your content strategy with AI-powered ideation and human creativity. We generate data-driven content concepts that resonate with your audience and drive engagement.",
+      "cta": "Start Your Free Trial",
+      "secondaryCta": "See How It Works",
+      "years": "Years Experience",
+      "clients": "Happy Clients",
+      "ideasDelivered": "Ideas Delivered",
+      "clientSatisfaction": "Client Satisfaction",
+      "ideasPerMonth": "Ideas Per Month",
+      "ideasDescription": "Fresh, strategic content concepts generated monthly for our clients"
+    },
+    "trustBar": {
+      "label": "Featured In",
+      "hubspot": "HubSpot",
+      "contentMarketing": "Content Marketing Institute",
+      "socialMedia": "Social Media Today",
+      "seoJournal": "Search Engine Journal"
+    },
+    "services": {
+      "eyebrow": "Our Services",
+      "title": "Complete Content Ideation Solutions",
+      "subtitle": "From brainstorming to execution, we provide end-to-end content strategy services.",
+      "contentIdeation": {
+        "title": "Content Ideation",
+        "description": "Unlimited fresh, strategic content ideas tailored to your brand voice and audience preferences."
+      },
+      "trendAnalysis": {
+        "title": "Trend Analysis",
+        "description": "Real-time monitoring of industry trends and viral content patterns to keep you ahead of the curve."
+      },
+      "audienceTargeting": {
+        "title": "Audience Targeting",
+        "description": "Deep audience insights and persona development to ensure every idea hits the mark."
+      },
+      "editorialCalendar": {
+        "title": "Editorial Calendar",
+        "description": "Structured 90-day content roadmaps with strategic timing and platform optimization."
+      },
+      "aiPowered": {
+        "title": "AI-Powered Research",
+        "description": "Advanced AI tools combined with human expertise to identify content gaps and opportunities."
+      },
+      "platformOptimization": {
+        "title": "Platform Optimization",
+        "description": "Platform-specific content adaptations for maximum reach on Instagram, LinkedIn, TikTok, and more."
+      }
+    },
+    "formats": {
+      "eyebrow": "Content Formats",
+      "title": "Multi-Platform Content Ideas",
+      "subtitle": "We generate ideas optimized for every channel and format.",
+      "blogPosts": "Blog Posts & Articles",
+      "blogExamples": "Long-form guides, listicles, how-to articles, thought leadership pieces, case studies, and SEO-optimized content.",
+      "socialMedia": "Social Media Content",
+      "socialExamples": "Carousel posts, short-form videos, infographics, thread strategies, story sequences, and engagement prompts.",
+      "videoContent": "Video & Multimedia",
+      "videoExamples": "YouTube scripts, TikTok concepts, Reels ideas, podcast topics, webinar outlines, and live stream formats."
+    },
+    "process": {
+      "eyebrow": "Our Process",
+      "title": "How We Generate Winning Ideas",
+      "subtitle": "A proven 4-step methodology that consistently delivers high-performing content concepts.",
+      "step1": {
+        "title": "Discovery & Audit",
+        "description": "We analyze your brand, audience, competitors, and current content performance to identify opportunities."
+      },
+      "step2": {
+        "title": "Research & Brainstorm",
+        "description": "Our AI tools and creative team generate hundreds of ideas based on data-driven insights and trends."
+      },
+      "step3": {
+        "title": "Curate & Prioritize",
+        "description": "We filter, validate, and rank ideas based on potential impact, relevance, and strategic alignment."
+      },
+      "step4": {
+        "title": "Execute & Optimize",
+        "description": "Receive a ready-to-implement content calendar with detailed briefs and performance forecasts."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Testimonials",
+      "title": "What Our Clients Say",
+      "marketer": {
+        "quote": "The content ideas we receive are incredibly strategic and always on-brand. Our engagement has increased by 340% since partnering with them.",
+        "name": "Sarah Chen",
+        "role": "VP of Marketing, TechFlow"
+      },
+      "creator": {
+        "quote": "I was struggling with creator burnout. Now I have a steady stream of fresh ideas that my audience actually wants to see. Game changer!",
+        "name": "Marcus Williams",
+        "role": "Content Creator, 500K+ Followers"
+      },
+      "brand": {
+        "quote": "Their platform-specific strategies helped us dominate LinkedIn and Instagram simultaneously. The ROI has been incredible.",
+        "name": "Emily Rodriguez",
+        "role": "Brand Director, Nova Retail"
+      }
+    },
+    "consultation": {
+      "eyebrow": "Get Started",
+      "title": "Ready to Transform Your Content Strategy?",
+      "description": "Schedule a free consultation and receive 10 custom content ideas tailored to your brand.",
+      "benefits": {
+        "strategy": "Free content strategy assessment ($500 value)",
+        "delivery": "10 personalized content ideas delivered within 48 hours",
+        "analytics": "Performance forecasts and trend analysis included"
+      },
+      "cta": "Get Free Consultation",
+      "form": {
+        "name": "Full Name",
+        "namePlaceholder": "John Doe",
+        "email": "Work Email",
+        "emailPlaceholder": "john@company.com",
+        "niche": "Your Industry/Niche",
+        "nichePlaceholder": "e.g., SaaS, Fashion, Health & Wellness",
+        "message": "Message (Optional)",
+        "messagePlaceholder": "Tell us about your content goals...",
+        "submit": "Get My Free Ideas",
+        "disclaimer": "No spam, ever. Your ideas will be delivered within 48 hours."
+      }
+    },
+    "common": {
+      "learnMore": "Learn More"
+    }
+  },
+  "footer": {
+    "servicesHeading": "Our Services",
+    "companyHeading": "Company",
+    "contactHeading": "Contact Us",
+    "getInTouch": "Get In Touch",
+    "rightsReserved": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "madeWith": "Made with",
+    "backToTop": "Back to top",
+    "newsletter": {
+      "label": "Stay Ahead of the Curve",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe"
+    },
+    "companyLinks": {
+      "about": "About Us",
+      "caseStudies": "Case Studies",
+      "blog": "Blog & Insights",
+      "contact": "Contact Us",
+      "careers": "Careers"
+    }
+  },
+  "branding": {
+    "hero": {
+      "eyebrow": "Brand Identity Studio",
+      "title": "Crafting Brands That",
+      "titleAccent": "Command Attention",
+      "description": "Strategic brand development that transforms businesses into unforgettable brands. From visual identity to brand voice, we create cohesive experiences that resonate and inspire.",
+      "cta": "Elevate Your Brand",
+      "secondaryCta": "Our Process",
+      "years": "Years of Excellence",
+      "brands": "Brands Transformed",
+      "valueLabel": "Average Brand Value Increase",
+      "valueDescription": "Our clients see an average 340% increase in brand value within 12 months"
+    },
+    "trustBar": {
+      "label": "Recognized By",
+      "brandingMagazine": "Branding Magazine",
+      "designWeek": "Design Week",
+      "creativeReview": "Creative Review",
+      "aiga": "AIGA"
+    },
+    "services": {
+      "eyebrow": "What We Do",
+      "title": "Comprehensive Branding Solutions",
+      "subtitle": "End-to-end brand development services that position your business for lasting success.",
+      "brandStrategy": {
+        "title": "Brand Strategy",
+        "description": "Deep market research and strategic positioning to define your brand's unique place in the market."
+      },
+      "visualIdentity": {
+        "title": "Visual Identity Design",
+        "description": "Stunning logo design, color systems, and visual elements that capture your brand essence."
+      },
+      "brandPositioning": {
+        "title": "Brand Positioning",
+        "description": "Competitive analysis and market positioning strategies that differentiate your brand."
+      },
+      "brandMessaging": {
+        "title": "Brand Messaging",
+        "description": "Compelling brand voice, tone, and messaging frameworks that connect with your audience."
+      },
+      "brandGuidelines": {
+        "title": "Brand Guidelines",
+        "description": "Comprehensive brand books and design systems for consistent brand expression."
+      },
+      "rebranding": {
+        "title": "Rebranding Strategy",
+        "description": "Strategic rebranding initiatives that modernize your brand while preserving equity."
+      }
+    },
+    "elements": {
+      "eyebrow": "Brand Elements",
+      "title": "The Building Blocks of Iconic Brands",
+      "subtitle": "Every element of your brand is meticulously crafted for maximum impact.",
+      "color": "Color Psychology",
+      "colorDesc": "Strategic color selection based on psychology and industry positioning to evoke the right emotions and associations.",
+      "logo": "Logo Design",
+      "logoDesc": "Distinctive mark design that captures your brand's essence and creates instant recognition across all touchpoints.",
+      "typography": "Typography Systems",
+      "typographyDesc": "Carefully selected typefaces and hierarchies that communicate your brand personality and ensure readability."
+    },
+    "process": {
+      "eyebrow": "Our Process",
+      "title": "How We Build Iconic Brands",
+      "subtitle": "A proven methodology that consistently delivers remarkable brand identities.",
+      "step1": {
+        "title": "Discovery",
+        "description": "Deep dive into your business, market, competitors, and audience to uncover brand opportunities."
+      },
+      "step2": {
+        "title": "Strategy",
+        "description": "Develop positioning, messaging, and creative direction based on research insights."
+      },
+      "step3": {
+        "title": "Design",
+        "description": "Create visual identity systems including logos, colors, typography, and brand assets."
+      },
+      "step4": {
+        "title": "Launch",
+        "description": "Deliver comprehensive brand guidelines and assets for seamless implementation."
+      }
+    },
+    "portfolio": {
+      "eyebrow": "Our Work",
+      "title": "Featured Brand Transformations",
+      "item1": {
+        "title": "TechFlow Rebrand",
+        "category": "Technology"
+      },
+      "item2": {
+        "title": "Luxe Hospitality",
+        "category": "Hospitality"
+      },
+      "item3": {
+        "title": "Nova Retail Identity",
+        "category": "Retail"
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Testimonials",
+      "title": "Trusted by Industry Leaders",
+      "founder": {
+        "quote": "They didn't just design a logo—they built an entire brand ecosystem that transformed how our market perceives us. Revenue increased 200% post-launch.",
+        "name": "Alexandra Morgan",
+        "role": "Founder & CEO, TechFlow"
+      },
+      "ceo": {
+        "quote": "Our rebrand was flawless. Every detail was considered, every touchpoint elevated. Our brand now commands the premium positioning we always wanted.",
+        "name": "James Harrington",
+        "role": "CEO, Luxe Hospitality Group"
+      },
+      "director": {
+        "quote": "The strategic thinking behind our brand identity was exceptional. They understood our vision better than we did and brought it to life beautifully.",
+        "name": "Sophia Patel",
+        "role": "Creative Director, Nova Retail"
+      }
+    },
+    "consultation": {
+      "eyebrow": "Start Your Project",
+      "title": "Ready to Build an Iconic Brand?",
+      "description": "Book a free brand strategy session and discover how we can elevate your brand to new heights.",
+      "benefits": {
+        "audit": "Free brand audit and competitive analysis ($1,000 value)",
+        "strategy": "Custom brand strategy recommendations",
+        "roadmap": "Preliminary brand roadmap and timeline"
+      },
+      "cta": "Book Free Consultation",
+      "form": {
+        "name": "Full Name",
+        "namePlaceholder": "John Doe",
+        "email": "Work Email",
+        "emailPlaceholder": "john@company.com",
+        "company": "Company Name",
+        "companyPlaceholder": "Your Company Ltd.",
+        "submit": "Start My Brand Journey",
+        "disclaimer": "Free consultation. No commitment required."
+      }
+    },
+    "common": {
+      "learnMore": "Learn More",
+      "viewCaseStudy": "View Case Study"
+    }
+  },
+  "crisisManagement": {
+    "emergency": {
+      "available": "Crisis Response Team Available Now",
+      "hotline": "+1 (800) CRISIS-7"
+    },
+    "hero": {
+      "status": "Rapid Response Active",
+      "title": "Navigate Crises with",
+      "titleAccent": "Precision & Speed",
+      "description": "Elite crisis management for high-stakes situations. Our rapid response team protects your reputation, mitigates damage, and orchestrates recovery with military precision.",
+      "cta": "Get Immediate Help",
+      "secondaryCta": "Explore Capabilities",
+      "responseLabel": "Average Response Time",
+      "responseDescription": "From alert to action—minutes, not hours",
+      "crisisPhases": "Crisis Response Phases",
+      "monitoringLabel": "Monitoring",
+      "coverageLabel": "Global Coverage"
+    },
+    "phases": {
+      "detect": {
+        "title": "Detect",
+        "description": "AI-powered monitoring identifies potential crises before they escalate."
+      },
+      "assess": {
+        "title": "Assess",
+        "description": "Rapid threat evaluation and impact analysis by senior strategists."
+      },
+      "respond": {
+        "title": "Respond",
+        "description": "Coordinated multi-channel response execution within minutes."
+      },
+      "recover": {
+        "title": "Recover",
+        "description": "Strategic reputation rebuilding and narrative control restoration."
+      }
+    },
+    "trustBar": {
+      "label": "Trusted By",
+      "wsj": "The Wall Street Journal",
+      "bloomberg": "Bloomberg",
+      "reuters": "Reuters",
+      "cnn": "CNN",
+      "bbc": "BBC"
+    },
+    "services": {
+      "eyebrow": "Capabilities",
+      "title": "Complete Crisis Management Suite",
+      "reputationRecovery": {
+        "title": "Reputation Recovery",
+        "description": "Strategic reputation rehabilitation programs that restore trust and rebuild brand equity after crisis events.",
+        "statLabel": "Success Rate"
+      },
+      "socialMediaCrisis": {
+        "title": "Social Media Crisis",
+        "description": "Immediate containment of viral social media threats with strategic counter-narratives and engagement management.",
+        "statLabel": "Response Time"
+      },
+      "realTimeMonitoring": {
+        "title": "Real-Time Monitoring",
+        "description": "Global media and social listening with AI-powered threat detection and instant alerting systems.",
+        "statLabel": "Monitoring"
+      },
+      "legalPr": {
+        "title": "Legal PR Integration",
+        "description": "Seamless coordination between legal counsel and communications teams for litigation-sensitive situations.",
+        "statLabel": "Compliance"
+      },
+      "sentimentAnalysis": {
+        "title": "Sentiment Analysis",
+        "description": "Advanced sentiment tracking and predictive analytics to measure and forecast public perception shifts.",
+        "statLabel": "Accuracy"
+      },
+      "preventionPlanning": {
+        "title": "Prevention Planning",
+        "description": "Proactive crisis preparedness including vulnerability audits, scenario planning, and response protocols.",
+        "statLabel": "Prevention Rate"
+      }
+    },
+    "process": {
+      "eyebrow": "Methodology",
+      "title": "Our Crisis Response Protocol",
+      "step1": {
+        "title": "Initial Assessment",
+        "time": "< 5 min",
+        "description": "Immediate situation analysis, stakeholder identification, and threat level categorization."
+      },
+      "step2": {
+        "title": "Strategy Deployment",
+        "time": "< 15 min",
+        "description": "Rapid response strategy formulation with multi-channel execution across all relevant platforms."
+      },
+      "step3": {
+        "title": "Active Management",
+        "time": "24-72 hrs",
+        "description": "Continuous monitoring, message refinement, and stakeholder communication throughout crisis lifecycle."
+      },
+      "step4": {
+        "title": "Recovery & Rebuilding",
+        "time": "30-90 days",
+        "description": "Long-term reputation rehabilitation with strategic narrative rebuilding and sentiment restoration."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Testimonials",
+      "title": "Trusted in Critical Moments",
+      "ceo": {
+        "quote": "When a data breach threatened to destroy our company, their team had a containment strategy deployed within 12 minutes. We survived what could have been catastrophic.",
+        "name": "Jonathan Blackwell",
+        "role": "CEO, FinSecure Technologies",
+        "metricLabel": "Crisis Contained In"
+      },
+      "founder": {
+        "quote": "They turned a potential PR disaster into a demonstration of our company's values. Public sentiment shifted from negative to positive within 72 hours.",
+        "name": "Victoria Sterling",
+        "role": "Founder, Apex Brands",
+        "metricLabel": "Sentiment Recovery"
+      },
+      "director": {
+        "quote": "The speed and precision of their response saved us millions in potential revenue loss. Their crisis playbook is now our gold standard.",
+        "name": "Marcus Chen",
+        "role": "Communications Director, Global Retail Co.",
+        "metricLabel": "Revenue Protected"
+      }
+    },
+    "stats": {
+      "crisesManaged": "Crises Managed",
+      "avgResponse": "Average Response",
+      "successRate": "Success Rate",
+      "availability": "Availability"
+    },
+    "consultation": {
+      "eyebrow": "24/7 Crisis Hotline",
+      "title": "Facing a Crisis Right Now?",
+      "description": "Every minute counts. Our senior crisis strategists are standing by to provide immediate assistance and develop your response strategy.",
+      "benefits": {
+        "immediate": "Immediate Response",
+        "confidential": "100% Confidential",
+        "expert": "Senior Strategists"
+      },
+      "cta": "Get Immediate Assistance",
+      "form": {
+        "name": "Full Name",
+        "namePlaceholder": "John Doe",
+        "email": "Email Address",
+        "emailPlaceholder": "john@company.com",
+        "submit": "Get Help Now",
+        "disclaimer": "Your information is encrypted and confidential. We respond within 15 minutes."
+      }
+    },
+    "common": {
+      "learnMore": "Learn More",
+      "viewAll": "View All Services"
     }
   }
 }
