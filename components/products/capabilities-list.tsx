@@ -10,9 +10,9 @@ export function CapabilitiesList({
   variant?: 'two-col' | 'dense' | 'featured'
 }) {
   return (
-    <section className="border-t border-white/8 py-16 md:py-24">
+    <section className="border-t border-border/70 py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="font-display text-3xl font-semibold tracking-tight text-surface-ink-foreground sm:text-4xl">
+        <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
           {title}
         </h2>
 
@@ -28,10 +28,10 @@ export function CapabilitiesList({
             <li
               key={item}
               className={cn(
-                'flex items-start gap-4 rounded-xl border border-white/8 bg-white/3 px-5 py-4',
+                'flex items-start gap-4 rounded-xl border border-border bg-card px-5 py-4',
                 variant === 'featured' &&
                   index === 0 &&
-                  'md:col-span-2 border-accent/25 bg-accent/5 md:py-6',
+                  'border-accent/25 bg-accent/5 md:col-span-2 md:py-6',
               )}
             >
               <span className="font-display text-xs font-semibold tracking-wider text-accent">
@@ -39,7 +39,7 @@ export function CapabilitiesList({
               </span>
               <span
                 className={cn(
-                  'leading-relaxed text-surface-ink-foreground/75',
+                  'leading-relaxed text-foreground/80',
                   variant === 'featured' && index === 0 ? 'text-base' : 'text-sm',
                 )}
               >

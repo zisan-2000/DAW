@@ -31,10 +31,9 @@ export function ProductCta({
       className={cn(
         'flex flex-col gap-3 sm:flex-row sm:items-center',
         variant === 'centered' && 'items-stretch justify-center',
-        variant === 'split' && 'justify-start',
-        variant === 'minimal' && 'justify-start',
+        (variant === 'split' || variant === 'minimal' || variant === 'signal') &&
+          'justify-start',
         variant === 'wide' && 'justify-end',
-        variant === 'signal' && 'justify-start',
       )}
     >
       <Link href={primaryHref} className="w-full sm:w-auto">
@@ -73,13 +72,13 @@ export function ProductCta({
   )
 
   return (
-    <section className="border-t border-white/8 py-16 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="bg-surface-ink text-surface-ink-foreground">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
         {variant === 'centered' ? (
           <div className="relative overflow-hidden rounded-3xl border border-accent/25 bg-[radial-gradient(ellipse_70%_80%_at_50%_0%,color-mix(in_oklab,var(--accent)_18%,transparent),transparent_70%)] p-8 md:p-12">
             <div className="bg-grid-fade pointer-events-none absolute inset-0 opacity-25" aria-hidden />
             <div className="relative z-10 mx-auto max-w-2xl text-center">
-              <h2 className="font-display text-2xl font-semibold tracking-tight text-surface-ink-foreground sm:text-3xl">
+              <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
                 {title}
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-surface-ink-foreground/60 sm:text-base">
@@ -93,7 +92,7 @@ export function ProductCta({
         {variant === 'split' ? (
           <div className="grid items-center gap-8 rounded-3xl border border-white/10 bg-white/3 p-8 md:grid-cols-2 md:p-10">
             <div>
-              <h2 className="font-display text-2xl font-semibold tracking-tight text-surface-ink-foreground sm:text-3xl">
+              <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
                 {title}
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-surface-ink-foreground/60 sm:text-base">
@@ -109,7 +108,7 @@ export function ProductCta({
             <p className="text-[11px] tracking-[0.18em] text-accent uppercase">
               Private consultation
             </p>
-            <h2 className="font-display mt-3 max-w-2xl text-3xl font-semibold tracking-tight text-surface-ink-foreground">
+            <h2 className="font-display mt-3 max-w-2xl text-3xl font-semibold tracking-tight">
               {title}
             </h2>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-surface-ink-foreground/60">
@@ -122,7 +121,7 @@ export function ProductCta({
         {variant === 'wide' ? (
           <div className="flex flex-col gap-8 rounded-[2rem] border border-white/10 bg-[linear-gradient(105deg,color-mix(in_oklab,var(--accent)_12%,transparent),transparent_55%)] p-8 md:flex-row md:items-end md:justify-between md:p-12">
             <div className="max-w-xl">
-              <h2 className="font-display text-3xl font-semibold tracking-tight text-surface-ink-foreground">
+              <h2 className="font-display text-3xl font-semibold tracking-tight">
                 {title}
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-surface-ink-foreground/60">
@@ -142,7 +141,7 @@ export function ProductCta({
               </span>
             </div>
             <div className="p-8 md:p-10">
-              <h2 className="font-display text-2xl font-semibold tracking-tight text-surface-ink-foreground sm:text-3xl">
+              <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
                 {title}
               </h2>
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-surface-ink-foreground/60">

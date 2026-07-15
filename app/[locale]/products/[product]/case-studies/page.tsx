@@ -114,13 +114,13 @@ export default async function ProductCaseStudiesPage({ params }: PageProps) {
         accentNote={design.accentNote}
       />
 
-      <section className="border-t border-white/8 py-16 md:py-24">
+      <section className="border-t border-border/70 py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10">
             <p className="text-[11px] tracking-[0.16em] text-accent uppercase">
               Archive · {studies.length} entries
             </p>
-            <h2 className="font-display mt-2 text-3xl font-semibold tracking-tight text-surface-ink-foreground">
+            <h2 className="font-display mt-2 text-3xl font-semibold tracking-tight text-foreground">
               Work in this practice
             </h2>
           </div>

@@ -21,7 +21,7 @@ export function FaqAccordion({
   if (!items.length) return null
 
   return (
-    <section className="border-t border-white/8 py-16 md:py-24">
+    <section className="border-t border-border/70 py-16 md:py-24">
       <div
         className={cn(
           'mx-auto px-4 sm:px-6 lg:px-8',
@@ -32,7 +32,7 @@ export function FaqAccordion({
       >
         <h2
           className={cn(
-            'font-display font-semibold tracking-tight text-surface-ink-foreground',
+            'font-display font-semibold tracking-tight text-foreground',
             variant === 'editorial'
               ? 'text-3xl sm:text-4xl'
               : 'text-2xl sm:text-3xl',
@@ -48,7 +48,7 @@ export function FaqAccordion({
               return (
                 <div
                   key={item.question}
-                  className="border-t border-white/10 py-5"
+                  className="border-t border-border py-5"
                 >
                   <button
                     type="button"
@@ -56,19 +56,19 @@ export function FaqAccordion({
                     onClick={() => setOpenIndex(isOpen ? null : index)}
                     className="flex w-full items-start justify-between gap-4 text-left"
                   >
-                    <span className="font-display text-base font-medium text-surface-ink-foreground hover:text-accent">
+                    <span className="font-display text-base font-medium text-foreground hover:text-accent">
                       {item.question}
                     </span>
                     <ChevronDown
                       className={cn(
-                        'mt-1 size-4 shrink-0 transition-transform',
+                        'mt-1 size-4 shrink-0 text-muted-foreground transition-transform',
                         isOpen && 'rotate-180',
                       )}
                       aria-hidden
                     />
                   </button>
                   {isOpen ? (
-                    <p className="mt-3 text-sm leading-relaxed text-surface-ink-foreground/55">
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                       {item.answer}
                     </p>
                   ) : null}
@@ -79,9 +79,9 @@ export function FaqAccordion({
         ) : (
           <div
             className={cn(
-              'mt-8 divide-y divide-white/10',
-              variant === 'boxed' && 'rounded-2xl border border-white/10',
-              variant === 'wide' && 'border-y border-white/10',
+              'mt-8 divide-y divide-border',
+              variant === 'boxed' && 'rounded-2xl border border-border bg-card',
+              variant === 'wide' && 'border-y border-border',
             )}
           >
             {items.map((item, index) => {
@@ -97,14 +97,14 @@ export function FaqAccordion({
                       aria-expanded={isOpen}
                       aria-controls={panelId}
                       onClick={() => setOpenIndex(isOpen ? null : index)}
-                      className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-surface-ink-foreground transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+                      className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left text-foreground transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
                     >
                       <span className="text-sm font-medium sm:text-base">
                         {item.question}
                       </span>
                       <ChevronDown
                         className={cn(
-                          'size-4 shrink-0 transition-transform',
+                          'size-4 shrink-0 text-muted-foreground transition-transform',
                           isOpen && 'rotate-180',
                         )}
                         aria-hidden
@@ -118,7 +118,7 @@ export function FaqAccordion({
                     hidden={!isOpen}
                     className="px-5 pb-4"
                   >
-                    <p className="text-sm leading-relaxed text-surface-ink-foreground/60">
+                    <p className="text-sm leading-relaxed text-muted-foreground">
                       {item.answer}
                     </p>
                   </div>

@@ -12,28 +12,28 @@ export function ProcessSteps({
   layout?: ProcessLayout
 }) {
   return (
-    <section className="border-t border-white/8 py-16 md:py-24">
+    <section className="border-t border-border/70 bg-muted/30 py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="font-display text-3xl font-semibold tracking-tight text-surface-ink-foreground sm:text-4xl">
+        <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
           {title}
         </h2>
 
         {layout === 'timeline' || layout === 'rail' ? (
           <ol className="relative mt-12 space-y-0">
             <span
-              className="absolute top-4 bottom-4 left-[1.35rem] w-px bg-white/10 md:left-6"
+              className="absolute top-4 bottom-4 left-[1.35rem] w-px bg-border md:left-6"
               aria-hidden
             />
             {steps.map((step, index) => (
               <li key={step.title} className="relative flex gap-5 py-5 md:gap-8">
-                <span className="relative z-10 flex size-11 shrink-0 items-center justify-center rounded-full border border-accent/40 bg-surface-ink font-display text-sm font-semibold text-accent">
+                <span className="relative z-10 flex size-11 shrink-0 items-center justify-center rounded-full border border-accent/40 bg-background font-display text-sm font-semibold text-accent shadow-sm">
                   {String(index + 1).padStart(2, '0')}
                 </span>
-                <div className="min-w-0 flex-1 rounded-2xl border border-white/8 bg-white/3 p-5 md:p-6">
-                  <h3 className="font-display text-lg font-semibold text-surface-ink-foreground">
+                <div className="min-w-0 flex-1 rounded-2xl border border-border bg-card p-5 md:p-6">
+                  <h3 className="font-display text-lg font-semibold text-foreground">
                     {step.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-surface-ink-foreground/60">
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     {step.description}
                   </p>
                 </div>
@@ -54,15 +54,15 @@ export function ProcessSteps({
             {steps.map((step, index) => (
               <li
                 key={step.title}
-                className="rounded-2xl border border-white/10 bg-[linear-gradient(180deg,color-mix(in_oklab,var(--accent)_8%,transparent),transparent_55%)] p-6"
+                className="rounded-2xl border border-border bg-card bg-[linear-gradient(180deg,color-mix(in_oklab,var(--accent)_6%,transparent),transparent_55%)] p-6"
               >
                 <span className="font-display text-3xl font-semibold text-accent/80">
                   {String(index + 1).padStart(2, '0')}
                 </span>
-                <h3 className="font-display mt-4 text-lg font-semibold text-surface-ink-foreground">
+                <h3 className="font-display mt-4 text-lg font-semibold text-foreground">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-surface-ink-foreground/60">
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {step.description}
                 </p>
               </li>
@@ -80,14 +80,14 @@ export function ProcessSteps({
                     aria-hidden
                   />
                 ) : null}
-                <div className="relative z-10 rounded-2xl border border-accent/20 bg-black/25 p-5">
+                <div className="relative z-10 rounded-2xl border border-accent/20 bg-card p-5 shadow-sm">
                   <p className="text-[10px] tracking-[0.16em] text-accent uppercase">
                     Stage {index + 1}
                   </p>
-                  <h3 className="font-display mt-3 text-base font-semibold text-surface-ink-foreground">
+                  <h3 className="font-display mt-3 text-base font-semibold text-foreground">
                     {step.title}
                   </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-surface-ink-foreground/55">
+                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
                     {step.description}
                   </p>
                 </div>

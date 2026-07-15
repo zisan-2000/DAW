@@ -16,7 +16,7 @@ export function ProductCaseStudyCards({
 }) {
   if (!studies.length) {
     return (
-      <p className="rounded-2xl border border-dashed border-white/15 px-6 py-12 text-center text-sm text-surface-ink-foreground/50">
+      <p className="rounded-2xl border border-dashed border-border px-6 py-12 text-center text-sm text-muted-foreground">
         {emptyLabel}
       </p>
     )
@@ -69,17 +69,17 @@ export function ProductCaseStudyCards({
         {studies.map((study, index) => (
           <li
             key={study.id}
-            className="rounded-xl border border-white/10 bg-black/20 p-5"
+            className="rounded-xl border border-border bg-card p-5"
           >
             <div className="flex flex-wrap items-center gap-2">
               <span className="font-display text-xs text-accent">
                 #{index + 1}
               </span>
-              <span className="text-[11px] tracking-wide text-surface-ink-foreground/40 uppercase">
+              <span className="text-[11px] tracking-wide text-muted-foreground uppercase">
                 {study.industryLabel}
               </span>
               {study.isSample ? (
-                <span className="text-[11px] text-surface-ink-foreground/35 uppercase">
+                <span className="text-[11px] text-muted-foreground/70 uppercase">
                   Sample
                 </span>
               ) : null}
@@ -87,18 +87,14 @@ export function ProductCaseStudyCards({
             <h3 className="font-display mt-2 text-lg font-semibold text-accent">
               {study.title}
             </h3>
-            <p className="mt-1 text-sm text-surface-ink-foreground/55">
-              {study.summary}
-            </p>
+            <p className="mt-1 text-sm text-muted-foreground">{study.summary}</p>
             <div className="mt-4 flex flex-wrap gap-4">
               {study.results.map((metric) => (
                 <div key={metric.label}>
-                  <p className="font-display text-sm font-semibold text-surface-ink-foreground">
+                  <p className="font-display text-sm font-semibold text-foreground">
                     {metric.value}
                   </p>
-                  <p className="text-[11px] text-surface-ink-foreground/40">
-                    {metric.label}
-                  </p>
+                  <p className="text-[11px] text-muted-foreground">{metric.label}</p>
                 </div>
               ))}
             </div>
@@ -145,29 +141,27 @@ function CaseCard({
             {study.industryLabel}
           </span>
           {study.isSample ? (
-            <span className="text-[11px] text-surface-ink-foreground/35 uppercase">
-              Demo
-            </span>
+            <span className="text-[11px] text-muted-foreground uppercase">Demo</span>
           ) : null}
         </div>
         <h3
           className={cn(
-            'font-display mt-3 font-semibold tracking-tight text-surface-ink-foreground',
+            'font-display mt-3 font-semibold tracking-tight text-foreground',
             featured ? 'text-2xl sm:text-3xl' : 'text-xl',
           )}
         >
           {study.title}
         </h3>
-        <p className="mt-3 text-sm leading-relaxed text-surface-ink-foreground/55">
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           {study.summary}
         </p>
-        <div className="mt-auto grid grid-cols-3 gap-3 border-t border-white/10 pt-5">
+        <div className="mt-auto grid grid-cols-3 gap-3 border-t border-border pt-5">
           {study.results.map((metric) => (
             <div key={metric.label}>
               <p className="font-display text-base font-semibold text-accent">
                 {metric.value}
               </p>
-              <p className="mt-0.5 text-[11px] text-surface-ink-foreground/40">
+              <p className="mt-0.5 text-[11px] text-muted-foreground">
                 {metric.label}
               </p>
             </div>
@@ -180,7 +174,7 @@ function CaseCard({
   return (
     <article
       className={cn(
-        'flex h-full flex-col rounded-2xl border border-white/8 bg-white/3 p-6',
+        'flex h-full flex-col rounded-2xl border border-border bg-card p-6',
         horizontal && 'md:flex-row md:gap-8 md:p-7',
         compact && 'min-h-[320px]',
       )}
@@ -191,59 +185,48 @@ function CaseCard({
             {study.industryLabel}
           </span>
           {study.isSample ? (
-            <span className="text-[11px] tracking-wide text-surface-ink-foreground/40 uppercase">
+            <span className="text-[11px] tracking-wide text-muted-foreground uppercase">
               Sample · demo
             </span>
           ) : null}
         </div>
-        <h3 className="font-display mt-4 text-xl font-semibold text-surface-ink-foreground">
+        <h3 className="font-display mt-4 text-xl font-semibold text-foreground">
           {study.title}
         </h3>
-        <p className="mt-2 text-sm leading-relaxed text-surface-ink-foreground/60">
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
           {study.summary}
         </p>
         {!compact ? (
           <div className="mt-4 space-y-2 text-sm">
             <p>
-              <span className="font-semibold text-surface-ink-foreground">
-                Challenge:{' '}
-              </span>
-              <span className="text-surface-ink-foreground/55">
-                {study.challenge}
-              </span>
+              <span className="font-semibold text-foreground">Challenge: </span>
+              <span className="text-muted-foreground">{study.challenge}</span>
             </p>
             <p>
-              <span className="font-semibold text-surface-ink-foreground">
-                Solution:{' '}
-              </span>
-              <span className="text-surface-ink-foreground/55">
-                {study.solution}
-              </span>
+              <span className="font-semibold text-foreground">Solution: </span>
+              <span className="text-muted-foreground">{study.solution}</span>
             </p>
           </div>
         ) : null}
       </div>
       <div
         className={cn(
-          'mt-5 rounded-xl border border-white/10 bg-black/20 p-4',
+          'mt-5 rounded-xl border border-border bg-muted/50 p-4',
           horizontal && 'mt-0 md:w-56 md:shrink-0',
         )}
       >
-        <p className="mb-3 text-[10px] tracking-[0.14em] text-surface-ink-foreground/40 uppercase">
+        <p className="mb-3 text-[10px] tracking-[0.14em] text-muted-foreground uppercase">
           Results · {study.resultsNote}
         </p>
         <div
-          className={cn(
-            'grid gap-3',
-            horizontal ? 'grid-cols-1' : 'grid-cols-3',
-          )}
+          className={cn('grid gap-3', horizontal ? 'grid-cols-1' : 'grid-cols-3')}
         >
           {study.results.map((metric) => (
             <div key={metric.label}>
               <p className="font-display text-base font-semibold text-accent">
                 {metric.value}
               </p>
-              <p className="mt-0.5 text-[11px] leading-snug text-surface-ink-foreground/45">
+              <p className="mt-0.5 text-[11px] leading-snug text-muted-foreground">
                 {metric.label}
               </p>
             </div>

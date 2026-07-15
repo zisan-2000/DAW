@@ -102,7 +102,7 @@ export default async function ProductHubPage({ params }: PageProps) {
     cases: (
       <section
         key="cases"
-        className="border-t border-white/8 py-16 md:py-24"
+        className="border-t border-border/70 py-16 md:py-24"
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
@@ -110,7 +110,7 @@ export default async function ProductHubPage({ params }: PageProps) {
               <p className="mb-2 text-[11px] tracking-[0.16em] text-accent uppercase">
                 {design.signalWord}
               </p>
-              <h2 className="font-display text-3xl font-semibold tracking-tight text-surface-ink-foreground sm:text-4xl">
+              <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
                 Selected work
               </h2>
             </div>

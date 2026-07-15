@@ -21,13 +21,13 @@ export function AudienceShowcase({
   if (!links.length) return null
 
   return (
-    <section className="border-t border-white/8 py-16 md:py-24">
+    <section className="border-t border-border/70 py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-10 flex items-end justify-between gap-4">
-          <h2 className="font-display text-3xl font-semibold tracking-tight text-surface-ink-foreground sm:text-4xl">
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             {title}
           </h2>
-          <span className="hidden text-xs tracking-[0.16em] text-surface-ink-foreground/35 uppercase sm:inline">
+          <span className="hidden text-xs tracking-[0.16em] text-muted-foreground uppercase sm:inline">
             {links.length} audiences
           </span>
         </div>
@@ -48,29 +48,29 @@ export function AudienceShowcase({
         ) : null}
 
         {layout === 'list' ? (
-          <ul className="divide-y divide-white/10 overflow-hidden rounded-3xl border border-white/10">
+          <ul className="divide-y divide-border overflow-hidden rounded-3xl border border-border bg-card">
             {links.map((link, index) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="group flex items-start justify-between gap-6 px-5 py-5 transition-colors hover:bg-white/4 sm:px-7"
+                  className="group flex items-start justify-between gap-6 px-5 py-5 transition-colors hover:bg-muted/50 sm:px-7"
                 >
                   <div className="flex gap-4">
                     <span className="font-display text-sm text-accent">
                       {String(index + 1).padStart(2, '0')}
                     </span>
                     <div>
-                      <p className="font-display text-lg font-semibold text-surface-ink-foreground group-hover:text-accent">
+                      <p className="font-display text-lg font-semibold text-foreground group-hover:text-accent">
                         {link.label}
                       </p>
                       {link.description ? (
-                        <p className="mt-1 max-w-2xl text-sm text-surface-ink-foreground/55">
+                        <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
                           {link.description}
                         </p>
                       ) : null}
                     </div>
                   </div>
-                  <ArrowUpRight className="mt-1 size-4 shrink-0 text-surface-ink-foreground/35 group-hover:text-accent" />
+                  <ArrowUpRight className="mt-1 size-4 shrink-0 text-muted-foreground group-hover:text-accent" />
                 </Link>
               </li>
             ))}
@@ -89,16 +89,16 @@ export function AudienceShowcase({
               >
                 <Link
                   href={link.href}
-                  className="group block h-full border-t border-accent/30 pt-5"
+                  className="group block h-full border-t border-accent/40 pt-5"
                 >
                   <p className="text-[11px] tracking-[0.16em] text-accent uppercase">
                     Profile {String(index + 1).padStart(2, '0')}
                   </p>
-                  <p className="font-display mt-3 text-2xl font-semibold tracking-tight text-surface-ink-foreground group-hover:text-accent">
+                  <p className="font-display mt-3 text-2xl font-semibold tracking-tight text-foreground group-hover:text-accent">
                     {link.label}
                   </p>
                   {link.description ? (
-                    <p className="mt-3 text-sm leading-relaxed text-surface-ink-foreground/55">
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                       {link.description}
                     </p>
                   ) : null}
@@ -126,16 +126,16 @@ export function AudienceShowcase({
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-black/20 p-5"
+                  className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card p-5"
                 >
-                  <span className="absolute top-0 right-0 p-3 font-display text-4xl text-white/5">
+                  <span className="absolute top-0 right-0 p-3 font-display text-4xl text-foreground/5">
                     {String(index + 1).padStart(2, '0')}
                   </span>
-                  <p className="font-display text-lg font-semibold text-surface-ink-foreground group-hover:text-accent">
+                  <p className="font-display text-lg font-semibold text-foreground group-hover:text-accent">
                     {link.label}
                   </p>
                   {link.description ? (
-                    <p className="mt-3 flex-1 text-sm text-surface-ink-foreground/50">
+                    <p className="mt-3 flex-1 text-sm text-muted-foreground">
                       {link.description}
                     </p>
                   ) : null}
@@ -166,19 +166,20 @@ function AudienceCardLink({
     <Link
       href={link.href}
       className={cn(
-        'group flex h-full flex-col rounded-2xl border border-white/10 bg-white/3 p-6 transition-colors hover:border-accent/40',
+        'group flex h-full flex-col rounded-2xl border border-border bg-card p-6 transition-colors hover:border-accent/40',
         tall && 'min-h-[240px]',
-        featured && 'bg-[radial-gradient(ellipse_80%_70%_at_100%_0%,color-mix(in_oklab,var(--accent)_14%,transparent),transparent_60%)]',
+        featured &&
+          'bg-[radial-gradient(ellipse_80%_70%_at_100%_0%,color-mix(in_oklab,var(--accent)_10%,transparent),transparent_60%)]',
       )}
     >
       <div className="mb-4 flex items-start justify-between gap-3">
-        <p className="font-display text-xl font-semibold text-surface-ink-foreground group-hover:text-accent">
+        <p className="font-display text-xl font-semibold text-foreground group-hover:text-accent">
           {link.label}
         </p>
-        <ArrowUpRight className="size-4 shrink-0 text-surface-ink-foreground/35 group-hover:text-accent" />
+        <ArrowUpRight className="size-4 shrink-0 text-muted-foreground group-hover:text-accent" />
       </div>
       {link.description ? (
-        <p className="mt-auto text-sm leading-relaxed text-surface-ink-foreground/55">
+        <p className="mt-auto text-sm leading-relaxed text-muted-foreground">
           {link.description}
         </p>
       ) : null}

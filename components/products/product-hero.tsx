@@ -42,8 +42,10 @@ export function ProductHero({
   return (
     <section
       className={cn(
-        'relative overflow-hidden',
-        layout === 'concierge-wide' ? 'pt-32 pb-20 md:pt-40 md:pb-28' : 'pt-28 pb-16 md:pt-36 md:pb-24',
+        'relative overflow-hidden bg-surface-ink text-surface-ink-foreground',
+        layout === 'concierge-wide'
+          ? 'pt-32 pb-24 md:pt-40 md:pb-32'
+          : 'pt-28 pb-20 md:pt-36 md:pb-28',
       )}
     >
       <div className="pointer-events-none absolute inset-0" aria-hidden>
@@ -68,6 +70,7 @@ export function ProductHero({
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ProductBreadcrumbs
           items={breadcrumbs}
+          tone="ink"
           className={cn(isCentered && 'justify-center [&_ol]:justify-center')}
         />
 
@@ -180,6 +183,23 @@ export function ProductHero({
             </div>
           ) : null}
         </div>
+      </div>
+
+      {/* Curve into light content */}
+      <div
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-10 leading-0"
+        aria-hidden
+      >
+        <svg
+          className="relative block h-10 w-full translate-y-px sm:h-12"
+          viewBox="0 0 1440 88"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0 40C240 8 480 8 720 40C960 72 1200 80 1440 52V89H0V40Z"
+            fill="var(--background)"
+          />
+        </svg>
       </div>
     </section>
   )
