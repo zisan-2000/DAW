@@ -142,11 +142,11 @@ export default function GenerativeEngineOptimizationPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-surface-ink text-surface-ink-foreground">
+    <main className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-16 pb-20 md:pt-24 md:pb-32">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-surface-ink via-surface-ink to-accent/5" />
+          <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-accent/5" />
           <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent/3 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent/3 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2" />
           <div
@@ -171,14 +171,14 @@ export default function GenerativeEngineOptimizationPage() {
               <span className="inline-block font-mono text-xs font-semibold uppercase tracking-[0.15em] text-accent">
                 {t("hero.eyebrow")}
               </span>
-              <h1 className="mt-4 font-['Playfair_Display'] text-5xl font-bold leading-[1.05] text-surface-ink-foreground md:text-7xl lg:text-8xl">
+              <h1 className="mt-4 font-['Playfair_Display'] text-5xl font-bold leading-[1.05] text-foreground md:text-7xl lg:text-8xl">
                 {t("hero.title")}
                 <br />
                 <span className="italic text-accent">
                   {t("hero.titleAccent")}
                 </span>
               </h1>
-              <p className="mt-8 text-lg font-light text-surface-ink-foreground/60 md:text-xl leading-relaxed max-w-xl">
+              <p className="mt-8 text-lg font-light text-foreground/60 md:text-xl leading-relaxed max-w-xl">
                 {t("hero.description")}
               </p>
               <div className="mt-12 flex flex-wrap items-center gap-4">
@@ -186,7 +186,7 @@ export default function GenerativeEngineOptimizationPage() {
                   href="#consultation"
                   className="group relative inline-flex items-center gap-3 px-10 py-4 bg-accent text-accent-foreground font-semibold rounded-sm overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-accent/25"
                 >
-                  <span className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
+                  <span className="absolute inset-0 bg-foreground/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
                   <span className="relative flex items-center gap-3">
                     {t("hero.cta")}{" "}
                     <ArrowRight
@@ -197,7 +197,7 @@ export default function GenerativeEngineOptimizationPage() {
                 </Link>
                 <Link
                   href="#process"
-                  className="inline-flex items-center gap-2 px-10 py-4 border border-white/15 text-surface-ink-foreground font-medium rounded-sm hover:border-accent/50 hover:text-accent transition-all duration-300"
+                  className="inline-flex items-center gap-2 px-10 py-4 border border-border text-foreground font-medium rounded-sm hover:border-accent/50 hover:text-accent transition-all duration-300"
                 >
                   {t("hero.secondaryCta")}
                 </Link>
@@ -207,31 +207,31 @@ export default function GenerativeEngineOptimizationPage() {
             {/* Right Column - Citation Score Display */}
             <div className="flex justify-center lg:justify-end">
               <div ref={sectionRef} className="relative w-full max-w-lg">
-                <div className="relative rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-xl p-10">
+                <div className="relative rounded-3xl border border-border bg-foreground/[0.03] backdrop-blur-xl p-10">
                   {/* Citation Score Counter */}
                   <div className="text-center mb-10">
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-surface-ink-foreground/40 mb-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-foreground/40 mb-4">
                       {t("hero.citationLabel")}
                     </p>
                     <div className="flex items-baseline justify-center gap-2">
-                      <span className="font-mono text-8xl font-bold text-surface-ink-foreground tabular-nums">
+                      <span className="font-mono text-8xl font-bold text-foreground tabular-nums">
                         {citationScore}
                       </span>
                       <span className="font-mono text-3xl font-light text-accent">
                         %
                       </span>
                     </div>
-                    <p className="mt-3 text-sm text-surface-ink-foreground/60">
+                    <p className="mt-3 text-sm text-foreground/60">
                       {t("hero.citationDescription")}
                     </p>
                   </div>
 
                   {/* Divider */}
-                  <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-10" />
+                  <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent mb-10" />
 
                   {/* Live Engine Indicator */}
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-surface-ink-foreground/40 mb-6 text-center">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-foreground/40 mb-6 text-center">
                       {t("hero.engines")}
                     </p>
                     <div className="grid grid-cols-4 gap-2">
@@ -243,7 +243,7 @@ export default function GenerativeEngineOptimizationPage() {
                             className={`text-center p-3 rounded-xl transition-all duration-500 cursor-pointer ${
                               activeEngine === index
                                 ? "bg-accent/10 border border-accent/30"
-                                : "border border-transparent hover:bg-white/5"
+                                : "border border-transparent hover:bg-foreground/5"
                             }`}
                             onClick={() => setActiveEngine(index)}
                           >
@@ -252,10 +252,10 @@ export default function GenerativeEngineOptimizationPage() {
                               className={`mx-auto mb-2 transition-colors ${
                                 activeEngine === index
                                   ? "text-accent"
-                                  : "text-surface-ink-foreground/40"
+                                  : "text-foreground/40"
                               }`}
                             />
-                            <p className="text-[10px] font-semibold uppercase tracking-wider text-surface-ink-foreground/60">
+                            <p className="text-[10px] font-semibold uppercase tracking-wider text-foreground/60">
                               {engine.name}
                             </p>
                           </div>
@@ -265,40 +265,40 @@ export default function GenerativeEngineOptimizationPage() {
                   </div>
 
                   {/* Decorative Elements */}
-                  <div className="absolute -top-2 -right-2 h-16 w-16 rounded-full border border-accent/20 bg-surface-ink/50 backdrop-blur-sm flex items-center justify-center">
+                  <div className="absolute -top-2 -right-2 h-16 w-16 rounded-full border border-accent/20 bg-background/50 backdrop-blur-sm flex items-center justify-center">
                     <Sparkles size={24} className="text-accent" />
                   </div>
-                  <div className="absolute -bottom-2 -left-2 h-12 w-12 rounded-full border border-accent/20 bg-surface-ink/50 backdrop-blur-sm flex items-center justify-center">
+                  <div className="absolute -bottom-2 -left-2 h-12 w-12 rounded-full border border-accent/20 bg-background/50 backdrop-blur-sm flex items-center justify-center">
                     <Radar size={18} className="text-accent" />
                   </div>
                 </div>
 
                 {/* Floating Cards */}
-                <div className="absolute -top-6 -left-6 rounded-2xl border border-white/10 bg-white/[0.05] backdrop-blur-md px-5 py-3 shadow-2xl">
+                <div className="absolute -top-6 -left-6 rounded-2xl border border-border bg-foreground/[0.05] backdrop-blur-md px-5 py-3 shadow-2xl">
                   <div className="flex items-center gap-3">
                     <div className="flex size-10 items-center justify-center rounded-full bg-accent/10">
                       <Radar size={18} className="text-accent" />
                     </div>
                     <div>
-                      <p className="text-xs text-surface-ink-foreground/60">
+                      <p className="text-xs text-foreground/60">
                         {t("hero.monitoringLabel")}
                       </p>
-                      <p className="text-sm font-semibold text-surface-ink-foreground">
+                      <p className="text-sm font-semibold text-foreground">
                         24/7
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className="absolute -bottom-4 -right-4 rounded-2xl border border-white/10 bg-white/[0.05] backdrop-blur-md px-5 py-3 shadow-2xl">
+                <div className="absolute -bottom-4 -right-4 rounded-2xl border border-border bg-foreground/[0.05] backdrop-blur-md px-5 py-3 shadow-2xl">
                   <div className="flex items-center gap-3">
                     <div className="flex size-10 items-center justify-center rounded-full bg-accent/10">
                       <Search size={18} className="text-accent" />
                     </div>
                     <div>
-                      <p className="text-xs text-surface-ink-foreground/60">
+                      <p className="text-xs text-foreground/60">
                         {t("hero.coverageLabel")}
                       </p>
-                      <p className="text-sm font-semibold text-surface-ink-foreground">
+                      <p className="text-sm font-semibold text-foreground">
                         10K+
                       </p>
                     </div>
@@ -311,10 +311,10 @@ export default function GenerativeEngineOptimizationPage() {
       </section>
 
       {/* Trust Bar */}
-      <section className="border-y border-white/5 bg-white/[0.01]">
+      <section className="border-y border-border bg-foreground/[0.01]">
         <div className="container mx-auto px-4 md:px-6 py-8">
           <div className="flex flex-wrap items-center justify-between gap-6">
-            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-surface-ink-foreground/30">
+            <span className="text-xs font-semibold uppercase tracking-[0.2em] text-foreground/30">
               {t("trustBar.label")}
             </span>
             <div className="flex flex-wrap items-center gap-10">
@@ -322,7 +322,7 @@ export default function GenerativeEngineOptimizationPage() {
                 (source) => (
                   <span
                     key={source}
-                    className="text-sm font-medium text-surface-ink-foreground/30 transition hover:text-surface-ink-foreground/60"
+                    className="text-sm font-medium text-foreground/30 transition hover:text-foreground/60"
                   >
                     {t(`trustBar.${source}`)}
                   </span>
@@ -342,13 +342,13 @@ export default function GenerativeEngineOptimizationPage() {
                 <span className="inline-block font-mono text-xs font-semibold uppercase tracking-[0.15em] text-accent mb-4">
                   {t("services.eyebrow")}
                 </span>
-                <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl font-semibold leading-tight text-surface-ink-foreground">
+                <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl font-semibold leading-tight text-foreground">
                   {t("services.title")}
                 </h2>
               </div>
               <Link
                 href="#consultation"
-                className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-surface-ink-foreground transition-colors"
+                className="hidden md:inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-foreground transition-colors"
               >
                 {t("common.viewAll")} <ChevronRight size={16} />
               </Link>
@@ -361,7 +361,7 @@ export default function GenerativeEngineOptimizationPage() {
               return (
                 <div
                   key={index}
-                  className="group relative bg-white/[0.02] border border-white/5 p-8 hover:bg-white/[0.04] hover:border-accent/20 transition-all duration-500"
+                  className="group relative bg-foreground/[0.02] border border-border p-8 hover:bg-foreground/[0.04] hover:border-accent/20 transition-all duration-500"
                 >
                   <div className="flex items-start justify-between mb-6">
                     <div className="flex size-14 items-center justify-center rounded-2xl bg-accent/10 group-hover:bg-accent/20 transition-colors">
@@ -371,20 +371,20 @@ export default function GenerativeEngineOptimizationPage() {
                       <span className="block font-mono text-2xl font-bold text-accent">
                         {service.stat}
                       </span>
-                      <span className="text-xs text-surface-ink-foreground/40">
+                      <span className="text-xs text-foreground/40">
                         {service.statLabel}
                       </span>
                     </div>
                   </div>
-                  <h3 className="font-['Playfair_Display'] text-xl font-semibold text-surface-ink-foreground mb-3">
+                  <h3 className="font-['Playfair_Display'] text-xl font-semibold text-foreground mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-sm font-light text-surface-ink-foreground/60 leading-relaxed mb-6">
+                  <p className="text-sm font-light text-foreground/60 leading-relaxed mb-6">
                     {service.description}
                   </p>
                   <Link
                     href="#consultation"
-                    className="inline-flex items-center gap-2 text-sm font-medium text-surface-ink-foreground/40 group-hover:text-accent transition-colors"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-foreground/40 group-hover:text-accent transition-colors"
                   >
                     {t("common.learnMore")}
                     <ChevronRight
@@ -402,14 +402,14 @@ export default function GenerativeEngineOptimizationPage() {
       {/* Process - Timeline Style */}
       <section
         id="process"
-        className="py-24 md:py-32 bg-white/[0.01] border-y border-white/5"
+        className="py-24 md:py-32 bg-foreground/[0.01] border-y border-border"
       >
         <div className="container mx-auto px-4 md:px-6">
           <div className="mb-20 text-center">
             <span className="inline-block font-mono text-xs font-semibold uppercase tracking-[0.15em] text-accent mb-4">
               {t("process.eyebrow")}
             </span>
-            <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl font-semibold leading-tight text-surface-ink-foreground">
+            <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl font-semibold leading-tight text-foreground">
               {t("process.title")}
             </h2>
           </div>
@@ -422,21 +422,21 @@ export default function GenerativeEngineOptimizationPage() {
                 )}
 
                 <div className="relative flex-shrink-0">
-                  <div className="flex size-14 items-center justify-center rounded-full border-2 border-accent/30 bg-surface-ink font-mono text-lg font-bold text-accent">
+                  <div className="flex size-14 items-center justify-center rounded-full border-2 border-accent/30 bg-background font-mono text-lg font-bold text-accent">
                     {String(step).padStart(2, "0")}
                   </div>
                 </div>
 
                 <div className="pt-3">
                   <div className="flex items-center gap-3 mb-3">
-                    <h3 className="font-['Playfair_Display'] text-2xl font-semibold text-surface-ink-foreground">
+                    <h3 className="font-['Playfair_Display'] text-2xl font-semibold text-foreground">
                       {t(`process.step${step}.title`)}
                     </h3>
                     <span className="px-2 py-0.5 rounded-full bg-accent/10 text-xs font-mono text-accent">
                       {t(`process.step${step}.time`)}
                     </span>
                   </div>
-                  <p className="text-sm font-light text-surface-ink-foreground/60 leading-relaxed max-w-lg">
+                  <p className="text-sm font-light text-foreground/60 leading-relaxed max-w-lg">
                     {t(`process.step${step}.description`)}
                   </p>
                 </div>
@@ -453,7 +453,7 @@ export default function GenerativeEngineOptimizationPage() {
             <span className="inline-block font-mono text-xs font-semibold uppercase tracking-[0.15em] text-accent mb-4">
               {t("testimonials.eyebrow")}
             </span>
-            <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl font-semibold leading-tight text-surface-ink-foreground">
+            <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl font-semibold leading-tight text-foreground">
               {t("testimonials.title")}
             </h2>
           </div>
@@ -462,7 +462,7 @@ export default function GenerativeEngineOptimizationPage() {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="group relative rounded-3xl border border-white/5 bg-white/[0.02] p-8 hover:bg-white/[0.04] hover:border-accent/20 transition-all duration-500"
+                className="group relative rounded-3xl border border-border bg-foreground/[0.02] p-8 hover:bg-foreground/[0.04] hover:border-accent/20 transition-all duration-500"
               >
                 <div className="absolute top-6 right-8 text-8xl font-['Playfair_Display'] text-accent/10 leading-none select-none">
                   "
@@ -481,16 +481,16 @@ export default function GenerativeEngineOptimizationPage() {
                     ))}
                   </div>
 
-                  <blockquote className="text-sm font-light text-surface-ink-foreground/80 leading-relaxed mb-8">
+                  <blockquote className="text-sm font-light text-foreground/80 leading-relaxed mb-8">
                     "{testimonial.quote}"
                   </blockquote>
 
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="font-semibold text-surface-ink-foreground">
+                      <p className="font-semibold text-foreground">
                         {testimonial.name}
                       </p>
-                      <p className="text-xs text-surface-ink-foreground/40 mt-1">
+                      <p className="text-xs text-foreground/40 mt-1">
                         {testimonial.role}
                       </p>
                     </div>
@@ -498,7 +498,7 @@ export default function GenerativeEngineOptimizationPage() {
                       <span className="block font-mono text-lg font-bold text-accent">
                         {testimonial.metric}
                       </span>
-                      <span className="text-xs text-surface-ink-foreground/40">
+                      <span className="text-xs text-foreground/40">
                         {testimonial.metricLabel}
                       </span>
                     </div>
@@ -511,7 +511,7 @@ export default function GenerativeEngineOptimizationPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 md:py-32 border-y border-white/5 bg-white/[0.01]">
+      <section className="py-24 md:py-32 border-y border-border bg-foreground/[0.01]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -524,7 +524,7 @@ export default function GenerativeEngineOptimizationPage() {
                 <span className="block font-mono text-4xl md:text-5xl font-bold text-accent mb-3">
                   {stat.value}
                 </span>
-                <span className="text-sm text-surface-ink-foreground/40">
+                <span className="text-sm text-foreground/40">
                   {stat.label}
                 </span>
               </div>
@@ -536,7 +536,7 @@ export default function GenerativeEngineOptimizationPage() {
       {/* Consultation CTA */}
       <section id="consultation" className="py-24 md:py-32">
         <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-          <div className="relative rounded-3xl border border-accent/20 bg-gradient-to-br from-surface-ink via-accent/[0.02] to-surface-ink p-10 md:p-16 overflow-hidden">
+          <div className="relative rounded-3xl border border-accent/20 bg-gradient-to-br from-background via-accent/[0.02] to-background p-10 md:p-16 overflow-hidden">
             <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2" />
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/3 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2" />
 
@@ -548,10 +548,10 @@ export default function GenerativeEngineOptimizationPage() {
                     {t("consultation.eyebrow")}
                   </span>
                 </span>
-                <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl font-semibold leading-tight text-surface-ink-foreground mb-6">
+                <h2 className="font-['Playfair_Display'] text-5xl md:text-6xl font-semibold leading-tight text-foreground mb-6">
                   {t("consultation.title")}
                 </h2>
-                <p className="text-lg text-surface-ink-foreground/60 max-w-2xl mx-auto font-light">
+                <p className="text-lg text-foreground/60 max-w-2xl mx-auto font-light">
                   {t("consultation.description")}
                 </p>
               </div>
@@ -560,13 +560,13 @@ export default function GenerativeEngineOptimizationPage() {
                 {["immediate", "confidential", "expert"].map((item) => (
                   <div
                     key={item}
-                    className="text-center p-6 rounded-2xl bg-white/[0.02] border border-white/5"
+                    className="text-center p-6 rounded-2xl bg-foreground/[0.02] border border-border"
                   >
                     <CheckCircle
                       size={24}
                       className="mx-auto mb-3 text-accent"
                     />
-                    <p className="text-sm font-medium text-surface-ink-foreground">
+                    <p className="text-sm font-medium text-foreground">
                       {t(`consultation.benefits.${item}`)}
                     </p>
                   </div>
@@ -578,13 +578,13 @@ export default function GenerativeEngineOptimizationPage() {
                   <input
                     type="email"
                     placeholder={t("consultation.form.emailPlaceholder")}
-                    className="flex-1 bg-white/5 border border-white/10 rounded-xl px-6 py-4 text-surface-ink-foreground placeholder:text-surface-ink-foreground/30 focus:border-accent focus:outline-none transition-colors"
+                    className="flex-1 bg-foreground/5 border border-border rounded-xl px-6 py-4 text-foreground placeholder:text-foreground/30 focus:border-accent focus:outline-none transition-colors"
                   />
                   <button className="px-8 py-4 bg-accent text-accent-foreground font-semibold rounded-xl hover:bg-accent/90 transition-all duration-300 hover:shadow-lg hover:shadow-accent/25">
                     {t("consultation.form.submit")}
                   </button>
                 </div>
-                <p className="text-center text-xs text-surface-ink-foreground/40 mt-4">
+                <p className="text-center text-xs text-foreground/40 mt-4">
                   {t("consultation.form.disclaimer")}
                 </p>
               </div>
