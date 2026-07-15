@@ -172,5 +172,121 @@
         "disclaimer": "All information is confidential and protected"
       }
     }
+  },
+  "fixMySearchResults": {
+    "hero": {
+      "eyebrow": "Online Reputation Management",
+      "title": "Fix your Google search results and take back control.",
+      "description": "We help individuals and businesses improve what people see when they search online. Our team identifies, suppresses, and replaces harmful results so you can move forward with confidence.",
+      "primaryCta": "Book a free consultation",
+      "secondaryCta": "Explore our process",
+      "badges": {
+        "confidential": "Confidential",
+        "strategic": "Strategic",
+        "resultsFocused": "Results-focused"
+      },
+      "stats": {
+        "visibility": "Reputation visibility",
+        "monitoring": "Ongoing monitoring",
+        "confidentiality": "Confidential strategy"
+      },
+      "imageAlt": "Online reputation management strategy"
+    },
+    "intro": {
+      "eyebrow": "Your search results matter",
+      "title": "Build a search presence that reflects your real value.",
+      "paragraph1": "Every piece of information about you shapes your online reputation, both good and bad. When people search your name or business to hire you, buy a service, or research a product, negative results can damage trust when they are left unchecked.",
+      "paragraph2": "Old, inaccurate, or harmful information can become mixed with positive results and create the wrong impression. Even when a direct removal is not possible, a strategic approach can reduce its visibility and make credible information easier to find.",
+      "paragraph3": "Our online reputation management services are designed to create a cleaner, stronger, and more positive digital profile for individuals, executives, brands, and businesses in organic search results."
+    },
+    "benefits": {
+      "eyebrow": "A complete approach",
+      "title": "Improve what people find about you.",
+      "subtitle": "Our process combines strategy, content, search optimization, and continuous monitoring to strengthen your online image.",
+      "strategicSuppression": {
+        "title": "Employ Strategic Suppression",
+        "description": "We design customized strategies to push negative search results lower and improve what people discover about you."
+      },
+      "highQualityContent": {
+        "title": "Create and Promote High-Quality Content",
+        "description": "We create credible, positive content that supports your reputation and improves your visibility across search engines."
+      },
+      "imageAmplification": {
+        "title": "Amplify Your Image",
+        "description": "We help position your personal or business profile in front of the right audience with a stronger digital presence."
+      }
+    },
+    "difference": {
+      "eyebrow": "Why we are different",
+      "title": "A strategy built around your reputation, not a generic template.",
+      "paragraph1": "We understand that every reputation challenge is different. That is why our approach begins with your goals, your audience, and the search results that currently define your online image.",
+      "paragraph2": "Our specialists combine reputation strategy, content creation, digital publishing, search optimization, and ongoing monitoring to create lasting improvements.",
+      "visibility": "Reputation visibility",
+      "imageAlt": "Team discussing an online reputation strategy",
+      "trustPoints": {
+        "customizedStrategy": "Customized reputation strategy",
+        "experiencedSpecialists": "Experienced reputation specialists",
+        "transparentReporting": "Transparent progress reporting",
+        "longTermProtection": "Long-term reputation protection"
+      }
+    },
+    "process": {
+      "eyebrow": "Our ORM process",
+      "title": "A clear path from reputation risk to measurable improvement.",
+      "subtitle": "Our process is structured to understand your current position, create the right strategy, execute effectively, and continuously improve results.",
+      "stepLabel": "Step {number} - {eyebrow}",
+      "steps": {
+        "discovery": {
+          "eyebrow": "Discovery",
+          "title": "Assess and Analyze",
+          "description": "We perform a detailed audit of your search results to uncover negative, harmful, outdated, or misleading information. We then identify opportunities, reputation risks, and the most effective path forward.",
+          "points": {
+            "1": "Search result and content audit",
+            "2": "Reputation risk identification",
+            "3": "Competitor and industry analysis"
+          },
+          "imageAlt": "Assessment and analysis workflow"
+        },
+        "strategy": {
+          "eyebrow": "Strategy",
+          "title": "Strategize and Plan",
+          "description": "Our team develops a personalized strategy to remove, suppress, or outperform negative content with trustworthy and high-quality information about you or your business.",
+          "points": {
+            "1": "Personalized reputation roadmap",
+            "2": "Content and authority planning",
+            "3": "Clear priorities and milestones"
+          },
+          "imageAlt": "Strategy and planning workflow"
+        },
+        "execution": {
+          "eyebrow": "Execution",
+          "title": "Implement and Execute Positive Search Engine Results",
+          "description": "Once the strategy is approved, our team begins producing, publishing, and optimizing trustworthy content designed to improve what appears in search results.",
+          "points": {
+            "1": "Search-optimized content production",
+            "2": "Publishing and digital placement",
+            "3": "Authority and credibility development"
+          },
+          "imageAlt": "Content execution workflow"
+        },
+        "reporting": {
+          "eyebrow": "Reporting",
+          "title": "Monitor and Report",
+          "description": "We continuously monitor your brand mentions and search visibility across major online channels. You receive clear reports, performance updates, and recommendations for continued reputation growth.",
+          "points": {
+            "1": "Ongoing search result monitoring",
+            "2": "Performance and progress reports",
+            "3": "Long-term reputation protection"
+          },
+          "imageAlt": "Monitoring and reporting workflow"
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Ready to improve your results?",
+      "title": "Build a stronger online reputation starting today.",
+      "description": "Speak with our reputation specialists and discover a strategy built around your search results, goals, and long-term image.",
+      "primaryCta": "Get a no-cost evaluation"
+    }
   }
 }
