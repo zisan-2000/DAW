@@ -8,9 +8,9 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
 import { AGENCY_CONFIG } from "@/lib/content";
 import { productNavSections } from "@/lib/products/nav";
-import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
+import { LiquidGradientButton } from "@/components/ui/GitHubButton";
 
 type MenuItem = {
   label: string;
@@ -96,7 +96,10 @@ function ProductsDesktopDropdown() {
             <div className="max-h-[min(70vh,640px)] overflow-y-auto overflow-x-hidden p-3">
               <div className="grid grid-cols-2 gap-1 md:grid-cols-3 xl:grid-cols-5">
                 {productSections.map((section) => {
-                  const sectionActive = isActivePath(pathname, section.basePath);
+                  const sectionActive = isActivePath(
+                    pathname,
+                    section.basePath,
+                  );
 
                   return (
                     <div
@@ -229,7 +232,10 @@ export function Header() {
   const pathname = usePathname();
 
   const serviceItems: MenuItem[] = [
-    { label: t("services.fixMySearchResults"), href: "/services/fix-my-search-results" },
+    {
+      label: t("services.fixMySearchResults"),
+      href: "/services/fix-my-search-results",
+    },
     {
       label: t("services.personalReputationManagement"),
       href: "/services/personal-reputation-management",
@@ -242,8 +248,14 @@ export function Header() {
       label: t("services.aiReputationManagement"),
       href: "/services/ai-reputation-management",
     },
-    { label: t("services.executiveBranding"), href: "/services/executive-branding" },
-    { label: t("services.reviewManagement"), href: "/services/review-management" },
+    {
+      label: t("services.executiveBranding"),
+      href: "/services/executive-branding",
+    },
+    {
+      label: t("services.reviewManagement"),
+      href: "/services/review-management",
+    },
     { label: t("services.redditRemoval"), href: "/services/reddit-removal" },
     { label: t("services.wikipedia"), href: "/services/wikipedia" },
     { label: t("services.googleMapsSeo"), href: "/services/google-maps-seo" },
@@ -258,23 +270,35 @@ export function Header() {
   ];
 
   const consultingItems: MenuItem[] = [
-    { label: t("consulting.reputationConsulting"), href: "/consulting/reputation-consulting" },
+    {
+      label: t("consulting.reputationConsulting"),
+      href: "/consulting/reputation-consulting",
+    },
     {
       label: t("consulting.contentIdeaGeneration"),
       href: "/consulting/content-idea-generation",
     },
     { label: t("consulting.branding"), href: "/consulting/branding" },
-    { label: t("consulting.crisisManagement"), href: "/consulting/crisis-management" },
+    {
+      label: t("consulting.crisisManagement"),
+      href: "/consulting/crisis-management",
+    },
     {
       label: t("consulting.generativeEngineOptimization"),
       href: "/consulting/generative-engine-optimization",
     },
-    { label: t("consulting.publicRelations"), href: "/consulting/public-relations" },
+    {
+      label: t("consulting.publicRelations"),
+      href: "/consulting/public-relations",
+    },
   ];
 
   const aboutItems: MenuItem[] = [
     { label: t("about.ourStory"), href: "/about/our-story" },
-    { label: t("about.yourOnlineReputation"), href: "/about/your-online-reputation" },
+    {
+      label: t("about.yourOnlineReputation"),
+      href: "/about/your-online-reputation",
+    },
     { label: t("about.whyUs"), href: "/about/why-us" },
     { label: t("about.caseStudies"), href: "/about/case-studies" },
     { label: t("about.concern"), href: "/about/concern" },
@@ -361,10 +385,13 @@ export function Header() {
 
           <LanguageSwitcher />
 
-          <Link href="/contact?type=consultation">
-            <Button className="h-10 max-w-[11rem] truncate rounded-xl bg-accent px-3 text-xs font-semibold text-accent-foreground shadow-sm hover:bg-accent/90 2xl:max-w-none 2xl:px-4 2xl:text-sm">
+          <Link
+            href="/onbording"
+            className="rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          >
+            <LiquidGradientButton className="text-base font-bold sm:text-[15px]">
               {t("freeConsultation")}
-            </Button>
+            </LiquidGradientButton>
           </Link>
 
           <a
@@ -686,13 +713,13 @@ export function Header() {
 
               <div className="mt-5 border-t border-border pt-5">
                 <Link
-                  href="/contact?type=consultation"
+                  href="/onbording"
                   onClick={closeMobileMenu}
                   className="block"
                 >
-                  <Button className="h-12 w-full rounded-xl bg-accent font-semibold text-accent-foreground shadow-sm hover:bg-accent/90">
+                  <LiquidGradientButton className="h-12 w-full">
                     {t("freeConsultation")}
-                  </Button>
+                  </LiquidGradientButton>
                 </Link>
 
                 <a
