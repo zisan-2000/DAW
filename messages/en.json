@@ -1708,6 +1708,89 @@
       "primaryCta": "Get a no-cost evaluation"
     }
   },
+  "consultationOnboarding": {
+    "hero": {
+      "eyebrow": "Free Consultation",
+      "title": "Let's Build Your Growth Plan",
+      "description": "Tell us about yourself and your business, then see a live snapshot of where you currently rank in search for a keyword that matters to you.",
+      "trust": {
+        "fast": "5-minute setup",
+        "confidential": "100% confidential",
+        "noObligation": "No obligation"
+      }
+    },
+    "steps": {
+      "contact": "Your Details",
+      "business": "Your Business",
+      "keyword": "Keyword & SERP Snapshot"
+    },
+    "nav": {
+      "back": "Back",
+      "next": "Continue",
+      "submit": "Submit & Get My Free Consultation"
+    },
+    "contact": {
+      "title": "Tell us who you are",
+      "description": "We will use this to prepare your consultation and send your results.",
+      "nameLabel": "Full name",
+      "namePlaceholder": "Jordan Smith",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "jordan@company.com",
+      "phoneLabel": "Phone number",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "companyLabel": "Company name",
+      "companyPlaceholder": "Acme Inc."
+    },
+    "business": {
+      "title": "Tell us about your business",
+      "description": "This helps us tailor the strategy to your industry and goals.",
+      "websiteLabel": "Website URL",
+      "websitePlaceholder": "yourcompany.com",
+      "industryLabel": "Industry",
+      "industryPlaceholder": "Select your industry",
+      "industries": [
+        "Technology & SaaS",
+        "Healthcare",
+        "Finance & Legal",
+        "Real Estate",
+        "E-commerce & Retail",
+        "Professional Services",
+        "Hospitality & Travel",
+        "Other"
+      ],
+      "challengeLabel": "What is your biggest challenge right now?",
+      "challengePlaceholder": "Select a challenge",
+      "challenges": [
+        "Negative search results",
+        "Low search visibility",
+        "Weak brand reputation",
+        "Losing customers to competitors",
+        "Not sure yet"
+      ]
+    },
+    "keyword": {
+      "title": "What keyword should we analyze?",
+      "description": "Enter a search term your customers use to find businesses like yours. We will pull a live snapshot of the current Google results.",
+      "keywordLabel": "Target keyword",
+      "keywordPlaceholder": "e.g. best marketing agency in Austin",
+      "analyzeButton": "Analyze SERP",
+      "analyzing": "Analyzing search results…",
+      "resultsTitle": "Live SERP Snapshot",
+      "resultsFor": "Top results for",
+      "yourDomain": "Your domain",
+      "notRanked": "Not found in top 10",
+      "rankedAt": "Ranked #{position}",
+      "noApiTitle": "Live search data isn't connected yet",
+      "noApiDescription": "Your request has been saved. Our team will run a full manual SERP analysis and include it in your consultation.",
+      "errorTitle": "We couldn't fetch live results",
+      "errorDescription": "No problem — we will run this analysis manually and include it in your consultation.",
+      "retry": "Try again"
+    },
+    "success": {
+      "title": "You're all set!",
+      "description": "Thanks {name}, we've received your details. A strategist will reach out to {email} within one business day with your full consultation."
+    }
+  },
   "homepage": {
     "meta": {
       "title": "[BRAND] | Digital Growth Partner — Web, SEO, Marketing & Software",

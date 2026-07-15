@@ -386,7 +386,7 @@ export function Header() {
           <LanguageSwitcher />
 
           <Link
-            href="/contact?type=consultation"
+            href="/onbording"
             className="rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
           >
             <LiquidGradientButton className="text-base font-bold sm:text-[15px]">
@@ -713,7 +713,7 @@ export function Header() {
 
               <div className="mt-5 border-t border-border pt-5">
                 <Link
-                  href="/contact?type=consultation"
+                  href="/onbording"
                   onClick={closeMobileMenu}
                   className="block"
                 >
