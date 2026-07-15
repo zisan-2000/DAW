@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { SERVICES, INDUSTRIES, CASE_STUDIES, BLOG_POSTS } from '@/lib/content'
 import { PRODUCT_IDS } from '@/lib/products/types'
 import { AUDIENCE_ORDER } from '@/lib/products/audiences'
+import { SERVICE_SLUGS } from '@/lib/services/types'
 import { routing } from '@/i18n/routing'
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://yourdomain.com'
@@ -46,9 +47,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...entriesForPath('/contact', 'monthly', 0.7),
   ]
 
-  const servicePages = SERVICES.flatMap((service) =>
-    entriesForPath(`/services/${service.slug}`, 'monthly', 0.8),
-  )
+  const servicePages = [
+    ...SERVICES.flatMap((service) =>
+      entriesForPath(`/services/${service.slug}`, 'monthly', 0.8),
+    ),
+    ...SERVICE_SLUGS.flatMap((slug) =>
+      entriesForPath(`/services/${slug}`, 'monthly', 0.85),
+    ),
+    ...entriesForPath('/services/fix-my-search-results', 'monthly', 0.85),
+  ]
 
   const industryPages = INDUSTRIES.flatMap((industry) =>
     entriesForPath(`/industries/${industry.slug}`, 'monthly', 0.8),
