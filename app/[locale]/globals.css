@@ -166,7 +166,7 @@
 
 .about-editorial .border.border-border {
   border-color: var(--about-line) !important;
-  box-shadow: 0 1px 0 color-mix(in srgb, white 35%, transparent) inset;
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--background) 35%, transparent) inset;
 }
 
 .about-editorial a .border.border-border,
@@ -391,5 +391,77 @@
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Shimmer-border button — rotating conic-gradient ring, ui-layouts style */
+@property --shimmer-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes shimmer-spin {
+  to {
+    --shimmer-angle: 360deg;
+  }
+}
+
+.btn-shimmer {
+  position: relative;
+  isolation: isolate;
+  z-index: 0;
+  overflow: visible;
+}
+
+.btn-shimmer::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--shimmer-angle),
+    transparent 0%,
+    color-mix(in srgb, var(--accent) 90%, white 10%) 12%,
+    transparent 24%,
+    transparent 100%
+  );
+  animation: shimmer-spin 2.6s linear infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.btn-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  z-index: -2;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--shimmer-angle),
+    transparent 0%,
+    color-mix(in srgb, var(--accent) 70%, transparent) 12%,
+    transparent 26%,
+    transparent 100%
+  );
+  filter: blur(8px);
+  opacity: 0.75;
+  animation: shimmer-spin 2.6s linear infinite;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-shimmer::before,
+  .btn-shimmer::after {
+    animation: none !important;
   }
 }

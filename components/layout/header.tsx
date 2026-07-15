@@ -8,9 +8,9 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
 import { AGENCY_CONFIG } from "@/lib/content";
 import { productNavSections } from "@/lib/products/nav";
-import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
+import { LiquidGradientButton } from "@/components/ui/GitHubButton";
 
 type MenuItem = {
   label: string;
@@ -215,7 +215,10 @@ export function Header() {
   const pathname = usePathname();
 
   const serviceItems: MenuItem[] = [
-    { label: t("services.fixMySearchResults"), href: "/services/fix-my-search-results" },
+    {
+      label: t("services.fixMySearchResults"),
+      href: "/services/fix-my-search-results",
+    },
     {
       label: t("services.personalReputationManagement"),
       href: "/services/personal-reputation-management",
@@ -228,8 +231,14 @@ export function Header() {
       label: t("services.aiReputationManagement"),
       href: "/services/ai-reputation-management",
     },
-    { label: t("services.executiveBranding"), href: "/services/executive-branding" },
-    { label: t("services.reviewManagement"), href: "/services/review-management" },
+    {
+      label: t("services.executiveBranding"),
+      href: "/services/executive-branding",
+    },
+    {
+      label: t("services.reviewManagement"),
+      href: "/services/review-management",
+    },
     { label: t("services.redditRemoval"), href: "/services/reddit-removal" },
     { label: t("services.wikipedia"), href: "/services/wikipedia" },
     { label: t("services.googleMapsSeo"), href: "/services/google-maps-seo" },
@@ -244,23 +253,35 @@ export function Header() {
   ];
 
   const consultingItems: MenuItem[] = [
-    { label: t("consulting.reputationConsulting"), href: "/consulting/reputation-consulting" },
+    {
+      label: t("consulting.reputationConsulting"),
+      href: "/consulting/reputation-consulting",
+    },
     {
       label: t("consulting.contentIdeaGeneration"),
       href: "/consulting/content-idea-generation",
     },
     { label: t("consulting.branding"), href: "/consulting/branding" },
-    { label: t("consulting.crisisManagement"), href: "/consulting/crisis-management" },
+    {
+      label: t("consulting.crisisManagement"),
+      href: "/consulting/crisis-management",
+    },
     {
       label: t("consulting.generativeEngineOptimization"),
       href: "/consulting/generative-engine-optimization",
     },
-    { label: t("consulting.publicRelations"), href: "/consulting/public-relations" },
+    {
+      label: t("consulting.publicRelations"),
+      href: "/consulting/public-relations",
+    },
   ];
 
   const aboutItems: MenuItem[] = [
     { label: t("about.ourStory"), href: "/about/our-story" },
-    { label: t("about.yourOnlineReputation"), href: "/about/your-online-reputation" },
+    {
+      label: t("about.yourOnlineReputation"),
+      href: "/about/your-online-reputation",
+    },
     { label: t("about.whyUs"), href: "/about/why-us" },
     { label: t("about.caseStudies"), href: "/about/case-studies" },
     { label: t("about.concern"), href: "/about/concern" },
@@ -343,10 +364,13 @@ export function Header() {
 
           <LanguageSwitcher />
 
-          <Link href="/contact?type=consultation">
-            <Button className="h-10 whitespace-nowrap rounded-xl bg-accent px-4 text-sm font-semibold text-accent-foreground shadow-sm hover:bg-accent/90">
+          <Link
+            href="/contact?type=consultation"
+            className="rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+          >
+            <LiquidGradientButton className="text-base font-bold sm:text-[15px]">
               {t("freeConsultation")}
-            </Button>
+            </LiquidGradientButton>
           </Link>
 
           <a
@@ -672,9 +696,9 @@ export function Header() {
                   onClick={closeMobileMenu}
                   className="block"
                 >
-                  <Button className="h-12 w-full rounded-xl bg-accent font-semibold text-accent-foreground shadow-sm hover:bg-accent/90">
+                  <LiquidGradientButton className="h-12 w-full">
                     {t("freeConsultation")}
-                  </Button>
+                  </LiquidGradientButton>
                 </Link>
 
                 <a
