@@ -9,6 +9,7 @@
   "nav": {
     "home": "Home",
     "services": "Services",
+    "products": "Products",
     "industries": "Industries",
     "caseStudies": "Case Studies",
     "blog": "Blog",
@@ -172,5 +173,17 @@
         "disclaimer": "All information is confidential and protected"
       }
     }
+  },
+  "products": {
+    "breadcrumbHome": "Home",
+    "relatedAudiences": "Other audiences",
+    "relatedProducts": "Related products",
+    "whoItsFor": "Who it’s for",
+    "selectedWork": "Selected work",
+    "viewAllCaseStudies": "View all case studies",
+    "caseStudiesEyebrow": "Case studies",
+    "caseStudiesDescription": "Demonstration projects with sample challenges and placeholder results. Replace with verified client outcomes before launch.",
+    "sampleLabel": "Sample · demo",
+    "emptyCaseStudies": "No demonstration case studies for this product yet."
   }
 }
