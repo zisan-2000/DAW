@@ -2330,36 +2330,36 @@
       }
     },
     "faqSection": {
-  "eyebrow": "PREGUNTAS FRECUENTES",
-  "title": "Las preguntas que recibimos antes de comenzar",
-  "description": "Un vistazo rápido a cómo trabajamos, qué puede esperar y cómo estructuramos cada colaboración."
-},
-"faqItems": {
-  "process": {
-    "question": "¿Cómo comienza el proceso?",
-    "answer": "Comenzamos con una consulta gratuita para comprender sus objetivos, evaluar su situación actual y definir una estrategia clara antes de cualquier compromiso."
-  },
-  "timeline": {
-    "question": "¿Cuánto tiempo se necesita para ver resultados?",
-    "answer": "Depende del alcance del proyecto y de los canales involucrados, pero la mayoría de nuestros clientes comienza a ver avances entre 4 y 8 semanas, con resultados más sólidos que se consolidan entre los 3 y 6 meses."
-  },
-  "pricing": {
-    "question": "¿Cómo se estructura el precio?",
-    "answer": "El precio se basa en el alcance y la complejidad de su proyecto. Después de la consulta inicial, recibirá una propuesta detallada y transparente, sin costos ocultos."
-  },
-  "reporting": {
-    "question": "¿Cómo informan sobre el progreso?",
-    "answer": "Recibirá informes periódicos en un lenguaje claro, centrados en los indicadores que realmente importan para su negocio, en lugar de métricas superficiales."
-  },
-  "industries": {
-    "question": "¿Trabajan con nuestro sector?",
-    "answer": "Hemos trabajado con empresas de comercio electrónico, SaaS, servicios profesionales y muchos otros sectores. Cada estrategia se adapta a las necesidades específicas de su industria."
-  },
-  "contract": {
-    "question": "¿Estamos obligados a firmar un contrato a largo plazo?",
-    "answer": "No. No creemos en contratos innecesariamente largos. La duración de la colaboración depende únicamente de sus objetivos y de lo que realmente necesite."
-  }
-},
+      "eyebrow": "PREGUNTAS FRECUENTES",
+      "title": "Las preguntas que recibimos antes de comenzar",
+      "description": "Un vistazo rápido a cómo trabajamos, qué puede esperar y cómo estructuramos cada colaboración."
+    },
+    "faqItems": {
+      "process": {
+        "question": "¿Cómo comienza el proceso?",
+        "answer": "Comenzamos con una consulta gratuita para comprender sus objetivos, evaluar su situación actual y definir una estrategia clara antes de cualquier compromiso."
+      },
+      "timeline": {
+        "question": "¿Cuánto tiempo se necesita para ver resultados?",
+        "answer": "Depende del alcance del proyecto y de los canales involucrados, pero la mayoría de nuestros clientes comienza a ver avances entre 4 y 8 semanas, con resultados más sólidos que se consolidan entre los 3 y 6 meses."
+      },
+      "pricing": {
+        "question": "¿Cómo se estructura el precio?",
+        "answer": "El precio se basa en el alcance y la complejidad de su proyecto. Después de la consulta inicial, recibirá una propuesta detallada y transparente, sin costos ocultos."
+      },
+      "reporting": {
+        "question": "¿Cómo informan sobre el progreso?",
+        "answer": "Recibirá informes periódicos en un lenguaje claro, centrados en los indicadores que realmente importan para su negocio, en lugar de métricas superficiales."
+      },
+      "industries": {
+        "question": "¿Trabajan con nuestro sector?",
+        "answer": "Hemos trabajado con empresas de comercio electrónico, SaaS, servicios profesionales y muchos otros sectores. Cada estrategia se adapta a las necesidades específicas de su industria."
+      },
+      "contract": {
+        "question": "¿Estamos obligados a firmar un contrato a largo plazo?",
+        "answer": "No. No creemos en contratos innecesariamente largos. La duración de la colaboración depende únicamente de sus objetivos y de lo que realmente necesite."
+      }
+    },
     "finalCta": {
       "eyebrow": "Próximo paso",
       "title": "¿Listo para construir tu próxima etapa de crecimiento?",
@@ -3523,5 +3523,12 @@
         ]
       }
     }
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "Esta página no existe",
+    "description": "Es posible que la página que buscas haya sido movida, renombrada o nunca haya existido. Volvamos al buen camino.",
+    "backToHome": "Volver al inicio",
+    "contactUs": "Contáctanos"
   }
 }

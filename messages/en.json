@@ -3634,5 +3634,12 @@
         ]
       }
     }
+  },
+  "notFound": {
+    "eyebrow": "Error 404",
+    "title": "This page doesn't exist",
+    "description": "The page you're looking for may have been moved, renamed, or never existed. Let's get you back on track.",
+    "backToHome": "Back to home",
+    "contactUs": "Contact us"
   }
 }

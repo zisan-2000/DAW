@@ -2330,36 +2330,36 @@
       }
     },
     "faqSection": {
-  "eyebrow": "FAQ",
-  "title": "Les questions que nous recevons avant de commencer",
-  "description": "Un aperçu rapide de notre façon de travailler, de ce à quoi vous attendre et de la manière dont nos collaborations sont organisées."
-},
-"faqItems": {
-  "process": {
-    "question": "Comment le processus commence-t-il ?",
-    "answer": "Nous commençons par une consultation gratuite afin de comprendre vos objectifs, d'analyser votre situation actuelle et de définir une feuille de route claire avant tout engagement."
-  },
-  "timeline": {
-    "question": "Combien de temps faut-il pour obtenir des résultats ?",
-    "answer": "Cela dépend de l'ampleur du projet et des canaux concernés, mais la plupart de nos clients constatent les premiers progrès entre 4 et 8 semaines, avec des résultats plus significatifs sur une période de 3 à 6 mois."
-  },
-  "pricing": {
-    "question": "Comment est établie la tarification ?",
-    "answer": "Nos tarifs sont définis en fonction de l'étendue et de la complexité de votre projet. Après la consultation initiale, vous recevrez une proposition détaillée et transparente, sans frais cachés."
-  },
-  "reporting": {
-    "question": "Comment suivez-vous les progrès ?",
-    "answer": "Vous recevez des rapports réguliers, rédigés dans un langage clair et axés sur les indicateurs qui comptent réellement pour votre activité, plutôt que sur des statistiques superficielles."
-  },
-  "industries": {
-    "question": "Travaillez-vous avec notre secteur d'activité ?",
-    "answer": "Nous accompagnons des entreprises issues de nombreux secteurs, notamment le e-commerce, les solutions SaaS, les services professionnels et bien d'autres. Chaque stratégie est entièrement adaptée à votre marché."
-  },
-  "contract": {
-    "question": "Sommes-nous engagés par un contrat à long terme ?",
-    "answer": "Non. Nous ne croyons pas aux contrats de longue durée imposés. La durée de notre collaboration dépend uniquement de vos objectifs et de vos besoins réels."
-  }
-},
+      "eyebrow": "FAQ",
+      "title": "Les questions que nous recevons avant de commencer",
+      "description": "Un aperçu rapide de notre façon de travailler, de ce à quoi vous attendre et de la manière dont nos collaborations sont organisées."
+    },
+    "faqItems": {
+      "process": {
+        "question": "Comment le processus commence-t-il ?",
+        "answer": "Nous commençons par une consultation gratuite afin de comprendre vos objectifs, d'analyser votre situation actuelle et de définir une feuille de route claire avant tout engagement."
+      },
+      "timeline": {
+        "question": "Combien de temps faut-il pour obtenir des résultats ?",
+        "answer": "Cela dépend de l'ampleur du projet et des canaux concernés, mais la plupart de nos clients constatent les premiers progrès entre 4 et 8 semaines, avec des résultats plus significatifs sur une période de 3 à 6 mois."
+      },
+      "pricing": {
+        "question": "Comment est établie la tarification ?",
+        "answer": "Nos tarifs sont définis en fonction de l'étendue et de la complexité de votre projet. Après la consultation initiale, vous recevrez une proposition détaillée et transparente, sans frais cachés."
+      },
+      "reporting": {
+        "question": "Comment suivez-vous les progrès ?",
+        "answer": "Vous recevez des rapports réguliers, rédigés dans un langage clair et axés sur les indicateurs qui comptent réellement pour votre activité, plutôt que sur des statistiques superficielles."
+      },
+      "industries": {
+        "question": "Travaillez-vous avec notre secteur d'activité ?",
+        "answer": "Nous accompagnons des entreprises issues de nombreux secteurs, notamment le e-commerce, les solutions SaaS, les services professionnels et bien d'autres. Chaque stratégie est entièrement adaptée à votre marché."
+      },
+      "contract": {
+        "question": "Sommes-nous engagés par un contrat à long terme ?",
+        "answer": "Non. Nous ne croyons pas aux contrats de longue durée imposés. La durée de notre collaboration dépend uniquement de vos objectifs et de vos besoins réels."
+      }
+    },
     "finalCta": {
       "eyebrow": "Prochaine étape",
       "title": "Prêt à construire votre prochaine phase de croissance ?",
@@ -3523,5 +3523,12 @@
         ]
       }
     }
+  },
+  "notFound": {
+    "eyebrow": "Erreur 404",
+    "title": "Cette page n'existe pas",
+    "description": "La page que vous recherchez a peut-être été déplacée, renommée ou n'a jamais existé. Revenons sur la bonne voie.",
+    "backToHome": "Retour à l'accueil",
+    "contactUs": "Contactez-nous"
   }
 }
