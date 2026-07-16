@@ -4,7 +4,7 @@
 export const AGENCY_CONFIG = {
   name: "ORM DEFENDER",
   shortName: "ORM DEFENDER",
-  tagline: "Online Reputation Management (ORM)",
+  tagline: "“ORM” – Online Reputation Management",
   email: "[contact@agency.com]",
   phone: "[+1 (XXX) XXX-XXXX]",
   whatsapp: "[+1234567890]",
