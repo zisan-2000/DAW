@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Menu, X, ChevronDown, Phone, ArrowRight } from "lucide-react";
@@ -95,7 +96,7 @@ function ProductsDesktopDropdown() {
       <div
         className="
           pointer-events-none invisible fixed inset-x-0 top-14 z-50
-          px-4 pt-3 opacity-0 transition-all duration-200 sm:top-[4.25rem] sm:px-6 lg:px-8
+          px-4 pt-3 opacity-0 transition-all duration-200 sm:top-17 sm:px-6 lg:px-8
           group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100
           group-focus-within:pointer-events-auto group-focus-within:visible
           group-focus-within:opacity-100
@@ -370,16 +371,21 @@ export function Header() {
   const isBlogActive = isActivePath(pathname, "/blog");
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/80 bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80">
+    <header className="sticky top-0 z-50 w-full border-b border-border/80 bg-background/95 backdrop-blur-xl supports-backdrop-filter:bg-background/80">
       <div className="mx-auto flex min-h-16 max-w-[1600px] items-center justify-between gap-3 px-4 sm:min-h-20 sm:gap-4 sm:px-6 lg:px-8">
         <Link
           href="/"
           className="font-display flex shrink-0 items-center gap-2.5 text-lg font-semibold text-foreground transition-colors hover:text-accent"
           aria-label={`${AGENCY_CONFIG.shortName} home`}
         >
-          <div className="flex size-9 items-center justify-center rounded-xl bg-accent text-sm font-bold text-accent-foreground shadow-sm sm:size-10">
-            {AGENCY_CONFIG.shortName.replace(/[\[\]]/g, "").charAt(0) || "A"}
-          </div>
+          <Image
+            src="/images/logo.png"
+            alt={AGENCY_CONFIG.shortName}
+            width={40}
+            height={40}
+            priority
+            className="size-9 rounded-xl object-contain sm:size-10"
+          />
 
           <span className="hidden 2xl:inline">{AGENCY_CONFIG.shortName}</span>
         </Link>
