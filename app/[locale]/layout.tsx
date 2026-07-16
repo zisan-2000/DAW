@@ -1,20 +1,23 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, DM_Sans } from "next/font/google";
-import Script from "next/script";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { cookies } from "next/headers";
 import { notFound } from "next/navigation";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { ThemeSync } from "@/components/layout/theme-sync";
 import { AnnouncementBar } from "@/components/sections/announcement-bar";
 import { SkipLink } from "@/components/a11y/skip-link";
 import { MotionProvider } from "@/components/providers/motion-provider";
 import { OrganizationJsonLd } from "@/components/seo/organization-json-ld";
 import { AGENCY_CONFIG } from "@/lib/content";
 import { generateOrganizationSchema } from "@/lib/seo";
+import { isTheme } from "@/lib/theme";
 import { routing, rtlLocales, type Locale } from "@/i18n/routing";
+import { cn } from "@/lib/utils";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -115,21 +118,21 @@ export default async function RootLayout({
   const messages = await getMessages();
   const dir = rtlLocales.includes(locale as Locale) ? "rtl" : "ltr";
   const organizationSchema = generateOrganizationSchema();
+  const themeCookie = (await cookies()).get("theme")?.value;
+  const themeClass = isTheme(themeCookie) && themeCookie === "dark" ? "dark" : "";
 
   return (
     <html
       lang={locale}
       dir={dir}
       suppressHydrationWarning
-      className={`${spaceGrotesk.variable} ${dmSans.variable}`}
+      className={cn(spaceGrotesk.variable, dmSans.variable, themeClass)}
     >
-      <head>
-        <Script src="/theme-init.js" strategy="beforeInteractive" />
-      </head>
       <body
         className="flex min-h-screen flex-col overflow-x-clip bg-background text-foreground antialiased"
         suppressHydrationWarning
       >
+        <ThemeSync />
         <OrganizationJsonLd data={organizationSchema} />
         <NextIntlClientProvider messages={messages}>
           <MotionProvider>
