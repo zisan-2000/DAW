@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -65,7 +65,15 @@ function localizeProductNavItemLabel(
   return fallback;
 }
 
-function ProductsDesktopDropdown() {
+function ProductsMegaDropdown({
+  isOpen,
+  onOpen,
+  onClose,
+}: {
+  isOpen: boolean;
+  onOpen: () => void;
+  onClose: () => void;
+}) {
   const t = useTranslations("header");
   const tProducts = useTranslations("products");
   const pathname = usePathname();
@@ -78,32 +86,46 @@ function ProductsDesktopDropdown() {
   );
 
   return (
-    <div className="group relative">
+    <div
+      className="group relative"
+      onMouseEnter={onOpen}
+      onMouseLeave={onClose}
+    >
       <button
         type="button"
+        onFocus={onOpen}
         className={`${navLinkClass} ${active ? navLinkActiveClass : ""}`}
         aria-haspopup="true"
+        aria-expanded={isOpen}
       >
         {t("products")}
         <ChevronDown
           size={14}
           aria-hidden="true"
-          className="transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180"
+          className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
         />
       </button>
 
       {/* Viewport-anchored panel — never clips against the Products trigger edge */}
       <div
-        className="
-          pointer-events-none invisible fixed inset-x-0 top-14 z-50
-          px-4 pt-3 opacity-0 transition-all duration-200 sm:top-17 sm:px-6 lg:px-8
-          group-hover:pointer-events-auto group-hover:visible group-hover:opacity-100
-          group-focus-within:pointer-events-auto group-focus-within:visible
-          group-focus-within:opacity-100
-        "
+        onMouseEnter={onOpen}
+        onMouseLeave={onClose}
+        className={`
+          fixed inset-x-0 top-14 z-50
+          px-4 pt-3 transition-all duration-200 sm:top-17 sm:px-6 lg:px-8
+          ${
+            isOpen
+              ? "pointer-events-auto visible opacity-100"
+              : "pointer-events-none invisible opacity-0"
+          }
+        `}
       >
         <div className="mx-auto max-w-[1600px]">
-          <div className="origin-top translate-y-2 overflow-hidden rounded-2xl border border-border/80 bg-card shadow-2xl shadow-black/10 transition-transform duration-200 group-hover:translate-y-0 group-focus-within:translate-y-0 dark:shadow-black/40">
+          <div
+            className={`origin-top overflow-hidden rounded-2xl border border-border/80 bg-card shadow-2xl shadow-black/10 transition-transform duration-200 dark:shadow-black/40 ${
+              isOpen ? "translate-y-0" : "translate-y-2"
+            }`}
+          >
             <div className="border-b border-border/70 px-5 py-4 sm:px-6">
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
                 {t("productsEyebrow")}
@@ -179,9 +201,15 @@ function ProductsDesktopDropdown() {
 function DesktopDropdown({
   item,
   align = "start",
+  isOpen,
+  onOpen,
+  onClose,
 }: {
   item: NavigationItem;
   align?: "start" | "end" | "center";
+  isOpen: boolean;
+  onOpen: () => void;
+  onClose: () => void;
 }) {
   const pathname = usePathname();
   const active = isActiveGroup(pathname, item.items);
@@ -194,27 +222,33 @@ function DesktopDropdown({
         : "left-0";
 
   return (
-    <div className="group relative">
+    <div
+      className="group relative"
+      onMouseEnter={onOpen}
+      onMouseLeave={onClose}
+    >
       <button
         type="button"
+        onFocus={onOpen}
         className={`${navLinkClass} ${active ? navLinkActiveClass : ""}`}
         aria-haspopup="true"
+        aria-expanded={isOpen}
       >
         {item.label}
         <ChevronDown
           size={14}
           aria-hidden="true"
-          className="transition-transform duration-200 group-hover:rotate-180 group-focus-within:rotate-180"
+          className={`transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
         />
       </button>
 
       <div
+        onMouseEnter={onOpen}
+        onMouseLeave={onClose}
         className={`
-          invisible absolute top-full z-50 w-[min(320px,calc(100vw-2rem))]
-          translate-y-3 pt-4 opacity-0 transition-all duration-200
-          group-hover:visible group-hover:translate-y-0 group-hover:opacity-100
-          group-focus-within:visible group-focus-within:translate-y-0
-          group-focus-within:opacity-100
+          absolute top-full z-50 w-[min(320px,calc(100vw-2rem))]
+          pt-4 opacity-0 transition-all duration-200
+          ${isOpen ? "visible translate-y-0 opacity-100" : "invisible translate-y-3"}
           ${panelAlign}
         `}
       >
@@ -347,6 +381,10 @@ export function Header() {
     string | null
   >(null);
 
+  const [openDesktopDropdown, setOpenDesktopDropdown] = useState<
+    string | null
+  >(null);
+
   const reduced = useReducedMotion() ?? false;
 
   const phoneNumber = AGENCY_CONFIG.phone || "+1 (800) 555-0199";
@@ -366,6 +404,55 @@ export function Header() {
   const toggleProductSection = (id: string) => {
     setActiveProductSection((current) => (current === id ? null : id));
   };
+
+  const closeDesktopDropdownTimeout = useRef<ReturnType<
+    typeof setTimeout
+  > | null>(null);
+
+  const openDesktopDropdownMenu = (id: string) => {
+    if (closeDesktopDropdownTimeout.current) {
+      clearTimeout(closeDesktopDropdownTimeout.current);
+      closeDesktopDropdownTimeout.current = null;
+    }
+    setOpenDesktopDropdown(id);
+  };
+
+  const closeDesktopDropdownMenu = () => {
+    if (closeDesktopDropdownTimeout.current) {
+      clearTimeout(closeDesktopDropdownTimeout.current);
+    }
+    closeDesktopDropdownTimeout.current = setTimeout(() => {
+      setOpenDesktopDropdown(null);
+    }, 350);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (closeDesktopDropdownTimeout.current) {
+        clearTimeout(closeDesktopDropdownTimeout.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!openDesktopDropdown) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpenDesktopDropdown(null);
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [openDesktopDropdown]);
+
+  useEffect(() => {
+    setOpenDesktopDropdown(null);
+  }, [pathname]);
 
   const isHomeActive = pathname === "/";
   const isBlogActive = isActivePath(pathname, "/blog");
@@ -406,13 +493,20 @@ export function Header() {
           className="hidden flex-1 items-center justify-center gap-3 xl:flex 2xl:gap-6"
           aria-label={tNav("primaryNavigation")}
         >
-          <ProductsDesktopDropdown />
+          <ProductsMegaDropdown
+            isOpen={openDesktopDropdown === "products"}
+            onOpen={() => openDesktopDropdownMenu("products")}
+            onClose={closeDesktopDropdownMenu}
+          />
 
           {navigationItems.map((item) => (
             <DesktopDropdown
               key={item.id}
               item={item}
               align={item.id === "about" ? "end" : "start"}
+              isOpen={openDesktopDropdown === item.id}
+              onOpen={() => openDesktopDropdownMenu(item.id)}
+              onClose={closeDesktopDropdownMenu}
             />
           ))}
 
