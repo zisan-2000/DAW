@@ -1828,7 +1828,8 @@
       "trustLine": "Serving Bangladesh, UK, US, Canada, Australia, UAE and international clients. Project count editable in configuration."
     },
     "logoMarquee": {
-      "heading": "Trusted by Growing Businesses",
+      "headingPrefix": "Trusted by",
+      "headingHighlight": "Growing Businesses",
       "note": "Demo logos — replace with authorized client marks"
     },
     "companyIntro": {

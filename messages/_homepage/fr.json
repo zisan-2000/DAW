@@ -19,7 +19,8 @@
     "trustLine": "Au service du Bangladesh, du Royaume-Uni, des États-Unis, du Canada, de l'Australie, des Émirats arabes unis et de clients internationaux. Nombre de projets modifiable dans la configuration."
   },
   "logoMarquee": {
-    "heading": "La confiance d'entreprises en croissance",
+    "headingPrefix": "La confiance",
+    "headingHighlight": "d'entreprises en croissance",
     "note": "Logos de démonstration — remplacer par les marques clients autorisées"
   },
   "companyIntro": {
