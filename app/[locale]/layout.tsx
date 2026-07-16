@@ -11,6 +11,7 @@ import { Footer } from "@/components/layout/footer";
 import { AnnouncementBar } from "@/components/sections/announcement-bar";
 import { SkipLink } from "@/components/a11y/skip-link";
 import { MotionProvider } from "@/components/providers/motion-provider";
+import { OrganizationJsonLd } from "@/components/seo/organization-json-ld";
 import { AGENCY_CONFIG } from "@/lib/content";
 import { generateOrganizationSchema } from "@/lib/seo";
 import { routing, rtlLocales, type Locale } from "@/i18n/routing";
@@ -113,6 +114,7 @@ export default async function RootLayout({
 
   const messages = await getMessages();
   const dir = rtlLocales.includes(locale as Locale) ? "rtl" : "ltr";
+  const organizationSchema = generateOrganizationSchema();
 
   return (
     <html
@@ -122,25 +124,13 @@ export default async function RootLayout({
       className={`${spaceGrotesk.variable} ${dmSans.variable}`}
     >
       <head>
-        <Script
-          id="theme-init"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.classList.add('dark');}}catch(e){}})();`,
-          }}
-        />
-        <Script
-          id="organization-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(generateOrganizationSchema()),
-          }}
-        />
+        <Script src="/theme-init.js" strategy="beforeInteractive" />
       </head>
       <body
         className="flex min-h-screen flex-col overflow-x-clip bg-background text-foreground antialiased"
         suppressHydrationWarning
       >
+        <OrganizationJsonLd data={organizationSchema} />
         <NextIntlClientProvider messages={messages}>
           <MotionProvider>
             <SkipLink />
