@@ -79,15 +79,11 @@ export function HeroSection() {
           <motion.h1
             id="hero-heading"
             variants={fadeUp}
-            className="font-display mt-8 text-[clamp(2.15rem,1.05rem+3.4vw,3.85rem)] font-bold tracking-[-0.035em] text-foreground"
+            className="font-display mt-7 max-w-[18ch] text-[clamp(2.15rem,1.05rem+3.4vw,3.85rem)] leading-[1.2] font-bold tracking-[-0.035em] text-foreground"
           >
-            <span className="block leading-[1.28]">{t('headlineBefore')}</span>
-            <span className="mt-2 block leading-[1.28] text-accent">
-              {t('headlineAccent')}
-            </span>
-            <span className="mt-2 block leading-[1.28] text-foreground/85">
-              {t('headlineAfter')}
-            </span>
+            {t('headlineBefore')}{' '}
+            <span className="text-accent">{t('headlineAccent')}</span>{' '}
+            {t('headlineAfter')}
           </motion.h1>
 
           <motion.p
