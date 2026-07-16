@@ -1911,70 +1911,55 @@
         }
       }
     },
-    "caseStudiesSection": {
-      "eyebrow": "Selected work",
-      "title": "Case studies that show the system in action",
-      "description": "Demonstration projects with sample challenges and placeholder results. Replace with verified outcomes before launch.",
-      "filters": {
-        "all": "All",
-        "seo": "SEO",
-        "paid-advertising": "Paid Advertising",
-        "website-development": "Website Development",
-        "software": "Software",
-        "branding": "Branding",
-        "content": "Content"
+    "featuredCaseStudies": {
+      "eyebrow": "Proven Client Outcomes",
+      "title": "Case Studies",
+      "description": "Explore how strategic reputation management and privacy protection helped organizations and individuals address complex digital challenges.",
+
+      "common": {
+        "caseStudy": "Case Study",
+        "reputationCaseStudy": "Reputation Case Study",
+        "problem": "Problem",
+        "outcome": "Outcome",
+        "readFullCaseStudy": "Read Full Case Study"
       },
-      "readFull": "Read Full Case Study",
-      "results": "Results"
-    },
-    "caseStudies": {
-      "1": {
-        "title": "E-commerce conversion and visibility rebuild",
-        "summary": "[SAMPLE] Low conversion rate and weak organic visibility limited revenue growth.",
-        "industryLabel": "E-commerce",
-        "tags": [
-          "Website Development",
-          "SEO",
-          "Paid Advertising"
-        ],
-        "challenge": "The store loaded slowly, product discovery was unclear, and organic traffic plateaued while paid acquisition costs rose.",
-        "solution": "Website redesign focused on conversion paths, technical SEO foundations, and coordinated paid acquisition.",
-        "resultsNote": "[INSERT VERIFIED RESULTS]",
-        "metric1Label": "Conversion lift (placeholder)",
-        "metric2Label": "Organic visibility (placeholder)",
-        "metric3Label": "Page experience (placeholder)"
-      },
-      "2": {
-        "title": "Professional services lead system",
-        "summary": "[SAMPLE] Inconsistent lead flow made planning pipeline and hiring unreliable.",
-        "industryLabel": "Professional Services",
-        "tags": [
-          "Paid Advertising",
-          "Website Development",
-          "Software"
-        ],
-        "challenge": "Inbound enquiries arrived sporadically, landing pages underperformed, and follow-up lived in scattered spreadsheets.",
-        "solution": "Landing-page system, Google Ads structure, and CRM automation for qualification and response speed.",
-        "resultsNote": "[INSERT VERIFIED RESULTS]",
-        "metric1Label": "Qualified lead lift (placeholder)",
-        "metric2Label": "Cost efficiency (placeholder)",
-        "metric3Label": "Response speed (placeholder)"
-      },
-      "3": {
-        "title": "Education enrollment funnel",
-        "summary": "[SAMPLE] Weak digital enrollment funnel limited program discovery and enquiry quality.",
-        "industryLabel": "Education",
-        "tags": [
-          "SEO",
-          "Content",
-          "Website Development"
-        ],
-        "challenge": "Program pages ranked poorly for intent-rich queries, content lacked structure, and enquiry forms abandoned mid-flow.",
-        "solution": "SEO architecture, content strategy aligned to enrollment intent, and conversion optimisation across key journeys.",
-        "resultsNote": "[INSERT VERIFIED RESULTS]",
-        "metric1Label": "Organic enquiries (placeholder)",
-        "metric2Label": "Program page reach (placeholder)",
-        "metric3Label": "Form completion (placeholder)"
+
+      "items": {
+        "companyDispute": {
+          "title": "Company linked to dispute with ex-employee",
+          "category": "Corporate Reputation",
+          "problem": "An executive contacted ReputationDefender to clear his company's name after an ex-employee's dispute with the business went viral. Years after the company resolved the dispute, articles about the conflict were still appearing when people Googled the company or its leadership team, thereby giving potential stakeholders a negative first impression and leading to lost business.",
+          "outcome": "Even in this highly challenging case, we were able to achieve rapid initial success on the most visible negative items, with only one negative result briefly reappearing twice on the bottom of the first page beyond 14 months.",
+          "result": "Rapid initial suppression",
+          "timeframe": "14+ months monitored"
+        },
+
+        "privacyRisk": {
+          "title": "Mitigating broad-based privacy risk",
+          "category": "Privacy Protection",
+          "problem": "A well-known company garnered negative publicity after a public figure repeatedly disparaged it in the press. This increased attention, combined with the amount of easily accessible personally identifiable information (PII) online about the company's workforce, made the workers vulnerable to hackers, scammers, and other bad actors.",
+          "outcome": "ReputationDefender's Special Projects team was able to find and remove 97% of the employees' PII within eight weeks of starting the engagement.",
+          "result": "97% of PII removed",
+          "timeframe": "Within 8 weeks"
+        },
+
+        "philanthropistPress": {
+          "title": "Philanthropist attacked by the press",
+          "category": "Personal Reputation",
+          "problem": "A respected philanthropist contacted ReputationDefender to help him suppress negative news coverage in his search results stemming from a minor altercation that happened to be captured on a television broadcast.",
+          "outcome": "Despite the challenging nature of this case, we were able to achieve rapid initial success on most negative items, with only one particularly difficult search result—a video carousel—persisting beyond Month 7.",
+          "result": "Most results suppressed",
+          "timeframe": "7+ months monitored"
+        },
+
+        "oilGasThreats": {
+          "title": "Oil and gas companies facing threats",
+          "category": "Executive Privacy",
+          "problem": "Oil and gas companies face unique challenges in protecting their cybersecurity and their employees' physical safety due to the rising threat of AI and the intense and often polarized online discourse surrounding fossil fuels and environmental concerns.",
+          "outcome": "Locking down their executives' online privacy can help these companies safeguard employees and operations and maintain public trust in an increasingly contentious digital landscape.",
+          "result": "Executive privacy protection",
+          "timeframe": "Ongoing risk reduction"
+        }
       }
     },
     "processSection": {
