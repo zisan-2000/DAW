@@ -1,11 +1,12 @@
 "use client";
 
 // components/Footer.tsx
-import { Mail, Phone, MapPin, Heart, ArrowUpRight } from "lucide-react";
+import { Mail, Phone, MapPin, Heart, ArrowUp, ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { AGENCY_CONFIG, SERVICES } from "@/lib/content";
 import { useState, useEffect } from "react";
+import { MessageButton } from "@/components/layout/message-button";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -246,14 +247,17 @@ export function Footer() {
         </div>
       </div>
 
+      {/* Floating action buttons */}
+      <MessageButton />
+
       {/* Back to Top Button */}
       {showBackToTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 flex size-12 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg hover:scale-110 transition-all duration-300"
+          className="fixed bottom-8 right-8 z-50 flex size-12 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg transition-all duration-300 hover:scale-110"
           aria-label={t("backToTop")}
         >
-          <ArrowUpRight size={20} className="rotate-45" />
+          <ArrowUp size={20} />
         </button>
       )}
     </footer>

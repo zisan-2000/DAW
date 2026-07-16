@@ -2,6 +2,17 @@
   "a11y": {
     "skipToContent": "Saltar al contenido"
   },
+  "messageWidget": {
+    "open": "Abrir buzón de mensajes",
+    "close": "Cerrar buzón de mensajes",
+    "title": "Envíanos un mensaje",
+    "subtitle": "Solemos responder dentro de un día hábil.",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Tu correo electrónico",
+    "messagePlaceholder": "¿Cómo podemos ayudarte?",
+    "send": "Enviar mensaje",
+    "sentConfirmation": "¡Gracias! Tu mensaje ha sido enviado."
+  },
   "announcementBar": {
     "textShort": "Estrategia, tecnología y crecimiento medible.",
     "ctaShort": "Consultar",

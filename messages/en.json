@@ -2,6 +2,17 @@
   "a11y": {
     "skipToContent": "Skip to content"
   },
+  "messageWidget": {
+    "open": "Open message box",
+    "close": "Close message box",
+    "title": "Send us a message",
+    "subtitle": "We usually reply within one business day.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Your email",
+    "messagePlaceholder": "How can we help?",
+    "send": "Send message",
+    "sentConfirmation": "Thanks! Your message has been sent."
+  },
   "announcementBar": {
     "textShort": "Strategy, technology & measurable growth.",
     "ctaShort": "Consult",

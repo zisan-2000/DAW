@@ -2,6 +2,17 @@
   "a11y": {
     "skipToContent": "تخطي إلى المحتوى"
   },
+  "messageWidget": {
+    "open": "افتح صندوق الرسائل",
+    "close": "أغلق صندوق الرسائل",
+    "title": "أرسل لنا رسالة",
+    "subtitle": "نرد عادةً خلال يوم عمل واحد.",
+    "namePlaceholder": "اسمك",
+    "emailPlaceholder": "بريدك الإلكتروني",
+    "messagePlaceholder": "كيف يمكننا المساعدة؟",
+    "send": "إرسال الرسالة",
+    "sentConfirmation": "شكراً! تم إرسال رسالتك."
+  },
   "announcementBar": {
     "textShort": "الاستراتيجية والتكنولوجيا والنمو القابل للقياس.",
     "ctaShort": "استشارة",
