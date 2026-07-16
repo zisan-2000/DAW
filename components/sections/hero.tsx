@@ -18,9 +18,10 @@ function HeroVisual({ reduced }: { reduced: boolean }) {
       className="pointer-events-none absolute inset-0 lg:left-[42%]"
       aria-hidden
     >
-      {/* Soft teal depth */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_70%_at_70%_40%,color-mix(in_oklab,var(--accent)_22%,transparent),transparent_70%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_50%_50%_at_85%_75%,color-mix(in_oklab,var(--accent)_12%,transparent),transparent_65%)]" />
+      {/* Ember copper depth + indigo wash */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_70%_at_70%_40%,color-mix(in_oklab,var(--accent)_26%,transparent),transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_55%_50%_at_88%_78%,color-mix(in_oklab,var(--accent)_14%,transparent),transparent_65%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_45%_40%_at_55%_20%,color-mix(in_oklab,var(--surface-ink-foreground)_6%,transparent),transparent_60%)]" />
 
       {/* Perspective mesh */}
       <svg

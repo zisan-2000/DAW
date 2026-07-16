@@ -1,6 +1,6 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk, DM_Sans } from "next/font/google";
+import { Syne, Manrope } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { cookies } from "next/headers";
@@ -19,13 +19,13 @@ import { isTheme } from "@/lib/theme";
 import { routing, rtlLocales, type Locale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
 
-const spaceGrotesk = Space_Grotesk({
+const syne = Syne({
   subsets: ["latin"],
   variable: "--font-display",
   display: "swap",
 });
 
-const dmSans = DM_Sans({
+const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
@@ -97,8 +97,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   colorScheme: "light dark",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f7f8fa" },
-    { media: "(prefers-color-scheme: dark)", color: "#0a0c12" },
+    { media: "(prefers-color-scheme: light)", color: "#f3f4f8" },
+    { media: "(prefers-color-scheme: dark)", color: "#161225" },
   ],
 };
 
@@ -126,7 +126,7 @@ export default async function RootLayout({
       lang={locale}
       dir={dir}
       suppressHydrationWarning
-      className={cn(spaceGrotesk.variable, dmSans.variable, themeClass)}
+      className={cn(syne.variable, manrope.variable, themeClass)}
     >
       <body
         className="flex min-h-screen flex-col overflow-x-clip bg-background text-foreground antialiased"
