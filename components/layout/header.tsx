@@ -373,25 +373,34 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/80 bg-background/95 backdrop-blur-xl supports-backdrop-filter:bg-background/80">
       <div className="mx-auto flex min-h-16 max-w-[1600px] items-center justify-between gap-3 px-4 sm:min-h-20 sm:gap-4 sm:px-6 lg:px-8">
- <Link
-  href="/"
-  className="group flex shrink-0 items-center gap-3"
-  aria-label={`${AGENCY_CONFIG.shortName} home`}
->
-  <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-accent text-base font-bold text-accent-foreground shadow-md">
-    {AGENCY_CONFIG.shortName.replace(/[\[\]]/g, '').charAt(0) || 'A'}
-  </div>
+        <Link
+          href="/"
+          className="group flex shrink-0 items-center gap-3"
+          aria-label={`${AGENCY_CONFIG.shortName} home`}
+        >
+          <div className="relative">
+            <Image
+              src="/images/logo.png"
+              alt={AGENCY_CONFIG.shortName}
+              width={44}
+              height={44}
+              priority
+              className="size-11 shrink-0 rounded-xl object-contain transition-all duration-500 group-hover:scale-105 group-hover:drop-shadow-[0_0_18px_hsl(var(--accent)/0.45)]"
+            />
 
-  <div className="hidden flex-col 2xl:flex">
-    <span className="font-display text-xl font-bold leading-none tracking-tight text-foreground transition-colors group-hover:text-accent">
-      {AGENCY_CONFIG.shortName}
-    </span>
+            <div className="absolute inset-0 -z-10 rounded-xl bg-accent/15 opacity-0 blur-xl transition-all duration-500 group-hover:opacity-100" />
+          </div>
 
-    <span className="mt-1 text-[11px] font-medium leading-none tracking-[0.12em] uppercase text-muted-foreground">
-      {AGENCY_CONFIG.tagline}
-    </span>
-  </div>
-</Link>
+          <div className="hidden flex-col 2xl:flex">
+            <span className="font-display bg-gradient-to-r from-foreground via-foreground to-accent bg-clip-text text-xl font-bold leading-none tracking-tight text-transparent transition-all duration-300 group-hover:from-accent group-hover:via-accent group-hover:to-sky-400">
+              {AGENCY_CONFIG.shortName}
+            </span>
+
+            <span className="mt-1 text-[11px] font-semibold leading-none tracking-[0.18em] uppercase text-muted-foreground transition-colors duration-300 group-hover:text-accent">
+              {AGENCY_CONFIG.tagline}
+            </span>
+          </div>
+        </Link>
 
         <nav
           className="hidden flex-1 items-center justify-center gap-3 xl:flex 2xl:gap-6"

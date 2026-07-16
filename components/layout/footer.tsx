@@ -1,6 +1,7 @@
 "use client";
 
 // components/Footer.tsx
+import Image from "next/image";
 import { Mail, Phone, MapPin, Heart, ArrowUp, ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -57,10 +58,13 @@ export function Footer() {
           {/* Brand Column - Spans 2 cols on large screens */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="flex size-10 items-center justify-center rounded-lg bg-accent font-mono text-lg font-bold text-accent-foreground">
-                {AGENCY_CONFIG.shortName.replace(/[\[\]]/g, "").charAt(0) ||
-                  "A"}
-              </div>
+              <Image
+                src="/images/logo.png"
+                alt={AGENCY_CONFIG.shortName}
+                width={40}
+                height={40}
+                className="size-10 shrink-0 rounded-lg object-contain"
+              />
               <div>
                 <span className="font-['Playfair_Display'] text-xl font-semibold text-surface-ink-foreground">
                   {AGENCY_CONFIG.shortName}
