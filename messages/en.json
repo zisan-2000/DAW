@@ -1995,54 +1995,56 @@
         "description": "Review outcomes, remove friction and compound improvements across channels and systems."
       }
     },
-    "industriesSection": {
-      "eyebrow": "Industries",
-      "title": "Industry outcomes we design for",
-      "description": "Sector context shapes strategy. Explore how digital growth systems adapt to the pressures of your market.",
-      "ctaLabel": "Explore Industry Solutions"
+    "reputationUseCasesSection": {
+      "eyebrow": "REPUTATION SOLUTIONS",
+      "title": "Protect What Matters Most",
+      "description": "Your name, leadership, brand and digital presence deserve proactive protection. Explore reputation solutions designed around the challenges you need to solve.",
+      "ctaLabel": "Explore All Solutions",
+      "cardCtaLabel": "Explore Solution",
+      "supportingText": "Choose the reputation challenge that matters most to you. Each solution combines strategy, search optimization, content development and continuous monitoring to build a stronger digital presence."
     },
-    "industries": {
-      "ecommerce": {
-        "name": "E-commerce",
-        "outcome": "More online sales through conversion-focused storefronts and acquisition."
+    "reputationUseCases": {
+      "personalReputation": {
+        "name": "Personal Reputation",
+        "description": "Take control of what people discover when they search for your name online."
       },
-      "saas": {
-        "name": "Software and SaaS",
-        "outcome": "Better customer acquisition and clearer product-led growth loops."
+      "executiveReputation": {
+        "name": "Executive Reputation",
+        "description": "Strengthen leadership credibility, authority and visibility across search and digital platforms."
       },
-      "finance": {
-        "name": "Finance and Fintech",
-        "outcome": "Trust-building journeys that support qualified product enquiry."
+      "brandReputation": {
+        "name": "Brand Reputation",
+        "description": "Build a trusted brand presence that supports customer confidence and long-term growth."
       },
-      "education": {
-        "name": "Education",
-        "outcome": "Higher enrollment interest through structured digital funnels."
+      "reviewManagement": {
+        "name": "Review Management",
+        "description": "Monitor customer feedback, improve ratings and respond to reviews more effectively."
       },
-      "realestate": {
-        "name": "Real Estate",
-        "outcome": "More qualified property enquiries from search and paid channels."
+      "searchResultCleanup": {
+        "name": "Search Result Cleanup",
+        "description": "Improve branded search results by reducing the visibility of outdated or harmful content."
       },
-      "healthcare": {
-        "name": "Healthcare",
-        "outcome": "Clearer patient and client pathways without overclaimed outcomes."
+      "crisisManagement": {
+        "name": "Crisis Management",
+        "description": "Respond quickly to reputation threats with a structured strategy that protects public trust."
       },
-      "legal": {
-        "name": "Legal and Professional Services",
-        "outcome": "Consistent inbound demand with better qualification and follow-up."
+      "wikipediaKnowledgePanel": {
+        "name": "Wikipedia & Knowledge Panel",
+        "description": "Improve the accuracy, credibility and consistency of your public information online."
       },
-      "travel": {
-        "name": "Travel and Hospitality",
-        "outcome": "Stronger booking intent through content, SEO and conversion UX."
+      "negativeContentRemoval": {
+        "name": "Negative Content Removal",
+        "description": "Identify removal opportunities and reduce the impact of damaging online content."
       },
-      "manufacturing": {
-        "name": "Manufacturing",
-        "outcome": "Clearer digital presence that supports B2B demand generation."
+      "onlineMonitoring": {
+        "name": "Online Monitoring",
+        "description": "Track mentions, reviews, search results and emerging risks before they become serious."
       },
-      "localbusiness": {
-        "name": "Local Businesses",
-        "outcome": "Stronger local visibility and enquiry systems for nearby customers."
+      "aiSearchReputation": {
+        "name": "AI Search Reputation",
+        "description": "Shape how your name or brand appears in AI-generated answers and conversational search."
       }
-    },
+  },
     "techSection": {
       "eyebrow": "Stack",
       "title": "Technology and platforms we work with",
