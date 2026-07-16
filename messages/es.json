@@ -1933,7 +1933,8 @@
       "trustLine": "Atendemos clientes en Bangladesh, Reino Unido, EE. UU., Canadá, Australia, EAU e internacionales. El conteo de proyectos es editable en la configuración."
     },
     "logoMarquee": {
-      "heading": "La confianza de negocios en crecimiento",
+      "headingPrefix": "La confianza",
+      "headingHighlight": "de negocios en crecimiento",
       "note": "Logotipos de demostración — reemplazar con marcas de clientes autorizadas"
     },
     "companyIntro": {
