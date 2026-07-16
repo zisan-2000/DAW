@@ -2135,19 +2135,19 @@
         "description": "Shape how your name or brand appears in AI-generated answers and conversational search."
       }
   },
-    "techSection": {
-      "eyebrow": "Stack",
-      "title": "Technology and platforms we work with",
-      "description": "Modern tools chosen for performance, maintainability and marketing visibility. Official partnerships claimed only when verified.",
-      "note": "Tool familiarity listed for clarity—not as endorsement claims."
-    },
-    "techCategories": {
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "cms": "CMS and Commerce",
-      "infrastructure": "Infrastructure",
-      "marketing": "Marketing"
-    },
+   "techSection": {
+    "eyebrow": "CAPABILITIES",
+    "title": "Reputation solutions built for every digital risk",
+    "description": "From search results and reviews to crisis response and AI visibility, we use structured reputation strategies to protect trust, improve perception and strengthen long-term credibility.",
+    "note": "Every strategy is tailored to the client, industry and level of reputational risk."
+  },
+  "techCategories": {
+    "searchReputation": "Search Reputation",
+    "contentAuthority": "Content & Authority",
+    "reviewsTrust": "Reviews & Local Trust",
+    "monitoringIntelligence": "Monitoring & Intelligence",
+    "crisisProtection": "Crisis & Protection"
+  },
     "testimonialsSection": {
       "eyebrow": "Client voice",
       "title": "What collaboration can feel like",
