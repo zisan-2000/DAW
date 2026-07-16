@@ -13,6 +13,7 @@ import { AnnouncementBar } from "@/components/sections/announcement-bar";
 import { SkipLink } from "@/components/a11y/skip-link";
 import { MotionProvider } from "@/components/providers/motion-provider";
 import { OrganizationJsonLd } from "@/components/seo/organization-json-ld";
+import { PageSvgBackdrop } from "@/components/visuals/page-svg-backdrop";
 import { AGENCY_CONFIG } from "@/lib/content";
 import { generateOrganizationSchema } from "@/lib/seo";
 import { isTheme } from "@/lib/theme";
@@ -136,10 +137,11 @@ export default async function RootLayout({
         <OrganizationJsonLd data={organizationSchema} />
         <NextIntlClientProvider messages={messages}>
           <MotionProvider>
+            <PageSvgBackdrop />
             <SkipLink />
             <AnnouncementBar />
             <Header />
-            <main id="main-content" className="flex-1">
+            <main id="main-content" className="relative z-0 flex-1">
               {children}
             </main>
             <Footer />

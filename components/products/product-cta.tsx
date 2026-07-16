@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { ArrowRight, MessageCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { SvgSignalField } from '@/components/visuals/svg-signal-field'
 import { getWhatsAppHref } from '@/lib/whatsapp'
 import { cn } from '@/lib/utils'
 
@@ -77,8 +78,9 @@ export function ProductCta({
   )
 
   return (
-    <section className="bg-surface-ink text-surface-ink-foreground">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
+    <section className="relative overflow-hidden bg-surface-ink text-surface-ink-foreground">
+      <SvgSignalField variant="dusk" className="opacity-90" />
+      <div className="relative z-10 mx-auto max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-8">
         {variant === 'centered' ? (
           <div className="relative overflow-hidden rounded-3xl border border-accent/25 bg-[radial-gradient(ellipse_70%_80%_at_50%_0%,color-mix(in_oklab,var(--accent)_18%,transparent),transparent_70%)] p-8 md:p-12">
             <div className="bg-grid-fade pointer-events-none absolute inset-0 opacity-25" aria-hidden />
@@ -138,7 +140,7 @@ export function ProductCta({
         ) : null}
 
         {variant === 'signal' ? (
-          <div className="overflow-hidden rounded-2xl border border-accent/30 bg-black/30">
+          <div className="overflow-hidden rounded-2xl border border-accent/30 bg-black/15">
             <div className="flex items-center gap-2 border-b border-white/10 px-5 py-3">
               <span className="size-2 rounded-full bg-accent" />
               <span className="text-[11px] tracking-[0.16em] text-surface-ink-foreground/45 uppercase">

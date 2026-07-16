@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import type { HeroLayout } from '@/lib/products/design'
 import { ProductBreadcrumbs, type Crumb } from './product-breadcrumbs'
 import { ProductMotif } from './product-motif'
+import { SvgSignalField } from '@/components/visuals/svg-signal-field'
 import { cn } from '@/lib/utils'
 
 type ProductHeroProps = {
@@ -49,6 +50,7 @@ export function ProductHero({
       )}
     >
       <div className="pointer-events-none absolute inset-0" aria-hidden>
+        <SvgSignalField variant="dusk" />
         <div
           className={cn(
             'absolute rounded-full blur-3xl',
@@ -64,7 +66,6 @@ export function ProductHero({
               'top-[20%] right-0 h-[26rem] w-[26rem] bg-[radial-gradient(closest-side,color-mix(in_oklab,var(--accent)_24%,transparent),transparent)]',
           )}
         />
-        <div className="bg-grid-fade absolute inset-0 opacity-30" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

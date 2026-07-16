@@ -12,6 +12,7 @@ type SectionProps = ComponentProps<'section'> & {
 const toneStyles: Record<SectionTone, string> = {
   light: 'bg-background text-foreground',
   muted: 'bg-surface-muted text-foreground',
+  /* Dusk copper — luminous indigo, not flat black */
   ink: 'bg-surface-ink text-surface-ink-foreground',
   accent: 'bg-accent text-accent-foreground',
 }
@@ -38,7 +39,7 @@ export function Section({
         'relative w-full',
         toneStyles[tone],
         paddingStyles[padding],
-        bleed && 'overflow-hidden',
+        bleed && 'overflow-x-clip',
         className,
       )}
       {...props}

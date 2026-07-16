@@ -16,6 +16,7 @@ import { PROCESS_STEPS } from '@/lib/content'
 import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
 import { SectionHeader } from '@/components/ui/section-header'
+import { SvgSignalField } from '@/components/visuals/svg-signal-field'
 import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion'
 import { cn } from '@/lib/utils'
 
@@ -65,12 +66,9 @@ export function ProcessSection() {
       className="overflow-hidden"
       aria-labelledby="process-heading"
     >
-      <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_55%_45%_at_0%_50%,color-mix(in_oklab,var(--accent)_14%,transparent),transparent_70%)]"
-        aria-hidden
-      />
+      <SvgSignalField variant="dusk" animated={!reduced} />
 
-      <Container className="relative">
+      <Container className="relative z-10">
         <motion.div
           className="mb-12 max-w-2xl md:mb-16"
           variants={staggerContainer}

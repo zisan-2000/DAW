@@ -9,6 +9,7 @@ import { getWhatsAppHref } from '@/lib/whatsapp'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
+import { SvgSignalField } from '@/components/visuals/svg-signal-field'
 import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion'
 
 export function FinalCtaSection() {
@@ -25,11 +26,7 @@ export function FinalCtaSection() {
       className="overflow-hidden"
       aria-labelledby="final-cta-heading"
     >
-      <div
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_0%,color-mix(in_oklab,var(--accent)_22%,transparent),transparent_70%)]"
-        aria-hidden
-      />
-      <div className="bg-grid-fade pointer-events-none absolute inset-0 opacity-30" aria-hidden />
+      <SvgSignalField variant="dusk" />
 
       {/* Soft top curve hint into CTA */}
       <div
