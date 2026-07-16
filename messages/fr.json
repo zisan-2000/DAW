@@ -1952,6 +1952,96 @@
         "clientsServed": "Clients accompagnés"
       }
     },
+    "heroParallax": {
+      "eyebrow": "Une récupération de réputation éprouvée",
+      "title": "Un système de gestion de réputation qui fonctionne vraiment",
+      "description": "De la stratégie à l'exécution, en passant par la surveillance et les rapports—découvrez comment notre processus transforme les résultats de recherche et protège votre nom.",
+      "cards": {
+        "onlineReputationManagement": {
+          "title": "Gestion de la réputation en ligne",
+          "description": "Surveillance et réparation complètes sur les moteurs de recherche, réseaux sociaux et avis."
+        },
+        "personalReputation": {
+          "title": "Réputation personnelle",
+          "description": "Protégez votre image lorsque clients, employeurs et partenaires recherchent votre nom."
+        },
+        "corporateReputation": {
+          "title": "Réputation d'entreprise",
+          "description": "Protégez la confiance de votre marque dans les résultats de recherche, la presse et l'opinion publique."
+        },
+        "reviewManagement": {
+          "title": "Gestion des avis",
+          "description": "Surveillez, répondez et développez vos avis sur Google, Trustpilot et les plateformes du secteur."
+        },
+        "googleSearchCleanup": {
+          "title": "Nettoyage de recherche Google",
+          "description": "Supprimez ou repoussez les résultats obsolètes, faux ou nuisibles de la première page."
+        },
+        "negativeContentSuppression": {
+          "title": "Suppression de contenu négatif",
+          "description": "Repoussez les articles nuisibles grâce à un contenu faisant autorité et bien positionné."
+        },
+        "seoReputation": {
+          "title": "SEO pour la réputation",
+          "description": "SEO technique et éditorial conçu spécifiquement pour contrôler ce qui se classe à votre sujet."
+        },
+        "generativeEngineOptimization": {
+          "title": "Optimisation pour moteurs génératifs",
+          "description": "Influencez la façon dont les IA vous décrivent, sur ChatGPT, Gemini et au-delà."
+        },
+        "aiReputationManagement": {
+          "title": "Gestion de réputation IA",
+          "description": "Surveillez et influencez la manière dont les modèles d'IA résument et citent votre nom."
+        },
+        "wikipediaManagement": {
+          "title": "Gestion Wikipédia",
+          "description": "Création et surveillance neutres et conformes aux règles des pages Wikipédia."
+        },
+        "crisisManagement": {
+          "title": "Gestion de crise",
+          "description": "Plans de réponse rapide et exécution lorsqu'une menace de réputation survient."
+        },
+        "executiveBranding": {
+          "title": "Image de marque des dirigeants",
+          "description": "Construisez des profils de marque personnelle faisant autorité pour fondateurs et dirigeants."
+        },
+        "digitalPR": {
+          "title": "Relations presse digitales",
+          "description": "Obtenez une couverture presse crédible qui renforce la confiance et la visibilité."
+        },
+        "brandMonitoring": {
+          "title": "Surveillance de marque",
+          "description": "Alertes en continu sur la recherche, les réseaux sociaux et l'actualité pour toute nouvelle mention."
+        },
+        "contentStrategy": {
+          "title": "Stratégie de contenu",
+          "description": "Publiez du contenu propriétaire qui reflète qui vous êtes aujourd'hui et se classe devant le reste."
+        }
+      }
+    },
+    "reputationProcess": {
+      "eyebrow": "Notre processus",
+      "title": "Comment nous protégeons et reconstruisons votre réputation",
+      "description": "Un système éprouvé en quatre étapes pour surveiller, nettoyer et développer votre présence en ligne.",
+      "steps": {
+        "audit": {
+          "title": "Audit et surveillance",
+          "description": "Nous commençons par un audit complet de vos résultats de recherche, avis et mentions sur les réseaux sociaux — en recensant chaque contenu qui façonne votre image en ligne, puis en mettant en place une surveillance 24h/24 pour ne rien laisser passer."
+        },
+        "suppress": {
+          "title": "Suppression et nettoyage",
+          "description": "Les articles négatifs, fiches obsolètes et avis nuisibles sont repoussés grâce à un SEO ciblé et, si possible, supprimés à la source. Notre équipe juridique et de relations travaille directement avec les éditeurs et les plateformes."
+        },
+        "build": {
+          "title": "Création et publication",
+          "description": "Nous créons et diffusons du contenu faisant autorité — articles de presse, profils et actifs propriétaires — conçus pour se classer au-dessus de tout contenu négatif et donner une image fidèle de qui vous êtes."
+        },
+        "protect": {
+          "title": "Protection et suivi",
+          "description": "Une fois vos résultats de recherche fidèles à la réalité, nous restons vigilants. Des rapports mensuels et une surveillance continue permettent de détecter et traiter toute nouvelle menace avant qu'elle ne se propage."
+        }
+      }
+    },
     "statistics": {
       "eyebrow": "Résultats",
       "title": "Des chiffres qui suivent le travail—pas des affirmations vides",
@@ -1995,33 +2085,25 @@
       }
     },
     "valueProposition": {
-      "eyebrow": "Système connecté",
-      "title": "Plus que des services séparés—un système de croissance connecté",
-      "description": "Marketing, design, développement, SEO, contenu, data et automatisation fonctionnent comme un seul système d'exploitation—pas comme des projets déconnectés.",
+      "eyebrow": "Notre processus éprouvé",
+      "titleFirst": "Un processus clair construit autour de",
+      "titleHighlight": "vos objectifs de réputation",
+      "description": "Nous combinons recherche, stratégie sur mesure et exécution constante pour améliorer votre présence dans les résultats de recherche et protéger votre marque.",
       "stages": {
+        "understand": {
+          "label": "Comprendre la situation",
+          "detail": "Nous examinons vos résultats de recherche et vos objectifs afin de savoir exactement ce qu'il faut traiter en premier.",
+          "floatingText": "Analyse de la situation"
+        },
         "strategy": {
-          "label": "Stratégie",
-          "detail": "Objectifs business, clarté audience et feuille de route priorisée."
+          "label": "Créer une stratégie sur mesure",
+          "detail": "Ensemble, nous décidons quels problèmes traiter et quelles solutions correspondent à vos objectifs et à votre budget.",
+          "floatingText": "Stratégie sur mesure"
         },
-        "experience": {
-          "label": "Expérience",
-          "detail": "Marque, UX et sites qui transforment l'attention en confiance."
-        },
-        "acquisition": {
-          "label": "Acquisition",
-          "detail": "SEO, médias payants et contenu qui atteignent la bonne demande."
-        },
-        "conversion": {
-          "label": "Conversion",
-          "detail": "Offres, tunnels et suppression des frictions UX qui améliorent les résultats."
-        },
-        "retention": {
-          "label": "Rétention",
-          "detail": "Messages cycle de vie, CRM et boucles produit qui font revenir."
-        },
-        "scale": {
-          "label": "Échelle",
-          "detail": "Mesure, automatisation et systèmes prêts pour la croissance."
+        "execution": {
+          "label": "Réaliser le travail et actualiser le plan",
+          "detail": "Notre équipe se charge du travail de fond et vous tient informé avec des mises à jour claires.",
+          "floatingText": "Mises à jour"
         }
       }
     },

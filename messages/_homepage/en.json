@@ -38,6 +38,97 @@
       "clientsServed": "Clients partnered"
     }
   },
+  "heroParallax": {
+    "eyebrow": "Proven Reputation Recovery",
+    "titlePrefix": "A Reputation Management System That",
+    "titleHighlight": "Actually Works",
+    "description": "From strategy to execution, monitoring and reporting—see how our process turns search results around and keeps your name protected.",
+    "cards": {
+      "onlineReputationManagement": {
+        "title": "Online Reputation Management",
+        "description": "Full-spectrum monitoring and repair across search, social and review platforms."
+      },
+      "personalReputation": {
+        "title": "Personal Reputation",
+        "description": "Protect how individuals are seen when clients, employers and partners search their name."
+      },
+      "corporateReputation": {
+        "title": "Corporate Reputation",
+        "description": "Safeguard brand trust across search results, press coverage and public sentiment."
+      },
+      "reviewManagement": {
+        "title": "Review Management",
+        "description": "Monitor, respond to and grow reviews across Google, Trustpilot and industry platforms."
+      },
+      "googleSearchCleanup": {
+        "title": "Google Search Cleanup",
+        "description": "Remove or suppress outdated, false and damaging results from the first page."
+      },
+      "negativeContentSuppression": {
+        "title": "Negative Content Suppression",
+        "description": "Push down harmful articles and listings with authoritative, ranking content."
+      },
+      "seoReputation": {
+        "title": "SEO for Reputation",
+        "description": "Technical and content SEO built specifically to control what ranks about you."
+      },
+      "generativeEngineOptimization": {
+        "title": "Generative Engine Optimization",
+        "description": "Shape how AI answer engines describe you across ChatGPT, Gemini and beyond."
+      },
+      "aiReputationManagement": {
+        "title": "AI Reputation Management",
+        "description": "Monitor and influence how AI models summarize and reference your name."
+      },
+      "wikipediaManagement": {
+        "title": "Wikipedia Management",
+        "description": "Neutral, policy-compliant creation and monitoring of Wikipedia pages."
+      },
+      "crisisManagement": {
+        "title": "Crisis Management",
+        "description": "Rapid response plans and execution when a reputation threat breaks out."
+      },
+      "executiveBranding": {
+        "title": "Executive Branding",
+        "description": "Build authoritative personal brand profiles for founders and leadership."
+      },
+      "digitalPR": {
+        "title": "Digital PR",
+        "description": "Earn authoritative press coverage that builds trust and search visibility."
+      },
+      "brandMonitoring": {
+        "title": "Brand Monitoring",
+        "description": "Round-the-clock alerts across search, social and news for new mentions."
+      },
+      "contentStrategy": {
+        "title": "Content Strategy",
+        "description": "Publish owned content that reflects who you are today, ranking above the rest."
+      }
+    }
+  },
+  "reputationProcess": {
+    "eyebrow": "Our Process",
+    "title": "How We Protect and Rebuild Your Reputation",
+    "description": "A proven four-stage system used to monitor, clean, and grow your online presence.",
+    "steps": {
+      "audit": {
+        "title": "Audit & Monitor",
+        "description": "We start with a full audit of your search results, reviews, and social mentions — mapping every piece of content that shapes how you're seen online, then set up 24/7 monitoring so nothing new slips through unnoticed."
+      },
+      "suppress": {
+        "title": "Suppress & Clean",
+        "description": "Negative articles, outdated listings, and damaging reviews are pushed down through targeted SEO and, where possible, removed at the source. Our legal and outreach team works directly with publishers and platforms."
+      },
+      "build": {
+        "title": "Build & Publish",
+        "description": "We create and distribute authoritative content — press features, profiles, and owned assets — engineered to rank above anything negative and give people an accurate picture of who you are."
+      },
+      "protect": {
+        "title": "Protect & Report",
+        "description": "Once your search results reflect the real you, we keep watch. Monthly reporting and continuous monitoring mean new threats get caught and handled before they can spread."
+      }
+    }
+  },
   "statistics": {
     "eyebrow": "Outcomes",
     "title": "Numbers that track the work—not empty claims",
@@ -81,33 +172,25 @@
     }
   },
   "valueProposition": {
-    "eyebrow": "Connected system",
-    "title": "More than separate services—one connected growth system",
-    "description": "Marketing, design, development, SEO, content, data and automation work as one operating system—not disconnected projects.",
+    "eyebrow": "Our Proven Process",
+    "titleFirst": "A Clear Process Built Around",
+    "titleHighlight": "Your Reputation Goals",
+    "description": "We combine research, tailored strategy and consistent execution to improve your search presence and protect your brand.",
     "stages": {
+      "understand": {
+        "label": "Understand the situation",
+        "detail": "We review your search results and goals so we know exactly what to address first.",
+        "floatingText": "Situation Analysis"
+      },
       "strategy": {
-        "label": "Strategy",
-        "detail": "Business goals, audience clarity and prioritised roadmap."
+        "label": "Create a tailored strategy",
+        "detail": "Together we decide which issues to tackle and which solutions fit your goals and budget.",
+        "floatingText": "Tailored Strategy"
       },
-      "experience": {
-        "label": "Experience",
-        "detail": "Brand, UX and websites that convert attention into trust."
-      },
-      "acquisition": {
-        "label": "Acquisition",
-        "detail": "SEO, paid media and content that reach the right demand."
-      },
-      "conversion": {
-        "label": "Conversion",
-        "detail": "Offers, funnels and UX friction removal that lift results."
-      },
-      "retention": {
-        "label": "Retention",
-        "detail": "Lifecycle messaging, CRM and product loops that return."
-      },
-      "scale": {
-        "label": "Scale",
-        "detail": "Measurement, automation and systems ready for growth."
+      "execution": {
+        "label": "Do the work and update the plan",
+        "detail": "Our team handles the heavy lifting and keeps you informed with clear progress updates.",
+        "floatingText": "Progress Updates"
       }
     }
   },
