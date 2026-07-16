@@ -2171,5 +2171,1159 @@
       "reassurance": "No pressure. No generic sales pitch. Just a focused conversation about your goals.",
       "whatsappMessage": "Hello, I visited your website and would like to discuss a project."
     }
+  },
+  "products": {
+    "ui": {
+      "breadcrumbHome": "Home",
+      "breadcrumbProducts": "Products",
+      "breadcrumbCaseStudies": "Case Studies",
+      "breadcrumbAria": "Breadcrumb",
+      "whoItsFor": "Who it’s for",
+      "audiencesCount": "{count} audiences",
+      "whatsIncluded": "What’s included",
+      "howItWorks": "How it works",
+      "faqs": "Frequently asked questions",
+      "commonChallenges": "Common challenges",
+      "outcomesTitle": "Outcomes this engagement supports",
+      "related": "Related",
+      "relatedProducts": "Related products",
+      "otherAudiences": "Other audiences",
+      "exploreByAudience": "Explore by audience",
+      "selectedWork": "Selected work",
+      "viewAllCaseStudies": "View all case studies",
+      "viewCaseStudies": "View case studies",
+      "requestConsultation": "Request a Free Consultation",
+      "aboutProduct": "About {shortName}",
+      "chatWhatsApp": "Chat on WhatsApp",
+      "privateConsultation": "Private consultation",
+      "priorityIntake": "Priority intake",
+      "ctaDefaultTitle": "Ready to discuss your next step?",
+      "ctaDefaultDescription": "Tell us your goals and constraints. We will recommend a practical roadmap—without pressure or generic pitches.",
+      "ctaStartConversation": "Start a {shortName} conversation",
+      "ctaStartDescription": "Share your situation for {productName}. We’ll outline practical next steps—no pressure, no generic pitch.",
+      "ctaTalkAbout": "Talk about {shortName} for {audience}",
+      "whatsappPrefill": "Hello, I visited your Products page and would like to discuss a project.",
+      "sample": "Sample",
+      "demo": "Demo",
+      "sampleDemo": "Sample · demo",
+      "challenge": "Challenge",
+      "solution": "Solution",
+      "results": "Results",
+      "discussSimilar": "Discuss a similar engagement",
+      "emptyCases": "No demonstration case studies for this product yet. Add verified projects in the product registry.",
+      "workInPractice": "Work in this practice",
+      "archiveEntries": "Archive · {count} entries",
+      "caseStudiesHeroTitle": "{shortName} case studies",
+      "caseStudiesHeroDescription": "Demonstration projects with sample challenges and placeholder results. Replace with verified client outcomes and permissioned details before launch.",
+      "caseStudiesMetaTitle": "{shortName} Case Studies",
+      "caseStudiesMetaDescription": "Demonstration case studies for {productName}. Replace sample results with verified outcomes before launch.",
+      "notFoundTitle": "Product not found",
+      "notFoundDescription": "The product page you requested does not exist.",
+      "pageNotFound": "Page not found",
+      "caseStudiesNotFound": "Case studies not found",
+      "open": "Open",
+      "profile": "Profile {n}",
+      "stage": "Stage {n}"
+    },
+    "nav": {
+      "caseStudies": "Case Studies",
+      "audiences": {
+        "individuals": "Individuals",
+        "job-seekers": "Job Seekers",
+        "small-businesses": "Small Businesses",
+        "executives": "Executives",
+        "large-companies": "Large Companies"
+      },
+      "products": {
+        "reputation-management": "Reputation Management",
+        "privacy-protection": "Privacy Protection",
+        "executive-privacy": "Executive Privacy",
+        "concierge-privacy": "Concierge Privacy",
+        "negative-suppression": "Negative Suppression"
+      }
+    },
+    "design": {
+      "reputation-management": {
+        "motifLabel": "360° system",
+        "signalWord": "Visibility",
+        "accentNote": "Search · Reviews · Narrative · Monitor"
+      },
+      "privacy-protection": {
+        "motifLabel": "Exposure control",
+        "signalWord": "Privacy",
+        "accentNote": "Audit · Opt-out · Recheck · Maintain"
+      },
+      "executive-privacy": {
+        "motifLabel": "Discreet protocol",
+        "signalWord": "Discretion",
+        "accentNote": "Brief · Baseline · Remediate · Vigilance"
+      },
+      "concierge-privacy": {
+        "motifLabel": "Dedicated ownership",
+        "signalWord": "Concierge",
+        "accentNote": "Assign · Prioritise · Execute · Maintain"
+      },
+      "negative-suppression": {
+        "motifLabel": "SERP strategy",
+        "signalWord": "Suppression",
+        "accentNote": "Audit · Build · Suppress · Measure"
+      }
+    },
+    "items": {
+      "reputation-management": {
+        "name": "360° Reputation Management",
+        "shortName": "Reputation Management",
+        "tagline": "Full-spectrum visibility, monitoring and narrative control",
+        "description": "A connected programme covering search presence, reviews, content strategy and ongoing monitoring—so your public story stays coherent as you grow.",
+        "seoTitle": "360° Reputation Management | Digital Reputation Programmes",
+        "seoDescription": "Full-spectrum reputation management spanning search, reviews, content and monitoring for individuals through enterprise teams.",
+        "capabilities": [
+          "Search narrative audit and prioritisation",
+          "Review and mention monitoring",
+          "Content and profile strengthening",
+          "Suppression strategy where appropriate",
+          "Crisis-ready escalation playbooks",
+          "Monthly reporting stakeholders can act on"
+        ],
+        "process": [
+          {
+            "title": "Discovery and risk mapping",
+            "description": "Assess current search, reviews and sensitive coverage against your goals and constraints."
+          },
+          {
+            "title": "Strategy and roadmap",
+            "description": "Prioritise the few moves that most improve trust signals—without busywork."
+          },
+          {
+            "title": "Execution and publishing",
+            "description": "Build and refine assets, responses and technical fixes with clear ownership."
+          },
+          {
+            "title": "Monitor and optimise",
+            "description": "Track new mentions, adjust tactics and report progress in plain language."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Who is 360° Reputation Management for?",
+            "answer": "Individuals, professionals, growing businesses and leadership teams who need a durable system—not a one-off cleanup."
+          },
+          {
+            "question": "How is this different from a single service?",
+            "answer": "We coordinate monitoring, content, reviews and search work under one roadmap so efforts reinforce each other."
+          },
+          {
+            "question": "How soon will we see movement?",
+            "answer": "Timelines depend on competition, content history and platform policies. We define near-term and longer-horizon indicators during onboarding."
+          }
+        ],
+        "audiences": {
+          "individuals": {
+            "label": "Individuals",
+            "headline": "Protect and strengthen your reputation as individuals",
+            "supporting": "360° Reputation Management tailored for individuals—personal search results, reviews and public mentions that affect trust in everyday reputation.",
+            "painPoints": [
+              "Outdated or inaccurate personal information ranking too high",
+              "Hard-to-answer questions when someone Googles your name",
+              "Limited positive assets to balance older content"
+            ],
+            "outcomes": [
+              "Clearer personal search narrative",
+              "Practical monitoring for new mentions",
+              "Guided content and profile improvements"
+            ],
+            "faqs": [
+              {
+                "question": "Is 360° Reputation Management relevant for individuals?",
+                "answer": "Yes. This programme is scoped for individuals, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              },
+              {
+                "question": "Do you guarantee ranking changes?",
+                "answer": "No. Search and platform outcomes vary. We set clear scopes, track progress transparently and adjust tactics—without guaranteeing specific rankings or removals."
+              }
+            ],
+            "seoTitle": "360° Reputation Management for Individuals | Reputation",
+            "seoDescription": "360° Reputation Management for individuals. personal search results, reviews and public mentions that affect trust in everyday reputation.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "job-seekers": {
+            "label": "Job Seekers",
+            "headline": "Protect and strengthen your reputation as job seekers",
+            "supporting": "360° Reputation Management tailored for job seekers—employer search checks, professional profiles and content that can influence hiring decisions.",
+            "painPoints": [
+              "Search results that do not reflect current skills or roles",
+              "Inactive or inconsistent profiles across platforms",
+              "Uncertainty about what hiring teams may find first"
+            ],
+            "outcomes": [
+              "Stronger first-impression search footprint",
+              "Aligned LinkedIn and professional assets",
+              "Guidance on what to prioritise before interviews"
+            ],
+            "faqs": [
+              {
+                "question": "Is 360° Reputation Management relevant for job seekers?",
+                "answer": "Yes. This programme is scoped for job seekers, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              },
+              {
+                "question": "Do you guarantee ranking changes?",
+                "answer": "No. Search and platform outcomes vary. We set clear scopes, track progress transparently and adjust tactics—without guaranteeing specific rankings or removals."
+              }
+            ],
+            "seoTitle": "360° Reputation Management for Job Seekers | Reputation",
+            "seoDescription": "360° Reputation Management for job seekers. employer search checks, professional profiles and content that can influence hiring decisions.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "small-businesses": {
+            "label": "Small Businesses",
+            "headline": "Protect and strengthen your reputation as small businesses",
+            "supporting": "360° Reputation Management tailored for small businesses—local reviews, Maps presence and brand search that drive customer trust and enquiries.",
+            "painPoints": [
+              "Inconsistent reviews and unanswered customer feedback",
+              "Competitor visibility overshadowing your brand search",
+              "Limited time to manage listings and response quality"
+            ],
+            "outcomes": [
+              "More coherent brand search and listing presence",
+              "Structured review response habits",
+              "Practical cadence your team can sustain"
+            ],
+            "faqs": [
+              {
+                "question": "Is 360° Reputation Management relevant for small businesses?",
+                "answer": "Yes. This programme is scoped for small businesses, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              },
+              {
+                "question": "Do you guarantee ranking changes?",
+                "answer": "No. Search and platform outcomes vary. We set clear scopes, track progress transparently and adjust tactics—without guaranteeing specific rankings or removals."
+              }
+            ],
+            "seoTitle": "360° Reputation Management for Small Businesses | Reputation",
+            "seoDescription": "360° Reputation Management for small businesses. local reviews, Maps presence and brand search that drive customer trust and enquiries.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "executives": {
+            "label": "Executives",
+            "headline": "Safeguard and shape your reputation as executives",
+            "supporting": "360° Reputation Management tailored for executives—leadership visibility, sensitive coverage and the narrative stakeholders see first.",
+            "painPoints": [
+              "Personal and corporate stories blending in search",
+              "Sensitive or outdated coverage resurfacing at the wrong time",
+              "Need for discreet, senior-ready communication"
+            ],
+            "outcomes": [
+              "Controlled executive search narrative",
+              "Discreet monitoring and escalation paths",
+              "Assets that support credibility with boards and media"
+            ],
+            "faqs": [
+              {
+                "question": "Is 360° Reputation Management relevant for executives?",
+                "answer": "Yes. This programme is scoped for executives, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              },
+              {
+                "question": "Do you guarantee ranking changes?",
+                "answer": "No. Search and platform outcomes vary. We set clear scopes, track progress transparently and adjust tactics—without guaranteeing specific rankings or removals."
+              }
+            ],
+            "seoTitle": "360° Reputation Management for Executives | Reputation",
+            "seoDescription": "360° Reputation Management for executives. leadership visibility, sensitive coverage and the narrative stakeholders see first.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "large-companies": {
+            "label": "Large Companies",
+            "headline": "Scale protection for your reputation as large companies",
+            "supporting": "360° Reputation Management tailored for large companies—enterprise brand search, multi-location reputation signals and coordinated crisis readiness.",
+            "painPoints": [
+              "Fragmented reputation signals across brands and locations",
+              "Slow internal coordination when coverage spikes",
+              "Need for measurable reporting across stakeholders"
+            ],
+            "outcomes": [
+              "Enterprise-ready monitoring and playbooks",
+              "Aligned messaging across brand properties",
+              "Reporting suitable for leadership review"
+            ],
+            "faqs": [
+              {
+                "question": "Is 360° Reputation Management relevant for large companies?",
+                "answer": "Yes. This programme is scoped for large companies, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              },
+              {
+                "question": "Do you guarantee ranking changes?",
+                "answer": "No. Search and platform outcomes vary. We set clear scopes, track progress transparently and adjust tactics—without guaranteeing specific rankings or removals."
+              }
+            ],
+            "seoTitle": "360° Reputation Management for Large Companies | Reputation",
+            "seoDescription": "360° Reputation Management for large companies. enterprise brand search, multi-location reputation signals and coordinated crisis readiness.",
+            "ctaLabel": "Request a Free Consultation"
+          }
+        }
+      },
+      "privacy-protection": {
+        "name": "Privacy Protection",
+        "shortName": "Privacy Protection",
+        "tagline": "Reduce unnecessary public exposure of personal data",
+        "description": "Systematic work across data brokers, people-search platforms and public listings to lower easy-access personal exposure—within each platform’s policies and legal limits.",
+        "seoTitle": "Privacy Protection Services | Data Exposure Reduction",
+        "seoDescription": "Privacy protection programmes to reduce personal data exposure across brokers and public listings for individuals, leaders and organisations.",
+        "capabilities": [
+          "Exposure audit across common data sources",
+          "Opt-out and suppression workflows",
+          "Recurring scans for re-listings",
+          "Guidance for household and staff exposure",
+          "Coordination with reputation programmes when needed"
+        ],
+        "process": [
+          {
+            "title": "Map exposure",
+            "description": "Identify where personal or staff data is publicly resurfacing."
+          },
+          {
+            "title": "Prioritise removals",
+            "description": "Focus first on high-risk and high-visibility sources."
+          },
+          {
+            "title": "Execute opt-outs",
+            "description": "Work platform processes carefully and document outcomes."
+          },
+          {
+            "title": "Re-check and maintain",
+            "description": "Watch for reappearances and keep exposure lower over time."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Can you remove everything online?",
+            "answer": "No. Some information is public record or controlled by third parties. We focus on what can legitimately be reduced and are transparent about limits."
+          },
+          {
+            "question": "Is this legal and ethical?",
+            "answer": "We follow each platform’s published processes and applicable laws. We do not use deceptive or abusive tactics."
+          }
+        ],
+        "audiences": {
+          "individuals": {
+            "label": "Individuals",
+            "headline": "Reduce exposure and protect your reputation as individuals",
+            "supporting": "Privacy Protection tailored for individuals—personal search results, reviews and public mentions that affect trust in everyday privacy.",
+            "painPoints": [
+              "Personal details resurfacing on people-search sites",
+              "Unclear where private data was collected or shared",
+              "Difficulty coordinating opt-outs across many brokers"
+            ],
+            "outcomes": [
+              "Structured data-broker and listing opt-out work",
+              "Reduced easy-access exposure where platforms allow",
+              "Ongoing checks as new listings appear"
+            ],
+            "faqs": [
+              {
+                "question": "Is Privacy Protection relevant for individuals?",
+                "answer": "Yes. This programme is scoped for individuals, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Privacy Protection for Individuals | Privacy",
+            "seoDescription": "Privacy Protection for individuals. personal search results, reviews and public mentions that affect trust in everyday privacy.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "job-seekers": {
+            "label": "Job Seekers",
+            "headline": "Reduce exposure and protect your reputation as job seekers",
+            "supporting": "Privacy Protection tailored for job seekers—employer search checks, professional profiles and content that can influence hiring decisions.",
+            "painPoints": [
+              "Personal details resurfacing on people-search sites",
+              "Unclear where private data was collected or shared",
+              "Difficulty coordinating opt-outs across many brokers"
+            ],
+            "outcomes": [
+              "Structured data-broker and listing opt-out work",
+              "Reduced easy-access exposure where platforms allow",
+              "Ongoing checks as new listings appear"
+            ],
+            "faqs": [
+              {
+                "question": "Is Privacy Protection relevant for job seekers?",
+                "answer": "Yes. This programme is scoped for job seekers, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Privacy Protection for Job Seekers | Privacy",
+            "seoDescription": "Privacy Protection for job seekers. employer search checks, professional profiles and content that can influence hiring decisions.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "small-businesses": {
+            "label": "Small Businesses",
+            "headline": "Reduce exposure and protect your reputation as small businesses",
+            "supporting": "Privacy Protection tailored for small businesses—local reviews, Maps presence and brand search that drive customer trust and enquiries.",
+            "painPoints": [
+              "Personal details resurfacing on people-search sites",
+              "Unclear where private data was collected or shared",
+              "Difficulty coordinating opt-outs across many brokers"
+            ],
+            "outcomes": [
+              "Structured data-broker and listing opt-out work",
+              "Reduced easy-access exposure where platforms allow",
+              "Ongoing checks as new listings appear"
+            ],
+            "faqs": [
+              {
+                "question": "Is Privacy Protection relevant for small businesses?",
+                "answer": "Yes. This programme is scoped for small businesses, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Privacy Protection for Small Businesses | Privacy",
+            "seoDescription": "Privacy Protection for small businesses. local reviews, Maps presence and brand search that drive customer trust and enquiries.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "executives": {
+            "label": "Executives",
+            "headline": "Reduce exposure and protect your reputation as executives",
+            "supporting": "Privacy Protection tailored for executives—reducing unnecessary personal data exposure across people-search and data-broker surfaces that affect leadership and team safety.",
+            "painPoints": [
+              "Personal details resurfacing on people-search sites",
+              "Unclear where private data was collected or shared",
+              "Difficulty coordinating opt-outs across many brokers"
+            ],
+            "outcomes": [
+              "Structured data-broker and listing opt-out work",
+              "Reduced easy-access exposure where platforms allow",
+              "Ongoing checks as new listings appear"
+            ],
+            "faqs": [
+              {
+                "question": "Is Privacy Protection relevant for executives?",
+                "answer": "Yes. This programme is scoped for executives, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Privacy Protection for Executives | Privacy",
+            "seoDescription": "Privacy Protection for executives. reducing unnecessary personal data exposure across people-search and data-broker surfaces that affect leadership and team safety.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "large-companies": {
+            "label": "Large Companies",
+            "headline": "Reduce exposure and protect your reputation as large companies",
+            "supporting": "Privacy Protection tailored for large companies—reducing unnecessary personal data exposure across people-search and data-broker surfaces that affect leadership and team safety.",
+            "painPoints": [
+              "Personal details resurfacing on people-search sites",
+              "Unclear where private data was collected or shared",
+              "Difficulty coordinating opt-outs across many brokers"
+            ],
+            "outcomes": [
+              "Structured data-broker and listing opt-out work",
+              "Reduced easy-access exposure where platforms allow",
+              "Ongoing checks as new listings appear"
+            ],
+            "faqs": [
+              {
+                "question": "Is Privacy Protection relevant for large companies?",
+                "answer": "Yes. This programme is scoped for large companies, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Privacy Protection for Large Companies | Privacy",
+            "seoDescription": "Privacy Protection for large companies. reducing unnecessary personal data exposure across people-search and data-broker surfaces that affect leadership and team safety.",
+            "ctaLabel": "Request a Free Consultation"
+          }
+        }
+      },
+      "executive-privacy": {
+        "name": "Executive Privacy",
+        "shortName": "Executive Privacy",
+        "tagline": "Discreet protection for leaders and their households",
+        "description": "Privacy work designed for executives and high-visibility leaders—balancing reduced personal exposure with the professional presence stakeholders expect.",
+        "seoTitle": "Executive Privacy Services | Leadership Data Exposure Reduction",
+        "seoDescription": "Discreet executive privacy programmes for leaders and organisations seeking lower personal exposure with professional presence intact.",
+        "capabilities": [
+          "Executive and household exposure mapping",
+          "Priority opt-out campaigns",
+          "Staff and assistant enablement guides",
+          "Integration with personal brand assets",
+          "Confidential reporting cadence"
+        ],
+        "process": [
+          {
+            "title": "Confidential briefing",
+            "description": "Align priorities with the executive, EA and security stakeholders."
+          },
+          {
+            "title": "Exposure baseline",
+            "description": "Document high-risk surfaces affecting home, family and contact data."
+          },
+          {
+            "title": "Remediation sprints",
+            "description": "Execute opt-outs and suppressions with discreet communication."
+          },
+          {
+            "title": "Ongoing vigilance",
+            "description": "Monitor re-listings and update playbooks as roles change."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Will this make me invisible online?",
+            "answer": "No—and that is rarely desirable for executives. We reduce unnecessary personal exposure while preserving intentional professional visibility."
+          }
+        ],
+        "audiences": {
+          "individuals": {
+            "label": "Individuals",
+            "headline": "Discreetly protect your reputation as individuals",
+            "supporting": "Executive Privacy tailored for individuals—discreet reduction of executive and household exposure while keeping professional presence intentional.",
+            "painPoints": [
+              "Home and family details tied to public executive profiles",
+              "People-search sites aggregating sensitive contact data",
+              "Need for confidentiality with boards and security teams"
+            ],
+            "outcomes": [
+              "Lower personal exposure where platforms allow",
+              "Clear protocols for staff and household listings",
+              "Coordination with reputation and security stakeholders"
+            ],
+            "faqs": [
+              {
+                "question": "Is Executive Privacy relevant for individuals?",
+                "answer": "Yes. This programme is scoped for individuals, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Executive Privacy for Individuals | Executive Privacy",
+            "seoDescription": "Executive Privacy for individuals. discreet reduction of executive and household exposure while keeping professional presence intentional.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "job-seekers": {
+            "label": "Job Seekers",
+            "headline": "Discreetly protect your reputation as job seekers",
+            "supporting": "Executive Privacy tailored for job seekers—discreet reduction of executive and household exposure while keeping professional presence intentional.",
+            "painPoints": [
+              "Home and family details tied to public executive profiles",
+              "People-search sites aggregating sensitive contact data",
+              "Need for confidentiality with boards and security teams"
+            ],
+            "outcomes": [
+              "Lower personal exposure where platforms allow",
+              "Clear protocols for staff and household listings",
+              "Coordination with reputation and security stakeholders"
+            ],
+            "faqs": [
+              {
+                "question": "Is Executive Privacy relevant for job seekers?",
+                "answer": "Yes. This programme is scoped for job seekers, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Executive Privacy for Job Seekers | Executive Privacy",
+            "seoDescription": "Executive Privacy for job seekers. discreet reduction of executive and household exposure while keeping professional presence intentional.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "small-businesses": {
+            "label": "Small Businesses",
+            "headline": "Discreetly protect your reputation as small businesses",
+            "supporting": "Executive Privacy tailored for small businesses—discreet reduction of executive and household exposure while keeping professional presence intentional.",
+            "painPoints": [
+              "Home and family details tied to public executive profiles",
+              "People-search sites aggregating sensitive contact data",
+              "Need for confidentiality with boards and security teams"
+            ],
+            "outcomes": [
+              "Lower personal exposure where platforms allow",
+              "Clear protocols for staff and household listings",
+              "Coordination with reputation and security stakeholders"
+            ],
+            "faqs": [
+              {
+                "question": "Is Executive Privacy relevant for small businesses?",
+                "answer": "Yes. This programme is scoped for small businesses, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Executive Privacy for Small Businesses | Executive Privacy",
+            "seoDescription": "Executive Privacy for small businesses. discreet reduction of executive and household exposure while keeping professional presence intentional.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "executives": {
+            "label": "Executives",
+            "headline": "Discreetly protect your reputation as executives",
+            "supporting": "Executive Privacy tailored for executives—discreet reduction of executive and household exposure while keeping professional presence intentional.",
+            "painPoints": [
+              "Home and family details tied to public executive profiles",
+              "People-search sites aggregating sensitive contact data",
+              "Need for confidentiality with boards and security teams"
+            ],
+            "outcomes": [
+              "Lower personal exposure where platforms allow",
+              "Clear protocols for staff and household listings",
+              "Coordination with reputation and security stakeholders"
+            ],
+            "faqs": [
+              {
+                "question": "Is Executive Privacy relevant for executives?",
+                "answer": "Yes. This programme is scoped for executives, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Executive Privacy for Executives | Executive Privacy",
+            "seoDescription": "Executive Privacy for executives. discreet reduction of executive and household exposure while keeping professional presence intentional.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "large-companies": {
+            "label": "Large Companies",
+            "headline": "Discreetly protect your reputation as large companies",
+            "supporting": "Executive Privacy tailored for large companies—discreet reduction of executive and household exposure while keeping professional presence intentional.",
+            "painPoints": [
+              "Home and family details tied to public executive profiles",
+              "People-search sites aggregating sensitive contact data",
+              "Need for confidentiality with boards and security teams"
+            ],
+            "outcomes": [
+              "Lower personal exposure where platforms allow",
+              "Clear protocols for staff and household listings",
+              "Coordination with reputation and security stakeholders"
+            ],
+            "faqs": [
+              {
+                "question": "Is Executive Privacy relevant for large companies?",
+                "answer": "Yes. This programme is scoped for large companies, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Executive Privacy for Large Companies | Executive Privacy",
+            "seoDescription": "Executive Privacy for large companies. discreet reduction of executive and household exposure while keeping professional presence intentional.",
+            "ctaLabel": "Request a Free Consultation"
+          }
+        }
+      },
+      "concierge-privacy": {
+        "name": "Concierge Privacy",
+        "shortName": "Concierge Privacy",
+        "tagline": "High-touch privacy operations with dedicated ownership",
+        "description": "A concierge-style privacy programme for clients who need closer coordination, faster prioritisation and white-glove communication across complex exposure landscapes.",
+        "seoTitle": "Concierge Privacy Services | High-Touch Data Exposure Support",
+        "seoDescription": "Concierge privacy programmes with dedicated coordination for individuals, executives and organisations needing high-touch support.",
+        "capabilities": [
+          "Dedicated privacy lead",
+          "Household and staff coverage options",
+          "Accelerated opt-out queues",
+          "Custom reporting for principals and advisors",
+          "Escalation paths for emerging risks"
+        ],
+        "process": [
+          {
+            "title": "Concierge onboarding",
+            "description": "Assign ownership, map stakeholders and confirm discretion requirements."
+          },
+          {
+            "title": "Priority matrix",
+            "description": "Rank exposure sources by risk and urgency with the client."
+          },
+          {
+            "title": "Hands-on remediation",
+            "description": "Execute and chase platform processes with continuous status notes."
+          },
+          {
+            "title": "Live maintenance",
+            "description": "Keep scanning, updating and advising as life and roles change."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "How is Concierge different from standard Privacy Protection?",
+            "answer": "Concierge adds dedicated ownership, tighter communication cadence and capacity for more complex multi-party scopes."
+          }
+        ],
+        "audiences": {
+          "individuals": {
+            "label": "Individuals",
+            "headline": "Premium protection for your reputation as individuals",
+            "supporting": "Concierge Privacy tailored for individuals—white-glove privacy operations with dedicated coordination, faster turnaround and higher-touch reporting.",
+            "painPoints": [
+              "Complex multi-person or multi-property exposure",
+              "Need for a single operator who owns follow-through",
+              "Preference for high-touch updates over self-serve portals"
+            ],
+            "outcomes": [
+              "Dedicated privacy coordination",
+              "Prioritised remediation across key sources",
+              "Concise status updates for busy principals"
+            ],
+            "faqs": [
+              {
+                "question": "Is Concierge Privacy relevant for individuals?",
+                "answer": "Yes. This programme is scoped for individuals, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Concierge Privacy for Individuals | Concierge Privacy",
+            "seoDescription": "Concierge Privacy for individuals. white-glove privacy operations with dedicated coordination, faster turnaround and higher-touch reporting.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "job-seekers": {
+            "label": "Job Seekers",
+            "headline": "Premium protection for your reputation as job seekers",
+            "supporting": "Concierge Privacy tailored for job seekers—white-glove privacy operations with dedicated coordination, faster turnaround and higher-touch reporting.",
+            "painPoints": [
+              "Complex multi-person or multi-property exposure",
+              "Need for a single operator who owns follow-through",
+              "Preference for high-touch updates over self-serve portals"
+            ],
+            "outcomes": [
+              "Dedicated privacy coordination",
+              "Prioritised remediation across key sources",
+              "Concise status updates for busy principals"
+            ],
+            "faqs": [
+              {
+                "question": "Is Concierge Privacy relevant for job seekers?",
+                "answer": "Yes. This programme is scoped for job seekers, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Concierge Privacy for Job Seekers | Concierge Privacy",
+            "seoDescription": "Concierge Privacy for job seekers. white-glove privacy operations with dedicated coordination, faster turnaround and higher-touch reporting.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "small-businesses": {
+            "label": "Small Businesses",
+            "headline": "Premium protection for your reputation as small businesses",
+            "supporting": "Concierge Privacy tailored for small businesses—white-glove privacy operations with dedicated coordination, faster turnaround and higher-touch reporting.",
+            "painPoints": [
+              "Complex multi-person or multi-property exposure",
+              "Need for a single operator who owns follow-through",
+              "Preference for high-touch updates over self-serve portals"
+            ],
+            "outcomes": [
+              "Dedicated privacy coordination",
+              "Prioritised remediation across key sources",
+              "Concise status updates for busy principals"
+            ],
+            "faqs": [
+              {
+                "question": "Is Concierge Privacy relevant for small businesses?",
+                "answer": "Yes. This programme is scoped for small businesses, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Concierge Privacy for Small Businesses | Concierge Privacy",
+            "seoDescription": "Concierge Privacy for small businesses. white-glove privacy operations with dedicated coordination, faster turnaround and higher-touch reporting.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "executives": {
+            "label": "Executives",
+            "headline": "Premium protection for your reputation as executives",
+            "supporting": "Concierge Privacy tailored for executives—white-glove privacy operations with dedicated coordination, faster turnaround and higher-touch reporting.",
+            "painPoints": [
+              "Complex multi-person or multi-property exposure",
+              "Need for a single operator who owns follow-through",
+              "Preference for high-touch updates over self-serve portals"
+            ],
+            "outcomes": [
+              "Dedicated privacy coordination",
+              "Prioritised remediation across key sources",
+              "Concise status updates for busy principals"
+            ],
+            "faqs": [
+              {
+                "question": "Is Concierge Privacy relevant for executives?",
+                "answer": "Yes. This programme is scoped for executives, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Concierge Privacy for Executives | Concierge Privacy",
+            "seoDescription": "Concierge Privacy for executives. white-glove privacy operations with dedicated coordination, faster turnaround and higher-touch reporting.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "large-companies": {
+            "label": "Large Companies",
+            "headline": "Premium protection for your reputation as large companies",
+            "supporting": "Concierge Privacy tailored for large companies—white-glove privacy operations with dedicated coordination, faster turnaround and higher-touch reporting.",
+            "painPoints": [
+              "Complex multi-person or multi-property exposure",
+              "Need for a single operator who owns follow-through",
+              "Preference for high-touch updates over self-serve portals"
+            ],
+            "outcomes": [
+              "Dedicated privacy coordination",
+              "Prioritised remediation across key sources",
+              "Concise status updates for busy principals"
+            ],
+            "faqs": [
+              {
+                "question": "Is Concierge Privacy relevant for large companies?",
+                "answer": "Yes. This programme is scoped for large companies, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Concierge Privacy for Large Companies | Concierge Privacy",
+            "seoDescription": "Concierge Privacy for large companies. white-glove privacy operations with dedicated coordination, faster turnaround and higher-touch reporting.",
+            "ctaLabel": "Request a Free Consultation"
+          }
+        }
+      },
+      "negative-suppression": {
+        "name": "Negative Suppression",
+        "shortName": "Negative Suppression",
+        "tagline": "Ethical strategies to reduce harmful search prominence",
+        "description": "Search-focused work that builds preferred assets and applies legitimate suppression tactics so damaging or outdated results carry less weight—without guarantees of removal or ranking.",
+        "seoTitle": "Negative Suppression Services | Search Result Strategy",
+        "seoDescription": "Ethical negative suppression and SERP strategy for individuals and organisations dealing with harmful or outdated search prominence.",
+        "capabilities": [
+          "SERP composition analysis",
+          "Preferred asset strategy and publishing",
+          "Technical and content improvements",
+          "Ethical suppression planning",
+          "Progress reporting on result mix"
+        ],
+        "process": [
+          {
+            "title": "SERP audit",
+            "description": "Document which results drive risk and which assets can compete."
+          },
+          {
+            "title": "Build preferred equity",
+            "description": "Strengthen authoritative pages, profiles and earned placements."
+          },
+          {
+            "title": "Suppression execution",
+            "description": "Apply coordinated tactics within platform and legal boundaries."
+          },
+          {
+            "title": "Measure and iterate",
+            "description": "Track result mix and refine based on observed movement."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Can you delete negative articles?",
+            "answer": "Removal depends on publishers and applicable law. Where removal is not available, suppression and strengthened preferred content are the practical paths—and we state that clearly upfront."
+          },
+          {
+            "question": "Do you guarantee page-one changes?",
+            "answer": "No. Search outcomes are competitive and uncontrolled by any agency. We work toward measurable improvement with transparent reporting."
+          }
+        ],
+        "audiences": {
+          "individuals": {
+            "label": "Individuals",
+            "headline": "Counteract negative visibility for your reputation as individuals",
+            "supporting": "Negative Suppression tailored for individuals—reducing the visibility of harmful or outdated search results by strengthening preferred assets and applying ethical suppression strategies.",
+            "painPoints": [
+              "Damaging or outdated pages dominating the first screen of results",
+              "Limited positive content competing for attention",
+              "Uncertainty about what can and cannot be removed"
+            ],
+            "outcomes": [
+              "Stronger preferred pages and profiles",
+              "Clear suppression roadmap with realistic expectations",
+              "Measurement of SERP composition over time"
+            ],
+            "faqs": [
+              {
+                "question": "Is Negative Suppression relevant for individuals?",
+                "answer": "Yes. This programme is scoped for individuals, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Negative Suppression for Individuals | Negative Suppression",
+            "seoDescription": "Negative Suppression for individuals. reducing the visibility of harmful or outdated search results by strengthening preferred assets and applying ethical suppression strategies.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "job-seekers": {
+            "label": "Job Seekers",
+            "headline": "Counteract negative visibility for your reputation as job seekers",
+            "supporting": "Negative Suppression tailored for job seekers—reducing the visibility of harmful or outdated search results by strengthening preferred assets and applying ethical suppression strategies.",
+            "painPoints": [
+              "Damaging or outdated pages dominating the first screen of results",
+              "Limited positive content competing for attention",
+              "Uncertainty about what can and cannot be removed"
+            ],
+            "outcomes": [
+              "Stronger preferred pages and profiles",
+              "Clear suppression roadmap with realistic expectations",
+              "Measurement of SERP composition over time"
+            ],
+            "faqs": [
+              {
+                "question": "Is Negative Suppression relevant for job seekers?",
+                "answer": "Yes. This programme is scoped for job seekers, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Negative Suppression for Job Seekers | Negative Suppression",
+            "seoDescription": "Negative Suppression for job seekers. reducing the visibility of harmful or outdated search results by strengthening preferred assets and applying ethical suppression strategies.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "small-businesses": {
+            "label": "Small Businesses",
+            "headline": "Counteract negative visibility for your reputation as small businesses",
+            "supporting": "Negative Suppression tailored for small businesses—reducing the visibility of harmful or outdated search results by strengthening preferred assets and applying ethical suppression strategies.",
+            "painPoints": [
+              "Damaging or outdated pages dominating the first screen of results",
+              "Limited positive content competing for attention",
+              "Uncertainty about what can and cannot be removed"
+            ],
+            "outcomes": [
+              "Stronger preferred pages and profiles",
+              "Clear suppression roadmap with realistic expectations",
+              "Measurement of SERP composition over time"
+            ],
+            "faqs": [
+              {
+                "question": "Is Negative Suppression relevant for small businesses?",
+                "answer": "Yes. This programme is scoped for small businesses, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Negative Suppression for Small Businesses | Negative Suppression",
+            "seoDescription": "Negative Suppression for small businesses. reducing the visibility of harmful or outdated search results by strengthening preferred assets and applying ethical suppression strategies.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "executives": {
+            "label": "Executives",
+            "headline": "Counteract negative visibility for your reputation as executives",
+            "supporting": "Negative Suppression tailored for executives—reducing the visibility of harmful or outdated search results by strengthening preferred assets and applying ethical suppression strategies.",
+            "painPoints": [
+              "Damaging or outdated pages dominating the first screen of results",
+              "Limited positive content competing for attention",
+              "Uncertainty about what can and cannot be removed"
+            ],
+            "outcomes": [
+              "Stronger preferred pages and profiles",
+              "Clear suppression roadmap with realistic expectations",
+              "Measurement of SERP composition over time"
+            ],
+            "faqs": [
+              {
+                "question": "Is Negative Suppression relevant for executives?",
+                "answer": "Yes. This programme is scoped for executives, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Negative Suppression for Executives | Negative Suppression",
+            "seoDescription": "Negative Suppression for executives. reducing the visibility of harmful or outdated search results by strengthening preferred assets and applying ethical suppression strategies.",
+            "ctaLabel": "Request a Free Consultation"
+          },
+          "large-companies": {
+            "label": "Large Companies",
+            "headline": "Counteract negative visibility for your reputation as large companies",
+            "supporting": "Negative Suppression tailored for large companies—reducing the visibility of harmful or outdated search results by strengthening preferred assets and applying ethical suppression strategies.",
+            "painPoints": [
+              "Damaging or outdated pages dominating the first screen of results",
+              "Limited positive content competing for attention",
+              "Uncertainty about what can and cannot be removed"
+            ],
+            "outcomes": [
+              "Stronger preferred pages and profiles",
+              "Clear suppression roadmap with realistic expectations",
+              "Measurement of SERP composition over time"
+            ],
+            "faqs": [
+              {
+                "question": "Is Negative Suppression relevant for large companies?",
+                "answer": "Yes. This programme is scoped for large companies, with priorities, messaging and reporting adjusted to your context—not a generic one-size package."
+              },
+              {
+                "question": "How do engagements typically start?",
+                "answer": "We begin with a focused consultation to understand visibility risks, goals and constraints, then recommend a practical roadmap you can approve before work begins."
+              }
+            ],
+            "seoTitle": "Negative Suppression for Large Companies | Negative Suppression",
+            "seoDescription": "Negative Suppression for large companies. reducing the visibility of harmful or outdated search results by strengthening preferred assets and applying ethical suppression strategies.",
+            "ctaLabel": "Request a Free Consultation"
+          }
+        }
+      }
+    },
+    "caseStudies": {
+      "rm-1": {
+        "title": "Professional search narrative rebuild",
+        "industryLabel": "Professional services",
+        "summary": "[SAMPLE] Outdated personal results overshadowed current professional credentials.",
+        "challenge": "Legacy content ranked above current profiles, creating confusion for clients and employers.",
+        "solution": "Search audit, preferred asset publishing and ongoing monitoring under a reputation roadmap.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "results": [
+          {
+            "value": "[XX]",
+            "label": "Preferred assets strengthened (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Monitoring cadence (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Review cycle (placeholder)"
+          }
+        ]
+      },
+      "pp-1": {
+        "title": "Household data-broker reduction",
+        "industryLabel": "Privacy",
+        "summary": "[SAMPLE] Personal contact details repeatedly resurfaced on people-search sites.",
+        "challenge": "Opt-outs were incomplete and listings reappeared without a maintenance process.",
+        "solution": "Exposure map, prioritised opt-outs and recurring re-listing checks.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "results": [
+          {
+            "value": "[XX]",
+            "label": "Sources addressed (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Re-scan interval (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Open items tracked (placeholder)"
+          }
+        ]
+      },
+      "ep-1": {
+        "title": "Executive household exposure programme",
+        "industryLabel": "Executive",
+        "summary": "[SAMPLE] Leadership home and contact details were easy to find alongside corporate coverage.",
+        "challenge": "Personal and corporate identities mixed in public aggregators, raising safety concerns.",
+        "solution": "Confidential briefing, household-focused opt-outs and EA enablement.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "results": [
+          {
+            "value": "[XX]",
+            "label": "Priority sources (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Staff protocols (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Report cadence (placeholder)"
+          }
+        ]
+      },
+      "cp-1": {
+        "title": "Concierge multi-property privacy sprint",
+        "industryLabel": "Concierge",
+        "summary": "[SAMPLE] Complex multi-person exposure needed a single owner and faster follow-through.",
+        "challenge": "Scattered opt-out attempts lacked ownership and status visibility for the principal.",
+        "solution": "Dedicated concierge lead, priority matrix and weekly status notes.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "results": [
+          {
+            "value": "[XX]",
+            "label": "Workstreams owned (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Status cadence (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Open escalations (placeholder)"
+          }
+        ]
+      },
+      "ns-1": {
+        "title": "SERP mix improvement for brand search",
+        "industryLabel": "Search",
+        "summary": "[SAMPLE] Damaging results dominated brand queries while preferred pages lacked equity.",
+        "challenge": "Limited positive assets competed poorly against older critical coverage.",
+        "solution": "Preferred asset programme plus ethical suppression planning and SERP tracking.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "results": [
+          {
+            "value": "[XX]",
+            "label": "Preferred URLs (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Tracking window (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Review checkpoints (placeholder)"
+          }
+        ]
+      }
+    }
   }
 }

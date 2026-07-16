@@ -1,11 +1,10 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
-import Script from 'next/script'
+import { getTranslations } from 'next-intl/server'
 import {
   allAudienceStaticParams,
   getAudienceContent,
-  PRODUCTS,
 } from '@/lib/products/registry'
 import {
   productAudiencePath,
@@ -14,6 +13,11 @@ import {
 } from '@/lib/products/nav'
 import { AUDIENCE_ORDER } from '@/lib/products/audiences'
 import { getProductDesign, getSectionVariants } from '@/lib/products/design'
+import {
+  getLocalizedDesign,
+  getLocalizedProduct,
+} from '@/lib/products/i18n'
+import type { ProductId } from '@/lib/products/types'
 import { AGENCY_CONFIG } from '@/lib/content'
 import { ProductPageShell } from '@/components/products/product-page-shell'
 import { ProductHero } from '@/components/products/product-hero'
@@ -24,6 +28,7 @@ import { ProcessSteps } from '@/components/products/process-steps'
 import { FaqAccordion } from '@/components/products/faq-accordion'
 import { RelatedLinks } from '@/components/products/related-links'
 import { ProductCta } from '@/components/products/product-cta'
+import { JsonLd } from '@/components/seo/json-ld'
 
 type PageProps = {
   params: Promise<{ locale: string; product: string; audience: string }>
@@ -36,52 +41,63 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { product: productId, audience: audienceId } = await params
+  const { locale, product: productId, audience: audienceId } = await params
   const data = getAudienceContent(productId, audienceId)
-  if (!data) return { title: 'Page not found' }
+  const t = await getTranslations({ locale, namespace: 'products' })
+  if (!data) return { title: t('ui.pageNotFound') }
+
+  const copy = getLocalizedProduct(t, data.product.id)
+  const audience = copy.audiences[data.audienceId]
 
   return {
-    title: `${data.audience.seoTitle} | ${AGENCY_CONFIG.shortName}`,
-    description: data.audience.seoDescription,
+    title: `${audience.seoTitle} | ${AGENCY_CONFIG.shortName}`,
+    description: audience.seoDescription,
     alternates: {
       canonical: productAudiencePath(data.product.id, data.audienceId),
     },
     openGraph: {
-      title: data.audience.seoTitle,
-      description: data.audience.seoDescription,
+      title: audience.seoTitle,
+      description: audience.seoDescription,
       type: 'website',
     },
   }
 }
 
 export default async function ProductAudiencePage({ params }: PageProps) {
-  const { product: productId, audience: audienceId } = await params
+  const { locale, product: productId, audience: audienceId } = await params
 
   if (audienceId === 'case-studies') notFound()
 
   const data = getAudienceContent(productId, audienceId)
   if (!data) notFound()
 
-  const { product, audience, audienceId: aid } = data
+  const { product, audienceId: aid } = data
+  const t = await getTranslations({ locale, namespace: 'products' })
+  const copy = getLocalizedProduct(t, product.id)
+  const designCopy = getLocalizedDesign(t, product.id)
+  const audience = copy.audiences[aid]
   const design = getProductDesign(product.id)
   const variants = getSectionVariants(product.id)
   const base = productBasePath(product.id)
 
   const siblingAudiences = AUDIENCE_ORDER.filter((id) => id !== aid).map(
     (id) => ({
-      label: product.audiences[id].label,
-      description: product.audiences[id].headline,
+      label: copy.audiences[id].label,
+      description: copy.audiences[id].headline,
       href: productAudiencePath(product.id, id),
     }),
   )
 
-  const relatedProducts = product.relatedProductIds.map((id) => ({
-    label: PRODUCTS[id].name,
-    description: PRODUCTS[id].tagline,
-    href: productBasePath(id),
-  }))
+  const relatedProducts = product.relatedProductIds.map((id) => {
+    const related = getLocalizedProduct(t, id as ProductId)
+    return {
+      label: related.name,
+      description: related.tagline,
+      href: productBasePath(id),
+    }
+  })
 
-  const faqs = [...audience.faqs, ...product.faqs].slice(0, 6)
+  const faqs = [...audience.faqs, ...copy.faqs].slice(0, 6)
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -153,14 +169,14 @@ export default async function ProductAudiencePage({ params }: PageProps) {
     capabilities: (
       <CapabilitiesList
         key="capabilities"
-        items={product.capabilities}
+        items={copy.capabilities}
         variant={variants.capabilities}
       />
     ),
     process: (
       <ProcessSteps
         key="process"
-        steps={product.process}
+        steps={copy.process}
         layout={design.processLayout}
       />
     ),
@@ -171,41 +187,40 @@ export default async function ProductAudiencePage({ params }: PageProps) {
 
   return (
     <ProductPageShell>
-      <Script
-        id={`faq-${product.id}-${aid}`}
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <JsonLd id={`faq-${product.id}-${aid}`} data={faqSchema} />
       <ProductHero
         breadcrumbs={[
-          { label: 'Home', href: '/' },
-          { label: product.shortName, href: base },
+          { label: t('ui.breadcrumbHome'), href: '/' },
+          { label: copy.shortName, href: base },
           { label: audience.label },
         ]}
-        eyebrow={`${product.shortName} · ${audience.label}`}
+        eyebrow={`${copy.shortName} · ${audience.label}`}
         title={audience.headline}
         description={audience.supporting}
         primaryCta={{
-          label: audience.ctaLabel ?? 'Request a Free Consultation',
+          label: audience.ctaLabel || t('ui.requestConsultation'),
           href: '/contact?type=consultation',
         }}
         secondaryCta={{
-          label: 'View case studies',
+          label: t('ui.viewCaseStudies'),
           href: productCaseStudiesPath(product.id),
         }}
         layout={design.heroLayout}
-        motifLabel={design.motifLabel}
-        signalWord={design.signalWord}
-        accentNote={design.accentNote}
+        motifLabel={designCopy.motifLabel}
+        signalWord={designCopy.signalWord}
+        accentNote={designCopy.accentNote}
       />
 
       {sectionRhythm[product.id].map((id) => blocks[id])}
 
-      <RelatedLinks title="Other audiences" links={siblingAudiences} />
-      <RelatedLinks title="Related products" links={relatedProducts} />
+      <RelatedLinks title={t('ui.otherAudiences')} links={siblingAudiences} />
+      <RelatedLinks title={t('ui.relatedProducts')} links={relatedProducts} />
       <ProductCta
         variant={variants.cta}
-        title={`Talk about ${product.shortName} for ${audience.label.toLowerCase()}`}
+        title={t('ui.ctaTalkAbout', {
+          shortName: copy.shortName,
+          audience: audience.label,
+        })}
       />
     </ProductPageShell>
   )

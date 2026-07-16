@@ -1,7 +1,10 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
 import { cn } from '@/lib/utils'
 
 export function CapabilitiesList({
-  title = 'What’s included',
+  title,
   items,
   variant = 'two-col',
 }: {
@@ -9,11 +12,14 @@ export function CapabilitiesList({
   items: string[]
   variant?: 'two-col' | 'dense' | 'featured'
 }) {
+  const t = useTranslations('products.ui')
+  const resolvedTitle = title ?? t('whatsIncluded')
+
   return (
     <section className="border-t border-border/70 py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-          {title}
+          {resolvedTitle}
         </h2>
 
         <ul

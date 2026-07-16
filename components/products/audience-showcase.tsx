@@ -1,3 +1,6 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { ArrowUpRight } from 'lucide-react'
 import type { AudienceLayout } from '@/lib/products/design'
@@ -10,7 +13,7 @@ export type AudienceCard = {
 }
 
 export function AudienceShowcase({
-  title = 'Who it’s for',
+  title,
   layout,
   links,
 }: {
@@ -18,6 +21,9 @@ export function AudienceShowcase({
   layout: AudienceLayout
   links: AudienceCard[]
 }) {
+  const t = useTranslations('products.ui')
+  const resolvedTitle = title ?? t('whoItsFor')
+
   if (!links.length) return null
 
   return (
@@ -25,10 +31,10 @@ export function AudienceShowcase({
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-10 flex items-end justify-between gap-4">
           <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            {title}
+            {resolvedTitle}
           </h2>
           <span className="hidden text-xs tracking-[0.16em] text-muted-foreground uppercase sm:inline">
-            {links.length} audiences
+            {t('audiencesCount', { count: links.length })}
           </span>
         </div>
 
@@ -92,7 +98,7 @@ export function AudienceShowcase({
                   className="group block h-full border-t border-accent/40 pt-5"
                 >
                   <p className="text-[11px] tracking-[0.16em] text-accent uppercase">
-                    Profile {String(index + 1).padStart(2, '0')}
+                    {t('profile', { n: String(index + 1).padStart(2, '0') })}
                   </p>
                   <p className="font-display mt-3 text-2xl font-semibold tracking-tight text-foreground group-hover:text-accent">
                     {link.label}
@@ -140,7 +146,7 @@ export function AudienceShowcase({
                     </p>
                   ) : null}
                   <span className="mt-5 inline-flex items-center gap-1 text-xs font-semibold tracking-wide text-accent uppercase">
-                    Open
+                    {t('open')}
                     <ArrowUpRight className="size-3.5" />
                   </span>
                 </Link>

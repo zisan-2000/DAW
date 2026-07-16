@@ -1,3 +1,6 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { ArrowUpRight } from 'lucide-react'
 
@@ -8,19 +11,22 @@ export type RelatedLink = {
 }
 
 export function RelatedLinks({
-  title = 'Related',
+  title,
   links,
 }: {
   title?: string
   links: RelatedLink[]
 }) {
+  const t = useTranslations('products.ui')
+  const resolvedTitle = title ?? t('related')
+
   if (!links.length) return null
 
   return (
     <section className="border-t border-border/70 py-16 md:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-          {title}
+          {resolvedTitle}
         </h2>
         <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {links.map((link) => (

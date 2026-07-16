@@ -2276,5 +2276,1159 @@
       "reassurance": "Sans pression. Sans pitch générique. Juste une conversation ciblée sur vos objectifs.",
       "whatsappMessage": "Bonjour, j'ai visité votre site et souhaiterais discuter d'un projet."
     }
+  },
+  "products": {
+    "ui": {
+      "breadcrumbHome": "Accueil",
+      "breadcrumbProducts": "Produits",
+      "breadcrumbCaseStudies": "Études de cas",
+      "breadcrumbAria": "Fil d'Ariane",
+      "whoItsFor": "Pour qui",
+      "audiencesCount": "{count} audiences",
+      "whatsIncluded": "Ce qui est inclus",
+      "howItWorks": "Comment ça fonctionne",
+      "faqs": "Questions fréquentes",
+      "commonChallenges": "Défis fréquents",
+      "outcomesTitle": "Résultats que cet accompagnement soutient",
+      "related": "Associés",
+      "relatedProducts": "Produits associés",
+      "otherAudiences": "Autres audiences",
+      "exploreByAudience": "Explorer par audience",
+      "selectedWork": "Travaux sélectionnés",
+      "viewAllCaseStudies": "Voir toutes les études de cas",
+      "viewCaseStudies": "Voir les études de cas",
+      "requestConsultation": "Demander une consultation gratuite",
+      "aboutProduct": "À propos de {shortName}",
+      "chatWhatsApp": "Discuter sur WhatsApp",
+      "privateConsultation": "Consultation privée",
+      "priorityIntake": "Prise en charge prioritaire",
+      "ctaDefaultTitle": "Prêt à discuter de la prochaine étape ?",
+      "ctaDefaultDescription": "Partagez vos objectifs et vos contraintes. Nous vous proposerons une feuille de route concrète—sans pression ni discours générique.",
+      "ctaStartConversation": "Démarrer une conversation {shortName}",
+      "ctaStartDescription": "Présentez votre situation pour {productName}. Nous détaillerons les prochaines étapes concrètes—sans pression, sans discours générique.",
+      "ctaTalkAbout": "Parler de {shortName} pour {audience}",
+      "whatsappPrefill": "Bonjour, j'ai consulté votre page Produits et je souhaite discuter d'un projet.",
+      "sample": "Exemple",
+      "demo": "Démo",
+      "sampleDemo": "Exemple · démo",
+      "challenge": "Défi",
+      "solution": "Solution",
+      "results": "Résultats",
+      "discussSimilar": "Discuter d'un accompagnement similaire",
+      "emptyCases": "Aucune étude de cas de démonstration pour ce produit pour le moment. Ajoutez des projets vérifiés dans le registre des produits.",
+      "workInPractice": "Travaux dans cette pratique",
+      "archiveEntries": "Archive · {count} entrées",
+      "caseStudiesHeroTitle": "Études de cas {shortName}",
+      "caseStudiesHeroDescription": "Projets de démonstration avec défis exemples et résultats factices. Remplacez-les par des résultats clients vérifiés et des détails autorisés avant le lancement.",
+      "caseStudiesMetaTitle": "Études de cas {shortName}",
+      "caseStudiesMetaDescription": "Études de cas de démonstration pour {productName}. Remplacez les résultats exemples par des résultats vérifiés avant le lancement.",
+      "notFoundTitle": "Produit introuvable",
+      "notFoundDescription": "La page produit demandée n'existe pas.",
+      "pageNotFound": "Page introuvable",
+      "caseStudiesNotFound": "Études de cas introuvables",
+      "open": "Ouvrir",
+      "profile": "Profil {n}",
+      "stage": "Étape {n}"
+    },
+    "nav": {
+      "caseStudies": "Études de cas",
+      "audiences": {
+        "individuals": "Particuliers",
+        "job-seekers": "Chercheurs d'emploi",
+        "small-businesses": "Petites entreprises",
+        "executives": "Dirigeants",
+        "large-companies": "Grandes entreprises"
+      },
+      "products": {
+        "reputation-management": "Gestion de réputation",
+        "privacy-protection": "Protection de la vie privée",
+        "executive-privacy": "Confidentialité des dirigeants",
+        "concierge-privacy": "Confidentialité concierge",
+        "negative-suppression": "Suppression de contenus négatifs"
+      }
+    },
+    "design": {
+      "reputation-management": {
+        "motifLabel": "Système 360°",
+        "signalWord": "Visibilité",
+        "accentNote": "Recherche · Avis · Narratif · Surveillance"
+      },
+      "privacy-protection": {
+        "motifLabel": "Contrôle de l'exposition",
+        "signalWord": "Confidentialité",
+        "accentNote": "Audit · Opt-out · Vérification · Maintien"
+      },
+      "executive-privacy": {
+        "motifLabel": "Protocole discret",
+        "signalWord": "Discrétion",
+        "accentNote": "Brief · Référence · Remédiation · Vigilance"
+      },
+      "concierge-privacy": {
+        "motifLabel": "Responsabilité dédiée",
+        "signalWord": "Concierge",
+        "accentNote": "Assigner · Prioriser · Exécuter · Maintenir"
+      },
+      "negative-suppression": {
+        "motifLabel": "Stratégie SERP",
+        "signalWord": "Suppression",
+        "accentNote": "Auditer · Construire · Supprimer · Mesurer"
+      }
+    },
+    "items": {
+      "reputation-management": {
+        "name": "Gestion de réputation 360°",
+        "shortName": "Gestion de réputation",
+        "tagline": "Visibilité, surveillance et maîtrise du narratif à 360°",
+        "description": "Un programme interconnecté couvrant la présence en recherche, les avis, la stratégie de contenu et la surveillance continue—pour que votre récit public reste cohérent à mesure que vous grandissez.",
+        "seoTitle": "Gestion de réputation 360° | Programmes de réputation digitale",
+        "seoDescription": "Gestion de réputation à 360° couvrant la recherche, les avis, le contenu et la surveillance, des particuliers aux équipes d'entreprise.",
+        "capabilities": [
+          "Audit et priorisation du narratif de recherche",
+          "Surveillance des avis et mentions",
+          "Renforcement du contenu et des profils",
+          "Stratégie de suppression lorsque c'est pertinent",
+          "Playbooks d'escalade prêts pour les crises",
+          "Reporting mensuel actionnable pour les parties prenantes"
+        ],
+        "process": [
+          {
+            "title": "Découverte et cartographie des risques",
+            "description": "Évaluer la recherche actuelle, les avis et la couverture sensible au regard de vos objectifs et contraintes."
+          },
+          {
+            "title": "Stratégie et feuille de route",
+            "description": "Prioriser les quelques actions qui améliorent le plus les signaux de confiance—sans agitation inutile."
+          },
+          {
+            "title": "Exécution et publication",
+            "description": "Construire et affiner les actifs, réponses et correctifs techniques avec une responsabilité claire."
+          },
+          {
+            "title": "Surveiller et optimiser",
+            "description": "Suivre les nouvelles mentions, ajuster les tactiques et rendre compte des progrès en langage clair."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "À qui s'adresse la Gestion de réputation 360° ?",
+            "answer": "Aux particuliers, professionnels, entreprises en croissance et équipes de direction qui ont besoin d'un système durable—pas d'un nettoyage ponctuel."
+          },
+          {
+            "question": "En quoi cela diffère-t-il d'un service isolé ?",
+            "answer": "Nous coordonnons la surveillance, le contenu, les avis et le travail sur la recherche sous une seule feuille de route pour que les efforts se renforcent mutuellement."
+          },
+          {
+            "question": "Quand verrons-nous des mouvements ?",
+            "answer": "Les délais dépendent de la concurrence, de l'historique de contenu et des politiques des plateformes. Nous définissons des indicateurs à court et plus long terme lors de l'onboarding."
+          }
+        ],
+        "audiences": {
+          "individuals": {
+            "label": "Particuliers",
+            "headline": "Protégez et renforcez votre réputation en tant que particuliers",
+            "supporting": "Gestion de réputation 360° adaptée aux particuliers—résultats de recherche personnels, avis et mentions publiques qui influencent la confiance au quotidien.",
+            "painPoints": [
+              "Informations personnelles obsolètes ou inexactes trop bien classées",
+              "Questions difficiles à répondre lorsque quelqu'un recherche votre nom",
+              "Peu d'actifs positifs pour contrebalancer les contenus plus anciens"
+            ],
+            "outcomes": [
+              "Narratif de recherche personnel plus clair",
+              "Surveillance pratique des nouvelles mentions",
+              "Améliorations guidées du contenu et des profils"
+            ],
+            "faqs": [
+              {
+                "question": "La Gestion de réputation 360° est-elle pertinente pour les particuliers ?",
+                "answer": "Oui. Ce programme est cadré pour les particuliers, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              },
+              {
+                "question": "Garantissez-vous des changements de classement ?",
+                "answer": "Non. Les résultats de recherche et des plateformes varient. Nous définissons des périmètres clairs, suivons les progrès de façon transparente et ajustons les tactiques—sans garantir de classements ou de suppressions spécifiques."
+              }
+            ],
+            "seoTitle": "Gestion de réputation 360° pour les particuliers | Réputation",
+            "seoDescription": "Gestion de réputation 360° pour les particuliers. résultats de recherche personnels, avis et mentions publiques qui influencent la confiance au quotidien.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "job-seekers": {
+            "label": "Chercheurs d'emploi",
+            "headline": "Protégez et renforcez votre réputation en tant que chercheurs d'emploi",
+            "supporting": "Gestion de réputation 360° adaptée aux chercheurs d'emploi—vérifications de recherche par les employeurs, profils professionnels et contenus qui peuvent influencer les décisions d'embauche.",
+            "painPoints": [
+              "Résultats de recherche qui ne reflètent pas les compétences ou rôles actuels",
+              "Profils inactifs ou incohérents d'une plateforme à l'autre",
+              "Incertitude sur ce que les équipes de recrutement peuvent trouver en premier"
+            ],
+            "outcomes": [
+              "Empreinte de recherche plus solide pour la première impression",
+              "Actifs LinkedIn et professionnels alignés",
+              "Conseils sur ce qu'il faut prioriser avant les entretiens"
+            ],
+            "faqs": [
+              {
+                "question": "La Gestion de réputation 360° est-elle pertinente pour les chercheurs d'emploi ?",
+                "answer": "Oui. Ce programme est cadré pour les chercheurs d'emploi, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              },
+              {
+                "question": "Garantissez-vous des changements de classement ?",
+                "answer": "Non. Les résultats de recherche et des plateformes varient. Nous définissons des périmètres clairs, suivons les progrès de façon transparente et ajustons les tactiques—sans garantir de classements ou de suppressions spécifiques."
+              }
+            ],
+            "seoTitle": "Gestion de réputation 360° pour les chercheurs d'emploi | Réputation",
+            "seoDescription": "Gestion de réputation 360° pour les chercheurs d'emploi. vérifications de recherche par les employeurs, profils professionnels et contenus qui peuvent influencer les décisions d'embauche.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "small-businesses": {
+            "label": "Petites entreprises",
+            "headline": "Protégez et renforcez votre réputation en tant que petites entreprises",
+            "supporting": "Gestion de réputation 360° adaptée aux petites entreprises—avis locaux, présence Maps et recherche de marque qui génèrent confiance et demandes clients.",
+            "painPoints": [
+              "Avis incohérents et retours clients sans réponse",
+              "Visibilité concurrente qui éclipse la recherche de votre marque",
+              "Peu de temps pour gérer les fiches et la qualité des réponses"
+            ],
+            "outcomes": [
+              "Présence de recherche et de fiches de marque plus cohérente",
+              "Habitudes structurées de réponse aux avis",
+              "Cadence pratique que votre équipe peut tenir"
+            ],
+            "faqs": [
+              {
+                "question": "La Gestion de réputation 360° est-elle pertinente pour les petites entreprises ?",
+                "answer": "Oui. Ce programme est cadré pour les petites entreprises, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              },
+              {
+                "question": "Garantissez-vous des changements de classement ?",
+                "answer": "Non. Les résultats de recherche et des plateformes varient. Nous définissons des périmètres clairs, suivons les progrès de façon transparente et ajustons les tactiques—sans garantir de classements ou de suppressions spécifiques."
+              }
+            ],
+            "seoTitle": "Gestion de réputation 360° pour les petites entreprises | Réputation",
+            "seoDescription": "Gestion de réputation 360° pour les petites entreprises. avis locaux, présence Maps et recherche de marque qui génèrent confiance et demandes clients.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "executives": {
+            "label": "Dirigeants",
+            "headline": "Protégez et façonnez votre réputation en tant que dirigeants",
+            "supporting": "Gestion de réputation 360° adaptée aux dirigeants—visibilité du leadership, couverture sensible et narratif que les parties prenantes voient en premier.",
+            "painPoints": [
+              "Récits personnels et corporate qui se mêlent dans la recherche",
+              "Couverture sensible ou obsolète qui ressurgit au mauvais moment",
+              "Besoin d'une communication discrète, digne d'un niveau senior"
+            ],
+            "outcomes": [
+              "Narratif de recherche dirigeant maîtrisé",
+              "Surveillance discrète et chemins d'escalade",
+              "Actifs qui soutiennent la crédibilité auprès des conseils et des médias"
+            ],
+            "faqs": [
+              {
+                "question": "La Gestion de réputation 360° est-elle pertinente pour les dirigeants ?",
+                "answer": "Oui. Ce programme est cadré pour les dirigeants, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              },
+              {
+                "question": "Garantissez-vous des changements de classement ?",
+                "answer": "Non. Les résultats de recherche et des plateformes varient. Nous définissons des périmètres clairs, suivons les progrès de façon transparente et ajustons les tactiques—sans garantir de classements ou de suppressions spécifiques."
+              }
+            ],
+            "seoTitle": "Gestion de réputation 360° pour les dirigeants | Réputation",
+            "seoDescription": "Gestion de réputation 360° pour les dirigeants. visibilité du leadership, couverture sensible et narratif que les parties prenantes voient en premier.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "large-companies": {
+            "label": "Grandes entreprises",
+            "headline": "Renforcez à grande échelle la protection de votre réputation en tant que grandes entreprises",
+            "supporting": "Gestion de réputation 360° adaptée aux grandes entreprises—recherche de marque entreprise, signaux de réputation multi-sites et préparation de crise coordonnée.",
+            "painPoints": [
+              "Signaux de réputation fragmentés entre marques et sites",
+              "Coordination interne lente lorsque la couverture s'intensifie",
+              "Besoin d'un reporting mesurable pour les parties prenantes"
+            ],
+            "outcomes": [
+              "Surveillance et playbooks prêts pour l'entreprise",
+              "Messages alignés sur les propriétés de marque",
+              "Reporting adapté à la revue de direction"
+            ],
+            "faqs": [
+              {
+                "question": "La Gestion de réputation 360° est-elle pertinente pour les grandes entreprises ?",
+                "answer": "Oui. Ce programme est cadré pour les grandes entreprises, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              },
+              {
+                "question": "Garantissez-vous des changements de classement ?",
+                "answer": "Non. Les résultats de recherche et des plateformes varient. Nous définissons des périmètres clairs, suivons les progrès de façon transparente et ajustons les tactiques—sans garantir de classements ou de suppressions spécifiques."
+              }
+            ],
+            "seoTitle": "Gestion de réputation 360° pour les grandes entreprises | Réputation",
+            "seoDescription": "Gestion de réputation 360° pour les grandes entreprises. recherche de marque entreprise, signaux de réputation multi-sites et préparation de crise coordonnée.",
+            "ctaLabel": "Demander une consultation gratuite"
+          }
+        }
+      },
+      "privacy-protection": {
+        "name": "Protection de la vie privée",
+        "shortName": "Protection de la vie privée",
+        "tagline": "Réduire l'exposition publique inutile des données personnelles",
+        "description": "Travail systématique auprès des courtiers en données, plateformes de recherche de personnes et annuaires publics pour diminuer l'accès facile aux informations personnelles—dans le cadre des politiques de chaque plateforme et des limites légales.",
+        "seoTitle": "Services de protection de la vie privée | Réduction de l'exposition des données",
+        "seoDescription": "Programmes de protection de la vie privée pour réduire l'exposition des données personnelles auprès des courtiers et annuaires publics, pour particuliers, dirigeants et organisations.",
+        "capabilities": [
+          "Audit d'exposition sur les sources de données courantes",
+          "Workflows d'opt-out et de suppression",
+          "Scans récurrents des réinscriptions",
+          "Conseils sur l'exposition du foyer et du personnel",
+          "Coordination avec les programmes de réputation si nécessaire"
+        ],
+        "process": [
+          {
+            "title": "Cartographier l'exposition",
+            "description": "Identifier où les données personnelles ou du personnel ressurgissent publiquement."
+          },
+          {
+            "title": "Prioriser les suppressions",
+            "description": "Se concentrer d'abord sur les sources à haut risque et à forte visibilité."
+          },
+          {
+            "title": "Exécuter les opt-outs",
+            "description": "Suivre soigneusement les processus des plateformes et documenter les résultats."
+          },
+          {
+            "title": "Revérifier et maintenir",
+            "description": "Surveiller les réapparitions et maintenir une exposition plus faible dans le temps."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Pouvez-vous tout supprimer en ligne ?",
+            "answer": "Non. Certaines informations sont du domaine public ou contrôlées par des tiers. Nous nous concentrons sur ce qui peut légitimement être réduit et restons transparents sur les limites."
+          },
+          {
+            "question": "Est-ce légal et éthique ?",
+            "answer": "Nous suivons les processus publiés de chaque plateforme et les lois applicables. Nous n'utilisons pas de tactiques trompeuses ou abusives."
+          }
+        ],
+        "audiences": {
+          "individuals": {
+            "label": "Particuliers",
+            "headline": "Réduisez l'exposition et protégez votre réputation en tant que particuliers",
+            "supporting": "Protection de la vie privée adaptée aux particuliers—résultats de recherche personnels, avis et mentions publiques qui influencent la confiance au quotidien.",
+            "painPoints": [
+              "Coordonnées personnelles qui ressurgissent sur les sites de recherche de personnes",
+              "Manque de clarté sur l'origine ou le partage des données privées",
+              "Difficulté à coordonner les opt-outs auprès de nombreux courtiers"
+            ],
+            "outcomes": [
+              "Travail structuré d'opt-out auprès des courtiers et annuaires",
+              "Exposition d'accès facile réduite lorsque les plateformes le permettent",
+              "Vérifications continues à mesure que de nouvelles fiches apparaissent"
+            ],
+            "faqs": [
+              {
+                "question": "La Protection de la vie privée est-elle pertinente pour les particuliers ?",
+                "answer": "Oui. Ce programme est cadré pour les particuliers, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Protection de la vie privée pour les particuliers | Confidentialité",
+            "seoDescription": "Protection de la vie privée pour les particuliers. résultats de recherche personnels, avis et mentions publiques qui influencent la confiance au quotidien.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "job-seekers": {
+            "label": "Chercheurs d'emploi",
+            "headline": "Réduisez l'exposition et protégez votre réputation en tant que chercheurs d'emploi",
+            "supporting": "Protection de la vie privée adaptée aux chercheurs d'emploi—vérifications de recherche par les employeurs, profils professionnels et contenus qui peuvent influencer les décisions d'embauche.",
+            "painPoints": [
+              "Coordonnées personnelles qui ressurgissent sur les sites de recherche de personnes",
+              "Manque de clarté sur l'origine ou le partage des données privées",
+              "Difficulté à coordonner les opt-outs auprès de nombreux courtiers"
+            ],
+            "outcomes": [
+              "Travail structuré d'opt-out auprès des courtiers et annuaires",
+              "Exposition d'accès facile réduite lorsque les plateformes le permettent",
+              "Vérifications continues à mesure que de nouvelles fiches apparaissent"
+            ],
+            "faqs": [
+              {
+                "question": "La Protection de la vie privée est-elle pertinente pour les chercheurs d'emploi ?",
+                "answer": "Oui. Ce programme est cadré pour les chercheurs d'emploi, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Protection de la vie privée pour les chercheurs d'emploi | Confidentialité",
+            "seoDescription": "Protection de la vie privée pour les chercheurs d'emploi. vérifications de recherche par les employeurs, profils professionnels et contenus qui peuvent influencer les décisions d'embauche.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "small-businesses": {
+            "label": "Petites entreprises",
+            "headline": "Réduisez l'exposition et protégez votre réputation en tant que petites entreprises",
+            "supporting": "Protection de la vie privée adaptée aux petites entreprises—avis locaux, présence Maps et recherche de marque qui génèrent confiance et demandes clients.",
+            "painPoints": [
+              "Coordonnées personnelles qui ressurgissent sur les sites de recherche de personnes",
+              "Manque de clarté sur l'origine ou le partage des données privées",
+              "Difficulté à coordonner les opt-outs auprès de nombreux courtiers"
+            ],
+            "outcomes": [
+              "Travail structuré d'opt-out auprès des courtiers et annuaires",
+              "Exposition d'accès facile réduite lorsque les plateformes le permettent",
+              "Vérifications continues à mesure que de nouvelles fiches apparaissent"
+            ],
+            "faqs": [
+              {
+                "question": "La Protection de la vie privée est-elle pertinente pour les petites entreprises ?",
+                "answer": "Oui. Ce programme est cadré pour les petites entreprises, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Protection de la vie privée pour les petites entreprises | Confidentialité",
+            "seoDescription": "Protection de la vie privée pour les petites entreprises. avis locaux, présence Maps et recherche de marque qui génèrent confiance et demandes clients.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "executives": {
+            "label": "Dirigeants",
+            "headline": "Réduisez l'exposition et protégez votre réputation en tant que dirigeants",
+            "supporting": "Protection de la vie privée adaptée aux dirigeants—réduction de l'exposition inutile des données personnelles sur les surfaces de recherche de personnes et de courtage de données qui affectent la sécurité du leadership et des équipes.",
+            "painPoints": [
+              "Coordonnées personnelles qui ressurgissent sur les sites de recherche de personnes",
+              "Manque de clarté sur l'origine ou le partage des données privées",
+              "Difficulté à coordonner les opt-outs auprès de nombreux courtiers"
+            ],
+            "outcomes": [
+              "Travail structuré d'opt-out auprès des courtiers et annuaires",
+              "Exposition d'accès facile réduite lorsque les plateformes le permettent",
+              "Vérifications continues à mesure que de nouvelles fiches apparaissent"
+            ],
+            "faqs": [
+              {
+                "question": "La Protection de la vie privée est-elle pertinente pour les dirigeants ?",
+                "answer": "Oui. Ce programme est cadré pour les dirigeants, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Protection de la vie privée pour les dirigeants | Confidentialité",
+            "seoDescription": "Protection de la vie privée pour les dirigeants. réduction de l'exposition inutile des données personnelles sur les surfaces de recherche de personnes et de courtage de données qui affectent la sécurité du leadership et des équipes.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "large-companies": {
+            "label": "Grandes entreprises",
+            "headline": "Réduisez l'exposition et protégez votre réputation en tant que grandes entreprises",
+            "supporting": "Protection de la vie privée adaptée aux grandes entreprises—réduction de l'exposition inutile des données personnelles sur les surfaces de recherche de personnes et de courtage de données qui affectent la sécurité du leadership et des équipes.",
+            "painPoints": [
+              "Coordonnées personnelles qui ressurgissent sur les sites de recherche de personnes",
+              "Manque de clarté sur l'origine ou le partage des données privées",
+              "Difficulté à coordonner les opt-outs auprès de nombreux courtiers"
+            ],
+            "outcomes": [
+              "Travail structuré d'opt-out auprès des courtiers et annuaires",
+              "Exposition d'accès facile réduite lorsque les plateformes le permettent",
+              "Vérifications continues à mesure que de nouvelles fiches apparaissent"
+            ],
+            "faqs": [
+              {
+                "question": "La Protection de la vie privée est-elle pertinente pour les grandes entreprises ?",
+                "answer": "Oui. Ce programme est cadré pour les grandes entreprises, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Protection de la vie privée pour les grandes entreprises | Confidentialité",
+            "seoDescription": "Protection de la vie privée pour les grandes entreprises. réduction de l'exposition inutile des données personnelles sur les surfaces de recherche de personnes et de courtage de données qui affectent la sécurité du leadership et des équipes.",
+            "ctaLabel": "Demander une consultation gratuite"
+          }
+        }
+      },
+      "executive-privacy": {
+        "name": "Confidentialité des dirigeants",
+        "shortName": "Confidentialité des dirigeants",
+        "tagline": "Protection discrète pour les leaders et leur foyer",
+        "description": "Travail de confidentialité conçu pour les dirigeants et leaders à forte visibilité—équilibrant la réduction de l'exposition personnelle avec la présence professionnelle attendue par les parties prenantes.",
+        "seoTitle": "Services de confidentialité des dirigeants | Réduction de l'exposition des données du leadership",
+        "seoDescription": "Programmes discrets de confidentialité des dirigeants pour les leaders et organisations souhaitant une exposition personnelle plus faible tout en préservant leur présence professionnelle.",
+        "capabilities": [
+          "Cartographie d'exposition du dirigeant et du foyer",
+          "Campagnes d'opt-out prioritaires",
+          "Guides d'habilitation pour le personnel et les assistants",
+          "Intégration avec les actifs de marque personnelle",
+          "Cadence de reporting confidentielle"
+        ],
+        "process": [
+          {
+            "title": "Briefing confidentiel",
+            "description": "Aligner les priorités avec le dirigeant, l'assistant de direction et les parties prenantes sécurité."
+          },
+          {
+            "title": "Référence d'exposition",
+            "description": "Documenter les surfaces à haut risque touchant le domicile, la famille et les données de contact."
+          },
+          {
+            "title": "Sprints de remédiation",
+            "description": "Exécuter les opt-outs et suppressions avec une communication discrète."
+          },
+          {
+            "title": "Vigilance continue",
+            "description": "Surveiller les réinscriptions et mettre à jour les playbooks à mesure que les rôles évoluent."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Cela me rendra-t-il invisible en ligne ?",
+            "answer": "Non—et c'est rarement souhaitable pour les dirigeants. Nous réduisons l'exposition personnelle inutile tout en préservant une visibilité professionnelle intentionnelle."
+          }
+        ],
+        "audiences": {
+          "individuals": {
+            "label": "Particuliers",
+            "headline": "Protégez discrètement votre réputation en tant que particuliers",
+            "supporting": "Confidentialité des dirigeants adaptée aux particuliers—réduction discrète de l'exposition du dirigeant et du foyer tout en maintenant une présence professionnelle intentionnelle.",
+            "painPoints": [
+              "Détails du domicile et de la famille liés aux profils publics de dirigeants",
+              "Sites de recherche de personnes qui agrègent des données de contact sensibles",
+              "Besoin de confidentialité avec les conseils d'administration et les équipes sécurité"
+            ],
+            "outcomes": [
+              "Exposition personnelle plus faible lorsque les plateformes le permettent",
+              "Protocoles clairs pour les fiches du personnel et du foyer",
+              "Coordination avec les parties prenantes réputation et sécurité"
+            ],
+            "faqs": [
+              {
+                "question": "La Confidentialité des dirigeants est-elle pertinente pour les particuliers ?",
+                "answer": "Oui. Ce programme est cadré pour les particuliers, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Confidentialité des dirigeants pour les particuliers | Confidentialité des dirigeants",
+            "seoDescription": "Confidentialité des dirigeants pour les particuliers. réduction discrète de l'exposition du dirigeant et du foyer tout en maintenant une présence professionnelle intentionnelle.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "job-seekers": {
+            "label": "Chercheurs d'emploi",
+            "headline": "Protégez discrètement votre réputation en tant que chercheurs d'emploi",
+            "supporting": "Confidentialité des dirigeants adaptée aux chercheurs d'emploi—réduction discrète de l'exposition du dirigeant et du foyer tout en maintenant une présence professionnelle intentionnelle.",
+            "painPoints": [
+              "Détails du domicile et de la famille liés aux profils publics de dirigeants",
+              "Sites de recherche de personnes qui agrègent des données de contact sensibles",
+              "Besoin de confidentialité avec les conseils d'administration et les équipes sécurité"
+            ],
+            "outcomes": [
+              "Exposition personnelle plus faible lorsque les plateformes le permettent",
+              "Protocoles clairs pour les fiches du personnel et du foyer",
+              "Coordination avec les parties prenantes réputation et sécurité"
+            ],
+            "faqs": [
+              {
+                "question": "La Confidentialité des dirigeants est-elle pertinente pour les chercheurs d'emploi ?",
+                "answer": "Oui. Ce programme est cadré pour les chercheurs d'emploi, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Confidentialité des dirigeants pour les chercheurs d'emploi | Confidentialité des dirigeants",
+            "seoDescription": "Confidentialité des dirigeants pour les chercheurs d'emploi. réduction discrète de l'exposition du dirigeant et du foyer tout en maintenant une présence professionnelle intentionnelle.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "small-businesses": {
+            "label": "Petites entreprises",
+            "headline": "Protégez discrètement votre réputation en tant que petites entreprises",
+            "supporting": "Confidentialité des dirigeants adaptée aux petites entreprises—réduction discrète de l'exposition du dirigeant et du foyer tout en maintenant une présence professionnelle intentionnelle.",
+            "painPoints": [
+              "Détails du domicile et de la famille liés aux profils publics de dirigeants",
+              "Sites de recherche de personnes qui agrègent des données de contact sensibles",
+              "Besoin de confidentialité avec les conseils d'administration et les équipes sécurité"
+            ],
+            "outcomes": [
+              "Exposition personnelle plus faible lorsque les plateformes le permettent",
+              "Protocoles clairs pour les fiches du personnel et du foyer",
+              "Coordination avec les parties prenantes réputation et sécurité"
+            ],
+            "faqs": [
+              {
+                "question": "La Confidentialité des dirigeants est-elle pertinente pour les petites entreprises ?",
+                "answer": "Oui. Ce programme est cadré pour les petites entreprises, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Confidentialité des dirigeants pour les petites entreprises | Confidentialité des dirigeants",
+            "seoDescription": "Confidentialité des dirigeants pour les petites entreprises. réduction discrète de l'exposition du dirigeant et du foyer tout en maintenant une présence professionnelle intentionnelle.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "executives": {
+            "label": "Dirigeants",
+            "headline": "Protégez discrètement votre réputation en tant que dirigeants",
+            "supporting": "Confidentialité des dirigeants adaptée aux dirigeants—réduction discrète de l'exposition du dirigeant et du foyer tout en maintenant une présence professionnelle intentionnelle.",
+            "painPoints": [
+              "Détails du domicile et de la famille liés aux profils publics de dirigeants",
+              "Sites de recherche de personnes qui agrègent des données de contact sensibles",
+              "Besoin de confidentialité avec les conseils d'administration et les équipes sécurité"
+            ],
+            "outcomes": [
+              "Exposition personnelle plus faible lorsque les plateformes le permettent",
+              "Protocoles clairs pour les fiches du personnel et du foyer",
+              "Coordination avec les parties prenantes réputation et sécurité"
+            ],
+            "faqs": [
+              {
+                "question": "La Confidentialité des dirigeants est-elle pertinente pour les dirigeants ?",
+                "answer": "Oui. Ce programme est cadré pour les dirigeants, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Confidentialité des dirigeants pour les dirigeants | Confidentialité des dirigeants",
+            "seoDescription": "Confidentialité des dirigeants pour les dirigeants. réduction discrète de l'exposition du dirigeant et du foyer tout en maintenant une présence professionnelle intentionnelle.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "large-companies": {
+            "label": "Grandes entreprises",
+            "headline": "Protégez discrètement votre réputation en tant que grandes entreprises",
+            "supporting": "Confidentialité des dirigeants adaptée aux grandes entreprises—réduction discrète de l'exposition du dirigeant et du foyer tout en maintenant une présence professionnelle intentionnelle.",
+            "painPoints": [
+              "Détails du domicile et de la famille liés aux profils publics de dirigeants",
+              "Sites de recherche de personnes qui agrègent des données de contact sensibles",
+              "Besoin de confidentialité avec les conseils d'administration et les équipes sécurité"
+            ],
+            "outcomes": [
+              "Exposition personnelle plus faible lorsque les plateformes le permettent",
+              "Protocoles clairs pour les fiches du personnel et du foyer",
+              "Coordination avec les parties prenantes réputation et sécurité"
+            ],
+            "faqs": [
+              {
+                "question": "La Confidentialité des dirigeants est-elle pertinente pour les grandes entreprises ?",
+                "answer": "Oui. Ce programme est cadré pour les grandes entreprises, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Confidentialité des dirigeants pour les grandes entreprises | Confidentialité des dirigeants",
+            "seoDescription": "Confidentialité des dirigeants pour les grandes entreprises. réduction discrète de l'exposition du dirigeant et du foyer tout en maintenant une présence professionnelle intentionnelle.",
+            "ctaLabel": "Demander une consultation gratuite"
+          }
+        }
+      },
+      "concierge-privacy": {
+        "name": "Confidentialité concierge",
+        "shortName": "Confidentialité concierge",
+        "tagline": "Opérations de confidentialité premium avec responsabilité dédiée",
+        "description": "Un programme de confidentialité de type concierge pour les clients qui ont besoin d'une coordination plus étroite, d'une priorisation plus rapide et d'une communication haut de gamme sur des paysages d'exposition complexes.",
+        "seoTitle": "Services de confidentialité concierge | Accompagnement premium sur l'exposition des données",
+        "seoDescription": "Programmes de confidentialité concierge avec coordination dédiée pour particuliers, dirigeants et organisations ayant besoin d'un accompagnement premium.",
+        "capabilities": [
+          "Responsable confidentialité dédié",
+          "Options de couverture foyer et personnel",
+          "Files d'attente d'opt-out accélérées",
+          "Reporting sur mesure pour dirigeants et conseillers",
+          "Chemins d'escalade pour les risques émergents"
+        ],
+        "process": [
+          {
+            "title": "Onboarding concierge",
+            "description": "Assigner la responsabilité, cartographier les parties prenantes et confirmer les exigences de discrétion."
+          },
+          {
+            "title": "Matrice de priorités",
+            "description": "Classer les sources d'exposition par risque et urgence avec le client."
+          },
+          {
+            "title": "Remédiation opérationnelle",
+            "description": "Exécuter et relancer les processus des plateformes avec des notes de statut continues."
+          },
+          {
+            "title": "Maintenance en continu",
+            "description": "Continuer à scanner, mettre à jour et conseiller à mesure que la vie et les rôles évoluent."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "En quoi Concierge diffère-t-il de la Protection de la vie privée standard ?",
+            "answer": "Concierge ajoute une responsabilité dédiée, une cadence de communication plus serrée et la capacité de gérer des périmètres multipartenaires plus complexes."
+          }
+        ],
+        "audiences": {
+          "individuals": {
+            "label": "Particuliers",
+            "headline": "Protection premium pour votre réputation en tant que particuliers",
+            "supporting": "Confidentialité concierge adaptée aux particuliers—opérations de confidentialité premium avec coordination dédiée, délais plus rapides et reporting plus attentif.",
+            "painPoints": [
+              "Exposition complexe multi-personnes ou multi-biens",
+              "Besoin d'un seul opérateur qui porte le suivi jusqu'au bout",
+              "Préférence pour des mises à jour premium plutôt que des portails en libre-service"
+            ],
+            "outcomes": [
+              "Coordination confidentialité dédiée",
+              "Remédiation priorisée sur les sources clés",
+              "Points de statut concis pour dirigeants occupés"
+            ],
+            "faqs": [
+              {
+                "question": "La Confidentialité concierge est-elle pertinente pour les particuliers ?",
+                "answer": "Oui. Ce programme est cadré pour les particuliers, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Confidentialité concierge pour les particuliers | Confidentialité concierge",
+            "seoDescription": "Confidentialité concierge pour les particuliers. opérations de confidentialité premium avec coordination dédiée, délais plus rapides et reporting plus attentif.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "job-seekers": {
+            "label": "Chercheurs d'emploi",
+            "headline": "Protection premium pour votre réputation en tant que chercheurs d'emploi",
+            "supporting": "Confidentialité concierge adaptée aux chercheurs d'emploi—opérations de confidentialité premium avec coordination dédiée, délais plus rapides et reporting plus attentif.",
+            "painPoints": [
+              "Exposition complexe multi-personnes ou multi-biens",
+              "Besoin d'un seul opérateur qui porte le suivi jusqu'au bout",
+              "Préférence pour des mises à jour premium plutôt que des portails en libre-service"
+            ],
+            "outcomes": [
+              "Coordination confidentialité dédiée",
+              "Remédiation priorisée sur les sources clés",
+              "Points de statut concis pour dirigeants occupés"
+            ],
+            "faqs": [
+              {
+                "question": "La Confidentialité concierge est-elle pertinente pour les chercheurs d'emploi ?",
+                "answer": "Oui. Ce programme est cadré pour les chercheurs d'emploi, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Confidentialité concierge pour les chercheurs d'emploi | Confidentialité concierge",
+            "seoDescription": "Confidentialité concierge pour les chercheurs d'emploi. opérations de confidentialité premium avec coordination dédiée, délais plus rapides et reporting plus attentif.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "small-businesses": {
+            "label": "Petites entreprises",
+            "headline": "Protection premium pour votre réputation en tant que petites entreprises",
+            "supporting": "Confidentialité concierge adaptée aux petites entreprises—opérations de confidentialité premium avec coordination dédiée, délais plus rapides et reporting plus attentif.",
+            "painPoints": [
+              "Exposition complexe multi-personnes ou multi-biens",
+              "Besoin d'un seul opérateur qui porte le suivi jusqu'au bout",
+              "Préférence pour des mises à jour premium plutôt que des portails en libre-service"
+            ],
+            "outcomes": [
+              "Coordination confidentialité dédiée",
+              "Remédiation priorisée sur les sources clés",
+              "Points de statut concis pour dirigeants occupés"
+            ],
+            "faqs": [
+              {
+                "question": "La Confidentialité concierge est-elle pertinente pour les petites entreprises ?",
+                "answer": "Oui. Ce programme est cadré pour les petites entreprises, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Confidentialité concierge pour les petites entreprises | Confidentialité concierge",
+            "seoDescription": "Confidentialité concierge pour les petites entreprises. opérations de confidentialité premium avec coordination dédiée, délais plus rapides et reporting plus attentif.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "executives": {
+            "label": "Dirigeants",
+            "headline": "Protection premium pour votre réputation en tant que dirigeants",
+            "supporting": "Confidentialité concierge adaptée aux dirigeants—opérations de confidentialité premium avec coordination dédiée, délais plus rapides et reporting plus attentif.",
+            "painPoints": [
+              "Exposition complexe multi-personnes ou multi-biens",
+              "Besoin d'un seul opérateur qui porte le suivi jusqu'au bout",
+              "Préférence pour des mises à jour premium plutôt que des portails en libre-service"
+            ],
+            "outcomes": [
+              "Coordination confidentialité dédiée",
+              "Remédiation priorisée sur les sources clés",
+              "Points de statut concis pour dirigeants occupés"
+            ],
+            "faqs": [
+              {
+                "question": "La Confidentialité concierge est-elle pertinente pour les dirigeants ?",
+                "answer": "Oui. Ce programme est cadré pour les dirigeants, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Confidentialité concierge pour les dirigeants | Confidentialité concierge",
+            "seoDescription": "Confidentialité concierge pour les dirigeants. opérations de confidentialité premium avec coordination dédiée, délais plus rapides et reporting plus attentif.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "large-companies": {
+            "label": "Grandes entreprises",
+            "headline": "Protection premium pour votre réputation en tant que grandes entreprises",
+            "supporting": "Confidentialité concierge adaptée aux grandes entreprises—opérations de confidentialité premium avec coordination dédiée, délais plus rapides et reporting plus attentif.",
+            "painPoints": [
+              "Exposition complexe multi-personnes ou multi-biens",
+              "Besoin d'un seul opérateur qui porte le suivi jusqu'au bout",
+              "Préférence pour des mises à jour premium plutôt que des portails en libre-service"
+            ],
+            "outcomes": [
+              "Coordination confidentialité dédiée",
+              "Remédiation priorisée sur les sources clés",
+              "Points de statut concis pour dirigeants occupés"
+            ],
+            "faqs": [
+              {
+                "question": "La Confidentialité concierge est-elle pertinente pour les grandes entreprises ?",
+                "answer": "Oui. Ce programme est cadré pour les grandes entreprises, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Confidentialité concierge pour les grandes entreprises | Confidentialité concierge",
+            "seoDescription": "Confidentialité concierge pour les grandes entreprises. opérations de confidentialité premium avec coordination dédiée, délais plus rapides et reporting plus attentif.",
+            "ctaLabel": "Demander une consultation gratuite"
+          }
+        }
+      },
+      "negative-suppression": {
+        "name": "Suppression de contenus négatifs",
+        "shortName": "Suppression de contenus négatifs",
+        "tagline": "Stratégies éthiques pour réduire la proéminence de résultats nuisibles",
+        "description": "Travail centré sur la recherche qui renforce les actifs préférés et applique des tactiques de suppression légitimes pour que les résultats dommageables ou obsolètes pèsent moins—sans garantie de suppression ni de classement.",
+        "seoTitle": "Services de suppression de contenus négatifs | Stratégie de résultats de recherche",
+        "seoDescription": "Suppression éthique de contenus négatifs et stratégie SERP pour particuliers et organisations confrontés à une proéminence de recherche nuisible ou obsolète.",
+        "capabilities": [
+          "Analyse de la composition SERP",
+          "Stratégie et publication d'actifs préférés",
+          "Améliorations techniques et de contenu",
+          "Planification éthique de suppression",
+          "Reporting des progrès sur le mix de résultats"
+        ],
+        "process": [
+          {
+            "title": "Audit SERP",
+            "description": "Documenter quels résultats génèrent du risque et quels actifs peuvent rivaliser."
+          },
+          {
+            "title": "Construire l'équité préférée",
+            "description": "Renforcer les pages autoritaires, profils et placements obtenus."
+          },
+          {
+            "title": "Exécution de la suppression",
+            "description": "Appliquer des tactiques coordonnées dans les limites des plateformes et de la loi."
+          },
+          {
+            "title": "Mesurer et itérer",
+            "description": "Suivre le mix de résultats et affiner selon les mouvements observés."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Pouvez-vous supprimer des articles négatifs ?",
+            "answer": "La suppression dépend des éditeurs et du droit applicable. Lorsque la suppression n'est pas disponible, la suppression relative et le renforcement du contenu préféré sont les voies pratiques—et nous le disons clairement dès le départ."
+          },
+          {
+            "question": "Garantissez-vous des changements en première page ?",
+            "answer": "Non. Les résultats de recherche sont concurrentiels et hors du contrôle de toute agence. Nous visons une amélioration mesurable avec un reporting transparent."
+          }
+        ],
+        "audiences": {
+          "individuals": {
+            "label": "Particuliers",
+            "headline": "Contrebalancez la visibilité négative pour votre réputation en tant que particuliers",
+            "supporting": "Suppression de contenus négatifs adaptée aux particuliers—réduction de la visibilité des résultats de recherche nuisibles ou obsolètes en renforçant les actifs préférés et en appliquant des stratégies de suppression éthiques.",
+            "painPoints": [
+              "Pages dommageables ou obsolètes qui dominent le premier écran de résultats",
+              "Peu de contenu positif pour rivaliser",
+              "Incertitude sur ce qui peut et ne peut pas être supprimé"
+            ],
+            "outcomes": [
+              "Pages et profils préférés plus solides",
+              "Feuille de route de suppression claire avec des attentes réalistes",
+              "Mesure de la composition SERP dans le temps"
+            ],
+            "faqs": [
+              {
+                "question": "La Suppression de contenus négatifs est-elle pertinente pour les particuliers ?",
+                "answer": "Oui. Ce programme est cadré pour les particuliers, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Suppression de contenus négatifs pour les particuliers | Suppression de contenus négatifs",
+            "seoDescription": "Suppression de contenus négatifs pour les particuliers. réduction de la visibilité des résultats de recherche nuisibles ou obsolètes en renforçant les actifs préférés et en appliquant des stratégies de suppression éthiques.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "job-seekers": {
+            "label": "Chercheurs d'emploi",
+            "headline": "Contrebalancez la visibilité négative pour votre réputation en tant que chercheurs d'emploi",
+            "supporting": "Suppression de contenus négatifs adaptée aux chercheurs d'emploi—réduction de la visibilité des résultats de recherche nuisibles ou obsolètes en renforçant les actifs préférés et en appliquant des stratégies de suppression éthiques.",
+            "painPoints": [
+              "Pages dommageables ou obsolètes qui dominent le premier écran de résultats",
+              "Peu de contenu positif pour rivaliser",
+              "Incertitude sur ce qui peut et ne peut pas être supprimé"
+            ],
+            "outcomes": [
+              "Pages et profils préférés plus solides",
+              "Feuille de route de suppression claire avec des attentes réalistes",
+              "Mesure de la composition SERP dans le temps"
+            ],
+            "faqs": [
+              {
+                "question": "La Suppression de contenus négatifs est-elle pertinente pour les chercheurs d'emploi ?",
+                "answer": "Oui. Ce programme est cadré pour les chercheurs d'emploi, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Suppression de contenus négatifs pour les chercheurs d'emploi | Suppression de contenus négatifs",
+            "seoDescription": "Suppression de contenus négatifs pour les chercheurs d'emploi. réduction de la visibilité des résultats de recherche nuisibles ou obsolètes en renforçant les actifs préférés et en appliquant des stratégies de suppression éthiques.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "small-businesses": {
+            "label": "Petites entreprises",
+            "headline": "Contrebalancez la visibilité négative pour votre réputation en tant que petites entreprises",
+            "supporting": "Suppression de contenus négatifs adaptée aux petites entreprises—réduction de la visibilité des résultats de recherche nuisibles ou obsolètes en renforçant les actifs préférés et en appliquant des stratégies de suppression éthiques.",
+            "painPoints": [
+              "Pages dommageables ou obsolètes qui dominent le premier écran de résultats",
+              "Peu de contenu positif pour rivaliser",
+              "Incertitude sur ce qui peut et ne peut pas être supprimé"
+            ],
+            "outcomes": [
+              "Pages et profils préférés plus solides",
+              "Feuille de route de suppression claire avec des attentes réalistes",
+              "Mesure de la composition SERP dans le temps"
+            ],
+            "faqs": [
+              {
+                "question": "La Suppression de contenus négatifs est-elle pertinente pour les petites entreprises ?",
+                "answer": "Oui. Ce programme est cadré pour les petites entreprises, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Suppression de contenus négatifs pour les petites entreprises | Suppression de contenus négatifs",
+            "seoDescription": "Suppression de contenus négatifs pour les petites entreprises. réduction de la visibilité des résultats de recherche nuisibles ou obsolètes en renforçant les actifs préférés et en appliquant des stratégies de suppression éthiques.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "executives": {
+            "label": "Dirigeants",
+            "headline": "Contrebalancez la visibilité négative pour votre réputation en tant que dirigeants",
+            "supporting": "Suppression de contenus négatifs adaptée aux dirigeants—réduction de la visibilité des résultats de recherche nuisibles ou obsolètes en renforçant les actifs préférés et en appliquant des stratégies de suppression éthiques.",
+            "painPoints": [
+              "Pages dommageables ou obsolètes qui dominent le premier écran de résultats",
+              "Peu de contenu positif pour rivaliser",
+              "Incertitude sur ce qui peut et ne peut pas être supprimé"
+            ],
+            "outcomes": [
+              "Pages et profils préférés plus solides",
+              "Feuille de route de suppression claire avec des attentes réalistes",
+              "Mesure de la composition SERP dans le temps"
+            ],
+            "faqs": [
+              {
+                "question": "La Suppression de contenus négatifs est-elle pertinente pour les dirigeants ?",
+                "answer": "Oui. Ce programme est cadré pour les dirigeants, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Suppression de contenus négatifs pour les dirigeants | Suppression de contenus négatifs",
+            "seoDescription": "Suppression de contenus négatifs pour les dirigeants. réduction de la visibilité des résultats de recherche nuisibles ou obsolètes en renforçant les actifs préférés et en appliquant des stratégies de suppression éthiques.",
+            "ctaLabel": "Demander une consultation gratuite"
+          },
+          "large-companies": {
+            "label": "Grandes entreprises",
+            "headline": "Contrebalancez la visibilité négative pour votre réputation en tant que grandes entreprises",
+            "supporting": "Suppression de contenus négatifs adaptée aux grandes entreprises—réduction de la visibilité des résultats de recherche nuisibles ou obsolètes en renforçant les actifs préférés et en appliquant des stratégies de suppression éthiques.",
+            "painPoints": [
+              "Pages dommageables ou obsolètes qui dominent le premier écran de résultats",
+              "Peu de contenu positif pour rivaliser",
+              "Incertitude sur ce qui peut et ne peut pas être supprimé"
+            ],
+            "outcomes": [
+              "Pages et profils préférés plus solides",
+              "Feuille de route de suppression claire avec des attentes réalistes",
+              "Mesure de la composition SERP dans le temps"
+            ],
+            "faqs": [
+              {
+                "question": "La Suppression de contenus négatifs est-elle pertinente pour les grandes entreprises ?",
+                "answer": "Oui. Ce programme est cadré pour les grandes entreprises, avec des priorités, un message et un reporting adaptés à votre contexte—pas une offre générique unique."
+              },
+              {
+                "question": "Comment démarrent généralement les missions ?",
+                "answer": "Nous commençons par une consultation ciblée pour comprendre les risques de visibilité, les objectifs et les contraintes, puis nous recommandons une feuille de route concrète que vous pouvez valider avant le début des travaux."
+              }
+            ],
+            "seoTitle": "Suppression de contenus négatifs pour les grandes entreprises | Suppression de contenus négatifs",
+            "seoDescription": "Suppression de contenus négatifs pour les grandes entreprises. réduction de la visibilité des résultats de recherche nuisibles ou obsolètes en renforçant les actifs préférés et en appliquant des stratégies de suppression éthiques.",
+            "ctaLabel": "Demander une consultation gratuite"
+          }
+        }
+      }
+    },
+    "caseStudies": {
+      "rm-1": {
+        "title": "Reconstruction du narratif de recherche professionnel",
+        "industryLabel": "Services professionnels",
+        "summary": "[SAMPLE] Des résultats personnels obsolètes éclipsaient les références professionnelles actuelles.",
+        "challenge": "Des contenus hérités se classaient au-dessus des profils actuels, créant de la confusion pour les clients et employeurs.",
+        "solution": "Audit de recherche, publication d'actifs préférés et surveillance continue sous une feuille de route de réputation.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "results": [
+          {
+            "value": "[XX]",
+            "label": "Actifs préférés renforcés (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Cadence de surveillance (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Cycle de revue (placeholder)"
+          }
+        ]
+      },
+      "pp-1": {
+        "title": "Réduction des courtiers en données du foyer",
+        "industryLabel": "Confidentialité",
+        "summary": "[SAMPLE] Des coordonnées personnelles ressurgissaient régulièrement sur les sites de recherche de personnes.",
+        "challenge": "Les opt-outs étaient incomplets et les fiches réapparaissaient sans processus de maintenance.",
+        "solution": "Cartographie d'exposition, opt-outs priorisés et vérifications récurrentes des réinscriptions.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "results": [
+          {
+            "value": "[XX]",
+            "label": "Sources traitées (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Intervalle de re-scan (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Éléments ouverts suivis (placeholder)"
+          }
+        ]
+      },
+      "ep-1": {
+        "title": "Programme d'exposition du foyer dirigeant",
+        "industryLabel": "Dirigeants",
+        "summary": "[SAMPLE] Le domicile et les coordonnées de dirigeants étaient faciles à trouver aux côtés de la couverture corporate.",
+        "challenge": "Identités personnelles et corporate mélangées dans les agrégateurs publics, soulevant des enjeux de sécurité.",
+        "solution": "Briefing confidentiel, opt-outs centrés sur le foyer et habilitation de l'assistant de direction.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "results": [
+          {
+            "value": "[XX]",
+            "label": "Sources prioritaires (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Protocoles du personnel (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Cadence de reporting (placeholder)"
+          }
+        ]
+      },
+      "cp-1": {
+        "title": "Sprint de confidentialité concierge multi-biens",
+        "industryLabel": "Concierge",
+        "summary": "[SAMPLE] Une exposition complexe multi-personnes nécessitait un responsable unique et un suivi plus rapide.",
+        "challenge": "Des tentatives d'opt-out dispersées manquaient de responsabilité et de visibilité de statut pour le principal.",
+        "solution": "Responsable concierge dédié, matrice de priorités et notes de statut hebdomadaires.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "results": [
+          {
+            "value": "[XX]",
+            "label": "Flux de travail pris en charge (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Cadence de statut (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Escalades ouvertes (placeholder)"
+          }
+        ]
+      },
+      "ns-1": {
+        "title": "Amélioration du mix SERP pour la recherche de marque",
+        "industryLabel": "Recherche",
+        "summary": "[SAMPLE] Des résultats dommageables dominaient les requêtes de marque tandis que les pages préférées manquaient d'équité.",
+        "challenge": "Peu d'actifs positifs rivalisaient mal face à une couverture critique plus ancienne.",
+        "solution": "Programme d'actifs préférés plus planification éthique de suppression et suivi SERP.",
+        "resultsNote": "[INSERT VERIFIED RESULTS]",
+        "results": [
+          {
+            "value": "[XX]",
+            "label": "URL préférées (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Fenêtre de suivi (placeholder)"
+          },
+          {
+            "value": "[XX]",
+            "label": "Points de contrôle de revue (placeholder)"
+          }
+        ]
+      }
+    }
   }
 }

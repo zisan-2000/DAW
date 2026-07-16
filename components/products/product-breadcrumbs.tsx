@@ -1,3 +1,6 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { ChevronRight } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -16,6 +19,7 @@ export function ProductBreadcrumbs({
   className?: string
   tone?: 'light' | 'ink'
 }) {
+  const t = useTranslations('products.ui')
   const muted =
     tone === 'ink'
       ? 'text-surface-ink-foreground/45'
@@ -28,7 +32,7 @@ export function ProductBreadcrumbs({
     tone === 'ink' ? 'hover:text-accent' : 'hover:text-accent'
 
   return (
-    <nav aria-label="Breadcrumb" className={cn('mb-8', className)}>
+    <nav aria-label={t('breadcrumbAria')} className={cn('mb-8', className)}>
       <ol className={cn('flex flex-wrap items-center gap-1.5 text-sm', muted)}>
         {items.map((item, index) => {
           const isLast = index === items.length - 1

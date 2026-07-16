@@ -1,12 +1,12 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import { notFound } from 'next/navigation'
+import { getTranslations } from 'next-intl/server'
 import { Link } from '@/i18n/navigation'
 import {
   allProductStaticParams,
   getProduct,
   getProductCaseStudies,
-  PRODUCTS,
 } from '@/lib/products/registry'
 import {
   productAudiencePath,
@@ -15,6 +15,12 @@ import {
 } from '@/lib/products/nav'
 import { AUDIENCE_ORDER } from '@/lib/products/audiences'
 import { getProductDesign, getSectionVariants } from '@/lib/products/design'
+import {
+  getLocalizedCaseStudy,
+  getLocalizedDesign,
+  getLocalizedProduct,
+} from '@/lib/products/i18n'
+import type { ProductId } from '@/lib/products/types'
 import { AGENCY_CONFIG } from '@/lib/content'
 import { ProductPageShell } from '@/components/products/product-page-shell'
 import { ProductHero } from '@/components/products/product-hero'
@@ -37,45 +43,59 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
-  const { product: productId } = await params
+  const { locale, product: productId } = await params
   const product = getProduct(productId)
-  if (!product) return { title: 'Product not found' }
+  const t = await getTranslations({ locale, namespace: 'products' })
+  if (!product) return { title: t('ui.notFoundTitle') }
+
+  const copy = getLocalizedProduct(t, product.id)
 
   return {
-    title: `${product.seoTitle} | ${AGENCY_CONFIG.shortName}`,
-    description: product.seoDescription,
+    title: `${copy.seoTitle} | ${AGENCY_CONFIG.shortName}`,
+    description: copy.seoDescription,
     alternates: {
       canonical: productBasePath(product.id),
     },
     openGraph: {
-      title: product.seoTitle,
-      description: product.seoDescription,
+      title: copy.seoTitle,
+      description: copy.seoDescription,
       type: 'website',
     },
   }
 }
 
 export default async function ProductHubPage({ params }: PageProps) {
-  const { product: productId } = await params
+  const { locale, product: productId } = await params
   const product = getProduct(productId)
   if (!product) notFound()
 
+  const t = await getTranslations({ locale, namespace: 'products' })
+  const copy = getLocalizedProduct(t, product.id)
+  const designCopy = getLocalizedDesign(t, product.id)
   const design = getProductDesign(product.id)
   const variants = getSectionVariants(product.id)
-  const caseStudies = getProductCaseStudies(product.id).slice(0, 2)
+  const caseStudies = getProductCaseStudies(product.id)
+    .slice(0, 2)
+    .map((s) => {
+      const loc = getLocalizedCaseStudy(t, s.id)
+      return loc ? { ...s, ...loc } : s
+    })
   const base = productBasePath(product.id)
 
   const audienceLinks = AUDIENCE_ORDER.map((id) => ({
-    label: product.audiences[id].label,
-    description: product.audiences[id].supporting,
+    label: copy.audiences[id].label,
+    description: copy.audiences[id].supporting,
     href: productAudiencePath(product.id, id),
   }))
 
-  const relatedLinks = product.relatedProductIds.map((id) => ({
-    label: PRODUCTS[id].name,
-    description: PRODUCTS[id].tagline,
-    href: productBasePath(id),
-  }))
+  const relatedLinks = product.relatedProductIds.map((id) => {
+    const related = getLocalizedProduct(t, id as ProductId)
+    return {
+      label: related.name,
+      description: related.tagline,
+      href: productBasePath(id),
+    }
+  })
 
   const sections: Record<(typeof design.sectionOrder)[number], ReactNode> = {
     audiences: (
@@ -88,14 +108,14 @@ export default async function ProductHubPage({ params }: PageProps) {
     capabilities: (
       <CapabilitiesList
         key="capabilities"
-        items={product.capabilities}
+        items={copy.capabilities}
         variant={variants.capabilities}
       />
     ),
     process: (
       <ProcessSteps
         key="process"
-        steps={product.process}
+        steps={copy.process}
         layout={design.processLayout}
       />
     ),
@@ -108,17 +128,17 @@ export default async function ProductHubPage({ params }: PageProps) {
           <div className="mb-10 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="mb-2 text-[11px] tracking-[0.16em] text-accent uppercase">
-                {design.signalWord}
+                {designCopy.signalWord}
               </p>
               <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                Selected work
+                {t('ui.selectedWork')}
               </h2>
             </div>
             <Link
               href={productCaseStudiesPath(product.id)}
               className="text-sm font-semibold text-accent hover:underline"
             >
-              View all case studies
+              {t('ui.viewAllCaseStudies')}
             </Link>
           </div>
           <ProductCaseStudyCards
@@ -131,14 +151,14 @@ export default async function ProductHubPage({ params }: PageProps) {
     faqs: (
       <FaqAccordion
         key="faqs"
-        items={product.faqs}
+        items={copy.faqs}
         variant={variants.faq}
       />
     ),
     related: (
       <RelatedLinks
         key="related"
-        title="Related products"
+        title={t('ui.relatedProducts')}
         links={relatedLinks}
       />
     ),
@@ -148,33 +168,33 @@ export default async function ProductHubPage({ params }: PageProps) {
     <ProductPageShell>
       <ProductHero
         breadcrumbs={[
-          { label: 'Home', href: '/' },
-          { label: 'Products', href: base },
-          { label: product.shortName },
+          { label: t('ui.breadcrumbHome'), href: '/' },
+          { label: t('ui.breadcrumbProducts'), href: base },
+          { label: copy.shortName },
         ]}
-        eyebrow={product.shortName}
-        title={product.name}
-        description={product.description}
+        eyebrow={copy.shortName}
+        title={copy.name}
+        description={copy.description}
         primaryCta={{
-          label: 'Request a Free Consultation',
+          label: t('ui.requestConsultation'),
           href: '/contact?type=consultation',
         }}
         secondaryCta={{
-          label: 'View case studies',
+          label: t('ui.viewCaseStudies'),
           href: productCaseStudiesPath(product.id),
         }}
         layout={design.heroLayout}
-        motifLabel={design.motifLabel}
-        signalWord={design.signalWord}
-        accentNote={design.accentNote}
+        motifLabel={designCopy.motifLabel}
+        signalWord={designCopy.signalWord}
+        accentNote={designCopy.accentNote}
       />
 
       {design.sectionOrder.map((id) => sections[id])}
 
       <ProductCta
         variant={variants.cta}
-        title={`Start a ${product.shortName} conversation`}
-        description={`Share your situation for ${product.name.toLowerCase()}. We’ll outline practical next steps—no pressure, no generic pitch.`}
+        title={t('ui.ctaStartConversation', { shortName: copy.shortName })}
+        description={t('ui.ctaStartDescription', { productName: copy.name })}
       />
     </ProductPageShell>
   )

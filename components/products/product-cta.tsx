@@ -1,3 +1,6 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { ArrowRight, MessageCircle } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -15,15 +18,17 @@ type ProductCtaProps = {
 }
 
 export function ProductCta({
-  title = 'Ready to discuss your next step?',
-  description = 'Tell us your goals and constraints. We will recommend a practical roadmap—without pressure or generic pitches.',
-  primaryLabel = 'Request a Free Consultation',
+  title,
+  description,
+  primaryLabel,
   primaryHref = '/contact?type=consultation',
   variant = 'centered',
 }: ProductCtaProps) {
-  const whatsappHref = getWhatsAppHref(
-    'Hello, I visited your Products page and would like to discuss a project.',
-  )
+  const t = useTranslations('products.ui')
+  const resolvedTitle = title ?? t('ctaDefaultTitle')
+  const resolvedDescription = description ?? t('ctaDefaultDescription')
+  const resolvedPrimaryLabel = primaryLabel ?? t('requestConsultation')
+  const whatsappHref = getWhatsAppHref(t('whatsappPrefill'))
   const isExternal = whatsappHref.startsWith('http')
 
   const actions = (
@@ -38,7 +43,7 @@ export function ProductCta({
     >
       <Link href={primaryHref} className="w-full sm:w-auto">
         <Button className="h-12 w-full rounded-xl bg-accent px-6 font-semibold text-accent-foreground hover:bg-accent/90 sm:w-auto">
-          {primaryLabel}
+          {resolvedPrimaryLabel}
           <ArrowRight className="size-4" />
         </Button>
       </Link>
@@ -54,7 +59,7 @@ export function ProductCta({
             className="h-12 w-full rounded-xl border-white/15 bg-white/3 px-6 text-surface-ink-foreground hover:border-accent/40 hover:bg-white/6 hover:text-surface-ink-foreground sm:w-auto"
           >
             <MessageCircle className="size-4" />
-            Chat on WhatsApp
+            {t('chatWhatsApp')}
           </Button>
         </a>
       ) : (
@@ -64,7 +69,7 @@ export function ProductCta({
             className="h-12 w-full rounded-xl border-white/15 bg-white/3 px-6 text-surface-ink-foreground hover:border-accent/40 hover:bg-white/6 hover:text-surface-ink-foreground sm:w-auto"
           >
             <MessageCircle className="size-4" />
-            Chat on WhatsApp
+            {t('chatWhatsApp')}
           </Button>
         </Link>
       )}
@@ -79,10 +84,10 @@ export function ProductCta({
             <div className="bg-grid-fade pointer-events-none absolute inset-0 opacity-25" aria-hidden />
             <div className="relative z-10 mx-auto max-w-2xl text-center">
               <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
-                {title}
+                {resolvedTitle}
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-surface-ink-foreground/60 sm:text-base">
-                {description}
+                {resolvedDescription}
               </p>
               <div className="mt-8">{actions}</div>
             </div>
@@ -93,10 +98,10 @@ export function ProductCta({
           <div className="grid items-center gap-8 rounded-3xl border border-white/10 bg-white/3 p-8 md:grid-cols-2 md:p-10">
             <div>
               <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
-                {title}
+                {resolvedTitle}
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-surface-ink-foreground/60 sm:text-base">
-                {description}
+                {resolvedDescription}
               </p>
             </div>
             {actions}
@@ -106,13 +111,13 @@ export function ProductCta({
         {variant === 'minimal' ? (
           <div className="border-t border-accent/40 pt-10">
             <p className="text-[11px] tracking-[0.18em] text-accent uppercase">
-              Private consultation
+              {t('privateConsultation')}
             </p>
             <h2 className="font-display mt-3 max-w-2xl text-3xl font-semibold tracking-tight">
-              {title}
+              {resolvedTitle}
             </h2>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-surface-ink-foreground/60">
-              {description}
+              {resolvedDescription}
             </p>
             <div className="mt-8">{actions}</div>
           </div>
@@ -122,10 +127,10 @@ export function ProductCta({
           <div className="flex flex-col gap-8 rounded-[2rem] border border-white/10 bg-[linear-gradient(105deg,color-mix(in_oklab,var(--accent)_12%,transparent),transparent_55%)] p-8 md:flex-row md:items-end md:justify-between md:p-12">
             <div className="max-w-xl">
               <h2 className="font-display text-3xl font-semibold tracking-tight">
-                {title}
+                {resolvedTitle}
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-surface-ink-foreground/60">
-                {description}
+                {resolvedDescription}
               </p>
             </div>
             {actions}
@@ -137,15 +142,15 @@ export function ProductCta({
             <div className="flex items-center gap-2 border-b border-white/10 px-5 py-3">
               <span className="size-2 rounded-full bg-accent" />
               <span className="text-[11px] tracking-[0.16em] text-surface-ink-foreground/45 uppercase">
-                Priority intake
+                {t('priorityIntake')}
               </span>
             </div>
             <div className="p-8 md:p-10">
               <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl">
-                {title}
+                {resolvedTitle}
               </h2>
               <p className="mt-4 max-w-2xl text-sm leading-relaxed text-surface-ink-foreground/60">
-                {description}
+                {resolvedDescription}
               </p>
               <div className="mt-8">{actions}</div>
             </div>

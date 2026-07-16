@@ -1,9 +1,12 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
 import type { ProcessStep } from '@/lib/products/types'
 import type { ProcessLayout } from '@/lib/products/design'
 import { cn } from '@/lib/utils'
 
 export function ProcessSteps({
-  title = 'How it works',
+  title,
   steps,
   layout = 'timeline',
 }: {
@@ -11,11 +14,14 @@ export function ProcessSteps({
   steps: ProcessStep[]
   layout?: ProcessLayout
 }) {
+  const t = useTranslations('products.ui')
+  const resolvedTitle = title ?? t('howItWorks')
+
   return (
     <section className="border-t border-border/70 bg-muted/30 py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-          {title}
+          {resolvedTitle}
         </h2>
 
         {layout === 'timeline' || layout === 'rail' ? (
@@ -82,7 +88,7 @@ export function ProcessSteps({
                 ) : null}
                 <div className="relative z-10 rounded-2xl border border-accent/20 bg-card p-5 shadow-sm">
                   <p className="text-[10px] tracking-[0.16em] text-accent uppercase">
-                    Stage {index + 1}
+                    {t('stage', { n: index + 1 })}
                   </p>
                   <h3 className="font-display mt-3 text-base font-semibold text-foreground">
                     {step.title}

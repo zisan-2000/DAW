@@ -1,7 +1,10 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
 import { CheckCircle2 } from 'lucide-react'
 
 export function OutcomesGrid({
-  title = 'Outcomes this engagement supports',
+  title,
   items,
   variant = 'cards',
 }: {
@@ -9,11 +12,14 @@ export function OutcomesGrid({
   items: string[]
   variant?: 'cards' | 'strip' | 'editorial'
 }) {
+  const t = useTranslations('products.ui')
+  const resolvedTitle = title ?? t('outcomesTitle')
+
   return (
     <section className="border-t border-border/70 py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-          {title}
+          {resolvedTitle}
         </h2>
 
         {variant === 'strip' ? (

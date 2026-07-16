@@ -8,6 +8,7 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
 import { AGENCY_CONFIG } from "@/lib/content";
 import { productNavSections } from "@/lib/products/nav";
+import { AUDIENCE_IDS } from "@/lib/products/types";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { LiquidGradientButton } from "@/components/ui/GitHubButton";
@@ -46,8 +47,26 @@ function isActiveGroup(pathname: string, items: MenuItem[] = []) {
   return items.some((item) => isActivePath(pathname, item.href));
 }
 
+function localizeProductNavItemLabel(
+  tProducts: ReturnType<typeof useTranslations<"products">>,
+  href: string,
+  fallback: string,
+) {
+  if (href.endsWith("/case-studies")) {
+    return tProducts("nav.caseStudies");
+  }
+
+  const segment = href.split("/").filter(Boolean).pop() ?? "";
+  if ((AUDIENCE_IDS as readonly string[]).includes(segment)) {
+    return tProducts(`nav.audiences.${segment}`);
+  }
+
+  return fallback;
+}
+
 function ProductsDesktopDropdown() {
   const t = useTranslations("header");
+  const tProducts = useTranslations("products");
   const pathname = usePathname();
   const active = isActiveGroup(
     pathname,
@@ -100,6 +119,7 @@ function ProductsDesktopDropdown() {
                     pathname,
                     section.basePath,
                   );
+                  const sectionLabel = tProducts(`items.${section.id}.name`);
 
                   return (
                     <div
@@ -112,7 +132,7 @@ function ProductsDesktopDropdown() {
                           sectionActive ? "text-accent" : "text-foreground"
                         }`}
                       >
-                        <span className="text-balance">{section.label}</span>
+                        <span className="text-balance">{sectionLabel}</span>
                         <ArrowRight
                           size={15}
                           className="mt-0.5 shrink-0 -translate-x-1 opacity-0 transition-all group-hover/title:translate-x-0 group-hover/title:opacity-100"
@@ -122,6 +142,11 @@ function ProductsDesktopDropdown() {
                       <div className="mt-3 space-y-0.5 border-t border-border/70 pt-3">
                         {section.items.map((item) => {
                           const itemActive = isActivePath(pathname, item.href);
+                          const itemLabel = localizeProductNavItemLabel(
+                            tProducts,
+                            item.href,
+                            item.label,
+                          );
 
                           return (
                             <Link
@@ -133,7 +158,7 @@ function ProductsDesktopDropdown() {
                                   : "text-muted-foreground"
                               }`}
                             >
-                              {item.label}
+                              {itemLabel}
                             </Link>
                           );
                         })}
@@ -229,6 +254,7 @@ function DesktopDropdown({
 export function Header() {
   const t = useTranslations("header");
   const tNav = useTranslations("nav");
+  const tProducts = useTranslations("products");
   const pathname = usePathname();
 
   const serviceItems: MenuItem[] = [
@@ -525,6 +551,9 @@ export function Header() {
                         {productSections.map((section) => {
                           const isSectionOpen =
                             activeProductSection === section.id;
+                          const sectionLabel = tProducts(
+                            `items.${section.id}.name`,
+                          );
 
                           return (
                             <div
@@ -537,7 +566,7 @@ export function Header() {
                                 className="flex min-h-11 w-full items-center justify-between gap-3 px-3 text-left text-sm font-semibold text-foreground transition-colors hover:text-accent"
                                 aria-expanded={isSectionOpen}
                               >
-                                <span>{section.label}</span>
+                                <span>{sectionLabel}</span>
 
                                 <ChevronDown
                                   size={15}
@@ -586,6 +615,12 @@ export function Header() {
                                           pathname,
                                           item.href,
                                         );
+                                        const itemLabel =
+                                          localizeProductNavItemLabel(
+                                            tProducts,
+                                            item.href,
+                                            item.label,
+                                          );
 
                                         return (
                                           <Link
@@ -598,7 +633,7 @@ export function Header() {
                                                 : "text-muted-foreground"
                                             }`}
                                           >
-                                            {item.label}
+                                            {itemLabel}
                                           </Link>
                                         );
                                       })}

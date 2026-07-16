@@ -1,3 +1,6 @@
+'use client'
+
+import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import type { ProductCaseStudy } from '@/lib/products/types'
 import { ArrowUpRight } from 'lucide-react'
@@ -8,16 +11,19 @@ export type CaseLayout = 'grid' | 'stack' | 'magazine' | 'rail' | 'serp'
 export function ProductCaseStudyCards({
   studies,
   layout = 'grid',
-  emptyLabel = 'No demonstration case studies for this product yet. Add verified projects in the product registry.',
+  emptyLabel,
 }: {
   studies: ProductCaseStudy[]
   layout?: CaseLayout
   emptyLabel?: string
 }) {
+  const t = useTranslations('products.ui')
+  const resolvedEmpty = emptyLabel ?? t('emptyCases')
+
   if (!studies.length) {
     return (
       <p className="rounded-2xl border border-dashed border-border px-6 py-12 text-center text-sm text-muted-foreground">
-        {emptyLabel}
+        {resolvedEmpty}
       </p>
     )
   }
@@ -80,7 +86,7 @@ export function ProductCaseStudyCards({
               </span>
               {study.isSample ? (
                 <span className="text-[11px] text-muted-foreground/70 uppercase">
-                  Sample
+                  {t('sample')}
                 </span>
               ) : null}
             </div>
@@ -128,6 +134,8 @@ function CaseCard({
   editorial?: boolean
   featured?: boolean
 }) {
+  const t = useTranslations('products.ui')
+
   if (editorial) {
     return (
       <article
@@ -141,7 +149,9 @@ function CaseCard({
             {study.industryLabel}
           </span>
           {study.isSample ? (
-            <span className="text-[11px] text-muted-foreground uppercase">Demo</span>
+            <span className="text-[11px] text-muted-foreground uppercase">
+              {t('demo')}
+            </span>
           ) : null}
         </div>
         <h3
@@ -186,7 +196,7 @@ function CaseCard({
           </span>
           {study.isSample ? (
             <span className="text-[11px] tracking-wide text-muted-foreground uppercase">
-              Sample · demo
+              {t('sampleDemo')}
             </span>
           ) : null}
         </div>
@@ -199,11 +209,15 @@ function CaseCard({
         {!compact ? (
           <div className="mt-4 space-y-2 text-sm">
             <p>
-              <span className="font-semibold text-foreground">Challenge: </span>
+              <span className="font-semibold text-foreground">
+                {t('challenge')}:{' '}
+              </span>
               <span className="text-muted-foreground">{study.challenge}</span>
             </p>
             <p>
-              <span className="font-semibold text-foreground">Solution: </span>
+              <span className="font-semibold text-foreground">
+                {t('solution')}:{' '}
+              </span>
               <span className="text-muted-foreground">{study.solution}</span>
             </p>
           </div>
@@ -216,7 +230,7 @@ function CaseCard({
         )}
       >
         <p className="mb-3 text-[10px] tracking-[0.14em] text-muted-foreground uppercase">
-          Results · {study.resultsNote}
+          {t('results')} · {study.resultsNote}
         </p>
         <div
           className={cn('grid gap-3', horizontal ? 'grid-cols-1' : 'grid-cols-3')}
@@ -240,7 +254,7 @@ function CaseCard({
           horizontal && 'md:hidden',
         )}
       >
-        Discuss a similar engagement
+        {t('discussSimilar')}
         <ArrowUpRight className="size-3.5" />
       </Link>
     </article>

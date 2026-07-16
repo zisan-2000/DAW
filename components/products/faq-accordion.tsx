@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useTranslations } from 'next-intl'
 import { ChevronDown } from 'lucide-react'
 import type { FaqItem } from '@/lib/products/types'
 import { cn } from '@/lib/utils'
@@ -8,7 +9,7 @@ import { cn } from '@/lib/utils'
 export type FaqVariant = 'boxed' | 'wide' | 'editorial'
 
 export function FaqAccordion({
-  title = 'Frequently asked questions',
+  title,
   items,
   variant = 'boxed',
 }: {
@@ -16,6 +17,8 @@ export function FaqAccordion({
   items: FaqItem[]
   variant?: FaqVariant
 }) {
+  const t = useTranslations('products.ui')
+  const resolvedTitle = title ?? t('faqs')
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   if (!items.length) return null
@@ -38,7 +41,7 @@ export function FaqAccordion({
               : 'text-2xl sm:text-3xl',
           )}
         >
-          {title}
+          {resolvedTitle}
         </h2>
 
         {variant === 'editorial' ? (
