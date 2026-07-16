@@ -75,7 +75,6 @@ export const metadata: Metadata = {
     description: AGENCY_CONFIG.tagline,
     images: ["/og-image.png"],
   },
-  generator: "v0.app",
   icons: {
     icon: [
       {
@@ -120,7 +119,8 @@ export default async function RootLayout({
   const dir = rtlLocales.includes(locale as Locale) ? "rtl" : "ltr";
   const organizationSchema = generateOrganizationSchema();
   const themeCookie = (await cookies()).get("theme")?.value;
-  const themeClass = isTheme(themeCookie) && themeCookie === "dark" ? "dark" : "";
+  const themeClass =
+    isTheme(themeCookie) && themeCookie === "dark" ? "dark" : "";
 
   return (
     <html

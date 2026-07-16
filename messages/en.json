@@ -1809,7 +1809,7 @@
   },
   "homepage": {
     "meta": {
-      "title": "[BRAND] | Digital Growth Partner — Web, SEO, Marketing & Software",
+      "title": "ORM Defender | Digital Growth Partner — Web, SEO, Marketing & Software",
       "description": "Strategy, technology and marketing built to accelerate growth. Conversion-focused websites, performance marketing, SEO and scalable software for ambitious businesses.",
       "keywords": "digital agency, growth partner, web development, SEO, digital marketing, branding, software development"
     },
@@ -1951,7 +1951,8 @@
     "servicesSection": {
       "eyebrow": "Capabilities",
       "title": "Services designed to compound growth",
-      "description": "Each engagement connects acquisition, experience and technology—so every channel works harder toward the same commercial goal."
+      "description": "Each engagement connects acquisition, experience and technology—so every channel works harder toward the same commercial goal.",
+      "learnMore": "Learn More"
     },
     "services": {
       "digital-marketing": {
@@ -1977,6 +1978,96 @@
       "content-video": {
         "title": "Content and Video",
         "description": "Produce messaging and media that clarify your offer, support SEO and convert attention into action."
+      }
+    },
+    "servicesGrid": {
+      "fixMySearchResults": {
+        "description": "Push down damaging links and rebuild a search results page that reflects who you really are.",
+        "capabilities": [
+          "Negative content suppression",
+          "Google search cleanup",
+          "Ongoing search monitoring"
+        ]
+      },
+      "personalReputationManagement": {
+        "description": "Protect how you're perceived by employers, clients and partners searching your name.",
+        "capabilities": [
+          "Personal brand audits",
+          "Search result management",
+          "Privacy risk reduction"
+        ]
+      },
+      "businessReputationManagement": {
+        "description": "Safeguard your company's public image across search, reviews and news coverage.",
+        "capabilities": [
+          "Corporate reputation audits",
+          "Review and rating management",
+          "Crisis response planning"
+        ]
+      },
+      "aiReputationManagement": {
+        "description": "Shape how AI assistants and generative search describe your name or brand.",
+        "capabilities": [
+          "Generative engine optimization",
+          "AI answer monitoring",
+          "Structured data alignment"
+        ]
+      },
+      "executiveBranding": {
+        "description": "Build a credible, visible executive presence that earns trust before the first meeting.",
+        "capabilities": [
+          "Thought leadership content",
+          "Media placement strategy",
+          "Profile optimization"
+        ]
+      },
+      "reviewManagement": {
+        "description": "Turn customer feedback into a growth channel with a steady stream of authentic reviews.",
+        "capabilities": [
+          "Review generation campaigns",
+          "Response strategy",
+          "Platform-specific monitoring"
+        ]
+      },
+      "redditRemoval": {
+        "description": "Address harmful Reddit threads and comments with proven removal and suppression tactics.",
+        "capabilities": [
+          "Content removal requests",
+          "Thread de-indexing",
+          "Ongoing thread monitoring"
+        ]
+      },
+      "wikipedia": {
+        "description": "Create, edit and protect Wikipedia pages in line with neutral, verifiable editorial standards.",
+        "capabilities": [
+          "Page creation & editing",
+          "Notability documentation",
+          "Vandalism monitoring"
+        ]
+      },
+      "googleMapsSeo": {
+        "description": "Win the local map pack with optimized listings that drive calls, visits and reviews.",
+        "capabilities": [
+          "Google Business Profile optimization",
+          "Local citation building",
+          "Map pack ranking strategy"
+        ]
+      },
+      "earnedMediaMarketing": {
+        "description": "Secure credible press coverage that builds authority and strengthens search visibility.",
+        "capabilities": [
+          "Digital PR outreach",
+          "Journalist relationship building",
+          "Coverage amplification"
+        ]
+      },
+      "expertWitnessServices": {
+        "description": "Bring specialized reputation and digital evidence expertise to legal proceedings.",
+        "capabilities": [
+          "Expert testimony",
+          "Digital evidence analysis",
+          "Case documentation support"
+        ]
       }
     },
     "valueProposition": {
@@ -2006,7 +2097,6 @@
       "eyebrow": "Proven Client Outcomes",
       "title": "Case Studies",
       "description": "Explore how strategic reputation management and privacy protection helped organizations and individuals address complex digital challenges.",
-
       "common": {
         "caseStudy": "Case Study",
         "reputationCaseStudy": "Reputation Case Study",
@@ -2014,7 +2104,6 @@
         "outcome": "Outcome",
         "readFullCaseStudy": "Read Full Case Study"
       },
-
       "items": {
         "companyDispute": {
           "title": "Company linked to dispute with ex-employee",
@@ -2024,7 +2113,6 @@
           "result": "Rapid initial suppression",
           "timeframe": "14+ months monitored"
         },
-
         "privacyRisk": {
           "title": "Mitigating broad-based privacy risk",
           "category": "Privacy Protection",
@@ -2033,7 +2121,6 @@
           "result": "97% of PII removed",
           "timeframe": "Within 8 weeks"
         },
-
         "philanthropistPress": {
           "title": "Philanthropist attacked by the press",
           "category": "Personal Reputation",
@@ -2042,7 +2129,6 @@
           "result": "Most results suppressed",
           "timeframe": "7+ months monitored"
         },
-
         "oilGasThreats": {
           "title": "Oil and gas companies facing threats",
           "category": "Executive Privacy",
@@ -2134,20 +2220,20 @@
         "name": "AI Search Reputation",
         "description": "Shape how your name or brand appears in AI-generated answers and conversational search."
       }
-  },
-   "techSection": {
-    "eyebrow": "CAPABILITIES",
-    "title": "Reputation solutions built for every digital risk",
-    "description": "From search results and reviews to crisis response and AI visibility, we use structured reputation strategies to protect trust, improve perception and strengthen long-term credibility.",
-    "note": "Every strategy is tailored to the client, industry and level of reputational risk."
-  },
-  "techCategories": {
-    "searchReputation": "Search Reputation",
-    "contentAuthority": "Content & Authority",
-    "reviewsTrust": "Reviews & Local Trust",
-    "monitoringIntelligence": "Monitoring & Intelligence",
-    "crisisProtection": "Crisis & Protection"
-  },
+    },
+    "techSection": {
+      "eyebrow": "CAPABILITIES",
+      "title": "Reputation solutions built for every digital risk",
+      "description": "From search results and reviews to crisis response and AI visibility, we use structured reputation strategies to protect trust, improve perception and strengthen long-term credibility.",
+      "note": "Every strategy is tailored to the client, industry and level of reputational risk."
+    },
+    "techCategories": {
+      "searchReputation": "Search Reputation",
+      "contentAuthority": "Content & Authority",
+      "reviewsTrust": "Reviews & Local Trust",
+      "monitoringIntelligence": "Monitoring & Intelligence",
+      "crisisProtection": "Crisis & Protection"
+    },
     "testimonialsSection": {
       "eyebrow": "Client voice",
       "title": "What collaboration can feel like",

@@ -1914,7 +1914,7 @@
   },
   "homepage": {
     "meta": {
-      "title": "[BRAND] | Partenaire de croissance digitale — Web, SEO, Marketing & Logiciel",
+      "title": "ORM Defender | Partenaire de croissance digitale — Web, SEO, Marketing & Logiciel",
       "description": "Stratégie, technologie et marketing conçus pour accélérer la croissance. Sites orientés conversion, marketing de performance, SEO et logiciels évolutifs pour les entreprises ambitieuses.",
       "keywords": "agence digitale, partenaire de croissance, développement web, SEO, marketing digital, branding, développement logiciel"
     },
@@ -2056,7 +2056,8 @@
     "servicesSection": {
       "eyebrow": "Expertise",
       "title": "Des services conçus pour amplifier la croissance",
-      "description": "Chaque mission relie acquisition, expérience et technologie—pour que chaque canal travaille davantage vers le même objectif commercial."
+      "description": "Chaque mission relie acquisition, expérience et technologie—pour que chaque canal travaille davantage vers le même objectif commercial.",
+      "learnMore": "En savoir plus"
     },
     "services": {
       "digital-marketing": {
@@ -2082,6 +2083,96 @@
       "content-video": {
         "title": "Contenu et vidéo",
         "description": "Produisez des messages et médias qui clarifient votre offre, soutiennent le SEO et transforment l'attention en action."
+      }
+    },
+    "servicesGrid": {
+      "fixMySearchResults": {
+        "description": "Push down damaging links and rebuild a search results page that reflects who you really are.",
+        "capabilities": [
+          "Negative content suppression",
+          "Google search cleanup",
+          "Ongoing search monitoring"
+        ]
+      },
+      "personalReputationManagement": {
+        "description": "Protect how you're perceived by employers, clients and partners searching your name.",
+        "capabilities": [
+          "Personal brand audits",
+          "Search result management",
+          "Privacy risk reduction"
+        ]
+      },
+      "businessReputationManagement": {
+        "description": "Safeguard your company's public image across search, reviews and news coverage.",
+        "capabilities": [
+          "Corporate reputation audits",
+          "Review and rating management",
+          "Crisis response planning"
+        ]
+      },
+      "aiReputationManagement": {
+        "description": "Shape how AI assistants and generative search describe your name or brand.",
+        "capabilities": [
+          "Generative engine optimization",
+          "AI answer monitoring",
+          "Structured data alignment"
+        ]
+      },
+      "executiveBranding": {
+        "description": "Build a credible, visible executive presence that earns trust before the first meeting.",
+        "capabilities": [
+          "Thought leadership content",
+          "Media placement strategy",
+          "Profile optimization"
+        ]
+      },
+      "reviewManagement": {
+        "description": "Turn customer feedback into a growth channel with a steady stream of authentic reviews.",
+        "capabilities": [
+          "Review generation campaigns",
+          "Response strategy",
+          "Platform-specific monitoring"
+        ]
+      },
+      "redditRemoval": {
+        "description": "Address harmful Reddit threads and comments with proven removal and suppression tactics.",
+        "capabilities": [
+          "Content removal requests",
+          "Thread de-indexing",
+          "Ongoing thread monitoring"
+        ]
+      },
+      "wikipedia": {
+        "description": "Create, edit and protect Wikipedia pages in line with neutral, verifiable editorial standards.",
+        "capabilities": [
+          "Page creation & editing",
+          "Notability documentation",
+          "Vandalism monitoring"
+        ]
+      },
+      "googleMapsSeo": {
+        "description": "Win the local map pack with optimized listings that drive calls, visits and reviews.",
+        "capabilities": [
+          "Google Business Profile optimization",
+          "Local citation building",
+          "Map pack ranking strategy"
+        ]
+      },
+      "earnedMediaMarketing": {
+        "description": "Secure credible press coverage that builds authority and strengthens search visibility.",
+        "capabilities": [
+          "Digital PR outreach",
+          "Journalist relationship building",
+          "Coverage amplification"
+        ]
+      },
+      "expertWitnessServices": {
+        "description": "Bring specialized reputation and digital evidence expertise to legal proceedings.",
+        "capabilities": [
+          "Expert testimony",
+          "Digital evidence analysis",
+          "Case documentation support"
+        ]
       }
     },
     "valueProposition": {
