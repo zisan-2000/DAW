@@ -12,6 +12,7 @@ import { TechStackSection } from "@/components/sections/tech-stack";
 import { TestimonialsSection } from "@/components/sections/testimonials";
 import { WhyChooseUsSection } from "@/components/sections/why-choose-us";
 import { BlogPreviewSection } from "@/components/sections/blog-preview";
+import { FaqSection } from "@/components/sections/faq";
 import { FinalCtaSection } from "@/components/sections/final-cta";
 import { HeroParallaxSection } from "@/components/sections/company-intro";
 
@@ -55,6 +56,7 @@ export default function Page() {
 
       {/* Phase 5 — Insights + close */}
       <BlogPreviewSection />
+      <FaqSection />
       <FinalCtaSection />
     </div>
   );

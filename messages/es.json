@@ -2452,6 +2452,37 @@
         "excerpt": "Patrones de arquitectura y publicación que mantienen el rendimiento estable cuando los equipos de marketing publican páginas cada semana."
       }
     },
+    "faqSection": {
+      "eyebrow": "Preguntas frecuentes",
+      "title": "Preguntas que escuchamos antes de empezar",
+      "description": "Un vistazo rápido a cómo trabajamos, qué esperar y cómo se estructuran los proyectos."
+    },
+    "faqItems": {
+      "process": {
+        "question": "¿Cómo empieza el proceso?",
+        "answer": "Comenzamos con una consulta gratuita para entender tus objetivos, revisar tu configuración actual y trazar una hoja de ruta práctica antes de cualquier compromiso."
+      },
+      "timeline": {
+        "question": "¿Cuánto tiempo tarda en verse resultados?",
+        "answer": "Depende del alcance y el canal, pero la mayoría de los clientes ven movimiento inicial en 4-8 semanas, con resultados más sólidos acumulándose en 3-6 meses."
+      },
+      "pricing": {
+        "question": "¿Cómo se estructuran los precios?",
+        "answer": "El precio se basa en el alcance y la complejidad de tu proyecto. Recibirás una propuesta clara y detallada tras la consulta inicial, sin costos ocultos."
+      },
+      "reporting": {
+        "question": "¿Cómo informan del progreso?",
+        "answer": "Recibirás informes regulares y claros vinculados a métricas que realmente importan a tu negocio, no números vacíos, para que siempre sepas qué está funcionando."
+      },
+      "industries": {
+        "question": "¿Trabajan con nuestro sector?",
+        "answer": "Hemos trabajado en comercio electrónico, SaaS, servicios profesionales y más. La estrategia se adapta a tu mercado en lugar de usar una plantilla única."
+      },
+      "contract": {
+        "question": "¿Estamos obligados a un contrato a largo plazo?",
+        "answer": "No. No creemos en atar a los clientes a contratos innecesarios; la duración depende de lo que tus objetivos realmente requieran."
+      }
+    },
     "finalCta": {
       "eyebrow": "Siguiente paso",
       "title": "¿Listo para construir tu próxima etapa de crecimiento?",

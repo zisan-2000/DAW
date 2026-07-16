@@ -1818,6 +1818,117 @@
       "description": "Thanks {name}, we've received your details. A strategist will reach out to {email} within one business day with your full consultation."
     }
   },
+  "reputationConsulting": {
+    "hero": {
+      "eyebrow": "Digital Reputation Strategy",
+      "title": "Your reputation is",
+      "titleAccent": "your most valuable asset",
+      "description": "Strategic consulting to protect, enhance and control your digital presence. We help executives, entrepreneurs and public figures shape their online narrative.",
+      "cta": "Get a Free Consultation",
+      "secondaryCta": "See Our Process",
+      "years": "Years of Experience",
+      "clients": "Clients Served",
+      "scoreLabel": "Reputation Score",
+      "scoreDescription": "Average client improvement after 6 months"
+    },
+    "trustBar": {
+      "label": "As Trusted By",
+      "newsweek": "Newsweek",
+      "forbes": "Forbes",
+      "entrepreneur": "Entrepreneur",
+      "inc": "Inc."
+    },
+    "services": {
+      "eyebrow": "What We Do",
+      "title": "Comprehensive Reputation Consulting",
+      "subtitle": "Strategic solutions tailored to your unique reputation challenges and goals.",
+      "contentRemoval": {
+        "title": "Content Removal & Correction",
+        "description": "Remove or correct inaccurate, misleading or damaging content across the web."
+      },
+      "searchSuppression": {
+        "title": "Search Results Suppression",
+        "description": "Push positive content upward in search results through strategic SEO and content development."
+      },
+      "crisisManagement": {
+        "title": "Crisis Response & Recovery",
+        "description": "Rapid response strategies to contain damage and rebuild trust during reputation emergencies."
+      },
+      "monitoring": {
+        "title": "Real-Time Reputation Monitoring",
+        "description": "24/7 monitoring across platforms to detect and address emerging threats proactively."
+      },
+      "brandBuilding": {
+        "title": "Digital Brand Building",
+        "description": "Create and amplify content that showcases your expertise, achievements and values."
+      },
+      "privacyProtection": {
+        "title": "Privacy & Data Protection",
+        "description": "Remove personal information from data broker sites and protect your digital privacy."
+      }
+    },
+    "process": {
+      "eyebrow": "How We Work",
+      "title": "A Strategic Approach to Reputation",
+      "subtitle": "Every client receives a personalized strategy designed for their unique situation.",
+      "step1": {
+        "title": "Discovery & Audit",
+        "description": "Thorough analysis of your current digital footprint, including search results, social presence and privacy exposure."
+      },
+      "step2": {
+        "title": "Strategy Development",
+        "description": "Custom roadmap with clear priorities, tactical approaches and measurable milestones aligned with your goals."
+      },
+      "step3": {
+        "title": "Execution & Refinement",
+        "description": "Implementation with continuous optimization, monitoring and adaptation to evolving online dynamics."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Client Success",
+      "title": "What Our Clients Say",
+      "executive": {
+        "quote": "Within months, the negative articles that had followed my career for years were no longer visible. The team understood the sensitivity and handled everything with discretion.",
+        "name": "Sarah Mitchell",
+        "role": "Fortune 500 Executive"
+      },
+      "entrepreneur": {
+        "quote": "My online reputation now reflects the reality of my business instead of unfair reviews. This transformed how prospective clients perceive me.",
+        "name": "David Chen",
+        "role": "Tech Entrepreneur"
+      },
+      "publicFigure": {
+        "quote": "Proactive privacy protection has given me peace of mind. I no longer worry about what people will find when they search my name.",
+        "name": "Amanda Ross",
+        "role": "Public Figure"
+      }
+    },
+    "consultation": {
+      "eyebrow": "Start Your Journey",
+      "title": "Ready to Take Control of Your Reputation?",
+      "description": "Schedule a confidential consultation with our team of experts. We'll assess your situation and outline a personalized strategy.",
+      "benefits": {
+        "confidential": "100% confidential discussion",
+        "expert": "Expert analysis of your digital presence",
+        "tailored": "Personalized strategy recommendations"
+      },
+      "cta": "Schedule Consultation",
+      "form": {
+        "name": "Full Name",
+        "namePlaceholder": "John Smith",
+        "email": "Email Address",
+        "emailPlaceholder": "john@example.com",
+        "message": "Tell us about your situation",
+        "messagePlaceholder": "Briefly describe your reputation concerns...",
+        "submit": "Submit Request",
+        "disclaimer": "All information is confidential and protected"
+      }
+    },
+    "common": {
+      "learnMore": "Learn More",
+      "viewAll": "View All Services"
+    }
+  },
   "homepage": {
     "meta": {
       "title": "ORM Defender | Digital Growth Partner — Web, SEO, Marketing & Software",
@@ -2327,6 +2438,37 @@
         "title": "Building websites that stay fast as content grows",
         "categoryLabel": "Website Development",
         "excerpt": "Architecture and publishing patterns that keep performance stable when marketing teams ship pages weekly."
+      }
+    },
+    "faqSection": {
+      "eyebrow": "FAQ",
+      "title": "Questions we hear before kickoff",
+      "description": "A quick look at how we work, what to expect, and how engagements are structured."
+    },
+    "faqItems": {
+      "process": {
+        "question": "How does the process start?",
+        "answer": "We begin with a free consultation to understand your goals, review your current setup, and outline a practical roadmap before any commitment is made."
+      },
+      "timeline": {
+        "question": "How long until we see results?",
+        "answer": "It depends on scope and channel, but most clients see early movement within 4-8 weeks, with stronger results compounding over 3-6 months."
+      },
+      "pricing": {
+        "question": "How is pricing structured?",
+        "answer": "Pricing is based on the scope and complexity of your project. You'll receive a clear, itemized proposal after the initial consultation—no hidden fees."
+      },
+      "reporting": {
+        "question": "How do you report on progress?",
+        "answer": "You get regular, plain-language reporting tied to metrics that matter to your business, not vanity numbers, so you always know what's working."
+      },
+      "industries": {
+        "question": "Do you work with our industry?",
+        "answer": "We've worked across e-commerce, SaaS, professional services and more. Strategy is tailored to your market rather than a one-size-fits-all template."
+      },
+      "contract": {
+        "question": "Are we locked into a long-term contract?",
+        "answer": "No. We don't believe in locking clients into unnecessary contracts—engagement length is based on what your goals actually require."
       }
     },
     "finalCta": {

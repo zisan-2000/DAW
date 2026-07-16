@@ -2452,6 +2452,37 @@
         "excerpt": "Architecture et modèles de publication qui maintiennent la performance stable lorsque les équipes marketing publient des pages chaque semaine."
       }
     },
+    "faqSection": {
+      "eyebrow": "FAQ",
+      "title": "Les questions posées avant de démarrer",
+      "description": "Un aperçu rapide de notre façon de travailler, de ce à quoi s'attendre et de la structure des missions."
+    },
+    "faqItems": {
+      "process": {
+        "question": "Comment commence le processus ?",
+        "answer": "Nous commençons par une consultation gratuite pour comprendre vos objectifs, examiner votre configuration actuelle et définir une feuille de route concrète avant tout engagement."
+      },
+      "timeline": {
+        "question": "Combien de temps avant de voir des résultats ?",
+        "answer": "Cela dépend du périmètre et du canal, mais la plupart des clients constatent une évolution dès 4 à 8 semaines, avec des résultats plus solides qui s'accumulent sur 3 à 6 mois."
+      },
+      "pricing": {
+        "question": "Comment les tarifs sont-ils structurés ?",
+        "answer": "Les tarifs dépendent du périmètre et de la complexité de votre projet. Vous recevrez une proposition claire et détaillée après la consultation initiale, sans frais cachés."
+      },
+      "reporting": {
+        "question": "Comment suivez-vous les progrès ?",
+        "answer": "Vous recevez des rapports réguliers et clairs, liés à des indicateurs qui comptent réellement pour votre activité, et non de simples chiffres de façade."
+      },
+      "industries": {
+        "question": "Travaillez-vous avec notre secteur ?",
+        "answer": "Nous avons travaillé avec l'e-commerce, le SaaS, les services professionnels et bien d'autres. La stratégie est adaptée à votre marché plutôt qu'un modèle unique."
+      },
+      "contract": {
+        "question": "Sommes-nous engagés dans un contrat de longue durée ?",
+        "answer": "Non. Nous ne croyons pas aux contrats inutiles à long terme : la durée de la collaboration dépend de ce que vos objectifs exigent réellement."
+      }
+    },
     "finalCta": {
       "eyebrow": "Prochaine étape",
       "title": "Prêt à construire votre prochaine étape de croissance ?",
