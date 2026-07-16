@@ -373,22 +373,25 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/80 bg-background/95 backdrop-blur-xl supports-backdrop-filter:bg-background/80">
       <div className="mx-auto flex min-h-16 max-w-[1600px] items-center justify-between gap-3 px-4 sm:min-h-20 sm:gap-4 sm:px-6 lg:px-8">
-        <Link
-          href="/"
-          className="font-display flex shrink-0 items-center gap-2.5 text-lg font-semibold text-foreground transition-colors hover:text-accent"
-          aria-label={`${AGENCY_CONFIG.shortName} home`}
-        >
-          <Image
-            src="/images/logo.png"
-            alt={AGENCY_CONFIG.shortName}
-            width={40}
-            height={40}
-            priority
-            className="size-9 rounded-xl object-contain sm:size-10"
-          />
+ <Link
+  href="/"
+  className="group flex shrink-0 items-center gap-3"
+  aria-label={`${AGENCY_CONFIG.shortName} home`}
+>
+  <div className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-accent text-base font-bold text-accent-foreground shadow-md">
+    {AGENCY_CONFIG.shortName.replace(/[\[\]]/g, '').charAt(0) || 'A'}
+  </div>
 
-          <span className="hidden 2xl:inline">{AGENCY_CONFIG.shortName}</span>
-        </Link>
+  <div className="hidden flex-col 2xl:flex">
+    <span className="font-display text-xl font-bold leading-none tracking-tight text-foreground transition-colors group-hover:text-accent">
+      {AGENCY_CONFIG.shortName}
+    </span>
+
+    <span className="mt-1 text-[11px] font-medium leading-none tracking-[0.12em] uppercase text-muted-foreground">
+      {AGENCY_CONFIG.tagline}
+    </span>
+  </div>
+</Link>
 
         <nav
           className="hidden flex-1 items-center justify-center gap-3 xl:flex 2xl:gap-6"
