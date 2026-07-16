@@ -502,4 +502,27 @@
   .btn-shimmer::after {
     animation: none !important;
   }
+  @property --border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes gradient-border-spin {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+.animate-gradient-border {
+  animation: gradient-border-spin 7s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-gradient-border {
+    animation: none;
+  }
+
+  
+}
 }
