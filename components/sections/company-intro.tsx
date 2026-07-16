@@ -1,94 +1,86 @@
-'use client'
+"use client";
 
-import { Link } from '@/i18n/navigation'
-import { motion } from 'framer-motion'
-import { ArrowRight } from 'lucide-react'
-import { useTranslations } from 'next-intl'
-import { AGENCY_CONFIG, HOMEPAGE } from '@/lib/content'
-import { Button } from '@/components/ui/button'
-import { Container } from '@/components/ui/container'
-import { Section } from '@/components/ui/section'
-import { SectionHeader } from '@/components/ui/section-header'
-import { fadeUp, staggerContainer, viewportOnce } from '@/lib/motion'
+import { useTranslations } from "next-intl";
+import { CanvasText } from "@/components/ui/canvas-text";
+import {
+  HeroParallax,
+  type ParallaxProduct,
+} from "@/components/ui/hero-parallax";
 
-export function CompanyIntroSection() {
-  const t = useTranslations('homepage.companyIntro')
-  const body = t.raw('body') as string[]
-  const { companyIntro } = HOMEPAGE
+const CARD_KEYS = [
+  "onlineReputationManagement",
+  "personalReputation",
+  "corporateReputation",
+  "reviewManagement",
+  "googleSearchCleanup",
+
+  "negativeContentSuppression",
+  "seoReputation",
+  "generativeEngineOptimization",
+  "aiReputationManagement",
+  "wikipediaManagement",
+
+  "crisisManagement",
+  "executiveBranding",
+  "digitalPR",
+  "brandMonitoring",
+  "contentStrategy",
+] as const;
+
+const CARD_IMAGES: Record<(typeof CARD_KEYS)[number], string> = {
+  onlineReputationManagement: "/images/onlineReputationManagement.jpg",
+  personalReputation: "/images/personalReputation.jpg",
+  corporateReputation: "/images/corporateReputation.jpg",
+  reviewManagement: "/images/reviewManagement.jpg",
+  googleSearchCleanup: "/images/googleSearchCleanup.jpg",
+
+  negativeContentSuppression: "/images/negativeContentSuppression.jpg",
+  seoReputation: "/images/seoReputation.jpg",
+  generativeEngineOptimization: "/images/generativeEngineOptimization.jpg",
+  aiReputationManagement: "/images/aiReputationManagement.jpg",
+  wikipediaManagement: "/images/wikipediaManagement.jpg",
+
+  crisisManagement: "/images/crisisManagement.jpg",
+  executiveBranding: "/images/executiveBranding.jpg",
+  digitalPR: "/images/digitalPR.JPG",
+  brandMonitoring: "/images/brandMonitoring.jpg",
+  contentStrategy: "/images/contentStrategy.jpg",
+};
+
+export function HeroParallaxSection() {
+  const t = useTranslations("homepage.heroParallax");
+
+  const products: ParallaxProduct[] = CARD_KEYS.map((key) => ({
+    title: t(`cards.${key}.title`),
+    description: t(`cards.${key}.description`),
+    link: "#",
+    thumbnail: CARD_IMAGES[key],
+  }));
 
   return (
-    <Section tone="light" padding="default" aria-labelledby="company-intro-heading">
-      <Container>
-        <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
-          <motion.div
-            className="lg:col-span-7"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewportOnce}
-          >
-            <motion.div variants={fadeUp}>
-              <SectionHeader
-                titleId="company-intro-heading"
-                eyebrow={t('eyebrow')}
-                title={t('title')}
-                description={body[0]}
-              />
-            </motion.div>
-
-            <motion.p
-              variants={fadeUp}
-              className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg"
+    <section
+      aria-labelledby="hero-parallax-heading"
+      className="relative w-full bg-background"
+    >
+      <HeroParallax
+        products={products}
+        header={
+          <div className="relative mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+            <p className="text-xs font-semibold tracking-[0.18em] text-accent uppercase">
+              {t("eyebrow")}
+            </p>
+            <h2
+              id="hero-parallax-heading"
+              className="mt-4 max-w-3xl font-display text-3xl font-semibold tracking-tight text-balance text-foreground sm:text-5xl md:text-6xl"
             >
-              {body[1]}
-            </motion.p>
-
-            <motion.div variants={fadeUp} className="mt-8">
-              <Link href={companyIntro.cta.href}>
-                <Button
-                  size="lg"
-                  className="h-11 rounded-xl bg-primary px-5 text-primary-foreground hover:bg-primary/90"
-                >
-                  {t('ctaLabel')}
-                  <ArrowRight className="size-4" />
-                </Button>
-              </Link>
-            </motion.div>
-          </motion.div>
-
-          <motion.div
-            className="lg:col-span-5"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={viewportOnce}
-          >
-            <div className="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-border bg-border">
-              {companyIntro.highlights.map((item) => {
-                const value = AGENCY_CONFIG[item.valueKey]
-                return (
-                  <motion.div
-                    key={item.valueKey}
-                    variants={fadeUp}
-                    className="bg-surface-muted px-5 py-6 sm:px-6 sm:py-8"
-                  >
-                    <p className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                      {value}
-                      <span className="text-accent">+</span>
-                    </p>
-                    <p className="mt-2 text-sm text-muted-foreground">
-                      {t(`highlights.${item.valueKey}`)}
-                    </p>
-                    <p className="mt-1 text-[10px] tracking-wide text-muted-foreground/60 uppercase">
-                      Editable
-                    </p>
-                  </motion.div>
-                )
-              })}
-            </div>
-          </motion.div>
-        </div>
-      </Container>
-    </Section>
-  )
+              {t("title")}
+            </h2>
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+              {t("description")}
+            </p>
+          </div>
+        }
+      />
+    </section>
+  );
 }
