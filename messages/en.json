@@ -1889,34 +1889,26 @@
         "description": "Produce messaging and media that clarify your offer, support SEO and convert attention into action."
       }
     },
-    "valueProposition": {
-      "eyebrow": "Connected system",
-      "title": "More than separate services—one connected growth system",
-      "description": "Marketing, design, development, SEO, content, data and automation work as one operating system—not disconnected projects.",
+   "valueProposition": {
+      "eyebrow": "Our Proven Process",
+      "titleFirst": "A Clear Process Built Around",
+      "titleHighlight": "Your Reputation Goals",
+      "description": "We combine research, tailored strategy and consistent execution to improve your search presence and protect your brand.",
       "stages": {
+        "understand": {
+          "label": "Understand the situation",
+          "detail": "We review your search results and goals so we know exactly what to address first.",
+          "floatingText": "Situation Analysis"
+        },
         "strategy": {
-          "label": "Strategy",
-          "detail": "Business goals, audience clarity and prioritised roadmap."
+          "label": "Create a tailored strategy",
+          "detail": "Together we decide which issues to tackle and which solutions fit your goals and budget.",
+          "floatingText": "Tailored Strategy"
         },
-        "experience": {
-          "label": "Experience",
-          "detail": "Brand, UX and websites that convert attention into trust."
-        },
-        "acquisition": {
-          "label": "Acquisition",
-          "detail": "SEO, paid media and content that reach the right demand."
-        },
-        "conversion": {
-          "label": "Conversion",
-          "detail": "Offers, funnels and UX friction removal that lift results."
-        },
-        "retention": {
-          "label": "Retention",
-          "detail": "Lifecycle messaging, CRM and product loops that return."
-        },
-        "scale": {
-          "label": "Scale",
-          "detail": "Measurement, automation and systems ready for growth."
+        "execution": {
+          "label": "Do the work and update the plan",
+          "detail": "Our team handles the heavy lifting and keeps you informed with clear progress updates.",
+          "floatingText": "Progress Updates"
         }
       }
     },
